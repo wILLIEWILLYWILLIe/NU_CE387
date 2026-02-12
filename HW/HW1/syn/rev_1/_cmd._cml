@@ -1,0 +1,1 @@
+-distcompmode -link    -encrypt       -top work.fibonacci -osyn /home/gel8580/CE387/HW/HW1/syn/rev_1/synwork/fibonacci_comp.srs /home/gel8580/CE387/HW/HW1/syn/rev_1/synwork//distcomp/distcomp0/distcomp0.srs    

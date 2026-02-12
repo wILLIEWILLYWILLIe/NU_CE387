@@ -1,0 +1,80 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.01, Jan 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/gel8580/CE387/HW/HW1/sim
+T_opt
+!s110 1768346416
+VSkA6NnJXz>V252`4fOcKn1
+Z1 04 12 4 work fibonacci_tb fast 0
+=1-a4bb6d3ee34b-6966d330-5184-2d567f
+Z2 o-quiet -auto_acc_if_foreign -work work -L work +acc
+Z3 tCvgOpt 0
+n@_opt
+Z4 OL;O;2020.1;71
+T_opt1
+!s110 1768346332
+Vn3ejfeWO@i<e9Ao=RZoK32
+R1
+=1-a4bb6d3ee34b-6966d2dc-71ef3-2d5071
+R2
+R3
+n@_opt1
+R4
+R0
+vfibonacci
+Z5 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z6 !s110 1768346415
+!i10b 1
+!s100 =<Kn7Sf8ja[N@;17zmRiL0
+Z7 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I[K[Fn9imEF4[ZEW1CIO1W1
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1768279750
+8../sv/fibonacci.sv
+F../sv/fibonacci.sv
+!i122 6
+L0 1 83
+Z9 OL;L;2020.1;71
+r1
+!s85 0
+31
+Z10 !s108 1768346415.000000
+!s107 ../sv/fibonacci.sv|
+!s90 -reportprogress|300|-work|work|../sv/fibonacci.sv|
+!i113 0
+Z11 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+vfibonacci_tb
+R5
+R6
+!i10b 1
+!s100 KL]MZSKNP3IGa?;[K>ICE1
+R7
+I<ZEl=bbSBNm^[`ZY7UgY`1
+R8
+S1
+R0
+w1768346321
+8../sv/fibonacci_tb.sv
+F../sv/fibonacci_tb.sv
+!i122 7
+L0 3 108
+R9
+r1
+!s85 0
+31
+R10
+!s107 ../sv/fibonacci_tb.sv|
+!s90 -reportprogress|300|-work|work|../sv/fibonacci_tb.sv|
+!i113 0
+R11
+R3

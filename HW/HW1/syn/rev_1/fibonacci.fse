@@ -1,0 +1,10 @@
+
+fsm_encoding {10154151} sequential
+
+fsm_state_encoding {10154151} IDLE {00}
+
+fsm_state_encoding {10154151} COMPUTE {01}
+
+fsm_state_encoding {10154151} DONE {10}
+
+fsm_registers {10154151} {state[1]}  {state[0]} 

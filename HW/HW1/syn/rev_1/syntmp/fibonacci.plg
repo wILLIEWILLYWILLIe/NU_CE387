@@ -1,0 +1,13 @@
+@P:  Part : ep4ce115fc23-7
+@P:  Worst Slack : -0.446
+@P:  fibonacci|clk - Estimated Frequency : 336.6 MHz
+@P:  fibonacci|clk - Requested Frequency : 396.0 MHz
+@P:  fibonacci|clk - Estimated Period : 2.971
+@P:  fibonacci|clk - Requested Period : 2.525
+@P:  fibonacci|clk - Slack : -0.446
+@P: fibonacci Part : ep4ce115fc23-7
+@P: fibonacci I/O ATOMs : 19
+@P: fibonacci Total LUTs : 73 
+@P: fibonacci Register bits : 67
+@P: fibonacci DSP Blocks : 0 (0 nine-bit DSP elements)
+@P:  CPU Time : 0h:00m:00s

@@ -1,0 +1,88 @@
+
+                               Synplify Pro (R) 
+
+                Version O-2018.09-SP1 for RHEL64 - Nov 27, 2018 
+
+                    Copyright (c) 1988 - 2018 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+Starting:    /vol/synopsys/fpga/O-2018.09-SP1/linux_a_64/mbin/synplify
+Install:     /vol/synopsys/fpga/O-2018.09-SP1
+Hostname:    riddler.ece.northwestern.edu
+Date:        Sun Jan 18 22:37:43 2026
+Version:     O-2018.09-SP1
+
+Arguments:   -product synplify_pro
+ProductType: synplify_pro
+
+License checkout: synplifypremierdp
+License: synplifypremierdp from server synopsyslm.ece.northwestern.edu (Using premium license)
+Licensed Vendor: All FPGA
+License Option: ident
+
+
+
+distributed_compile is not supported in current product.
+auto_infer_blackbox is not supported in current product.
+log file: "/home/gel8580/CE387/HW/HW2/syn/rev_1/matmul_top.srr"
+Running: rev_1 in foreground
+
+Running matmul|rev_1
+
+Running Flow: compile (Compile) on matmul|rev_1
+# Sun Jan 18 22:38:05 2026
+
+Running Flow: compile_flow (Compile Process) on matmul|rev_1
+# Sun Jan 18 22:38:05 2026
+
+Running: compiler (Compile Input) on matmul|rev_1
+# Sun Jan 18 22:38:05 2026
+Copied /home/gel8580/CE387/HW/HW2/syn/rev_1/synwork/matmul_top_comp.srs to /home/gel8580/CE387/HW/HW2/syn/rev_1/matmul_top.srs
+
+compiler completed
+# Sun Jan 18 22:38:08 2026
+
+Return Code: 0
+Run Time:00h:00m:03s
+
+Running: multi_srs_gen (Multi-srs Generator) on matmul|rev_1
+# Sun Jan 18 22:38:08 2026
+
+multi_srs_gen completed
+# Sun Jan 18 22:38:08 2026
+
+Return Code: 0
+Run Time:00h:00m:00s
+Copied /home/gel8580/CE387/HW/HW2/syn/rev_1/synwork/matmul_top_mult.srs to /home/gel8580/CE387/HW/HW2/syn/rev_1/matmul_top.srs
+Complete: Compile Process on matmul|rev_1
+
+Running: premap (Premap) on matmul|rev_1
+# Sun Jan 18 22:38:08 2026
+
+premap completed with warnings
+# Sun Jan 18 22:38:09 2026
+
+Return Code: 1
+Run Time:00h:00m:01s
+Complete: Compile on matmul|rev_1
+
+Running Flow: map (Map) on matmul|rev_1
+# Sun Jan 18 22:38:09 2026
+License granted for 4 parallel jobs
+
+Running: fpga_mapper (Map & Optimize) on matmul|rev_1
+# Sun Jan 18 22:38:09 2026
+Copied /home/gel8580/CE387/HW/HW2/syn/rev_1/synwork/matmul_top_m.srm to /home/gel8580/CE387/HW/HW2/syn/rev_1/matmul_top.srm
+
+fpga_mapper completed with warnings
+# Sun Jan 18 22:38:13 2026
+
+Return Code: 1
+Run Time:00h:00m:04s
+Complete: Map on matmul|rev_1
+Complete: Logic Synthesis on matmul|rev_1
+0exit status=0
+License checkin: synplifypremierdp

@@ -1,0 +1,91 @@
+Selecting top level module matmul_top
+@N: CG364 :"/home/gel8580/CE387/HW/HW2/sv/bram.sv":1:7:1:10|Synthesizing module bram in library work.
+
+	BRAM_ADDR_WIDTH=32'b00000000000000000000000000001010
+	BRAM_DATA_WIDTH=32'b00000000000000000000000000100000
+   Generated name = bram_10s_32s
+Running optimization stage 1 on bram_10s_32s .......
+@N: CL134 :"/home/gel8580/CE387/HW/HW2/sv/bram.sv":16:2:16:10|Found RAM mem, depth=1024, width=32
+@N: CG364 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":1:7:1:12|Synthesizing module matmul in library work.
+
+	DATA_WIDTH=32'b00000000000000000000000000100000
+	ADDR_WIDTH=32'b00000000000000000000000000001010
+	MATRIX_SIZE=32'b00000000000000000000000000001000
+   Generated name = matmul_32s_10s_8s
+Running optimization stage 1 on matmul_32s_10s_8s .......
+@N: CG364 :"/home/gel8580/CE387/HW/HW2/sv/matmul_top.sv":1:7:1:16|Synthesizing module matmul_top in library work.
+Running optimization stage 1 on matmul_top .......
+Running optimization stage 2 on matmul_top .......
+Running optimization stage 2 on matmul_32s_10s_8s .......
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit j[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Optimizing register bit i[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Pruning register bits 31 to 3 of i[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Pruning register bits 31 to 3 of j[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"/home/gel8580/CE387/HW/HW2/sv/matmul.sv":40:4:40:12|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+Running optimization stage 2 on bram_10s_32s .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/gel8580/CE387/HW/HW2/syn/rev_1/synwork/layer0.rt.csv
+

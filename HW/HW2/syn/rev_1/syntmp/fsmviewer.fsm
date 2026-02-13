@@ -1,0 +1,23 @@
+fsm_options -device {state[2:0]}
+
+define_state S_IDLE 00 {/home/gel8580/CE387/HW/HW2/sv/matmul.sv} 74 12 74 17
+state_output S_IDLE {state[0]} 1
+
+define_state S_PRELOAD 01 {/home/gel8580/CE387/HW/HW2/sv/matmul.sv} 87 12 87 20
+state_output S_PRELOAD {state[1]} 1
+
+define_state S_RUN 10 {/home/gel8580/CE387/HW/HW2/sv/matmul.sv} 97 12 97 16
+state_output S_RUN {state[2]} 1
+
+fsm_options -resetState S_IDLE
+
+define_transition S_RUN S_RUN {a_addr_2_sqmuxa,start = 0-}
+define_transition S_PRELOAD S_RUN {a_addr_2_sqmuxa,start = --}
+define_transition S_IDLE S_PRELOAD {a_addr_2_sqmuxa,start = -1}
+define_transition S_RUN S_IDLE {a_addr_2_sqmuxa,start = 1-}
+define_transition S_IDLE S_IDLE {a_addr_2_sqmuxa,start = -0}
+fsm_options -SRSPath {/home/gel8580/CE387/HW/HW2/syn/rev_1/synwork/matmul_top_mult.srs}
+fsm_options -SRSTime 1768797488
+fsm_options -FSMPath {matmul_inst.state[2:0]}
+fsm_options -view {work.matmul_32s_10s_8s_matmul_inst.verilog|i:state[2:0]}
+fsm_options -ID {11404401}

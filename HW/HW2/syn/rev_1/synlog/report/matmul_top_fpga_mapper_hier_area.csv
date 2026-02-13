@@ -1,0 +1,7 @@
+
+. Module name, ATOMS, ARITHMETIC MODE, REGISTERS, SYNC RAMS, MACs
+. matmul_top, 225, 0, 175, 3, 6
+.	. bram_10s_32s, 11, 0, 34, 1, 0
+.	. bram_10s_32s_0, 37, 0, 34, 1, 0
+.	. bram_10s_32s_1, 7, 0, 34, 1, 0
+.	. matmul_32s_10s_8s, 156, 0, 73, 0, 6

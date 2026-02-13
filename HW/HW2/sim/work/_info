@@ -1,0 +1,121 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.01, Jan 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/gel8580/CE387/HW/HW2/sim
+T_opt
+!s110 1768782543
+VCGkX:J[jhecRQGKFC3cZR3
+04 9 4 work matmul_tb fast 0
+=1-a4bb6d3ee34b-696d7acf-d088-2cf681
+o-quiet -auto_acc_if_foreign -work work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.1;71
+R0
+vbram
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1768782752
+!i10b 1
+!s100 iaDY7[a=Bc9fE2oYbFG9o1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ie^dhiZB2:cz3BS2TbJcPj2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1768777690
+8../sv/bram.sv
+F../sv/bram.sv
+!i122 8
+L0 1 21
+Z5 OL;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1768782752.000000
+!s107 ../sv/bram.sv|
+!s90 -reportprogress|300|-work|work|../sv/bram.sv|
+!i113 0
+Z6 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vmatmul
+R2
+Z7 !s110 1768782753
+!i10b 1
+!s100 >?OIS]_NH24H5Z7l]@>BV1
+R3
+IL]odHj`eY4HZ[=VRE@^==3
+R4
+S1
+R0
+w1768782642
+8../sv/matmul.sv
+F../sv/matmul.sv
+!i122 9
+L0 1 168
+R5
+r1
+!s85 0
+31
+Z8 !s108 1768782753.000000
+!s107 ../sv/matmul.sv|
+!s90 -reportprogress|300|-work|work|../sv/matmul.sv|
+!i113 0
+R6
+R1
+vmatmul_tb
+R2
+R7
+!i10b 1
+!s100 81?_Sm`n=]Fk;:4NXSVEC1
+R3
+I>c8iC`jHH;Kz?cbJOQ5jf1
+R4
+S1
+R0
+w1768776675
+8../sv/matmul_tb.sv
+F../sv/matmul_tb.sv
+!i122 11
+L0 3 203
+R5
+r1
+!s85 0
+31
+R8
+!s107 ../sv/matmul_tb.sv|
+!s90 -reportprogress|300|-work|work|../sv/matmul_tb.sv|
+!i113 0
+R6
+R1
+vmatmul_top
+R2
+R7
+!i10b 1
+!s100 he_E;SINJ<2V;X<=hl=Yh3
+R3
+I4QNRIcT^_`KMjPngMChEO1
+R4
+S1
+R0
+w1768776674
+8../sv/matmul_top.sv
+F../sv/matmul_top.sv
+!i122 10
+L0 1 105
+R5
+r1
+!s85 0
+31
+R8
+!s107 ../sv/matmul_top.sv|
+!s90 -reportprogress|300|-work|work|../sv/matmul_top.sv|
+!i113 0
+R6
+R1

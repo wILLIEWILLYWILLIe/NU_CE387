@@ -1,0 +1,2 @@
+@W: FA406 |Environment variable QUARTUS_ROOTDIR not set. Cannot determine PAR version.
+@W: MT529 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":63:4:63:12|Found inferred clock motion_detect_top|clock which controls 376 sequential elements including fifo_base_in.empty. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

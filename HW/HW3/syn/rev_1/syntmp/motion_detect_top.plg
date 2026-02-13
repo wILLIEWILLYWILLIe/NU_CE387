@@ -1,0 +1,13 @@
+@P:  Part : ep4ce115fc23-7
+@P:  Worst Slack : -2.129
+@P:  motion_detect_top|clock - Estimated Frequency : 70.5 MHz
+@P:  motion_detect_top|clock - Requested Frequency : 82.9 MHz
+@P:  motion_detect_top|clock - Estimated Period : 14.192
+@P:  motion_detect_top|clock - Requested Period : 12.063
+@P:  motion_detect_top|clock - Slack : -2.129
+@P: motion_detect_top Part : ep4ce115fc23-7
+@P: motion_detect_top I/O ATOMs : 53
+@P: motion_detect_top Total LUTs : 416 
+@P: motion_detect_top Register bits : 136
+@P: motion_detect_top DSP Blocks : 0 (0 nine-bit DSP elements)
+@P:  CPU Time : 0h:00m:05s

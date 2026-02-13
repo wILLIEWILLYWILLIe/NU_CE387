@@ -1,0 +1,108 @@
+# //  ModelSim SE-64 2020.1 Jan 28 2020 Linux 4.18.0-553.92.1.el8_10.x86_64
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do motion_detect_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 15:25:04 on Jan 24,2026
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 15:25:04 on Jan 24,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 15:25:04 on Jan 24,2026
+# vlog -reportprogress 300 -work work ../sv/grayscale.sv 
+# -- Compiling module grayscale
+# 
+# Top level modules:
+# 	grayscale
+# End time: 15:25:04 on Jan 24,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 15:25:05 on Jan 24,2026
+# vlog -reportprogress 300 -work work ../sv/background_sub.sv 
+# -- Compiling module background_sub
+# 
+# Top level modules:
+# 	background_sub
+# End time: 15:25:05 on Jan 24,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 15:25:05 on Jan 24,2026
+# vlog -reportprogress 300 -work work ../sv/highlight.sv 
+# -- Compiling module highlight
+# 
+# Top level modules:
+# 	highlight
+# End time: 15:25:05 on Jan 24,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 15:25:05 on Jan 24,2026
+# vlog -reportprogress 300 -work work ../sv/motion_detect_top.sv 
+# -- Compiling module motion_detect_top
+# 
+# Top level modules:
+# 	motion_detect_top
+# End time: 15:25:05 on Jan 24,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 15:25:06 on Jan 24,2026
+# vlog -reportprogress 300 -work work ../sv/motion_detect_tb.sv 
+# -- Compiling module motion_detect_tb
+# 
+# Top level modules:
+# 	motion_detect_tb
+# End time: 15:25:06 on Jan 24,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.motion_detect_tb 
+# Start time: 15:25:06 on Jan 24,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.motion_detect_tb(fast)
+# Loading work.motion_detect_top(fast)
+# Loading work.fifo(fast)
+# Loading work.grayscale(fast)
+# Loading work.fifo(fast__1)
+# Loading work.background_sub(fast)
+# Loading work.highlight(fast)
+# Loading Pedestrian Image: src/pedestrians.bmp
+# Loading Base Image: src/base.bmp
+# Base Image Load Done.
+# Pedestrian Image Load Done.
+# @ 8849160: Simulation completed.
+# Total simulation cycle count: 884916
+# Total error count: 0
+# ** Note: $finish    : ../sv/motion_detect_tb.sv(83)
+#    Time: 8849160 ns  Iteration: 2  Instance: /motion_detect_tb
+# 1
+# Break in NamedBeginStat main_process at ../sv/motion_detect_tb.sv line 83
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit

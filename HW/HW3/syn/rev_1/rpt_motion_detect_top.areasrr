@@ -1,0 +1,328 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09-SP1
+Install: /vol/synopsys/fpga/O-2018.09-SP1
+OS: Red Hat Enterprise Linux 8.10 (Ootpa)
+Hostname: moore.wot.ece.northwestern.edu
+max virtual memory: unlimited (bytes)
+max user processes: 1028002
+max stack size: 8388608 (bytes)
+
+
+Implementation : rev_1
+
+#### START OF AREA REPORT #####[
+
+Part:			EP4CE115FC23-7 (Altera)
+
+---------------------------------------------------------------------------------
+########   Utilization report for  Top level view:   motion_detect_top   ########
+=================================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     136                100 %                
+======================================================
+Total SEQUENTIAL ATOMS in the block motion_detect_top:	136 (21.25 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     286                100 %                
+==================================================
+Total COMBINATIONAL ATOMS in the block motion_detect_top:	286 (44.69 % Utilization)
+
+
+RAMS
+Name          Total elements     Number of bits     Utilization     Notes
+-------------------------------------------------------------------------
+SYNC RAMS     7                  3840               100 %                
+=========================================================================
+Total RAMS in the block motion_detect_top:	7 (1.09 % Utilization)
+
+--------------------------------------------------------------------
+########   Utilization report for  cell:   background_sub   ########
+Instance path:   motion_detect_top.background_sub                   
+====================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     2                  1.47 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block motion_detect_top.background_sub:	2 (0.31 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     26                 9.09 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block motion_detect_top.background_sub:	26 (4.06 % Utilization)
+
+---------------------------------------------------------------------
+########   Utilization report for  cell:   fifo_24s_32s_6s   ########
+Instance path:   motion_detect_top.fifo_24s_32s_6s                   
+=====================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     13                 9.56 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block motion_detect_top.fifo_24s_32s_6s:	13 (2.03 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     25                 8.74 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block motion_detect_top.fifo_24s_32s_6s:	25 (3.91 % Utilization)
+
+
+RAMS
+Name          Total elements     Number of bits     Utilization     Notes
+-------------------------------------------------------------------------
+SYNC RAMS     1                  768                14.3 %               
+=========================================================================
+Total RAMS in the block motion_detect_top.fifo_24s_32s_6s:	1 (0.16 % Utilization)
+
+-----------------------------------------------------------------------
+########   Utilization report for  cell:   fifo_24s_32s_6s_0   ########
+Instance path:   motion_detect_top.fifo_24s_32s_6s_0                   
+=======================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     13                 9.56 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block motion_detect_top.fifo_24s_32s_6s_0:	13 (2.03 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     26                 9.09 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block motion_detect_top.fifo_24s_32s_6s_0:	26 (4.06 % Utilization)
+
+
+RAMS
+Name          Total elements     Number of bits     Utilization     Notes
+-------------------------------------------------------------------------
+SYNC RAMS     1                  768                14.3 %               
+=========================================================================
+Total RAMS in the block motion_detect_top.fifo_24s_32s_6s_0:	1 (0.16 % Utilization)
+
+-----------------------------------------------------------------------
+########   Utilization report for  cell:   fifo_24s_32s_6s_1   ########
+Instance path:   motion_detect_top.fifo_24s_32s_6s_1                   
+=======================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     13                 9.56 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block motion_detect_top.fifo_24s_32s_6s_1:	13 (2.03 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     22                 7.69 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block motion_detect_top.fifo_24s_32s_6s_1:	22 (3.44 % Utilization)
+
+
+RAMS
+Name          Total elements     Number of bits     Utilization     Notes
+-------------------------------------------------------------------------
+SYNC RAMS     1                  768                14.3 %               
+=========================================================================
+Total RAMS in the block motion_detect_top.fifo_24s_32s_6s_1:	1 (0.16 % Utilization)
+
+-----------------------------------------------------------------------
+########   Utilization report for  cell:   fifo_24s_32s_6s_2   ########
+Instance path:   motion_detect_top.fifo_24s_32s_6s_2                   
+=======================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     13                 9.56 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block motion_detect_top.fifo_24s_32s_6s_2:	13 (2.03 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     25                 8.74 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block motion_detect_top.fifo_24s_32s_6s_2:	25 (3.91 % Utilization)
+
+
+RAMS
+Name          Total elements     Number of bits     Utilization     Notes
+-------------------------------------------------------------------------
+SYNC RAMS     1                  768                14.3 %               
+=========================================================================
+Total RAMS in the block motion_detect_top.fifo_24s_32s_6s_2:	1 (0.16 % Utilization)
+
+----------------------------------------------------------------------
+########   Utilization report for  cell:   fifo_8s_32s_6s_3   ########
+Instance path:   motion_detect_top.fifo_8s_32s_6s_3                   
+======================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     13                 9.56 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block motion_detect_top.fifo_8s_32s_6s_3:	13 (2.03 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     26                 9.09 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block motion_detect_top.fifo_8s_32s_6s_3:	26 (4.06 % Utilization)
+
+
+RAMS
+Name          Total elements     Number of bits     Utilization     Notes
+-------------------------------------------------------------------------
+SYNC RAMS     1                  256                14.3 %               
+=========================================================================
+Total RAMS in the block motion_detect_top.fifo_8s_32s_6s_3:	1 (0.16 % Utilization)
+
+------------------------------------------------------------------------
+########   Utilization report for  cell:   fifo_8s_32s_6s_3_0   ########
+Instance path:   motion_detect_top.fifo_8s_32s_6s_3_0                   
+========================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     13                 9.56 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block motion_detect_top.fifo_8s_32s_6s_3_0:	13 (2.03 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     27                 9.44 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block motion_detect_top.fifo_8s_32s_6s_3_0:	27 (4.22 % Utilization)
+
+
+RAMS
+Name          Total elements     Number of bits     Utilization     Notes
+-------------------------------------------------------------------------
+SYNC RAMS     1                  256                14.3 %               
+=========================================================================
+Total RAMS in the block motion_detect_top.fifo_8s_32s_6s_3_0:	1 (0.16 % Utilization)
+
+------------------------------------------------------------------------
+########   Utilization report for  cell:   fifo_8s_32s_6s_3_1   ########
+Instance path:   motion_detect_top.fifo_8s_32s_6s_3_1                   
+========================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     13                 9.56 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block motion_detect_top.fifo_8s_32s_6s_3_1:	13 (2.03 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     22                 7.69 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block motion_detect_top.fifo_8s_32s_6s_3_1:	22 (3.44 % Utilization)
+
+
+RAMS
+Name          Total elements     Number of bits     Utilization     Notes
+-------------------------------------------------------------------------
+SYNC RAMS     1                  256                14.3 %               
+=========================================================================
+Total RAMS in the block motion_detect_top.fifo_8s_32s_6s_3_1:	1 (0.16 % Utilization)
+
+---------------------------------------------------------------
+########   Utilization report for  cell:   grayscale   ########
+Instance path:   motion_detect_top.grayscale                   
+===============================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     9                  6.62 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block motion_detect_top.grayscale:	9 (1.41 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     25                 8.74 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block motion_detect_top.grayscale:	25 (3.91 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   grayscale_0   ########
+Instance path:   motion_detect_top.grayscale_0                   
+=================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     9                  6.62 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block motion_detect_top.grayscale_0:	9 (1.41 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     23                 8.04 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block motion_detect_top.grayscale_0:	23 (3.59 % Utilization)
+
+---------------------------------------------------------------
+########   Utilization report for  cell:   highlight   ########
+Instance path:   motion_detect_top.highlight                   
+===============================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     25                 18.4 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block motion_detect_top.highlight:	25 (3.91 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     37                 12.9 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block motion_detect_top.highlight:	37 (5.78 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+

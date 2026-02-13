@@ -1,0 +1,171 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.01, Jan 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/gel8580/CE387/HW/HW3/sim
+T_opt
+!s110 1769289219
+Vj`gT53@1O=[7j?l4E=dDh1
+04 16 4 work motion_detect_tb fast 0
+=1-b49691574b56-69753603-c5c60-18bf37
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.1;71
+R0
+vbackground_sub
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1769289905
+!i10b 1
+!s100 J<oE`G=23mTW9eB9aA]=b2
+Z4 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I>QTQfJVkAY[7aZKd5??[K3
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1769285931
+8../sv/background_sub.sv
+F../sv/background_sub.sv
+!i122 20
+L0 2 82
+Z6 OL;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1769289905.000000
+!s107 ../sv/background_sub.sv|
+!s90 -reportprogress|300|-work|work|../sv/background_sub.sv|
+!i113 0
+Z8 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vfifo
+R2
+Z9 !s110 1769289904
+!i10b 1
+!s100 JJ9WTn?^46FJn6Sib6ECo1
+R4
+Ij:[k:a4XRZ6Im<1oU4m=41
+R5
+S1
+R0
+w1769285899
+8../sv/fifo.sv
+F../sv/fifo.sv
+!i122 18
+L0 2 77
+R6
+r1
+!s85 0
+31
+Z10 !s108 1769289904.000000
+!s107 ../sv/fifo.sv|
+!s90 -reportprogress|300|-work|work|../sv/fifo.sv|
+!i113 0
+R8
+R1
+vgrayscale
+R2
+R9
+!i10b 1
+!s100 8JLUJ9T3UeM43Li4TSPiF1
+R4
+IRSEYA5Pmk4nF]egDm4N5A1
+R5
+S1
+R0
+w1769285913
+8../sv/grayscale.sv
+F../sv/grayscale.sv
+!i122 19
+L0 2 62
+R6
+r1
+!s85 0
+31
+R10
+!s107 ../sv/grayscale.sv|
+!s90 -reportprogress|300|-work|work|../sv/grayscale.sv|
+!i113 0
+R8
+R1
+vhighlight
+R2
+R3
+!i10b 1
+!s100 N6XZ<Moigfk:Uem8_QAjU3
+R4
+I:HG>nULW;N>J=DHfO7CV>0
+R5
+S1
+R0
+w1769288955
+8../sv/highlight.sv
+F../sv/highlight.sv
+!i122 21
+L0 2 79
+R6
+r1
+!s85 0
+31
+R7
+!s107 ../sv/highlight.sv|
+!s90 -reportprogress|300|-work|work|../sv/highlight.sv|
+!i113 0
+R8
+R1
+vmotion_detect_tb
+R2
+!s110 1769289906
+!i10b 1
+!s100 3Z5<8M1H7KZh:hYANY`7E2
+R4
+IU@Sz4E5=^b7gYj]UjC[>=0
+R5
+S1
+R0
+w1769289125
+8../sv/motion_detect_tb.sv
+F../sv/motion_detect_tb.sv
+!i122 23
+L0 4 235
+R6
+r1
+!s85 0
+31
+!s108 1769289906.000000
+!s107 ../sv/motion_detect_tb.sv|
+!s90 -reportprogress|300|-work|work|../sv/motion_detect_tb.sv|
+!i113 0
+R8
+R1
+vmotion_detect_top
+R2
+R3
+!i10b 1
+!s100 H<:]3^IL1`dnaa^>4ffd;1
+R4
+IJiS^60c@PH2li@f;^_FYJ1
+R5
+S1
+R0
+w1769285959
+8../sv/motion_detect_top.sv
+F../sv/motion_detect_top.sv
+!i122 22
+L0 2 154
+R6
+r1
+!s85 0
+31
+R7
+!s107 ../sv/motion_detect_top.sv|
+!s90 -reportprogress|300|-work|work|../sv/motion_detect_top.sv|
+!i113 0
+R8
+R1

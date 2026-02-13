@@ -1,0 +1,35 @@
+
+                               Synplify Pro (R) 
+
+                Version O-2018.09-SP1 for RHEL64 - Nov 27, 2018 
+
+                    Copyright (c) 1988 - 2018 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+Starting:    /vol/synopsys/fpga/O-2018.09-SP1/linux_a_64/mbin/synplify
+Install:     /vol/synopsys/fpga/O-2018.09-SP1
+Hostname:    moore.wot.ece.northwestern.edu
+Date:        Sat Jan 24 15:46:21 2026
+Version:     O-2018.09-SP1
+
+Arguments:   -product synplify_pro
+ProductType: synplify_pro
+
+License checkout: synplifypremierdp
+License: synplifypremierdp from server synopsyslm.ece.northwestern.edu (Using premium license)
+Licensed Vendor: All FPGA
+License Option: ident
+
+
+distributed_compile is not supported in current product.
+auto_infer_blackbox is not supported in current product.
+distributed_compile is not supported in current product.
+auto_infer_blackbox is not supported in current product.
+distributed_compile is not supported in current product.
+auto_infer_blackbox is not supported in current product.
+The feature is not supported in this version of the product
+exit status=0
+License checkin: synplifypremierdp

@@ -1,0 +1,2 @@
+@W: CL279 :"/home/gel8580/CE387/HW/HW3/sv/background_sub.sv":27:0:27:8|Pruning register bits 7 to 1 of mask[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+

@@ -1,0 +1,930 @@
+# Sat Jan 24 15:02:07 2026
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09-SP1
+Install: /vol/synopsys/fpga/O-2018.09-SP1
+OS: Red Hat Enterprise Linux 8.10 (Ootpa)
+Hostname: moore.wot.ece.northwestern.edu
+max virtual memory: unlimited (bytes)
+max user processes: 1028002
+max stack size: 8388608 (bytes)
+
+
+Implementation : rev_1
+Synopsys Intel FPGA Technology Mapper, Version maprc, Build 4745R, Built Nov 27 2018 21:14:52
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+@W: FA406 |Environment variable QUARTUS_ROOTDIR not set. Cannot determine PAR version.
+@N: MF284 |Setting synthesis effort to medium for the design
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+@N: MF236 :"/home/gel8580/CE387/HW/HW3/sv/grayscale.sv":38:61:38:149|Generating a type div divider 
+@N: MF236 :"/home/gel8580/CE387/HW/HW3/sv/grayscale.sv":38:61:38:149|Generating a type div divider 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 116MB peak: 117MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 116MB peak: 117MB)
+
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_out.dout[0] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Boundary register fifo_out.dout[0] (in view: work.motion_detect_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_out.dout[1] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Boundary register fifo_out.dout[1] (in view: work.motion_detect_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_out.dout[2] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Boundary register fifo_out.dout[2] (in view: work.motion_detect_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_out.dout[3] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Boundary register fifo_out.dout[3] (in view: work.motion_detect_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_out.dout[4] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Boundary register fifo_out.dout[4] (in view: work.motion_detect_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_out.dout[5] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Boundary register fifo_out.dout[5] (in view: work.motion_detect_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_out.dout[6] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Boundary register fifo_out.dout[6] (in view: work.motion_detect_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_out.dout[7] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Boundary register fifo_out.dout[7] (in view: work.motion_detect_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_out.dout[8] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Boundary register fifo_out.dout[8] (in view: work.motion_detect_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_out.dout[9] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Boundary register fifo_out.dout[9] (in view: work.motion_detect_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_out.dout[10] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Boundary register fifo_out.dout[10] (in view: work.motion_detect_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_out.dout[11] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Boundary register fifo_out.dout[11] (in view: work.motion_detect_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_out.dout[12] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Boundary register fifo_out.dout[12] (in view: work.motion_detect_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_out.dout[13] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Boundary register fifo_out.dout[13] (in view: work.motion_detect_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_out.dout[14] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Boundary register fifo_out.dout[14] (in view: work.motion_detect_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_out.dout[15] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Boundary register fifo_out.dout[15] (in view: work.motion_detect_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_out.dout[16] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Boundary register fifo_out.dout[16] (in view: work.motion_detect_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_out.dout[17] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Boundary register fifo_out.dout[17] (in view: work.motion_detect_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_out.dout[18] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Boundary register fifo_out.dout[18] (in view: work.motion_detect_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_out.dout[19] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Boundary register fifo_out.dout[19] (in view: work.motion_detect_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_out.dout[20] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Boundary register fifo_out.dout[20] (in view: work.motion_detect_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_out.dout[21] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Boundary register fifo_out.dout[21] (in view: work.motion_detect_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_out.dout[22] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Boundary register fifo_out.dout[22] (in view: work.motion_detect_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_out.dout[23] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@A: BN291 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Boundary register fifo_out.dout[23] (in view: work.motion_detect_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_hl.dout[0] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_hl.dout[1] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_hl.dout[2] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_hl.dout[3] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_hl.dout[4] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_hl.dout[5] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_hl.dout[6] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_hl.dout[7] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_hl.dout[8] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_hl.dout[9] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_hl.dout[10] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_hl.dout[11] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_hl.dout[12] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_hl.dout[13] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_hl.dout[14] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_hl.dout[15] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_hl.dout[16] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_hl.dout[17] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_hl.dout[18] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_hl.dout[19] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_hl.dout[20] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_hl.dout[21] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_hl.dout[22] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_hl.dout[23] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_gs.dout[0] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_gs.dout[1] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_gs.dout[2] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_gs.dout[3] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_gs.dout[4] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_gs.dout[5] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_gs.dout[6] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_gs.dout[7] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_gs.dout[8] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_gs.dout[9] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_gs.dout[10] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_gs.dout[11] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_gs.dout[12] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_gs.dout[13] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_gs.dout[14] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_gs.dout[15] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_gs.dout[16] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_gs.dout[17] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_gs.dout[18] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_gs.dout[19] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_gs.dout[20] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_gs.dout[21] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_gs.dout[22] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_img_to_gs.dout[23] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_base_in.dout[0] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_base_in.dout[1] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_base_in.dout[2] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_base_in.dout[3] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_base_in.dout[4] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_base_in.dout[5] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_base_in.dout[6] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_base_in.dout[7] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_base_in.dout[8] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_base_in.dout[9] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_base_in.dout[10] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_base_in.dout[11] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_base_in.dout[12] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_base_in.dout[13] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_base_in.dout[14] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_base_in.dout[15] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_base_in.dout[16] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_base_in.dout[17] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_base_in.dout[18] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_base_in.dout[19] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_base_in.dout[20] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_base_in.dout[21] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_base_in.dout[22] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance fifo_base_in.dout[23] (in view: work.motion_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[0] (in view: work.fifo_8s_32s_6s_2(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[1] (in view: work.fifo_8s_32s_6s_2(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[2] (in view: work.fifo_8s_32s_6s_2(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[3] (in view: work.fifo_8s_32s_6s_2(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+
+Only the first 100 messages of id 'BN362' are reported. To see all messages use 'report_messages -log /home/gel8580/CE387/HW/HW3/syn/rev_1/synlog/motion_detect_top_fpga_mapper.srr -id BN362' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN362} -count unlimited' in the Tcl shell.
+@W: FX107 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":35:4:35:12|RAM fifo_base_in.fifo_buf[23:0] (in view: work.motion_detect_top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":35:4:35:12|RAM fifo_img_to_gs.fifo_buf[23:0] (in view: work.motion_detect_top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":35:4:35:12|RAM fifo_img_to_hl.fifo_buf[23:0] (in view: work.motion_detect_top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":35:4:35:12|RAM fifo_out.fifo_buf[23:0] (in view: work.motion_detect_top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":35:4:35:12|RAM fifo_buf[7:0] (in view: work.fifo_8s_32s_6s_0(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":35:4:35:12|RAM fifo_buf[7:0] (in view: work.fifo_8s_32s_6s_1(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":35:4:35:12|RAM fifo_buf[7:0] (in view: work.fifo_8s_32s_6s_2(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@A: BN291 :"/home/gel8580/CE387/HW/HW3/sv/fifo.sv":50:4:50:12|Boundary register fifo_out.dout[23:0] (in view: work.motion_detect_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 118MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 118MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 119MB peak: 121MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 119MB peak: 121MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 120MB peak: 121MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 120MB peak: 121MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 120MB peak: 121MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 120MB peak: 121MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 119MB peak: 121MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 120MB peak: 121MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 119MB peak: 121MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 169MB peak: 171MB)
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 137MB peak: 174MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 137MB peak: 174MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 143 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@K:CKID0001       clock_in            cycloneive_io_ibuf     143        fifo_out.empty 
+=======================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 125MB peak: 174MB)
+
+Writing Analyst data base /home/gel8580/CE387/HW/HW3/syn/rev_1/synwork/motion_detect_top_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 135MB peak: 174MB)
+
+Writing Verilog Netlist and constraint files
+Writing .vqm output for Quartus
+
+Writing scf file... (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 137MB peak: 174MB)
+
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+Writing FDC file /home/gel8580/CE387/HW/HW3/syn/rev_1/motion_detect_top_synplify.fdc
+
+Finished Writing Verilog Netlist and constraint files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 135MB peak: 174MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 136MB peak: 174MB)
+
+@W: MT420 |Found inferred clock motion_detect_top|clock with period 12.06ns. Please declare a user-defined clock on port clock.
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Sat Jan 24 15:02:12 2026
+#
+
+
+Top view:               motion_detect_top
+Requested Frequency:    82.9 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -2.129
+
+                            Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock              Frequency     Frequency     Period        Period        Slack      Type         Group                
+---------------------------------------------------------------------------------------------------------------------------------
+motion_detect_top|clock     82.9 MHz      70.5 MHz      12.063        14.192        -2.129     inferred     Autoconstr_clkgroup_0
+=================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                            |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-----------------------------------------------------------------------------------------------------------------------------------------
+Starting                 Ending                   |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-----------------------------------------------------------------------------------------------------------------------------------------
+motion_detect_top|clock  motion_detect_top|clock  |  12.064      -2.129  |  No paths    -      |  No paths    -      |  No paths    -    
+=========================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: motion_detect_top|clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                          Starting                                                                                        Arrival           
+Instance                  Reference                   Type                              Pin         Net                   Time        Slack 
+                          Clock                                                                                                             
+--------------------------------------------------------------------------------------------------------------------------------------------
+fifo_base_in.fifo_buf     motion_detect_top|clock     synplicity_altsyncram_RAM_R_W     q_b[16]     base_fifo_dout_16     4.154       -2.129
+fifo_base_in.fifo_buf     motion_detect_top|clock     synplicity_altsyncram_RAM_R_W     q_b[8]      base_fifo_dout_8      4.154       -2.118
+fifo_base_in.fifo_buf     motion_detect_top|clock     synplicity_altsyncram_RAM_R_W     q_b[17]     base_fifo_dout_17     4.154       -2.063
+fifo_base_in.fifo_buf     motion_detect_top|clock     synplicity_altsyncram_RAM_R_W     q_b[9]      base_fifo_dout_9      4.154       -2.057
+fifo_base_in.fifo_buf     motion_detect_top|clock     synplicity_altsyncram_RAM_R_W     q_b[18]     base_fifo_dout_18     4.154       -1.997
+fifo_base_in.fifo_buf     motion_detect_top|clock     synplicity_altsyncram_RAM_R_W     q_b[10]     base_fifo_dout_10     4.154       -1.991
+fifo_base_in.fifo_buf     motion_detect_top|clock     synplicity_altsyncram_RAM_R_W     q_b[19]     base_fifo_dout_19     4.154       -1.931
+fifo_base_in.fifo_buf     motion_detect_top|clock     synplicity_altsyncram_RAM_R_W     q_b[11]     base_fifo_dout_11     4.154       -1.925
+fifo_base_in.fifo_buf     motion_detect_top|clock     synplicity_altsyncram_RAM_R_W     q_b[20]     base_fifo_dout_20     4.154       -1.865
+fifo_base_in.fifo_buf     motion_detect_top|clock     synplicity_altsyncram_RAM_R_W     q_b[12]     base_fifo_dout_12     4.154       -1.859
+============================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                       Starting                                                                  Required           
+Instance               Reference                   Type       Pin     Net                        Time         Slack 
+                       Clock                                                                                        
+--------------------------------------------------------------------------------------------------------------------
+gs_base_inst.gs[0]     motion_detect_top|clock     dffeas     d       gs_1_0_0__g0_i_x4          12.591       -2.129
+gs_base_inst.gs[1]     motion_detect_top|clock     dffeas     d       mult1_un68_sum_add3        12.591       -1.346
+gs_img_inst.gs[0]      motion_detect_top|clock     dffeas     d       gs_1_0_0__g0_i_x4          12.591       -1.345
+gs_img_inst.gs[1]      motion_detect_top|clock     dffeas     d       mult1_un68_sum_add3        12.591       -0.562
+gs_base_inst.gs[2]     motion_detect_top|clock     dffeas     d       mult1_un61_sum_add3        12.591       -0.351
+gs_img_inst.gs[2]      motion_detect_top|clock     dffeas     d       mult1_un61_sum_add3        12.591       0.433 
+gs_base_inst.gs[3]     motion_detect_top|clock     dffeas     d       mult1_un54_sum_add3        12.591       0.678 
+gs_img_inst.gs[3]      motion_detect_top|clock     dffeas     d       mult1_un54_sum_add3        12.591       1.462 
+gs_base_inst.gs[4]     motion_detect_top|clock     dffeas     d       mult1_un47_sum_carry_2     12.591       1.688 
+gs_img_inst.gs[4]      motion_detect_top|clock     dffeas     d       mult1_un47_sum_carry_2     12.591       2.473 
+====================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      12.063
+    - Setup time:                            0.086
+    + Intrinsic clock delay:                 0.613
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         12.591
+
+    - Propagation time:                      14.719
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -2.129
+
+    Number of logic level(s):                24
+    Starting point:                          fifo_base_in.fifo_buf / q_b[16]
+    Ending point:                            gs_base_inst.gs[0] / d
+    The start point is clocked by            motion_detect_top|clock [rising] on pin clock0
+    The end   point is clocked by            motion_detect_top|clock [rising] on pin clk
+
+Instance / Net                                                                                          Pin         Pin               Arrival     No. of    
+Name                                                                  Type                              Name        Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+fifo_base_in.fifo_buf                                                 synplicity_altsyncram_RAM_R_W     q_b[16]     Out     4.154     4.154       -         
+base_fifo_dout_16                                                     Net                               -           -       0.326     -           1         
+gs_base_inst.un2_gs_c_0_add0                                          cycloneive_lcell_comb             datab       In      -         4.480       -         
+gs_base_inst.un2_gs_c_0_add0                                          cycloneive_lcell_comb             cout        Out     0.509     4.989       -         
+un2_gs_c_0_carry_0                                                    Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_0_add1                                          cycloneive_lcell_comb             cin         In      -         4.989       -         
+gs_base_inst.un2_gs_c_0_add1                                          cycloneive_lcell_comb             cout        Out     0.066     5.055       -         
+un2_gs_c_0_carry_1                                                    Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_0_add2                                          cycloneive_lcell_comb             cin         In      -         5.055       -         
+gs_base_inst.un2_gs_c_0_add2                                          cycloneive_lcell_comb             cout        Out     0.066     5.121       -         
+un2_gs_c_0_carry_2                                                    Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_0_add3                                          cycloneive_lcell_comb             cin         In      -         5.121       -         
+gs_base_inst.un2_gs_c_0_add3                                          cycloneive_lcell_comb             cout        Out     0.066     5.187       -         
+un2_gs_c_0_carry_3                                                    Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_0_add4                                          cycloneive_lcell_comb             cin         In      -         5.187       -         
+gs_base_inst.un2_gs_c_0_add4                                          cycloneive_lcell_comb             cout        Out     0.066     5.253       -         
+un2_gs_c_0_carry_4                                                    Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_0_add5                                          cycloneive_lcell_comb             cin         In      -         5.253       -         
+gs_base_inst.un2_gs_c_0_add5                                          cycloneive_lcell_comb             cout        Out     0.066     5.319       -         
+un2_gs_c_0_carry_5                                                    Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_0_add6                                          cycloneive_lcell_comb             cin         In      -         5.319       -         
+gs_base_inst.un2_gs_c_0_add6                                          cycloneive_lcell_comb             cout        Out     0.066     5.385       -         
+un2_gs_c_0_carry_6                                                    Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_0_add7                                          cycloneive_lcell_comb             cin         In      -         5.385       -         
+gs_base_inst.un2_gs_c_0_add7                                          cycloneive_lcell_comb             cout        Out     0.066     5.451       -         
+un2_gs_c_0_add7_cout_0                                                Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_0_add7_term                                     cycloneive_lcell_comb             cin         In      -         5.451       -         
+gs_base_inst.un2_gs_c_0_add7_term                                     cycloneive_lcell_comb             combout     Out     0.000     5.451       -         
+un2_gs_c_0[8]                                                         Net                               -           -       0.652     -           1         
+gs_base_inst.un2_gs_c_add8                                            cycloneive_lcell_comb             datab       In      -         6.102       -         
+gs_base_inst.un2_gs_c_add8                                            cycloneive_lcell_comb             cout        Out     0.509     6.611       -         
+un2_gs_c_add8_cout_0                                                  Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add8_term                                       cycloneive_lcell_comb             cin         In      -         6.611       -         
+gs_base_inst.un2_gs_c_add8_term                                       cycloneive_lcell_comb             combout     Out     0.000     6.611       -         
+CO0_0                                                                 Net                               -           -       0.513     -           9         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_c1_1_a      cycloneive_lcell_comb             dataa       In      -         7.124       -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_c1_1_a      cycloneive_lcell_comb             combout     Out     0.437     7.561       -         
+mult1_un40_sum_0_c1_1_a                                               Net                               -           -       0.326     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_c1_1        cycloneive_lcell_comb             datac       In      -         7.887       -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_c1_1        cycloneive_lcell_comb             combout     Out     0.429     8.316       -         
+mult1_un40_sum_0_c1_1                                                 Net                               -           -       0.326     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_sum2        cycloneive_lcell_comb             datac       In      -         8.642       -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_sum2        cycloneive_lcell_comb             combout     Out     0.429     9.071       -         
+mult1_un40_sum_0_sum2                                                 Net                               -           -       0.333     -           2         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_m[2]          cycloneive_lcell_comb             datad       In      -         9.404       -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_m[2]          cycloneive_lcell_comb             combout     Out     0.155     9.559       -         
+mult1_un40_sum_m[2]                                                   Net                               -           -       0.333     -           2         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add1          cycloneive_lcell_comb             dataa       In      -         9.892       -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add1          cycloneive_lcell_comb             cout        Out     0.498     10.390      -         
+mult1_un47_sum_carry_1                                                Net                               -           -       0.000     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add2          cycloneive_lcell_comb             cin         In      -         10.390      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add2          cycloneive_lcell_comb             cout        Out     0.066     10.456      -         
+mult1_un47_sum_add2_cout                                              Net                               -           -       0.000     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add2_term     cycloneive_lcell_comb             cin         In      -         10.456      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add2_term     cycloneive_lcell_comb             combout     Out     0.000     10.456      -         
+mult1_un47_sum_carry_2                                                Net                               -           -       0.446     -           4         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un54_sum_add1          cycloneive_lcell_comb             dataa       In      -         10.902      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un54_sum_add1          cycloneive_lcell_comb             cout        Out     0.498     11.400      -         
+mult1_un54_sum_carry_1                                                Net                               -           -       0.000     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un54_sum_add2          cycloneive_lcell_comb             cin         In      -         11.400      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un54_sum_add2          cycloneive_lcell_comb             combout     Out     0.000     11.400      -         
+mult1_un54_sum_add2                                                   Net                               -           -       0.652     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un61_sum_add3          cycloneive_lcell_comb             datab       In      -         12.052      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un61_sum_add3          cycloneive_lcell_comb             combout     Out     0.443     12.495      -         
+mult1_un61_sum_add3                                                   Net                               -           -       0.446     -           4         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un68_sum_add1          cycloneive_lcell_comb             dataa       In      -         12.941      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un68_sum_add1          cycloneive_lcell_comb             combout     Out     0.437     13.378      -         
+mult1_un68_sum_add1                                                   Net                               -           -       0.432     -           2         
+gs_base_inst.gs_RNO_0[0]                                              cycloneive_lcell_comb             datac       In      -         13.810      -         
+gs_base_inst.gs_RNO_0[0]                                              cycloneive_lcell_comb             combout     Out     0.429     14.239      -         
+gs_1_0_0__g0_i_x4_a                                                   Net                               -           -       0.326     -           1         
+gs_base_inst.gs_RNO[0]                                                cycloneive_lcell_comb             datad       In      -         14.564      -         
+gs_base_inst.gs_RNO[0]                                                cycloneive_lcell_comb             combout     Out     0.155     14.719      -         
+gs_1_0_0__g0_i_x4                                                     Net                               -           -       0.000     -           1         
+gs_base_inst.gs[0]                                                    dffeas                            d           In      -         14.719      -         
+============================================================================================================================================================
+Total path delay (propagation time + setup - ICD at endpoint) of 14.192 is 9.083(64.0%) logic and 5.109(36.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      12.063
+    - Setup time:                            0.086
+    + Intrinsic clock delay:                 0.613
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         12.591
+
+    - Propagation time:                      14.719
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -2.129
+
+    Number of logic level(s):                24
+    Starting point:                          fifo_base_in.fifo_buf / q_b[16]
+    Ending point:                            gs_base_inst.gs[0] / d
+    The start point is clocked by            motion_detect_top|clock [rising] on pin clock0
+    The end   point is clocked by            motion_detect_top|clock [rising] on pin clk
+
+Instance / Net                                                                                          Pin         Pin               Arrival     No. of    
+Name                                                                  Type                              Name        Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+fifo_base_in.fifo_buf                                                 synplicity_altsyncram_RAM_R_W     q_b[16]     Out     4.154     4.154       -         
+base_fifo_dout_16                                                     Net                               -           -       0.326     -           1         
+gs_base_inst.un2_gs_c_0_add0                                          cycloneive_lcell_comb             datab       In      -         4.480       -         
+gs_base_inst.un2_gs_c_0_add0                                          cycloneive_lcell_comb             cout        Out     0.509     4.989       -         
+un2_gs_c_0_carry_0                                                    Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_0_add1                                          cycloneive_lcell_comb             cin         In      -         4.989       -         
+gs_base_inst.un2_gs_c_0_add1                                          cycloneive_lcell_comb             combout     Out     0.000     4.989       -         
+un2_gs_c_0_add1                                                       Net                               -           -       0.652     -           1         
+gs_base_inst.un2_gs_c_add1                                            cycloneive_lcell_comb             datab       In      -         5.640       -         
+gs_base_inst.un2_gs_c_add1                                            cycloneive_lcell_comb             cout        Out     0.509     6.149       -         
+un2_gs_c_carry_1                                                      Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add2                                            cycloneive_lcell_comb             cin         In      -         6.149       -         
+gs_base_inst.un2_gs_c_add2                                            cycloneive_lcell_comb             cout        Out     0.066     6.215       -         
+un2_gs_c_carry_2                                                      Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add3                                            cycloneive_lcell_comb             cin         In      -         6.215       -         
+gs_base_inst.un2_gs_c_add3                                            cycloneive_lcell_comb             cout        Out     0.066     6.281       -         
+un2_gs_c_carry_3                                                      Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add4                                            cycloneive_lcell_comb             cin         In      -         6.281       -         
+gs_base_inst.un2_gs_c_add4                                            cycloneive_lcell_comb             cout        Out     0.066     6.347       -         
+un2_gs_c_carry_4                                                      Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add5                                            cycloneive_lcell_comb             cin         In      -         6.347       -         
+gs_base_inst.un2_gs_c_add5                                            cycloneive_lcell_comb             cout        Out     0.066     6.413       -         
+un2_gs_c_carry_5                                                      Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add6                                            cycloneive_lcell_comb             cin         In      -         6.413       -         
+gs_base_inst.un2_gs_c_add6                                            cycloneive_lcell_comb             cout        Out     0.066     6.479       -         
+un2_gs_c_carry_6                                                      Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add7                                            cycloneive_lcell_comb             cin         In      -         6.479       -         
+gs_base_inst.un2_gs_c_add7                                            cycloneive_lcell_comb             cout        Out     0.066     6.545       -         
+un2_gs_c_carry_7                                                      Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add8                                            cycloneive_lcell_comb             cin         In      -         6.545       -         
+gs_base_inst.un2_gs_c_add8                                            cycloneive_lcell_comb             cout        Out     0.066     6.611       -         
+un2_gs_c_add8_cout_0                                                  Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add8_term                                       cycloneive_lcell_comb             cin         In      -         6.611       -         
+gs_base_inst.un2_gs_c_add8_term                                       cycloneive_lcell_comb             combout     Out     0.000     6.611       -         
+CO0_0                                                                 Net                               -           -       0.513     -           9         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_c1_1_a      cycloneive_lcell_comb             dataa       In      -         7.124       -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_c1_1_a      cycloneive_lcell_comb             combout     Out     0.437     7.561       -         
+mult1_un40_sum_0_c1_1_a                                               Net                               -           -       0.326     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_c1_1        cycloneive_lcell_comb             datac       In      -         7.887       -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_c1_1        cycloneive_lcell_comb             combout     Out     0.429     8.316       -         
+mult1_un40_sum_0_c1_1                                                 Net                               -           -       0.326     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_sum2        cycloneive_lcell_comb             datac       In      -         8.642       -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_sum2        cycloneive_lcell_comb             combout     Out     0.429     9.071       -         
+mult1_un40_sum_0_sum2                                                 Net                               -           -       0.333     -           2         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_m[2]          cycloneive_lcell_comb             datad       In      -         9.404       -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_m[2]          cycloneive_lcell_comb             combout     Out     0.155     9.559       -         
+mult1_un40_sum_m[2]                                                   Net                               -           -       0.333     -           2         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add1          cycloneive_lcell_comb             dataa       In      -         9.892       -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add1          cycloneive_lcell_comb             cout        Out     0.498     10.390      -         
+mult1_un47_sum_carry_1                                                Net                               -           -       0.000     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add2          cycloneive_lcell_comb             cin         In      -         10.390      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add2          cycloneive_lcell_comb             cout        Out     0.066     10.456      -         
+mult1_un47_sum_add2_cout                                              Net                               -           -       0.000     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add2_term     cycloneive_lcell_comb             cin         In      -         10.456      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add2_term     cycloneive_lcell_comb             combout     Out     0.000     10.456      -         
+mult1_un47_sum_carry_2                                                Net                               -           -       0.446     -           4         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un54_sum_add1          cycloneive_lcell_comb             dataa       In      -         10.902      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un54_sum_add1          cycloneive_lcell_comb             cout        Out     0.498     11.400      -         
+mult1_un54_sum_carry_1                                                Net                               -           -       0.000     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un54_sum_add2          cycloneive_lcell_comb             cin         In      -         11.400      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un54_sum_add2          cycloneive_lcell_comb             combout     Out     0.000     11.400      -         
+mult1_un54_sum_add2                                                   Net                               -           -       0.652     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un61_sum_add3          cycloneive_lcell_comb             datab       In      -         12.052      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un61_sum_add3          cycloneive_lcell_comb             combout     Out     0.443     12.495      -         
+mult1_un61_sum_add3                                                   Net                               -           -       0.446     -           4         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un68_sum_add1          cycloneive_lcell_comb             dataa       In      -         12.941      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un68_sum_add1          cycloneive_lcell_comb             combout     Out     0.437     13.378      -         
+mult1_un68_sum_add1                                                   Net                               -           -       0.432     -           2         
+gs_base_inst.gs_RNO_0[0]                                              cycloneive_lcell_comb             datac       In      -         13.810      -         
+gs_base_inst.gs_RNO_0[0]                                              cycloneive_lcell_comb             combout     Out     0.429     14.239      -         
+gs_1_0_0__g0_i_x4_a                                                   Net                               -           -       0.326     -           1         
+gs_base_inst.gs_RNO[0]                                                cycloneive_lcell_comb             datad       In      -         14.564      -         
+gs_base_inst.gs_RNO[0]                                                cycloneive_lcell_comb             combout     Out     0.155     14.719      -         
+gs_1_0_0__g0_i_x4                                                     Net                               -           -       0.000     -           1         
+gs_base_inst.gs[0]                                                    dffeas                            d           In      -         14.719      -         
+============================================================================================================================================================
+Total path delay (propagation time + setup - ICD at endpoint) of 14.192 is 9.083(64.0%) logic and 5.109(36.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      12.063
+    - Setup time:                            0.086
+    + Intrinsic clock delay:                 0.613
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         12.591
+
+    - Propagation time:                      14.719
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -2.129
+
+    Number of logic level(s):                24
+    Starting point:                          fifo_base_in.fifo_buf / q_b[16]
+    Ending point:                            gs_base_inst.gs[0] / d
+    The start point is clocked by            motion_detect_top|clock [rising] on pin clock0
+    The end   point is clocked by            motion_detect_top|clock [rising] on pin clk
+
+Instance / Net                                                                                          Pin         Pin               Arrival     No. of    
+Name                                                                  Type                              Name        Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+fifo_base_in.fifo_buf                                                 synplicity_altsyncram_RAM_R_W     q_b[16]     Out     4.154     4.154       -         
+base_fifo_dout_16                                                     Net                               -           -       0.326     -           1         
+gs_base_inst.un2_gs_c_0_add0                                          cycloneive_lcell_comb             datab       In      -         4.480       -         
+gs_base_inst.un2_gs_c_0_add0                                          cycloneive_lcell_comb             cout        Out     0.509     4.989       -         
+un2_gs_c_0_carry_0                                                    Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_0_add1                                          cycloneive_lcell_comb             cin         In      -         4.989       -         
+gs_base_inst.un2_gs_c_0_add1                                          cycloneive_lcell_comb             cout        Out     0.066     5.055       -         
+un2_gs_c_0_carry_1                                                    Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_0_add2                                          cycloneive_lcell_comb             cin         In      -         5.055       -         
+gs_base_inst.un2_gs_c_0_add2                                          cycloneive_lcell_comb             combout     Out     0.000     5.055       -         
+un2_gs_c_0_add2                                                       Net                               -           -       0.652     -           1         
+gs_base_inst.un2_gs_c_add2                                            cycloneive_lcell_comb             datab       In      -         5.706       -         
+gs_base_inst.un2_gs_c_add2                                            cycloneive_lcell_comb             cout        Out     0.509     6.215       -         
+un2_gs_c_carry_2                                                      Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add3                                            cycloneive_lcell_comb             cin         In      -         6.215       -         
+gs_base_inst.un2_gs_c_add3                                            cycloneive_lcell_comb             cout        Out     0.066     6.281       -         
+un2_gs_c_carry_3                                                      Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add4                                            cycloneive_lcell_comb             cin         In      -         6.281       -         
+gs_base_inst.un2_gs_c_add4                                            cycloneive_lcell_comb             cout        Out     0.066     6.347       -         
+un2_gs_c_carry_4                                                      Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add5                                            cycloneive_lcell_comb             cin         In      -         6.347       -         
+gs_base_inst.un2_gs_c_add5                                            cycloneive_lcell_comb             cout        Out     0.066     6.413       -         
+un2_gs_c_carry_5                                                      Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add6                                            cycloneive_lcell_comb             cin         In      -         6.413       -         
+gs_base_inst.un2_gs_c_add6                                            cycloneive_lcell_comb             cout        Out     0.066     6.479       -         
+un2_gs_c_carry_6                                                      Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add7                                            cycloneive_lcell_comb             cin         In      -         6.479       -         
+gs_base_inst.un2_gs_c_add7                                            cycloneive_lcell_comb             cout        Out     0.066     6.545       -         
+un2_gs_c_carry_7                                                      Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add8                                            cycloneive_lcell_comb             cin         In      -         6.545       -         
+gs_base_inst.un2_gs_c_add8                                            cycloneive_lcell_comb             cout        Out     0.066     6.611       -         
+un2_gs_c_add8_cout_0                                                  Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add8_term                                       cycloneive_lcell_comb             cin         In      -         6.611       -         
+gs_base_inst.un2_gs_c_add8_term                                       cycloneive_lcell_comb             combout     Out     0.000     6.611       -         
+CO0_0                                                                 Net                               -           -       0.513     -           9         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_c1_1_a      cycloneive_lcell_comb             dataa       In      -         7.124       -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_c1_1_a      cycloneive_lcell_comb             combout     Out     0.437     7.561       -         
+mult1_un40_sum_0_c1_1_a                                               Net                               -           -       0.326     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_c1_1        cycloneive_lcell_comb             datac       In      -         7.887       -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_c1_1        cycloneive_lcell_comb             combout     Out     0.429     8.316       -         
+mult1_un40_sum_0_c1_1                                                 Net                               -           -       0.326     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_sum2        cycloneive_lcell_comb             datac       In      -         8.642       -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_sum2        cycloneive_lcell_comb             combout     Out     0.429     9.071       -         
+mult1_un40_sum_0_sum2                                                 Net                               -           -       0.333     -           2         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_m[2]          cycloneive_lcell_comb             datad       In      -         9.404       -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_m[2]          cycloneive_lcell_comb             combout     Out     0.155     9.559       -         
+mult1_un40_sum_m[2]                                                   Net                               -           -       0.333     -           2         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add1          cycloneive_lcell_comb             dataa       In      -         9.892       -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add1          cycloneive_lcell_comb             cout        Out     0.498     10.390      -         
+mult1_un47_sum_carry_1                                                Net                               -           -       0.000     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add2          cycloneive_lcell_comb             cin         In      -         10.390      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add2          cycloneive_lcell_comb             cout        Out     0.066     10.456      -         
+mult1_un47_sum_add2_cout                                              Net                               -           -       0.000     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add2_term     cycloneive_lcell_comb             cin         In      -         10.456      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add2_term     cycloneive_lcell_comb             combout     Out     0.000     10.456      -         
+mult1_un47_sum_carry_2                                                Net                               -           -       0.446     -           4         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un54_sum_add1          cycloneive_lcell_comb             dataa       In      -         10.902      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un54_sum_add1          cycloneive_lcell_comb             cout        Out     0.498     11.400      -         
+mult1_un54_sum_carry_1                                                Net                               -           -       0.000     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un54_sum_add2          cycloneive_lcell_comb             cin         In      -         11.400      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un54_sum_add2          cycloneive_lcell_comb             combout     Out     0.000     11.400      -         
+mult1_un54_sum_add2                                                   Net                               -           -       0.652     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un61_sum_add3          cycloneive_lcell_comb             datab       In      -         12.052      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un61_sum_add3          cycloneive_lcell_comb             combout     Out     0.443     12.495      -         
+mult1_un61_sum_add3                                                   Net                               -           -       0.446     -           4         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un68_sum_add1          cycloneive_lcell_comb             dataa       In      -         12.941      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un68_sum_add1          cycloneive_lcell_comb             combout     Out     0.437     13.378      -         
+mult1_un68_sum_add1                                                   Net                               -           -       0.432     -           2         
+gs_base_inst.gs_RNO_0[0]                                              cycloneive_lcell_comb             datac       In      -         13.810      -         
+gs_base_inst.gs_RNO_0[0]                                              cycloneive_lcell_comb             combout     Out     0.429     14.239      -         
+gs_1_0_0__g0_i_x4_a                                                   Net                               -           -       0.326     -           1         
+gs_base_inst.gs_RNO[0]                                                cycloneive_lcell_comb             datad       In      -         14.564      -         
+gs_base_inst.gs_RNO[0]                                                cycloneive_lcell_comb             combout     Out     0.155     14.719      -         
+gs_1_0_0__g0_i_x4                                                     Net                               -           -       0.000     -           1         
+gs_base_inst.gs[0]                                                    dffeas                            d           In      -         14.719      -         
+============================================================================================================================================================
+Total path delay (propagation time + setup - ICD at endpoint) of 14.192 is 9.083(64.0%) logic and 5.109(36.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      12.063
+    - Setup time:                            0.086
+    + Intrinsic clock delay:                 0.613
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         12.591
+
+    - Propagation time:                      14.719
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -2.129
+
+    Number of logic level(s):                24
+    Starting point:                          fifo_base_in.fifo_buf / q_b[16]
+    Ending point:                            gs_base_inst.gs[0] / d
+    The start point is clocked by            motion_detect_top|clock [rising] on pin clock0
+    The end   point is clocked by            motion_detect_top|clock [rising] on pin clk
+
+Instance / Net                                                                                          Pin         Pin               Arrival     No. of    
+Name                                                                  Type                              Name        Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+fifo_base_in.fifo_buf                                                 synplicity_altsyncram_RAM_R_W     q_b[16]     Out     4.154     4.154       -         
+base_fifo_dout_16                                                     Net                               -           -       0.326     -           1         
+gs_base_inst.un2_gs_c_0_add0                                          cycloneive_lcell_comb             datab       In      -         4.480       -         
+gs_base_inst.un2_gs_c_0_add0                                          cycloneive_lcell_comb             cout        Out     0.509     4.989       -         
+un2_gs_c_0_carry_0                                                    Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_0_add1                                          cycloneive_lcell_comb             cin         In      -         4.989       -         
+gs_base_inst.un2_gs_c_0_add1                                          cycloneive_lcell_comb             cout        Out     0.066     5.055       -         
+un2_gs_c_0_carry_1                                                    Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_0_add2                                          cycloneive_lcell_comb             cin         In      -         5.055       -         
+gs_base_inst.un2_gs_c_0_add2                                          cycloneive_lcell_comb             cout        Out     0.066     5.121       -         
+un2_gs_c_0_carry_2                                                    Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_0_add3                                          cycloneive_lcell_comb             cin         In      -         5.121       -         
+gs_base_inst.un2_gs_c_0_add3                                          cycloneive_lcell_comb             combout     Out     0.000     5.121       -         
+un2_gs_c_0_add3                                                       Net                               -           -       0.652     -           1         
+gs_base_inst.un2_gs_c_add3                                            cycloneive_lcell_comb             datab       In      -         5.772       -         
+gs_base_inst.un2_gs_c_add3                                            cycloneive_lcell_comb             cout        Out     0.509     6.281       -         
+un2_gs_c_carry_3                                                      Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add4                                            cycloneive_lcell_comb             cin         In      -         6.281       -         
+gs_base_inst.un2_gs_c_add4                                            cycloneive_lcell_comb             cout        Out     0.066     6.347       -         
+un2_gs_c_carry_4                                                      Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add5                                            cycloneive_lcell_comb             cin         In      -         6.347       -         
+gs_base_inst.un2_gs_c_add5                                            cycloneive_lcell_comb             cout        Out     0.066     6.413       -         
+un2_gs_c_carry_5                                                      Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add6                                            cycloneive_lcell_comb             cin         In      -         6.413       -         
+gs_base_inst.un2_gs_c_add6                                            cycloneive_lcell_comb             cout        Out     0.066     6.479       -         
+un2_gs_c_carry_6                                                      Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add7                                            cycloneive_lcell_comb             cin         In      -         6.479       -         
+gs_base_inst.un2_gs_c_add7                                            cycloneive_lcell_comb             cout        Out     0.066     6.545       -         
+un2_gs_c_carry_7                                                      Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add8                                            cycloneive_lcell_comb             cin         In      -         6.545       -         
+gs_base_inst.un2_gs_c_add8                                            cycloneive_lcell_comb             cout        Out     0.066     6.611       -         
+un2_gs_c_add8_cout_0                                                  Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add8_term                                       cycloneive_lcell_comb             cin         In      -         6.611       -         
+gs_base_inst.un2_gs_c_add8_term                                       cycloneive_lcell_comb             combout     Out     0.000     6.611       -         
+CO0_0                                                                 Net                               -           -       0.513     -           9         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_c1_1_a      cycloneive_lcell_comb             dataa       In      -         7.124       -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_c1_1_a      cycloneive_lcell_comb             combout     Out     0.437     7.561       -         
+mult1_un40_sum_0_c1_1_a                                               Net                               -           -       0.326     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_c1_1        cycloneive_lcell_comb             datac       In      -         7.887       -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_c1_1        cycloneive_lcell_comb             combout     Out     0.429     8.316       -         
+mult1_un40_sum_0_c1_1                                                 Net                               -           -       0.326     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_sum2        cycloneive_lcell_comb             datac       In      -         8.642       -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_sum2        cycloneive_lcell_comb             combout     Out     0.429     9.071       -         
+mult1_un40_sum_0_sum2                                                 Net                               -           -       0.333     -           2         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_m[2]          cycloneive_lcell_comb             datad       In      -         9.404       -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_m[2]          cycloneive_lcell_comb             combout     Out     0.155     9.559       -         
+mult1_un40_sum_m[2]                                                   Net                               -           -       0.333     -           2         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add1          cycloneive_lcell_comb             dataa       In      -         9.892       -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add1          cycloneive_lcell_comb             cout        Out     0.498     10.390      -         
+mult1_un47_sum_carry_1                                                Net                               -           -       0.000     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add2          cycloneive_lcell_comb             cin         In      -         10.390      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add2          cycloneive_lcell_comb             cout        Out     0.066     10.456      -         
+mult1_un47_sum_add2_cout                                              Net                               -           -       0.000     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add2_term     cycloneive_lcell_comb             cin         In      -         10.456      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add2_term     cycloneive_lcell_comb             combout     Out     0.000     10.456      -         
+mult1_un47_sum_carry_2                                                Net                               -           -       0.446     -           4         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un54_sum_add1          cycloneive_lcell_comb             dataa       In      -         10.902      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un54_sum_add1          cycloneive_lcell_comb             cout        Out     0.498     11.400      -         
+mult1_un54_sum_carry_1                                                Net                               -           -       0.000     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un54_sum_add2          cycloneive_lcell_comb             cin         In      -         11.400      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un54_sum_add2          cycloneive_lcell_comb             combout     Out     0.000     11.400      -         
+mult1_un54_sum_add2                                                   Net                               -           -       0.652     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un61_sum_add3          cycloneive_lcell_comb             datab       In      -         12.052      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un61_sum_add3          cycloneive_lcell_comb             combout     Out     0.443     12.495      -         
+mult1_un61_sum_add3                                                   Net                               -           -       0.446     -           4         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un68_sum_add1          cycloneive_lcell_comb             dataa       In      -         12.941      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un68_sum_add1          cycloneive_lcell_comb             combout     Out     0.437     13.378      -         
+mult1_un68_sum_add1                                                   Net                               -           -       0.432     -           2         
+gs_base_inst.gs_RNO_0[0]                                              cycloneive_lcell_comb             datac       In      -         13.810      -         
+gs_base_inst.gs_RNO_0[0]                                              cycloneive_lcell_comb             combout     Out     0.429     14.239      -         
+gs_1_0_0__g0_i_x4_a                                                   Net                               -           -       0.326     -           1         
+gs_base_inst.gs_RNO[0]                                                cycloneive_lcell_comb             datad       In      -         14.564      -         
+gs_base_inst.gs_RNO[0]                                                cycloneive_lcell_comb             combout     Out     0.155     14.719      -         
+gs_1_0_0__g0_i_x4                                                     Net                               -           -       0.000     -           1         
+gs_base_inst.gs[0]                                                    dffeas                            d           In      -         14.719      -         
+============================================================================================================================================================
+Total path delay (propagation time + setup - ICD at endpoint) of 14.192 is 9.083(64.0%) logic and 5.109(36.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      12.063
+    - Setup time:                            0.086
+    + Intrinsic clock delay:                 0.613
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         12.591
+
+    - Propagation time:                      14.719
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -2.129
+
+    Number of logic level(s):                24
+    Starting point:                          fifo_base_in.fifo_buf / q_b[16]
+    Ending point:                            gs_base_inst.gs[0] / d
+    The start point is clocked by            motion_detect_top|clock [rising] on pin clock0
+    The end   point is clocked by            motion_detect_top|clock [rising] on pin clk
+
+Instance / Net                                                                                          Pin         Pin               Arrival     No. of    
+Name                                                                  Type                              Name        Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+fifo_base_in.fifo_buf                                                 synplicity_altsyncram_RAM_R_W     q_b[16]     Out     4.154     4.154       -         
+base_fifo_dout_16                                                     Net                               -           -       0.326     -           1         
+gs_base_inst.un2_gs_c_0_add0                                          cycloneive_lcell_comb             datab       In      -         4.480       -         
+gs_base_inst.un2_gs_c_0_add0                                          cycloneive_lcell_comb             cout        Out     0.509     4.989       -         
+un2_gs_c_0_carry_0                                                    Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_0_add1                                          cycloneive_lcell_comb             cin         In      -         4.989       -         
+gs_base_inst.un2_gs_c_0_add1                                          cycloneive_lcell_comb             cout        Out     0.066     5.055       -         
+un2_gs_c_0_carry_1                                                    Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_0_add2                                          cycloneive_lcell_comb             cin         In      -         5.055       -         
+gs_base_inst.un2_gs_c_0_add2                                          cycloneive_lcell_comb             cout        Out     0.066     5.121       -         
+un2_gs_c_0_carry_2                                                    Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_0_add3                                          cycloneive_lcell_comb             cin         In      -         5.121       -         
+gs_base_inst.un2_gs_c_0_add3                                          cycloneive_lcell_comb             cout        Out     0.066     5.187       -         
+un2_gs_c_0_carry_3                                                    Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_0_add4                                          cycloneive_lcell_comb             cin         In      -         5.187       -         
+gs_base_inst.un2_gs_c_0_add4                                          cycloneive_lcell_comb             combout     Out     0.000     5.187       -         
+un2_gs_c_0_add4                                                       Net                               -           -       0.652     -           1         
+gs_base_inst.un2_gs_c_add4                                            cycloneive_lcell_comb             datab       In      -         5.838       -         
+gs_base_inst.un2_gs_c_add4                                            cycloneive_lcell_comb             cout        Out     0.509     6.347       -         
+un2_gs_c_carry_4                                                      Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add5                                            cycloneive_lcell_comb             cin         In      -         6.347       -         
+gs_base_inst.un2_gs_c_add5                                            cycloneive_lcell_comb             cout        Out     0.066     6.413       -         
+un2_gs_c_carry_5                                                      Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add6                                            cycloneive_lcell_comb             cin         In      -         6.413       -         
+gs_base_inst.un2_gs_c_add6                                            cycloneive_lcell_comb             cout        Out     0.066     6.479       -         
+un2_gs_c_carry_6                                                      Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add7                                            cycloneive_lcell_comb             cin         In      -         6.479       -         
+gs_base_inst.un2_gs_c_add7                                            cycloneive_lcell_comb             cout        Out     0.066     6.545       -         
+un2_gs_c_carry_7                                                      Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add8                                            cycloneive_lcell_comb             cin         In      -         6.545       -         
+gs_base_inst.un2_gs_c_add8                                            cycloneive_lcell_comb             cout        Out     0.066     6.611       -         
+un2_gs_c_add8_cout_0                                                  Net                               -           -       0.000     -           1         
+gs_base_inst.un2_gs_c_add8_term                                       cycloneive_lcell_comb             cin         In      -         6.611       -         
+gs_base_inst.un2_gs_c_add8_term                                       cycloneive_lcell_comb             combout     Out     0.000     6.611       -         
+CO0_0                                                                 Net                               -           -       0.513     -           9         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_c1_1_a      cycloneive_lcell_comb             dataa       In      -         7.124       -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_c1_1_a      cycloneive_lcell_comb             combout     Out     0.437     7.561       -         
+mult1_un40_sum_0_c1_1_a                                               Net                               -           -       0.326     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_c1_1        cycloneive_lcell_comb             datac       In      -         7.887       -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_c1_1        cycloneive_lcell_comb             combout     Out     0.429     8.316       -         
+mult1_un40_sum_0_c1_1                                                 Net                               -           -       0.326     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_sum2        cycloneive_lcell_comb             datac       In      -         8.642       -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_0_sum2        cycloneive_lcell_comb             combout     Out     0.429     9.071       -         
+mult1_un40_sum_0_sum2                                                 Net                               -           -       0.333     -           2         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_m[2]          cycloneive_lcell_comb             datad       In      -         9.404       -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un40_sum_m[2]          cycloneive_lcell_comb             combout     Out     0.155     9.559       -         
+mult1_un40_sum_m[2]                                                   Net                               -           -       0.333     -           2         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add1          cycloneive_lcell_comb             dataa       In      -         9.892       -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add1          cycloneive_lcell_comb             cout        Out     0.498     10.390      -         
+mult1_un47_sum_carry_1                                                Net                               -           -       0.000     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add2          cycloneive_lcell_comb             cin         In      -         10.390      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add2          cycloneive_lcell_comb             cout        Out     0.066     10.456      -         
+mult1_un47_sum_add2_cout                                              Net                               -           -       0.000     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add2_term     cycloneive_lcell_comb             cin         In      -         10.456      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un47_sum_add2_term     cycloneive_lcell_comb             combout     Out     0.000     10.456      -         
+mult1_un47_sum_carry_2                                                Net                               -           -       0.446     -           4         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un54_sum_add1          cycloneive_lcell_comb             dataa       In      -         10.902      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un54_sum_add1          cycloneive_lcell_comb             cout        Out     0.498     11.400      -         
+mult1_un54_sum_carry_1                                                Net                               -           -       0.000     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un54_sum_add2          cycloneive_lcell_comb             cin         In      -         11.400      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un54_sum_add2          cycloneive_lcell_comb             combout     Out     0.000     11.400      -         
+mult1_un54_sum_add2                                                   Net                               -           -       0.652     -           1         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un61_sum_add3          cycloneive_lcell_comb             datab       In      -         12.052      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un61_sum_add3          cycloneive_lcell_comb             combout     Out     0.443     12.495      -         
+mult1_un61_sum_add3                                                   Net                               -           -       0.446     -           4         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un68_sum_add1          cycloneive_lcell_comb             dataa       In      -         12.941      -         
+gs_base_inst.un11_gs_c.if_generate_plus\.mult1_un68_sum_add1          cycloneive_lcell_comb             combout     Out     0.437     13.378      -         
+mult1_un68_sum_add1                                                   Net                               -           -       0.432     -           2         
+gs_base_inst.gs_RNO_0[0]                                              cycloneive_lcell_comb             datac       In      -         13.810      -         
+gs_base_inst.gs_RNO_0[0]                                              cycloneive_lcell_comb             combout     Out     0.429     14.239      -         
+gs_1_0_0__g0_i_x4_a                                                   Net                               -           -       0.326     -           1         
+gs_base_inst.gs_RNO[0]                                                cycloneive_lcell_comb             datad       In      -         14.564      -         
+gs_base_inst.gs_RNO[0]                                                cycloneive_lcell_comb             combout     Out     0.155     14.719      -         
+gs_1_0_0__g0_i_x4                                                     Net                               -           -       0.000     -           1         
+gs_base_inst.gs[0]                                                    dffeas                            d           In      -         14.719      -         
+============================================================================================================================================================
+Total path delay (propagation time + setup - ICD at endpoint) of 14.192 is 9.083(64.0%) logic and 5.109(36.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 136MB peak: 174MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 136MB peak: 174MB)
+
+##### START OF AREA REPORT #####[
+Design view:work.motion_detect_top(verilog)
+Selecting part EP4CE115F23C7
+@N: FA174 |The following device usage report estimates place and route data. Please look at the place and route report for final resource usage.
+
+Total combinational functions 416 of 114480 ( 0%)
+Logic element usage by number of inputs
+		  4 input functions 	 134
+		  3 input functions 	 65
+		  <=2 input functions 	 217
+Logic elements by mode
+		  normal mode            286
+		  arithmetic mode        130
+Total registers 136 of 114480 ( 0%)
+I/O pins 80 of 529 (15%), total I/O based on largest package of this part.
+
+Number of I/O registers
+			Input DDRs    :0
+			Output DDRs   :0
+
+DSP Blocks:     0  (0 nine-bit DSP elements).
+DSP Utilization: 0.00% of available 266 blocks (532 nine-bit).
+ShiftTap:       0  (0 registers)
+Ena:             39
+Sload:           0
+Sclr:            16
+Total ESB:      3840 bits 
+
+##### END OF AREA REPORT #####]
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 29MB peak: 174MB)
+
+Process took 0h:00m:05s realtime, 0h:00m:05s cputime
+# Sat Jan 24 15:02:12 2026
+
+###########################################################]

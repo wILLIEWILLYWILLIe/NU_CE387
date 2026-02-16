@@ -1,0 +1,1 @@
+-distcompmode -link    -encrypt       -top work.udp_parser_top -osyn /home/gel8580/CE387/HW/HW5/imp/syn/rev_1/synwork/udp_parser_top_comp.srs /home/gel8580/CE387/HW/HW5/imp/syn/rev_1/synwork//distcomp/distcomp0/distcomp0.srs    

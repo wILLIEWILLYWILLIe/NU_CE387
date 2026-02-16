@@ -1,0 +1,7 @@
+udp_parser_top.fifo_out.fifo_control work fifo 0 1
+udp_parser_top.fifo_out.fifo_data work fifo 0 1
+udp_parser_top.fifo_out work fifo_ctrl 0 1
+udp_parser_top.parser_inst work udp_parser 0 1
+udp_parser_top.fifo_in.fifo_control work fifo 0 1
+udp_parser_top.fifo_in.fifo_data work fifo 0 1
+udp_parser_top.fifo_in work fifo_ctrl 0 1

@@ -1,0 +1,101 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify (R) Premier
+Build: O-2018.09-SP1
+Install: /vol/synopsys/fpga/O-2018.09-SP1
+OS: Red Hat Enterprise Linux 8.10 (Ootpa)
+Hostname: moore.wot.ece.northwestern.edu
+max virtual memory: unlimited (bytes)
+max user processes: 1028002
+max stack size: 8388608 (bytes)
+
+
+Implementation : rev_1
+
+# Written on Thu Feb 12 16:13:12 2026
+
+##### DESIGN INFO #######################################################
+
+Top View:                "udp_parser_top"
+Constraint File(s):      (none)
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting                 Ending                   |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+udp_parser_top|clock     udp_parser_top|clock     |     5.162            |     No paths         |     No paths         |     No paths                         
+=============================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:din[0]
+p:din[1]
+p:din[2]
+p:din[3]
+p:din[4]
+p:din[5]
+p:din[6]
+p:din[7]
+p:din_eof
+p:din_full
+p:din_sof
+p:din_wr_en
+p:dout[0]
+p:dout[1]
+p:dout[2]
+p:dout[3]
+p:dout[4]
+p:dout[5]
+p:dout[6]
+p:dout[7]
+p:dout_empty
+p:dout_eof
+p:dout_rd_en
+p:dout_sof
+p:reset
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

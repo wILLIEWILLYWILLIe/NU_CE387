@@ -1,0 +1,22 @@
+
+fsm_encoding {12524521} onehot
+
+fsm_state_encoding {12524521} IDLE {000000001}
+
+fsm_state_encoding {12524521} ETH_HDR {000000010}
+
+fsm_state_encoding {12524521} ETH_CHK {000000100}
+
+fsm_state_encoding {12524521} IP_HDR {000001000}
+
+fsm_state_encoding {12524521} IP_CHK {000010000}
+
+fsm_state_encoding {12524521} UDP_HDR {000100000}
+
+fsm_state_encoding {12524521} UDP_DONE {001000000}
+
+fsm_state_encoding {12524521} PAYLOAD {010000000}
+
+fsm_state_encoding {12524521} DRAIN {100000000}
+
+fsm_registers {12524521} {state[8]}  {state[7]}  {state[6]}  {state[5]}  {state[4]}  {state[3]}  {state[2]}  {state[1]}  {state[0]} 

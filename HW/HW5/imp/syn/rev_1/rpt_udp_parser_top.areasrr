@@ -1,0 +1,240 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify (R) Premier
+Build: O-2018.09-SP1
+Install: /vol/synopsys/fpga/O-2018.09-SP1
+OS: Red Hat Enterprise Linux 8.10 (Ootpa)
+Hostname: moore.wot.ece.northwestern.edu
+max virtual memory: unlimited (bytes)
+max user processes: 1028002
+max stack size: 8388608 (bytes)
+
+
+Implementation : rev_1
+
+#### START OF AREA REPORT #####[
+
+Part:			EP4CE115FC23-7 (Altera)
+
+------------------------------------------------------------------------------
+########   Utilization report for  Top level view:   udp_parser_top   ########
+==============================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     133                100 %                
+======================================================
+Total SEQUENTIAL ATOMS in the block udp_parser_top:	133 (28.66 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     168                100 %                
+==================================================
+Total COMBINATIONAL ATOMS in the block udp_parser_top:	168 (36.21 % Utilization)
+
+
+RAMS
+Name          Total elements     Number of bits     Utilization     Notes
+-------------------------------------------------------------------------
+SYNC RAMS     4                  2560               100 %                
+=========================================================================
+Total RAMS in the block udp_parser_top:	4 (0.86 % Utilization)
+
+-------------------------------------------------------------------------
+########   Utilization report for  cell:   fifo_ctrl_8s_128s_1   ########
+Instance path:   udp_parser_top.fifo_ctrl_8s_128s_1                      
+=========================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     34                 25.6 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block udp_parser_top.fifo_ctrl_8s_128s_1:	34 (7.33 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     46                 27.4 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block udp_parser_top.fifo_ctrl_8s_128s_1:	46 (9.91 % Utilization)
+
+
+RAMS
+Name          Total elements     Number of bits     Utilization     Notes
+-------------------------------------------------------------------------
+SYNC RAMS     2                  1280               50 %                 
+=========================================================================
+Total RAMS in the block udp_parser_top.fifo_ctrl_8s_128s_1:	2 (0.43 % Utilization)
+
+-----------------------------------------------------------------------
+########   Utilization report for  cell:   fifo_2s_128s_8s_1   ########
+Instance path:   fifo_ctrl_8s_128s_1.fifo_2s_128s_8s_1                 
+=======================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     17                 12.8 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block fifo_ctrl_8s_128s_1.fifo_2s_128s_8s_1:	17 (3.66 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     24                 14.3 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block fifo_ctrl_8s_128s_1.fifo_2s_128s_8s_1:	24 (5.17 % Utilization)
+
+
+RAMS
+Name          Total elements     Number of bits     Utilization     Notes
+-------------------------------------------------------------------------
+SYNC RAMS     1                  256                25 %                 
+=========================================================================
+Total RAMS in the block fifo_ctrl_8s_128s_1.fifo_2s_128s_8s_1:	1 (0.22 % Utilization)
+
+-----------------------------------------------------------------------
+########   Utilization report for  cell:   fifo_8s_128s_8s_1   ########
+Instance path:   fifo_ctrl_8s_128s_1.fifo_8s_128s_8s_1                 
+=======================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     17                 12.8 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block fifo_ctrl_8s_128s_1.fifo_8s_128s_8s_1:	17 (3.66 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     20                 11.9 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block fifo_ctrl_8s_128s_1.fifo_8s_128s_8s_1:	20 (4.31 % Utilization)
+
+
+RAMS
+Name          Total elements     Number of bits     Utilization     Notes
+-------------------------------------------------------------------------
+SYNC RAMS     1                  1024               25 %                 
+=========================================================================
+Total RAMS in the block fifo_ctrl_8s_128s_1.fifo_8s_128s_8s_1:	1 (0.22 % Utilization)
+
+---------------------------------------------------------------------------
+########   Utilization report for  cell:   fifo_ctrl_8s_128s_1_0   ########
+Instance path:   udp_parser_top.fifo_ctrl_8s_128s_1_0                      
+===========================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     34                 25.6 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block udp_parser_top.fifo_ctrl_8s_128s_1_0:	34 (7.33 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     30                 17.9 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block udp_parser_top.fifo_ctrl_8s_128s_1_0:	30 (6.47 % Utilization)
+
+
+RAMS
+Name          Total elements     Number of bits     Utilization     Notes
+-------------------------------------------------------------------------
+SYNC RAMS     2                  1280               50 %                 
+=========================================================================
+Total RAMS in the block udp_parser_top.fifo_ctrl_8s_128s_1_0:	2 (0.43 % Utilization)
+
+-------------------------------------------------------------------------
+########   Utilization report for  cell:   fifo_2s_128s_8s_1_0   ########
+Instance path:   fifo_ctrl_8s_128s_1_0.fifo_2s_128s_8s_1_0               
+=========================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     17                 12.8 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block fifo_ctrl_8s_128s_1_0.fifo_2s_128s_8s_1_0:	17 (3.66 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     16                 9.52 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block fifo_ctrl_8s_128s_1_0.fifo_2s_128s_8s_1_0:	16 (3.45 % Utilization)
+
+
+RAMS
+Name          Total elements     Number of bits     Utilization     Notes
+-------------------------------------------------------------------------
+SYNC RAMS     1                  256                25 %                 
+=========================================================================
+Total RAMS in the block fifo_ctrl_8s_128s_1_0.fifo_2s_128s_8s_1_0:	1 (0.22 % Utilization)
+
+-------------------------------------------------------------------------
+########   Utilization report for  cell:   fifo_8s_128s_8s_1_0   ########
+Instance path:   fifo_ctrl_8s_128s_1_0.fifo_8s_128s_8s_1_0               
+=========================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     17                 12.8 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block fifo_ctrl_8s_128s_1_0.fifo_8s_128s_8s_1_0:	17 (3.66 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     13                 7.74 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block fifo_ctrl_8s_128s_1_0.fifo_8s_128s_8s_1_0:	13 (2.80 % Utilization)
+
+
+RAMS
+Name          Total elements     Number of bits     Utilization     Notes
+-------------------------------------------------------------------------
+SYNC RAMS     1                  1024               25 %                 
+=========================================================================
+Total RAMS in the block fifo_ctrl_8s_128s_1_0.fifo_8s_128s_8s_1_0:	1 (0.22 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   udp_parser   ########
+Instance path:   udp_parser_top.udp_parser                      
+================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     65                 48.9 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block udp_parser_top.udp_parser:	65 (14.01 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     91                 54.2 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block udp_parser_top.udp_parser:	91 (19.61 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+

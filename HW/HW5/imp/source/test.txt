@@ -1,0 +1,291 @@
+ADVANCED DIGITAL SYSTEM DESIGN WITH FPGAS
+
+CATALOG DESCRIPTION: This course covers the systematic design of advanced digital systems using field-programmable gate arrays (FPGAs). The emphasis is on top-down design starting with a software application, and translating it to high-level models using a hardware description language (such as VHDL or Verilog). The course will focus on design for high-performance computing applications using streaming architectures. We will first review in detail the basic building blocks of FPGA programming. Second, we focus on architecture, design methodologies, best design practices, and optimization techniques for performance (frequency, latency, area, power, etc). Finally, we will cover testbench development, simulation for bit-true design verification, and synthesis of complete digital systems. 
+RECOMMENDED TEXTBOOKS: The Designer’s Guide to VHDL, Peter J. Ashenden; HDL Chip Design, Douglas J. Smith; Advanced FPGA Design Architecture, Implementation, and Optimization, Steve
+41 44 56 41 4e 43 45 44  20 44 49 47 49 54 41 4c 
+20 53 59 53 54 45 4d 20  44 45 53 49 47 4e 20 57 
+49 54 48 20 46 50 47 41  53 0d 0a 0d 0a 43 41 54 
+41 4c 4f 47 20 44 45 53  43 52 49 50 54 49 4f 4e 
+3a 20 54 68 69 73 20 63  6f 75 72 73 65 20 63 6f 
+76 65 72 73 20 74 68 65  20 73 79 73 74 65 6d 61 
+74 69 63 20 64 65 73 69  67 6e 20 6f 66 20 61 64 
+76 61 6e 63 65 64 20 64  69 67 69 74 61 6c 20 73 
+79 73 74 65 6d 73 20 75  73 69 6e 67 20 66 69 65 
+6c 64 2d 70 72 6f 67 72  61 6d 6d 61 62 6c 65 20 
+67 61 74 65 20 61 72 72  61 79 73 20 28 46 50 47 
+41 73 29 2e 20 54 68 65  20 65 6d 70 68 61 73 69 
+73 20 69 73 20 6f 6e 20  74 6f 70 2d 64 6f 77 6e 
+20 64 65 73 69 67 6e 20  73 74 61 72 74 69 6e 67 
+20 77 69 74 68 20 61 20  73 6f 66 74 77 61 72 65 
+20 61 70 70 6c 69 63 61  74 69 6f 6e 2c 20 61 6e 
+64 20 74 72 61 6e 73 6c  61 74 69 6e 67 20 69 74 
+20 74 6f 20 68 69 67 68  2d 6c 65 76 65 6c 20 6d 
+6f 64 65 6c 73 20 75 73  69 6e 67 20 61 20 68 61 
+72 64 77 61 72 65 20 64  65 73 63 72 69 70 74 69 
+6f 6e 20 6c 61 6e 67 75  61 67 65 20 28 73 75 63 
+68 20 61 73 20 56 48 44  4c 20 6f 72 20 56 65 72 
+69 6c 6f 67 29 2e 20 54  68 65 20 63 6f 75 72 73 
+65 20 77 69 6c 6c 20 66  6f 63 75 73 20 6f 6e 20 
+64 65 73 69 67 6e 20 66  6f 72 20 68 69 67 68 2d 
+70 65 72 66 6f 72 6d 61  6e 63 65 20 63 6f 6d 70 
+75 74 69 6e 67 20 61 70  70 6c 69 63 61 74 69 6f 
+6e 73 20 75 73 69 6e 67  20 73 74 72 65 61 6d 69 
+6e 67 20 61 72 63 68 69  74 65 63 74 75 72 65 73 
+2e 20 57 65 20 77 69 6c  6c 20 66 69 72 73 74 20 
+72 65 76 69 65 77 20 69  6e 20 64 65 74 61 69 6c 
+20 74 68 65 20 62 61 73  69 63 20 62 75 69 6c 64 
+69 6e 67 20 62 6c 6f 63  6b 73 20 6f 66 20 46 50 
+47 41 20 70 72 6f 67 72  61 6d 6d 69 6e 67 2e 20 
+53 65 63 6f 6e 64 2c 20  77 65 20 66 6f 63 75 73 
+20 6f 6e 20 61 72 63 68  69 74 65 63 74 75 72 65 
+2c 20 64 65 73 69 67 6e  20 6d 65 74 68 6f 64 6f 
+6c 6f 67 69 65 73 2c 20  62 65 73 74 20 64 65 73 
+69 67 6e 20 70 72 61 63  74 69 63 65 73 2c 20 61 
+6e 64 20 6f 70 74 69 6d  69 7a 61 74 69 6f 6e 20 
+74 65 63 68 6e 69 71 75  65 73 20 66 6f 72 20 70 
+65 72 66 6f 72 6d 61 6e  63 65 20 28 66 72 65 71 
+75 65 6e 63 79 2c 20 6c  61 74 65 6e 63 79 2c 20 
+61 72 65 61 2c 20 70 6f  77 65 72 2c 20 65 74 63 
+29 2e 20 46 69 6e 61 6c  6c 79 2c 20 77 65 20 77 
+69 6c 6c 20 63 6f 76 65  72 20 74 65 73 74 62 65 
+6e 63 68 20 64 65 76 65  6c 6f 70 6d 65 6e 74 2c 
+20 73 69 6d 75 6c 61 74  69 6f 6e 20 66 6f 72 20 
+62 69 74 2d 74 72 75 65  20 64 65 73 69 67 6e 20 
+76 65 72 69 66 69 63 61  74 69 6f 6e 2c 20 61 6e 
+64 20 73 79 6e 74 68 65  73 69 73 20 6f 66 20 63 
+6f 6d 70 6c 65 74 65 20  64 69 67 69 74 61 6c 20 
+73 79 73 74 65 6d 73 2e  20 0d 0a 52 45 43 4f 4d 
+4d 45 4e 44 45 44 20 54  45 58 54 42 4f 4f 4b 53 
+3a 20 54 68 65 20 44 65  73 69 67 6e 65 72 92 73 
+20 47 75 69 64 65 20 74  6f 20 56 48 44 4c 2c 20 
+50 65 74 65 72 20 4a 2e  20 41 73 68 65 6e 64 65 
+6e 3b 20 48 44 4c 20 43  68 69 70 20 44 65 73 69 
+67 6e 2c 20 44 6f 75 67  6c 61 73 20 4a 2e 20 53 
+6d 69 74 68 3b 20 41 64  76 61 6e 63 65 64 20 46 
+50 47 41 20 44 65 73 69  67 6e 20 41 72 63 68 69 
+74 65 63 74 75 72 65 2c  20 49 6d 70 6c 65 6d 65 
+6e 74 61 74 69 6f 6e 2c  20 61 6e 64 20 4f 70 74 
+69 6d 69 7a 61 74 69 6f  6e 2c 20 53 74 65 76 65 
+ Kilts
+REFERENCE TEXTS: Online material and examples
+COURSE GOALS: To introduce students to advanced design methodologies and practical design approaches for high-performance FPGA applications. Students will design and implement a complete sophisticated digital system application on an FPGA, simulating and verifying the design with testbenches, and synthesizing and implementing these designs with FPGA development boards including interfacing to external devices. The course will focus on translating software models of digital signal processing applications, such as filters, radios, and image processing algorithms into optimized streaming architectures in hardware. Students will also learn sophisticated optimization techniques for streaming applications, FIFO and memory architectures, finite state machines, and various optimizations to drive performance. In the end, students will understand how to design and compare performance results between different design implementations.
+PRE-REQUISITES : EECS 303, 355 
+20 4b 69 6c 74 73 0d 0a  52 45 46 45 52 45 4e 43 
+45 20 54 45 58 54 53 3a  20 4f 6e 6c 69 6e 65 20 
+6d 61 74 65 72 69 61 6c  20 61 6e 64 20 65 78 61 
+6d 70 6c 65 73 0d 0a 43  4f 55 52 53 45 20 47 4f 
+41 4c 53 3a 20 54 6f 20  69 6e 74 72 6f 64 75 63 
+65 20 73 74 75 64 65 6e  74 73 20 74 6f 20 61 64 
+76 61 6e 63 65 64 20 64  65 73 69 67 6e 20 6d 65 
+74 68 6f 64 6f 6c 6f 67  69 65 73 20 61 6e 64 20 
+70 72 61 63 74 69 63 61  6c 20 64 65 73 69 67 6e 
+20 61 70 70 72 6f 61 63  68 65 73 20 66 6f 72 20 
+68 69 67 68 2d 70 65 72  66 6f 72 6d 61 6e 63 65 
+20 46 50 47 41 20 61 70  70 6c 69 63 61 74 69 6f 
+6e 73 2e 20 53 74 75 64  65 6e 74 73 20 77 69 6c 
+6c 20 64 65 73 69 67 6e  20 61 6e 64 20 69 6d 70 
+6c 65 6d 65 6e 74 20 61  20 63 6f 6d 70 6c 65 74 
+65 20 73 6f 70 68 69 73  74 69 63 61 74 65 64 20 
+64 69 67 69 74 61 6c 20  73 79 73 74 65 6d 20 61 
+70 70 6c 69 63 61 74 69  6f 6e 20 6f 6e 20 61 6e 
+20 46 50 47 41 2c 20 73  69 6d 75 6c 61 74 69 6e 
+67 20 61 6e 64 20 76 65  72 69 66 79 69 6e 67 20 
+74 68 65 20 64 65 73 69  67 6e 20 77 69 74 68 20 
+74 65 73 74 62 65 6e 63  68 65 73 2c 20 61 6e 64 
+20 73 79 6e 74 68 65 73  69 7a 69 6e 67 20 61 6e 
+64 20 69 6d 70 6c 65 6d  65 6e 74 69 6e 67 20 74 
+68 65 73 65 20 64 65 73  69 67 6e 73 20 77 69 74 
+68 20 46 50 47 41 20 64  65 76 65 6c 6f 70 6d 65 
+6e 74 20 62 6f 61 72 64  73 20 69 6e 63 6c 75 64 
+69 6e 67 20 69 6e 74 65  72 66 61 63 69 6e 67 20 
+74 6f 20 65 78 74 65 72  6e 61 6c 20 64 65 76 69 
+63 65 73 2e 20 54 68 65  20 63 6f 75 72 73 65 20 
+77 69 6c 6c 20 66 6f 63  75 73 20 6f 6e 20 74 72 
+61 6e 73 6c 61 74 69 6e  67 20 73 6f 66 74 77 61 
+72 65 20 6d 6f 64 65 6c  73 20 6f 66 20 64 69 67 
+69 74 61 6c 20 73 69 67  6e 61 6c 20 70 72 6f 63 
+65 73 73 69 6e 67 20 61  70 70 6c 69 63 61 74 69 
+6f 6e 73 2c 20 73 75 63  68 20 61 73 20 66 69 6c 
+74 65 72 73 2c 20 72 61  64 69 6f 73 2c 20 61 6e 
+64 20 69 6d 61 67 65 20  70 72 6f 63 65 73 73 69 
+6e 67 20 61 6c 67 6f 72  69 74 68 6d 73 20 69 6e 
+74 6f 20 6f 70 74 69 6d  69 7a 65 64 20 73 74 72 
+65 61 6d 69 6e 67 20 61  72 63 68 69 74 65 63 74 
+75 72 65 73 20 69 6e 20  68 61 72 64 77 61 72 65 
+2e 20 53 74 75 64 65 6e  74 73 20 77 69 6c 6c 20 
+61 6c 73 6f 20 6c 65 61  72 6e 20 73 6f 70 68 69 
+73 74 69 63 61 74 65 64  20 6f 70 74 69 6d 69 7a 
+61 74 69 6f 6e 20 74 65  63 68 6e 69 71 75 65 73 
+20 66 6f 72 20 73 74 72  65 61 6d 69 6e 67 20 61 
+70 70 6c 69 63 61 74 69  6f 6e 73 2c 20 46 49 46 
+4f 20 61 6e 64 20 6d 65  6d 6f 72 79 20 61 72 63 
+68 69 74 65 63 74 75 72  65 73 2c 20 66 69 6e 69 
+74 65 20 73 74 61 74 65  20 6d 61 63 68 69 6e 65 
+73 2c 20 61 6e 64 20 76  61 72 69 6f 75 73 20 6f 
+70 74 69 6d 69 7a 61 74  69 6f 6e 73 20 74 6f 20 
+64 72 69 76 65 20 70 65  72 66 6f 72 6d 61 6e 63 
+65 2e 20 49 6e 20 74 68  65 20 65 6e 64 2c 20 73 
+74 75 64 65 6e 74 73 20  77 69 6c 6c 20 75 6e 64 
+65 72 73 74 61 6e 64 20  68 6f 77 20 74 6f 20 64 
+65 73 69 67 6e 20 61 6e  64 20 63 6f 6d 70 61 72 
+65 20 70 65 72 66 6f 72  6d 61 6e 63 65 20 72 65 
+73 75 6c 74 73 20 62 65  74 77 65 65 6e 20 64 69 
+66 66 65 72 65 6e 74 20  64 65 73 69 67 6e 20 69 
+6d 70 6c 65 6d 65 6e 74  61 74 69 6f 6e 73 2e 0d 
+0a 50 52 45 2d 52 45 51  55 49 53 49 54 45 53 20 
+3a 20 45 45 43 53 20 33  30 33 2c 20 33 35 35 20 
+or equivalent HDL experience.
+DETAILED COURSE TOPICS
+Week 1: System-level architecture design for FPGAs. Review VHDL programming basics. 
+Week 2: Synthesizable VHDL, synchronous and asynchronous processes, finite state machines, and memory.
+Week 3: Practical testbench design, performance testing
+Week 4: Design optimizations and performance comparison
+Week 5: FIFOs and streaming architectures 
+Week 6-8: Design, optimize, simulate, and analyze performance for a digital application
+Week 9-10:  FPGA synthesis and iterative performance optimizations
+COMPUTER USAGE: Students may be expected to be comfortable with Sun/UNIX platform to run and manage Computer Aided Design projects with simulation and synthesis tools. Students can download Xilinx and Altera tools for free online.
+LABORATORY PROJECTS: Course is project oriented. Students will gain experience writing hardware designs in VHDL and optimizing them through various techniques. Each component will be independently tested through simulation and piece
+6f 72 20 65 71 75 69 76  61 6c 65 6e 74 20 48 44 
+4c 20 65 78 70 65 72 69  65 6e 63 65 2e 0d 0a 44 
+45 54 41 49 4c 45 44 20  43 4f 55 52 53 45 20 54 
+4f 50 49 43 53 0d 0a 57  65 65 6b 20 31 3a 20 53 
+79 73 74 65 6d 2d 6c 65  76 65 6c 20 61 72 63 68 
+69 74 65 63 74 75 72 65  20 64 65 73 69 67 6e 20 
+66 6f 72 20 46 50 47 41  73 2e 20 52 65 76 69 65 
+77 20 56 48 44 4c 20 70  72 6f 67 72 61 6d 6d 69 
+6e 67 20 62 61 73 69 63  73 2e 20 0d 0a 57 65 65 
+6b 20 32 3a 20 53 79 6e  74 68 65 73 69 7a 61 62 
+6c 65 20 56 48 44 4c 2c  20 73 79 6e 63 68 72 6f 
+6e 6f 75 73 20 61 6e 64  20 61 73 79 6e 63 68 72 
+6f 6e 6f 75 73 20 70 72  6f 63 65 73 73 65 73 2c 
+20 66 69 6e 69 74 65 20  73 74 61 74 65 20 6d 61 
+63 68 69 6e 65 73 2c 20  61 6e 64 20 6d 65 6d 6f 
+72 79 2e 0d 0a 57 65 65  6b 20 33 3a 20 50 72 61 
+63 74 69 63 61 6c 20 74  65 73 74 62 65 6e 63 68 
+20 64 65 73 69 67 6e 2c  20 70 65 72 66 6f 72 6d 
+61 6e 63 65 20 74 65 73  74 69 6e 67 0d 0a 57 65 
+65 6b 20 34 3a 20 44 65  73 69 67 6e 20 6f 70 74 
+69 6d 69 7a 61 74 69 6f  6e 73 20 61 6e 64 20 70 
+65 72 66 6f 72 6d 61 6e  63 65 20 63 6f 6d 70 61 
+72 69 73 6f 6e 0d 0a 57  65 65 6b 20 35 3a 20 46 
+49 46 4f 73 20 61 6e 64  20 73 74 72 65 61 6d 69 
+6e 67 20 61 72 63 68 69  74 65 63 74 75 72 65 73 
+20 0d 0a 57 65 65 6b 20  36 2d 38 3a 20 44 65 73 
+69 67 6e 2c 20 6f 70 74  69 6d 69 7a 65 2c 20 73 
+69 6d 75 6c 61 74 65 2c  20 61 6e 64 20 61 6e 61 
+6c 79 7a 65 20 70 65 72  66 6f 72 6d 61 6e 63 65 
+20 66 6f 72 20 61 20 64  69 67 69 74 61 6c 20 61 
+70 70 6c 69 63 61 74 69  6f 6e 0d 0a 57 65 65 6b 
+20 39 2d 31 30 3a 20 20  46 50 47 41 20 73 79 6e 
+74 68 65 73 69 73 20 61  6e 64 20 69 74 65 72 61 
+74 69 76 65 20 70 65 72  66 6f 72 6d 61 6e 63 65 
+20 6f 70 74 69 6d 69 7a  61 74 69 6f 6e 73 0d 0a 
+43 4f 4d 50 55 54 45 52  20 55 53 41 47 45 3a 20 
+53 74 75 64 65 6e 74 73  20 6d 61 79 20 62 65 20 
+65 78 70 65 63 74 65 64  20 74 6f 20 62 65 20 63 
+6f 6d 66 6f 72 74 61 62  6c 65 20 77 69 74 68 20 
+53 75 6e 2f 55 4e 49 58  20 70 6c 61 74 66 6f 72 
+6d 20 74 6f 20 72 75 6e  20 61 6e 64 20 6d 61 6e 
+61 67 65 20 43 6f 6d 70  75 74 65 72 20 41 69 64 
+65 64 20 44 65 73 69 67  6e 20 70 72 6f 6a 65 63 
+74 73 20 77 69 74 68 20  73 69 6d 75 6c 61 74 69 
+6f 6e 20 61 6e 64 20 73  79 6e 74 68 65 73 69 73 
+20 74 6f 6f 6c 73 2e 20  53 74 75 64 65 6e 74 73 
+20 63 61 6e 20 64 6f 77  6e 6c 6f 61 64 20 58 69 
+6c 69 6e 78 20 61 6e 64  20 41 6c 74 65 72 61 20 
+74 6f 6f 6c 73 20 66 6f  72 20 66 72 65 65 20 6f 
+6e 6c 69 6e 65 2e 0d 0a  4c 41 42 4f 52 41 54 4f 
+52 59 20 50 52 4f 4a 45  43 54 53 3a 20 43 6f 75 
+72 73 65 20 69 73 20 70  72 6f 6a 65 63 74 20 6f 
+72 69 65 6e 74 65 64 2e  20 53 74 75 64 65 6e 74 
+73 20 77 69 6c 6c 20 67  61 69 6e 20 65 78 70 65 
+72 69 65 6e 63 65 20 77  72 69 74 69 6e 67 20 68 
+61 72 64 77 61 72 65 20  64 65 73 69 67 6e 73 20 
+69 6e 20 56 48 44 4c 20  61 6e 64 20 6f 70 74 69 
+6d 69 7a 69 6e 67 20 74  68 65 6d 20 74 68 72 6f 
+75 67 68 20 76 61 72 69  6f 75 73 20 74 65 63 68 
+6e 69 71 75 65 73 2e 20  45 61 63 68 20 63 6f 6d 
+70 6f 6e 65 6e 74 20 77  69 6c 6c 20 62 65 20 69 
+6e 64 65 70 65 6e 64 65  6e 74 6c 79 20 74 65 73 
+74 65 64 20 74 68 72 6f  75 67 68 20 73 69 6d 75 
+6c 61 74 69 6f 6e 20 61  6e 64 20 70 69 65 63 65 
+d together to create an entire hardware application. 
+GRADES: Grades will be based on weekly programming assignments, final project, and final report.
+COURSE OBJECTIVES: When a student completes this course, s/he should be able to:
+1.	Translate a software application into hardware logic for FPGA architectures
+
+2.	Design synthesizable VHDL systems based on industry-standard coding methods.
+
+3.	Optimize logic for various performance goals (timing, frequency, area, and power).
+
+4.	Build testbenches and create data models to verify bit-true accurate designs.
+
+5.	Design streaming architectures for high-performance computing applications.
+
+6.	Calculate throughput, resource allocation, and other performance metrics.
+
+7.	Simulate and compare performance results between different optimizations.
+
+8.	Utilize commercial FPGA development tools for compilation, simulation, and synthesis.
+
+
+64 20 74 6f 67 65 74 68  65 72 20 74 6f 20 63 72 
+65 61 74 65 20 61 6e 20  65 6e 74 69 72 65 20 68 
+61 72 64 77 61 72 65 20  61 70 70 6c 69 63 61 74 
+69 6f 6e 2e 20 0d 0a 47  52 41 44 45 53 3a 20 47 
+72 61 64 65 73 20 77 69  6c 6c 20 62 65 20 62 61 
+73 65 64 20 6f 6e 20 77  65 65 6b 6c 79 20 70 72 
+6f 67 72 61 6d 6d 69 6e  67 20 61 73 73 69 67 6e 
+6d 65 6e 74 73 2c 20 66  69 6e 61 6c 20 70 72 6f 
+6a 65 63 74 2c 20 61 6e  64 20 66 69 6e 61 6c 20 
+72 65 70 6f 72 74 2e 0d  0a 43 4f 55 52 53 45 20 
+4f 42 4a 45 43 54 49 56  45 53 3a 20 57 68 65 6e 
+20 61 20 73 74 75 64 65  6e 74 20 63 6f 6d 70 6c 
+65 74 65 73 20 74 68 69  73 20 63 6f 75 72 73 65 
+2c 20 73 2f 68 65 20 73  68 6f 75 6c 64 20 62 65 
+20 61 62 6c 65 20 74 6f  3a 0d 0a 31 2e 09 54 72 
+61 6e 73 6c 61 74 65 20  61 20 73 6f 66 74 77 61 
+72 65 20 61 70 70 6c 69  63 61 74 69 6f 6e 20 69 
+6e 74 6f 20 68 61 72 64  77 61 72 65 20 6c 6f 67 
+69 63 20 66 6f 72 20 46  50 47 41 20 61 72 63 68 
+69 74 65 63 74 75 72 65  73 0d 0a 0d 0a 32 2e 09 
+44 65 73 69 67 6e 20 73  79 6e 74 68 65 73 69 7a 
+61 62 6c 65 20 56 48 44  4c 20 73 79 73 74 65 6d 
+73 20 62 61 73 65 64 20  6f 6e 20 69 6e 64 75 73 
+74 72 79 2d 73 74 61 6e  64 61 72 64 20 63 6f 64 
+69 6e 67 20 6d 65 74 68  6f 64 73 2e 0d 0a 0d 0a 
+33 2e 09 4f 70 74 69 6d  69 7a 65 20 6c 6f 67 69 
+63 20 66 6f 72 20 76 61  72 69 6f 75 73 20 70 65 
+72 66 6f 72 6d 61 6e 63  65 20 67 6f 61 6c 73 20 
+28 74 69 6d 69 6e 67 2c  20 66 72 65 71 75 65 6e 
+63 79 2c 20 61 72 65 61  2c 20 61 6e 64 20 70 6f 
+77 65 72 29 2e 0d 0a 0d  0a 34 2e 09 42 75 69 6c 
+64 20 74 65 73 74 62 65  6e 63 68 65 73 20 61 6e 
+64 20 63 72 65 61 74 65  20 64 61 74 61 20 6d 6f 
+64 65 6c 73 20 74 6f 20  76 65 72 69 66 79 20 62 
+69 74 2d 74 72 75 65 20  61 63 63 75 72 61 74 65 
+20 64 65 73 69 67 6e 73  2e 0d 0a 0d 0a 35 2e 09 
+44 65 73 69 67 6e 20 73  74 72 65 61 6d 69 6e 67 
+20 61 72 63 68 69 74 65  63 74 75 72 65 73 20 66 
+6f 72 20 68 69 67 68 2d  70 65 72 66 6f 72 6d 61 
+6e 63 65 20 63 6f 6d 70  75 74 69 6e 67 20 61 70 
+70 6c 69 63 61 74 69 6f  6e 73 2e 0d 0a 0d 0a 36 
+2e 09 43 61 6c 63 75 6c  61 74 65 20 74 68 72 6f 
+75 67 68 70 75 74 2c 20  72 65 73 6f 75 72 63 65 
+20 61 6c 6c 6f 63 61 74  69 6f 6e 2c 20 61 6e 64 
+20 6f 74 68 65 72 20 70  65 72 66 6f 72 6d 61 6e 
+63 65 20 6d 65 74 72 69  63 73 2e 0d 0a 0d 0a 37 
+2e 09 53 69 6d 75 6c 61  74 65 20 61 6e 64 20 63 
+6f 6d 70 61 72 65 20 70  65 72 66 6f 72 6d 61 6e 
+63 65 20 72 65 73 75 6c  74 73 20 62 65 74 77 65 
+65 6e 20 64 69 66 66 65  72 65 6e 74 20 6f 70 74 
+69 6d 69 7a 61 74 69 6f  6e 73 2e 0d 0a 0d 0a 38 
+2e 09 55 74 69 6c 69 7a  65 20 63 6f 6d 6d 65 72 
+63 69 61 6c 20 46 50 47  41 20 64 65 76 65 6c 6f 
+70 6d 65 6e 74 20 74 6f  6f 6c 73 20 66 6f 72 20 
+63 6f 6d 70 69 6c 61 74  69 6f 6e 2c 20 73 69 6d 
+75 6c 61 74 69 6f 6e 2c  20 61 6e 64 20 73 79 6e 
+74 68 65 73 69 73 2e 0d  0a 0d 0a 
+
+Execution time: 0.000365 seconds
+

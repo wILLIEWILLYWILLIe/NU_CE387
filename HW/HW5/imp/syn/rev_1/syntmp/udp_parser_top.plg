@@ -1,0 +1,13 @@
+@P:  Part : ep4ce115fc23-7
+@P:  Worst Slack : -0.918
+@P:  udp_parser_top|clock - Estimated Frequency : 163.4 MHz
+@P:  udp_parser_top|clock - Requested Frequency : 192.2 MHz
+@P:  udp_parser_top|clock - Estimated Period : 6.121
+@P:  udp_parser_top|clock - Requested Period : 5.203
+@P:  udp_parser_top|clock - Slack : -0.918
+@P: udp_parser_top Part : ep4ce115fc23-7
+@P: udp_parser_top I/O ATOMs : 14
+@P: udp_parser_top Total LUTs : 301 
+@P: udp_parser_top Register bits : 133
+@P: udp_parser_top DSP Blocks : 0 (0 nine-bit DSP elements)
+@P:  CPU Time : 0h:00m:04s

@@ -1,0 +1,321 @@
+\documentclass[12pt]{article}
+
+\usepackage{tkz-euclide}
+\newcommand{\drawaline}[4]{
+\draw [extended line=1cm,stealth-stealth] (#1,#2)--(#3,#4);
+}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[top=2.5cm,right=1.5cm,left=1.5cm,bottom=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{siunitx}
+\usepackage{enumerate}
+\usepackage{mhchem}
+\usepackage{mathtools}
+\usepackage{CJKutf8} 
+\usepackage{array}
+\usepackage{verbatim}
+
+
+\usepackage{float}
+\usepackage[american]{circuitikz}
+\usepackage{diagbox}   
+\usepackage{hyperref}
+\usepackage{subcaption}
+
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usepackage{datetime}
+
+
+\setlength{\arrayrulewidth}{0.5mm}
+\setlength{\tabcolsep}{35pt}
+\renewcommand{\arraystretch}{1.4}
+
+\fancyhf{}
+\rhead{Real-Time Digital Systems Design and Verification with FPGAs - HW5}
+\lhead{Willie Liao
+GEL8580}
+\lfoot{\today}
+\rfoot{Page \thepage}
+
+\begin{document}
+\pagestyle{fancy}
+\section{Simulation results}
+\subsection{Clock cycle count}
+\noindent\textbf{Answer:}
+
+The simulation results demonstrating the system performance and functional correctness are shown in Fig.~\ref{fig:sim_results}.
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.6\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Fig_sim/udp_parser_tb.png} 
+        \caption{Traditional Testbench output showing Total Clock Cycles (5178) and Bytes Processed (3979).}
+        \label{fig:sim_cycles}
+    \end{subfigure}
+    \vspace{1em}
+    \begin{subfigure}[b]{0.95\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Fig_sim/uvm_output.png} 
+        \caption{UVM Report Summary confirming 0 errors and 3979 bytes checked.}
+        \label{fig:uvm_report}
+    \end{subfigure}
+    \caption{Simulation verification results for the UDP Parser.}
+    \label{fig:sim_results}
+\end{figure}
+
+Fig.~\ref{fig:sim_cycles} shows the final simulation output from the top-level testbench. The simulation processed the PCAP file containing UDP packets in \textbf{5,178 cycles}. The design successfully extracted and processed \textbf{3,979 bytes} of payload data.
+
+The efficiency of the design is driven by the FSM in the \texttt{udp\_parser.sv} module, which processes the packet stream in a pipelined manner:
+\begin{enumerate}
+    \item \textbf{Header Parsing States:} The FSM sequentially navigates through header states (\texttt{ETH\_HDR}, \texttt{IP\_HDR}, \texttt{UDP\_HDR}) to strip off the encapsulation layers. This parsing happens at line rate (1 byte/cycle) for the relevant bytes.
+    \item \textbf{Single-Cycle Payload Extraction:} Once in the \texttt{PAYLOAD} state, the design forwards data to the output FIFO at a rate of \textbf{1 cycle per byte}. The slight overhead in total cycles (5178 vs 3979 bytes) is attributed to the header bytes (Ethernet: 14, IP: 20, UDP: 8) and the inter-packet gaps utilized for state transitions and resets.
+\end{enumerate}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\linewidth]{Fig_sim/udp_parser_wave.png} % 請替換檔名
+    \caption{Detailed waveform of the UDP Parser FSM processing a packet.}
+    \label{fig:udp_wave}
+\end{figure}
+
+Fig.~\ref{fig:udp_wave} provides a detailed waveform view of the parser's operation. The waveform reveals the clear state transitions matching the packet structure:
+\begin{itemize}
+    \item \textbf{Header Processing:} The state signal transitions from \texttt{IDLE} $\to$ \texttt{ETH\_HDR} $\to$ \texttt{IP\_HDR} $\to$ \texttt{UDP\_HDR} as the parser consumes header bytes.
+    \item \textbf{Payload Streaming:} Upon reaching the \texttt{PAYLOAD} state (shown as \texttt{PAYLOAD} in the waveform), the module asserts \texttt{out\_wr\_en} continuously, achieving the peak throughput of 1 byte/cycle. The byte counters (`byte\_cnt`) track the progress within each section to trigger the next state transition precisely.
+\end{itemize}
+
+\subsection{Errors reported}
+\noindent\textbf{Answer:}
+
+Functional verification was performed using two methods to ensure the parser correctly extracts payload data:
+\begin{enumerate}
+    \item \textbf{Bit-True Comparison:} The traditional testbench (`udp\_parser\_tb.sv`) compares the hardware output byte-by-byte against the expected payload data extracted from the PCAP file. As shown in Fig.~\ref{fig:sim_cycles}, the \textbf{SIMULATION PASSED} with a total error count of 0.
+    \item \textbf{UVM Verification:} The design was also verified using a comprehensive UVM environment. The UVM Scoreboard compared the transactions from the DUT against a golden reference model. Fig.~\ref{fig:uvm_report} confirms that the test passed with \textbf{checked 3979 bytes} (matching the testbench) and \textbf{0 UVM Errors}.
+\end{enumerate}
+
+\subsection{Functional coverage}
+\noindent\textbf{Answer:}
+
+To quantitatively measure the completeness of the verification, a UVM functional coverage model was implemented in the \texttt{my\_uvm\_coverage} component. This model ensures that the simulation exercises key features of the UDP parser.
+
+As shown in Fig.~\ref{fig:coverage_rept}, the coverage report indicates \textbf{100\% Functional Coverage} was achieved on the following covergroups:
+\begin{itemize}
+    \item \textbf{State Transitions:} Verifies that the FSM correctly traverses all defined states (\texttt{IDLE}, \texttt{ETH\_HDR}, \texttt{IP\_HDR}, \texttt{UDP\_HDR}, \texttt{PAYLOAD}, etc.) and their legal transitions (e.g., \texttt{ETH\_CHK} to \texttt{IP\_HDR} for IPv4 packets, or to \texttt{DRAIN} for non-IPv4).
+    \item \textbf{Protocol Fields:} Ensures that packets with valid EtherType (0x0800) and IP Protocol (0x11) fields are observed.
+    \item \textbf{Payload Sizes:} Covers a range of payload lengths to verify the parser's byte counting logic across different packet sizes:
+    \begin{itemize}
+        \item \textbf{Normal Packets:} $<$ 1024 bytes (Bin \texttt{len\_normal}).
+        \item \textbf{Jumbo Packets:} $\ge$ 1024 bytes (Bin \texttt{len\_jumbo}).
+    \end{itemize}
+\end{itemize}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Fig_sim/coverage.png} 
+    \caption{Functional Coverage Report showing 100\% coverage of State Transitions and Protocol Fields.}
+    \label{fig:coverage_rept}
+\end{figure}
+
+\section{Synthesis results}
+\subsection{Maximum frequency}
+\noindent\textbf{Answer:}
+
+The estimated maximum frequency of the design is \textbf{163.4 MHz}.
+
+As shown in the timing report, the worst-case slack is -0.918 ns (target 192.2 MHz), resulting in a calculated maximum frequency of 163.4 MHz (Period $\approx$ 6.121 ns). This performance comfortably exceeds the 125 MHz requirements for Gigabit Ethernet (1 Gbps at 8-bit width), providing a robust timing margin.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Fig_syn/timing_summary.png} 
+    \caption{Timing summary showing an estimated frequency of 163.4 MHz.}
+    \label{fig:timing_summary}
+\end{figure}
+
+\subsection{Registers/LUTs/Logic Elements}
+\noindent\textbf{Answer:}
+
+The resource utilization for the UDP Parser on the Cyclone IV-E FPGA is summarized below:
+\begin{enumerate}
+    \item \textbf{Total Registers:} 133
+    \item \textbf{Total Combinational Functions (LUTs):} 301
+    \item \textbf{Total Memory Bits:} 2,560
+\end{enumerate}
+
+The logic resources are primarily utilized by the FSM control logic and byte counting mechanisms in the parser. The memory bits are used by the input and output FIFOs to buffer packet data.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.95\linewidth]{Fig_syn/area_sum.png} 
+    \caption{Area summary report detailing the resource usage: 301 LUTs, 133 Registers, and 2,560 Memory Bits.}
+    \label{fig:area_summary}
+\end{figure}
+
+\subsection{Memory utilization}
+\noindent\textbf{Answer:}
+
+The design utilizes \textbf{2,560 bits} of memory. This usage corresponds to the two instantiated \texttt{fifo\_ctrl} modules (Input and Output). Each \texttt{fifo\_ctrl} contains:
+\begin{itemize}
+    \item One Data FIFO ($128 \times 8 = 1024$ bits).
+    \item One Control FIFO (for SOF/EOF signals, $128 \times 2 = 256$ bits).
+\end{itemize}
+Total per FIFO instance is 1,280 bits. The complete system uses $1,280 \times 2 = 2,560$ bits.
+
+\subsection{Multipliers (DSPs)}
+\noindent\textbf{Answer:}
+
+The DSP block utilization is \textbf{0}. The UDP packet parsing logic relies on byte comparison and incrementing counters, which are efficiently implemented in standard logic elements (LUTs) without requiring dedicated Digital Signal Processing (DSP) blocks.
+
+\subsection{Worst path(timing analysis)}
+\noindent\textbf{Answer:}
+
+The final critical path analysis reveals the current timing bottleneck in the design, limiting the maximum frequency to 163.4 MHz.
+
+\begin{enumerate}
+    \item \textbf{Critical Path Slack:} -0.918 ns (at 192.2 MHz target)
+    \item \textbf{Path Delay:} 6.121 ns (Logic: 78.7\%, Route: 21.3\%)
+    \item \textbf{Start Point:} \texttt{fifo\_in.fifo\_control.fifo\_buf / q\_b[1]} (Input Control FIFO M9K RAM Output, carrying \texttt{SOF})
+    \item \textbf{End Point:} \texttt{fifo\_in.fifo\_control.rd\_addr[0]} (FIFO Read Address Register)
+    \item \textbf{Logic Levels:} 2
+\end{enumerate}
+
+The critical path originates from the memory block of the Input Control FIFO (\texttt{fifo\_in.fifo\_control}). Specifically, the \texttt{q\_b} output ports of the M9K Block RAM, which drive the Start-of-Frame (\texttt{p\_in\_sof}) signal, have a significant Clock-to-Output ($T_{co}$) delay of approximately 4.15 ns. This delay dominates the timing budget.
+
+This \texttt{SOF} signal feeds directly into the \texttt{udp\_parser} combinatorial logic to determine whether the parser should assert the read enable signal (\texttt{in\_rd\_en}). If the parser decides to read (based on the presence of a valid SOF), this signal loops back to the \texttt{fifo\_in} module to increment the read address pointer (\texttt{rd\_addr}) for th\subsection{Schematic architecture (RTL)}
+\noindent\textbf{Answer:}
+
+The RTL architecture implements a streaming packet processing system composed of three main modular stages. To clearly illustrate the design hierarchy, we present the structural breakdown in two parts: the UDP Parser core logic and the critical FIFO buffering mechanism.
+
+\subsubsection{UDP Parser Architecture}
+Figure~\ref{fig:parser_arch} details the UDP Parser's construction.
+\begin{enumerate}
+    \item \textbf{System Pipeline}: Figure~\ref{fig:rtl_top} shows the top-level integration where the \texttt{parser\_inst} is sandwiched between input and output FIFOs (\texttt{fifo\_in}, \texttt{fifo\_out}).
+    \item \textbf{Control Plane}: The Finite State Machine (FSM) in Figure~\ref{fig:rtl_fsm} drives the parsing process, transitioning through Ethernet, IP, and UDP header checks before enabling payload extraction.
+    \item \textbf{Data Plane}: Figure~\ref{fig:parser_datapath} reveals the internal byte counters and protocol comparators that execute the FSM's decisions.
+\end{enumerate}
+
+Table~\ref{tab:fsm_states} summarizes the function of each state in the parser FSM.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Description of UDP Parser FSM States}
+    \label{tab:fsm_states}
+    \begin{tabular}{|l|p{10cm}|}
+        \hline
+        \textbf{State} & \textbf{Description} \\
+        \hline
+        \texttt{IDLE} & Waits for the Start-of-Frame (SOF) signal to begin parsing. \\
+        \hline
+        \texttt{ETH\_HDR} & Consumes the 14-byte Ethernet header and extracts the EtherType field. \\
+        \hline
+        \texttt{ETH\_CHK} & Checks if the EtherType is IPv4 (0x0800). If not, transitions to \texttt{DRAIN}. \\
+        \hline
+        \texttt{IP\_HDR} & Consumes the 20-byte IPv4 header and extracts the Protocol field. \\
+        \hline
+        \texttt{IP\_CHK} & Checks if the Protocol is UDP (0x11). If not, transitions to \texttt{DRAIN}. \\
+        \hline
+        \texttt{UDP\_HDR} & Consumes the 8-byte UDP header and extracts the UDP Length. \\
+        \hline
+        \texttt{PAYLOAD} & Streams $\text{(UDP Length} - 8)$ bytes of payload data to the output FIFO. \\
+        \hline
+        \texttt{DRAIN} & Discards remaining bytes of the current packet until End-of-Frame (EOF). \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{1.0\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Fig_syn/rtl_top.png}
+        \caption{Top-level RTL schematic showing the pipeline: Input FIFO $\to$ UDP Parser $\to$ Output FIFO.}
+        \label{fig:rtl_top}
+    \end{subfigure}
+    \vspace{1em}
+    \begin{subfigure}[b]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Fig_syn/fsm_bubble.png}
+        \caption{FSM State Diagram showing the header parsing sequence.}
+        \label{fig:rtl_fsm}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Fig_syn/parser_datapath.png}
+        \caption{Datapath logic with byte counters and header field comparators.}
+        \label{fig:parser_datapath}
+    \end{subfigure}
+    \caption{UDP Parser Architecture: (a) System Pipeline, (b) Control FSM, and (c) Datapath Logic.}
+    \label{fig:parser_arch}
+\end{figure}
+
+\subsubsection{FIFO Architecture}
+The integrity of the packet stream relies on the \texttt{fifo\_ctrl} module. Figure~\ref{fig:fifo_arch} highlights its dual-channel design.
+\begin{enumerate}
+    \item \textbf{Module Interface}: Figure~\ref{fig:fifo_block} depicts the external interface of the \texttt{fifo\_ctrl}, handling data width conversion and flow control signals.
+    \item \textbf{Internal Structure}: The schematic in Figure~\ref{fig:fifo_internal} proves the instantiation of two parallel FIFOs—one for 8-bit data and one for 2-bit control signals (SOF/EOF). This structure guarantees that packet boundaries are preserved synchronously with the data stream.
+\end{enumerate}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{1.0\linewidth}
+        \centering
+        \includegraphics[width=0.8\linewidth]{Fig_syn/fifo_block.png} 
+        \caption{Block view of the \texttt{fifo\_ctrl} module showing data and control ports.}
+        \label{fig:fifo_block}
+    \end{subfigure}
+    \vspace{1em}
+    \begin{subfigure}[b]{1.0\linewidth}
+        \centering
+        \includegraphics[width=1.0\linewidth]{Fig_syn/fifo_internal.png}
+        \caption{Internal schematic revealing the dual-FIFO architecture (Data FIFO + Control FIFO).}
+        \label{fig:fifo_internal}
+    \end{subfigure}
+    \caption{FIFO Architecture implementing synchronized data and sideband buffering.}
+    \label{fig:fifo_arch}
+\end{figure}
+
+\subsection{Performance / Speedup / Throughput}
+\noindent\textbf{Answer:}
+
+We measured the execution time of the reference C++ implementation (`udp_reader_time.cpp`) processing the same test PCAP file and compared it with the hardware simulation results.
+
+\begin{itemize}
+    \item \textbf{Software Baseline:} 
+    Processing the test PCAP file took \textbf{21 $\mu$s} ($2.1 \times 10^{-5}$ seconds) on the lab server CPU.
+    
+    \item \textbf{Hardware Latency:} 
+    The synthesized design runs at a maximum frequency of \textbf{163.4 MHz}. Simulation showed it took \textbf{5,178 cycles} to process the same data.
+    \begin{equation}
+        \text{Hardware Time} = \frac{5,178 \text{ cycles}}{163.4 \times 10^6 \text{ Hz}} \approx \textbf{31.7 $\mu$s}
+    \end{equation}
+
+    \item \textbf{Speedup Factor:}
+    \begin{equation}
+        \text{Speedup} = \frac{21 \mu s}{31.7 \mu s} \approx \textbf{0.66}\times
+    \end{equation}
+    
+    The software implementation is approximately \textbf{1.5x faster} in terms of pure execution latency for this small dataset. This result is expected because:
+    \begin{enumerate}
+        \item The CPU operates at a significantly higher clock frequency (> 3 GHz) compared to the FPGA (163 MHz).
+        \item The test workload is small enough to fit entirely within the CPU's L1/L2 cache, minimizing memory access overhead.
+        \item Simple sequential parsing tasks do not benefit as much from FPGA parallelism as complex image processing algorithms (like Sobel).
+    \end{enumerate}
+
+    \item \textbf{Hardware Throughput Capability:}
+    Despite the latency difference, the FPGA design excels in \textbf{consistent, deterministic throughput}. At 163.4 MHz, the parser can process 1 byte per cycle, achieving a theoretical peak throughput of:
+    \begin{equation}
+        163.4 \text{ MHz} \times 8 \text{ bits} \approx \textbf{1.3 Gbps}
+    \end{equation}
+    This capability exceeds the Gigabit Ethernet requirement (1.0 Gbps) by 30\%, ensuring that the hardware can sustain line-rate processing without dropping packets, a guarantee that software running on a general-purpose OS cannot match due to interrupt jitter and scheduling overhead.
+\end{itemize}
+
+\end{document}

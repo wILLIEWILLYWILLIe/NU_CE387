@@ -1,0 +1,11 @@
+add wave -position insertpoint sim:/my_uvm_tb/clock
+add wave -position insertpoint sim:/my_uvm_tb/reset
+add wave -position insertpoint sim:/my_uvm_tb/vif/din
+add wave -position insertpoint sim:/my_uvm_tb/vif/din_sof
+add wave -position insertpoint sim:/my_uvm_tb/vif/din_eof
+add wave -position insertpoint sim:/my_uvm_tb/dut/parser_inst/state
+add wave -position insertpoint sim:/my_uvm_tb/dut/parser_inst/byte_cnt
+add wave -position insertpoint sim:/my_uvm_tb/dut/parser_inst/udp_len
+add wave -position insertpoint sim:/my_uvm_tb/vif/dout
+add wave -position insertpoint sim:/my_uvm_tb/vif/dout_sof
+add wave -position insertpoint sim:/my_uvm_tb/vif/dout_eof

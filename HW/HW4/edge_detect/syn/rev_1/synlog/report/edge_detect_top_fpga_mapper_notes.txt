@@ -1,0 +1,254 @@
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MT206 |Auto Constrain mode is enabled
+@N: MF236 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/grayscale.sv":39:65:39:153|Generating a type div divider 
+@N: MO231 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/sobel.sv":43:4:43:12|Found counter in view:work.sobel_720s_540s(verilog) instance out_cnt[31:0] 
+@N: MO231 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/sobel.sv":43:4:43:12|Found counter in view:work.sobel_720s_540s(verilog) instance pix_cnt[31:0] 
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[0] (in view: work.fifo_24s_1024s_11s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[1] (in view: work.fifo_24s_1024s_11s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[2] (in view: work.fifo_24s_1024s_11s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[3] (in view: work.fifo_24s_1024s_11s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[4] (in view: work.fifo_24s_1024s_11s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[5] (in view: work.fifo_24s_1024s_11s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[6] (in view: work.fifo_24s_1024s_11s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[7] (in view: work.fifo_24s_1024s_11s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[8] (in view: work.fifo_24s_1024s_11s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[9] (in view: work.fifo_24s_1024s_11s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[10] (in view: work.fifo_24s_1024s_11s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[11] (in view: work.fifo_24s_1024s_11s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[12] (in view: work.fifo_24s_1024s_11s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[13] (in view: work.fifo_24s_1024s_11s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[14] (in view: work.fifo_24s_1024s_11s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[15] (in view: work.fifo_24s_1024s_11s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[16] (in view: work.fifo_24s_1024s_11s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[17] (in view: work.fifo_24s_1024s_11s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[18] (in view: work.fifo_24s_1024s_11s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[19] (in view: work.fifo_24s_1024s_11s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[20] (in view: work.fifo_24s_1024s_11s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[21] (in view: work.fifo_24s_1024s_11s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[22] (in view: work.fifo_24s_1024s_11s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[23] (in view: work.fifo_24s_1024s_11s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[0] (in view: work.fifo_8s_1024s_11s_1(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[1] (in view: work.fifo_8s_1024s_11s_1(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[2] (in view: work.fifo_8s_1024s_11s_1(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[3] (in view: work.fifo_8s_1024s_11s_1(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[4] (in view: work.fifo_8s_1024s_11s_1(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[5] (in view: work.fifo_8s_1024s_11s_1(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[6] (in view: work.fifo_8s_1024s_11s_1(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[7] (in view: work.fifo_8s_1024s_11s_1(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[0] (in view: work.fifo_8s_1024s_11s_0(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[1] (in view: work.fifo_8s_1024s_11s_0(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[2] (in view: work.fifo_8s_1024s_11s_0(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[3] (in view: work.fifo_8s_1024s_11s_0(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[4] (in view: work.fifo_8s_1024s_11s_0(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[5] (in view: work.fifo_8s_1024s_11s_0(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[6] (in view: work.fifo_8s_1024s_11s_0(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":50:4:50:12|Removing sequential instance dout[7] (in view: work.fifo_8s_1024s_11s_0(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: MF135 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/sobel.sv":43:4:43:12|RAM lb0[7:0] (in view: work.sobel_720s_540s(verilog)) is 720 words by 8 bits.
+@N: MF246 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/sobel.sv":43:4:43:12|Hierarchically decompose RAM 'lb0[7:0]' 
+@N: MF135 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/sobel.sv":43:4:43:12|RAM lb1[7:0] (in view: work.sobel_720s_540s(verilog)) is 720 words by 8 bits.
+@N: MF246 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/sobel.sv":43:4:43:12|Hierarchically decompose RAM 'lb1[7:0]' 
+@N: MF794 |RAM lb1[7:0] required 18 registers during mapping 
+@N: MF794 |RAM lb0[7:0] required 51 registers during mapping 
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams0_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams0_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams0_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams0_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams0_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams1_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams1_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams1_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams1_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams1_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams2_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams2_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams2_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams2_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams2_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams3_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams3_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams3_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams3_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams3_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams4_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams4_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams4_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams4_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams4_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams5_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams5_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams5_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams5_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams5_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams6_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams6_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams6_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams6_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams6_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams7_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams7_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams7_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams7_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams7_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams8_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams8_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams8_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams8_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams8_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams9_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams9_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams9_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams9_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams9_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams10_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams10_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams10_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams10_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams10_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams11_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams11_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams11_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams11_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams11_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams12_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams12_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams12_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams12_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams12_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams13_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams13_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams13_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams13_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams13_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams14_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams14_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams14_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams14_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams14_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams15_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams15_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams15_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams15_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams15_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams16_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams16_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams16_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams16_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams16_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams17_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams17_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams17_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams17_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams17_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams18_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams18_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams18_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams18_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams18_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams19_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams19_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams19_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams19_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams19_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams20_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams20_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams20_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams20_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams20_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams21_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams21_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams21_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams21_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams21_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams22_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams22_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams22_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams22_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams22_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams23_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams23_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams23_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams23_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams23_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams24_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams24_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams24_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams24_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams24_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams25_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams25_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams25_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams25_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams25_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams26_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams26_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams26_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams26_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams26_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams27_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams27_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams27_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams27_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams27_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams28_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams28_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams28_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams28_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams28_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams29_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams29_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams29_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams29_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams29_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams30_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams30_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams30_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams30_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams30_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams31_8 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams31_9 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams31_10 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams31_11 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance sob_inst.lb0_rams31_12 (in view: work.edge_detect_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams31 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams30 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams29 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams28 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams27 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams26 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams25 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams24 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams23 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams22 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams21 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams20 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams19 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams18 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams17 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams16 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams15 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams14 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams13 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams12 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams11 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams10 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams9 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams8 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams7 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams6 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams5 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams4 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams3 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams2 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams1 (in view: work.edge_detect_top(verilog)).
+@N: FX702 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":82:6:82:13|Found startup values on RAM instance sob_inst.lb0_rams0 (in view: work.edge_detect_top(verilog)).
+@N: MF794 |RAM lb1[7:0] required 8 registers during mapping 
+@N: MF794 |RAM lb0[7:0] required 16 registers during mapping 
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+@N: FA174 |The following device usage report estimates place and route data. Please look at the place and route report for final resource usage.

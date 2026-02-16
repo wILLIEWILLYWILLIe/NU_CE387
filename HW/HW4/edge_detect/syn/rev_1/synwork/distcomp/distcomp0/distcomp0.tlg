@@ -1,0 +1,61 @@
+@N:: Applying property .distcompmodetop with value 1 on module edge_detect_top in library work
+@N:: Applying property .distcompnoprune with value 1 on module edge_detect_top in library work
+@N:: Applying property .noprune with value 1 on module edge_detect_top in library work
+@N:: Applying property .distcompnoprune with value 1 on module fifo in library work
+@N:: Applying property .noprune with value 1 on module fifo in library work
+@N:: Applying property .distcompnoprune with value 1 on module sobel in library work
+@N:: Applying property .noprune with value 1 on module sobel in library work
+@N:: Applying property .distcompnoprune with value 1 on module grayscale in library work
+@N:: Applying property .noprune with value 1 on module grayscale in library work
+Selecting top level module edge_detect_top
+@N: CG364 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":2:7:2:10|Synthesizing module fifo in library work.
+
+	FIFO_DATA_WIDTH=32'b00000000000000000000000000011000
+	FIFO_BUFFER_SIZE=32'b00000000000000000000010000000000
+	FIFO_ADDR_WIDTH=32'b00000000000000000000000000001011
+   Generated name = fifo_24s_1024s_11s
+Running optimization stage 1 on fifo_24s_1024s_11s .......
+@N: CL134 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":35:4:35:12|Found RAM fifo_buf, depth=1024, width=24
+@N: CG364 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/grayscale.sv":2:7:2:15|Synthesizing module grayscale in library work.
+Running optimization stage 1 on grayscale .......
+@N: CG364 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":2:7:2:10|Synthesizing module fifo in library work.
+
+	FIFO_DATA_WIDTH=32'b00000000000000000000000000001000
+	FIFO_BUFFER_SIZE=32'b00000000000000000000010000000000
+	FIFO_ADDR_WIDTH=32'b00000000000000000000000000001011
+   Generated name = fifo_8s_1024s_11s
+Running optimization stage 1 on fifo_8s_1024s_11s .......
+@N: CL134 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/fifo.sv":35:4:35:12|Found RAM fifo_buf, depth=1024, width=8
+@N: CG364 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/sobel.sv":2:7:2:11|Synthesizing module sobel in library work.
+
+	WIDTH=32'b00000000000000000000001011010000
+	HEIGHT=32'b00000000000000000000001000011100
+   Generated name = sobel_720s_540s
+Running optimization stage 1 on sobel_720s_540s .......
+@N: CG364 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":2:7:2:21|Synthesizing module edge_detect_top in library work.
+@W: CG133 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":11:24:11:32|Object out_rd_en is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":20:43:20:52|Object fifo1_full is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":23:17:23:24|Object gs_rd_en is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":23:27:23:34|Object gs_wr_en is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":24:17:24:22|Object gs_out is declared but not assigned. Either assign a value or remove the declaration.
+Running optimization stage 1 on edge_detect_top .......
+Running optimization stage 2 on edge_detect_top .......
+@A: CL153 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/edge_detect_top.sv":11:24:11:32|*Unassigned bits of out_rd_en are referenced and tied to 0 -- simulation mismatch possible.
+Running optimization stage 2 on sobel_720s_540s .......
+@N: CL134 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/sobel.sv":43:4:43:12|Found RAM lb1, depth=720, width=8
+@N: CL134 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/sobel.sv":43:4:43:12|Found RAM lb0, depth=720, width=8
+@N: CL134 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/sobel.sv":43:4:43:12|Found RAM lb1, depth=720, width=8
+@N: CL201 :"/home/gel8580/CE387/HW/HW4/edge_detect/sv/sobel.sv":43:4:43:12|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+Running optimization stage 2 on fifo_8s_1024s_11s .......
+Running optimization stage 2 on grayscale .......
+Running optimization stage 2 on fifo_24s_1024s_11s .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/gel8580/CE387/HW/HW4/edge_detect/syn/rev_1/synwork//distcomp/distcomp0/distcomp0.rt.csv
+

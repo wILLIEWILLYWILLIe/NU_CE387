@@ -1,0 +1,13 @@
+@P:  Part : ep4ce115fc23-7
+@P:  Worst Slack : -2.016
+@P:  edge_detect_top|clock - Estimated Frequency : 74.4 MHz
+@P:  edge_detect_top|clock - Requested Frequency : 87.5 MHz
+@P:  edge_detect_top|clock - Estimated Period : 13.438
+@P:  edge_detect_top|clock - Requested Period : 11.422
+@P:  edge_detect_top|clock - Slack : -2.016
+@P: edge_detect_top Part : ep4ce115fc23-7
+@P: edge_detect_top I/O ATOMs : 28
+@P: edge_detect_top Total LUTs : 921 
+@P: edge_detect_top Register bits : 400
+@P: edge_detect_top DSP Blocks : 0 (0 nine-bit DSP elements)
+@P:  CPU Time : 0h:00m:04s

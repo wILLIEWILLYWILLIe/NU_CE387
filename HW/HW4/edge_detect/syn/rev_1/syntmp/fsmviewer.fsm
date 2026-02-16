@@ -1,0 +1,24 @@
+fsm_options -device {state[2:0]}
+
+define_state s0 00 {/home/gel8580/CE387/HW/HW4/edge_detect/sv/sobel.sv} 124 12 124 13
+state_output s0 {state[0]} 1
+
+define_state s1 01 {/home/gel8580/CE387/HW/HW4/edge_detect/sv/sobel.sv} 172 12 172 13
+state_output s1 {state[1]} 1
+
+define_state s2 10 {/home/gel8580/CE387/HW/HW4/edge_detect/sv/sobel.sv} 191 12 191 13
+state_output s2 {state[2]} 1
+
+fsm_options -resetState s0
+
+define_transition s0 s2 {out_full,in_empty,sob_res_c15 = -00}
+define_transition s1 s1 {out_full,in_empty,sob_res_c15 = 1--}
+define_transition s0 s1 {out_full,in_empty,sob_res_c15 = --1}
+define_transition s2 s0 {out_full,in_empty,sob_res_c15 = ---}
+define_transition s1 s0 {out_full,in_empty,sob_res_c15 = 0--}
+define_transition s0 s0 {out_full,in_empty,sob_res_c15 = -10}
+fsm_options -SRSPath {/home/gel8580/CE387/HW/HW4/edge_detect/syn/rev_1/synwork/edge_detect_top_mult.srs}
+fsm_options -SRSTime 1770095275
+fsm_options -FSMPath {sob_inst.state[2:0]}
+fsm_options -view {work.sobel_720s_540s_sob_inst.verilog|i:state[2:0]}
+fsm_options -ID {11434431}

@@ -1,0 +1,85 @@
+# do edge_detect_sim_tb.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 23:07:26 on Feb 02,2026
+# vlog -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 23:07:26 on Feb 02,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 23:07:26 on Feb 02,2026
+# vlog -work work ../sv/grayscale.sv 
+# -- Compiling module grayscale
+# 
+# Top level modules:
+# 	grayscale
+# End time: 23:07:26 on Feb 02,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 23:07:26 on Feb 02,2026
+# vlog -work work ../sv/sobel.sv 
+# -- Compiling module sobel
+# 
+# Top level modules:
+# 	sobel
+# End time: 23:07:26 on Feb 02,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 23:07:26 on Feb 02,2026
+# vlog -work work ../sv/edge_detect_top.sv 
+# -- Compiling module edge_detect_top
+# 
+# Top level modules:
+# 	edge_detect_top
+# End time: 23:07:26 on Feb 02,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 23:07:26 on Feb 02,2026
+# vlog -work work ../sv/edge_detect_tb.sv 
+# -- Compiling module edge_detect_tb
+# ** Warning: ../sv/edge_detect_tb.sv(134): (vlog-2244) Variable 'out_cnt' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# 
+# Top level modules:
+# 	edge_detect_tb
+# End time: 23:07:26 on Feb 02,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim -voptargs="+acc" work.edge_detect_tb 
+# Start time: 23:07:26 on Feb 02,2026
+# Loading /tmp/gel8580@moore.wot.ece.northwestern.edu_dpi_1257074/linux_x86_64_gcc-7.4.0/export_tramp.so
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  ModelSim SE-64 2020.1 Jan 28 2020 Linux 4.18.0-553.92.1.el8_10.x86_64
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.edge_detect_tb(fast)
+# Loading work.edge_detect_top(fast)
+# Loading work.fifo(fast)
+# Loading work.grayscale(fast)
+# Loading work.fifo(fast__1)
+# Loading work.sobel(fast)
+# Simulation Started...
+# Finished writing input data.
+# Finished reading output data. Total Errors: 0
+# Total Clock Cycles: 1555216
+# Simulation Finished.
+# ** Note: $finish    : ../sv/edge_detect_tb.sv(175)
+#    Time: 15552260 ns  Iteration: 1  Instance: /edge_detect_tb
+# End time: 23:07:35 on Feb 02,2026, Elapsed time: 0:00:09
+# Errors: 0, Warnings: 0

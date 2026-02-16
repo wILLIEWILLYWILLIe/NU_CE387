@@ -1,0 +1,13 @@
+#--  Synopsys, Inc.
+#--  Version O-2018.09-SP1
+#--  Project file /home/gel8580/CE387/HW/HW4/edge_detect/syn/edge_detect.prd
+#--  Written on Tue Feb  3 15:35:35 2026
+
+#
+### Watch Implementation type ###
+#
+watch_impl -all
+#
+### Watch Implementation properties ###
+#
+watch_prop -clear

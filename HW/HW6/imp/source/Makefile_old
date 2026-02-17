@@ -1,0 +1,26 @@
+
+# Makefile for HW6 CORDIC
+
+# Paths
+IMP_DIR = ../sv
+REF_CPP = ../../cordic.cpp
+
+# Tools
+CXX = g++
+VLOG = vlog
+VSIM = vsim
+
+# Targets
+all: clean gen_vectors run_sim
+
+gen_vectors:
+	$(CXX) -o cordic_ref $(REF_CPP) -lm
+	./cordic_ref
+
+run_sim:
+	vlib work
+	$(VLOG) $(IMP_DIR)/cordic.sv cordic_tb.sv
+	$(VSIM) -c -do "run -all; quit" cordic_tb
+
+clean:
+	rm -rf work transcript cordic_ref rad.txt sin.txt cos.txt

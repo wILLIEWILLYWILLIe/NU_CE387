@@ -1,0 +1,144 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify (R) Premier
+Build: O-2018.09-SP1
+Install: /vol/synopsys/fpga/O-2018.09-SP1
+OS: Red Hat Enterprise Linux 8.10 (Ootpa)
+Hostname: moore.wot.ece.northwestern.edu
+max virtual memory: unlimited (bytes)
+max user processes: 1028002
+max stack size: 8388608 (bytes)
+
+
+Implementation : rev_1
+
+# Written on Tue Feb 17 16:29:53 2026
+
+##### DESIGN INFO #######################################################
+
+Top View:                "cordic_top"
+Constraint File(s):      (none)
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting             Ending               |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+cordic_top|clock     cordic_top|clock     |     4.982            |     No paths         |     No paths         |     No paths                         
+=====================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:cos_out[0]
+p:cos_out[1]
+p:cos_out[2]
+p:cos_out[3]
+p:cos_out[4]
+p:cos_out[5]
+p:cos_out[6]
+p:cos_out[7]
+p:cos_out[8]
+p:cos_out[9]
+p:cos_out[10]
+p:cos_out[11]
+p:cos_out[12]
+p:cos_out[13]
+p:cos_out[14]
+p:cos_out[15]
+p:full_out
+p:rad_in[0]
+p:rad_in[1]
+p:rad_in[2]
+p:rad_in[3]
+p:rad_in[4]
+p:rad_in[5]
+p:rad_in[6]
+p:rad_in[7]
+p:rad_in[8]
+p:rad_in[9]
+p:rad_in[10]
+p:rad_in[11]
+p:rad_in[12]
+p:rad_in[13]
+p:rad_in[14]
+p:rad_in[15]
+p:rad_in[16]
+p:rad_in[17]
+p:rad_in[18]
+p:rad_in[19]
+p:rad_in[20]
+p:rad_in[21]
+p:rad_in[22]
+p:rad_in[23]
+p:rad_in[24]
+p:rad_in[25]
+p:rad_in[26]
+p:rad_in[27]
+p:rad_in[28]
+p:rad_in[29]
+p:rad_in[30]
+p:rad_in[31]
+p:reset
+p:sin_out[0]
+p:sin_out[1]
+p:sin_out[2]
+p:sin_out[3]
+p:sin_out[4]
+p:sin_out[5]
+p:sin_out[6]
+p:sin_out[7]
+p:sin_out[8]
+p:sin_out[9]
+p:sin_out[10]
+p:sin_out[11]
+p:sin_out[12]
+p:sin_out[13]
+p:sin_out[14]
+p:sin_out[15]
+p:valid_in
+p:valid_out
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

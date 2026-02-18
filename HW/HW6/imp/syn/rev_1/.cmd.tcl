@@ -1,0 +1,1 @@
+set tmp [q_correlate_db_qii -paths_per 1 -qor 1 -sdc_verif -impl_name /home/gel8580/CE387_new/HW/HW6/imp/syn/cordic.prj|rev_1 -impl_result /home/gel8580/CE387_new/HW/HW6/imp/syn/rev_1/cordic.vqm -load_sta -no_gui]

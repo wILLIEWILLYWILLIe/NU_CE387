@@ -1,0 +1,34 @@
+fsm_options -device {state[4:0]}
+
+define_state IDLE 000 {/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv} 106 12 106 15
+state_output IDLE {state[0]} 1
+
+define_state PRE_CALC_1 001 {/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv} 115 12 115 21
+state_output PRE_CALC_1 {state[1]} 1
+
+define_state PRE_CALC_2 010 {/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv} 127 12 127 21
+state_output PRE_CALC_2 {state[2]} 1
+
+define_state CALC 011 {/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv} 147 12 147 15
+state_output CALC {state[3]} 1
+
+define_state DONE 100 {/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv} 86 16 86 29
+state_output DONE {state[4]} 1
+
+fsm_options -resetState IDLE
+
+define_transition CALC DONE {iter[0],iter[1],iter[2],iter[3],valid_in = 1111-}
+define_transition CALC CALC {iter[0],iter[1],iter[2],iter[3],valid_in = 0----}
+define_transition CALC CALC {iter[0],iter[1],iter[2],iter[3],valid_in = -0---}
+define_transition CALC CALC {iter[0],iter[1],iter[2],iter[3],valid_in = --0--}
+define_transition CALC CALC {iter[0],iter[1],iter[2],iter[3],valid_in = ---0-}
+define_transition PRE_CALC_2 CALC {iter[0],iter[1],iter[2],iter[3],valid_in = -----}
+define_transition PRE_CALC_1 PRE_CALC_2 {iter[0],iter[1],iter[2],iter[3],valid_in = -----}
+define_transition IDLE PRE_CALC_1 {iter[0],iter[1],iter[2],iter[3],valid_in = ----1}
+define_transition DONE IDLE {iter[0],iter[1],iter[2],iter[3],valid_in = -----}
+define_transition IDLE IDLE {iter[0],iter[1],iter[2],iter[3],valid_in = ----0}
+fsm_options -SRSPath {/home/gel8580/CE387_new/HW/HW6/imp/syn/rev_1/synwork/cordic_mult.srs}
+fsm_options -SRSTime 1771367392
+fsm_options -FSMPath {cordic_inst.state[4:0]}
+fsm_options -view {work.cordic_cordic_inst.verilog|i:state[4:0]}
+fsm_options -ID {11684681}

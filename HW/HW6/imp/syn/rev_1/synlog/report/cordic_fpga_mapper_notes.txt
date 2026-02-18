@@ -1,0 +1,44 @@
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MT206 |Auto Constrain mode is enabled
+@N: MO231 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv":68:4:68:12|Found counter in view:work.cordic(verilog) instance iter[3:0] 
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[0] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[1] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[2] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[3] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[4] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[5] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[6] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[7] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[8] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[9] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[10] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[11] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[12] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[13] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[14] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[15] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[16] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[17] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[18] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[19] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[20] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[21] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[22] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[23] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[24] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[25] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[26] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[27] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[28] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[29] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[30] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":50:4:50:12|Removing sequential instance input_fifo.dout[31] (in view: work.cordic_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+@N: FA174 |The following device usage report estimates place and route data. Please look at the place and route report for final resource usage.

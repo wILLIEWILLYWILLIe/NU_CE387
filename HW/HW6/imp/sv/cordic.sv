@@ -8,7 +8,8 @@ module cordic (
     
     output logic        valid_out,
     output logic signed [15:0] sin_out,
-    output logic signed [15:0] cos_out
+    output logic signed [15:0] cos_out,
+    output logic        ready // Ready to accept new input
 );
 
     // CORDIC Constants
@@ -16,9 +17,10 @@ module cordic (
     // BITS 14
     // QUANT_VAL (1 << 14)
 
-    typedef enum logic [1:0] {
+    typedef enum logic [2:0] {
         IDLE,
-        PRE_CALC,
+        PRE_CALC_1,
+        PRE_CALC_2,
         CALC,
         DONE
     } state_t;
@@ -106,19 +108,27 @@ module cordic (
                     x_c = CORDIC_1K;
                     y_c = 16'd0;
                     z_c = rad_in;
-                    state_c = PRE_CALC;
+                    state_c = PRE_CALC_1;
                 end
             end
 
-            PRE_CALC: begin
-                // Range Reduction
+            PRE_CALC_1: begin
+                // Range Reduction Step 1: +/- 2PI
                 logic signed [31:0] z_temp;
                 z_temp = z;
 
-                // Simple range reduction (assuming input not too far from PI)
                  if (z_temp > PI)       z_temp = z_temp - TWO_PI;
-                else if (z_temp < -PI) z_temp = z_temp + TWO_PI; // Fixed typo (was TWO_PI, should add)
+                else if (z_temp < -PI) z_temp = z_temp + TWO_PI;
                 
+                z_c = z_temp;
+                state_c = PRE_CALC_2;
+            end
+
+            PRE_CALC_2: begin
+                // Range Reduction Step 2: +/- PI and Coordinate Rotation
+                logic signed [31:0] z_temp;
+                z_temp = z;
+
                 if (z_temp > HALF_PI) begin
                     z_temp = z_temp - PI;
                     x_c = -x;
@@ -170,5 +180,7 @@ module cordic (
             default: state_c = IDLE;
         endcase
     end
+
+    assign ready = (state == IDLE);
 
 endmodule

@@ -1,0 +1,714 @@
+
+
+End Points:
+
+Index     Instance                    Pin              Type     Start Clock            End Clock              Clock Delay     Req Per     Slack      Data path delay     Constraint
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1         cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -1.116     7.122                         
+2         cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -1.110     7.116                         
+3         cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -1.102     7.108                         
+4         cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -1.065     7.071                         
+5         cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -1.056     7.062                         
+6         cordic_inst/z[30]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -1.050     7.056                         
+7         cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -1.049     7.055                         
+8         cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -1.043     7.049                         
+9         cordic_inst/z[29]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.984     6.990                         
+10        cordic_inst/z[28]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.918     6.924                         
+11        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.880     6.886                         
+12        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.863     6.870                         
+13        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.859     6.865                         
+14        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.857     6.864                         
+15        cordic_inst/z[27]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.852     6.858                         
+16        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.851     6.857                         
+17        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.849     6.855                         
+18        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.849     6.855                         
+19        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.843     6.849                         
+20        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.843     6.849                         
+21        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.828     6.834                         
+22        cordic_inst/z[26]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.786     6.792                         
+23        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.775     6.781                         
+24        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.769     6.775                         
+25        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.761     6.767                         
+26        cordic_inst/z[25]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.720     6.726                         
+27        cordic_inst/z[24]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.654     6.660                         
+28        cordic_inst/z[23]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.588     6.594                         
+29        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.577     6.583                         
+30        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.568     6.574                         
+31        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.562     6.568                         
+32        cordic_inst/z[22]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.522     6.528                         
+33        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.487     6.493                         
+34        cordic_inst/z[21]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.456     6.462                         
+35        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.394     6.401                         
+36        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.390     6.396                         
+37        cordic_inst/z[20]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.390     6.396                         
+38        cordic_inst/x[13]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.385     6.392                         
+39        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.384     6.390                         
+40        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.376     6.382                         
+41        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.361     6.367                         
+42        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.355     6.361                         
+43        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.347     6.353                         
+44        cordic_inst/z[19]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.324     6.330                         
+45        cordic_inst/x[13]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.296     6.303                         
+46        cordic_inst/z[18]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.258     6.264                         
+47        cordic_inst/z[17]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.192     6.198                         
+48        cordic_inst/x[10]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.187     6.194                         
+49        cordic_inst/z[16]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.126     6.132                         
+50        cordic_inst/x[9]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.121     6.128                         
+51        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.080     6.086                         
+52        cordic_inst/z[15]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       -0.060     6.066                         
+53        cordic_inst/z[14]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.006      6.000                         
+54        cordic_inst/x[7]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.011      5.996                         
+55        cordic_inst/z[13]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.072      5.934                         
+56        cordic_inst/x[6]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.077      5.930                         
+57        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.135      5.872                         
+58        cordic_inst/z[12]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.138      5.868                         
+59        cordic_inst/z[11]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.204      5.802                         
+60        cordic_inst/x[4]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.209      5.798                         
+61        cordic_inst/z[10]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.270      5.736                         
+62        cordic_inst/x[3]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.275      5.732                         
+63        cordic_inst/x[15]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.289      5.717                         
+64        cordic_inst/y[15]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.289      5.717                         
+65        cordic_inst/x[13]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.318      5.689                         
+66        cordic_inst/x[13]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.319      5.687                         
+67        cordic_inst/z[9]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.336      5.670                         
+68        cordic_inst/x[2]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.341      5.666                         
+69        cordic_inst/x[14]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.355      5.651                         
+70        cordic_inst/y[14]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.355      5.651                         
+71        cordic_inst/x[13]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.376      5.630                         
+72        cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.378      5.628                         
+73        cordic_inst/z[8]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.402      5.604                         
+74        cordic_inst/y[13]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.421      5.585                         
+75        cordic_inst/x[13]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.427      5.579                         
+76        cordic_inst/z[7]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.468      5.538                         
+77        cordic_inst/x[13]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.470      5.536                         
+78        cordic_inst/x[13]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.476      5.530                         
+79        cordic_inst/x[12]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.487      5.519                         
+80        cordic_inst/y[12]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.487      5.519                         
+81        cordic_inst/x[13]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.493      5.513                         
+82        cordic_inst/x[13]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.517      5.489                         
+83        cordic_inst/x[13]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.526      5.480                         
+84        cordic_inst/z[6]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.534      5.472                         
+85        cordic_inst/x[13]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.552      5.454                         
+86        cordic_inst/x[11]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.553      5.453                         
+87        cordic_inst/y[11]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.553      5.453                         
+88        cordic_inst/z[5]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.600      5.406                         
+89        cordic_inst/x[13]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.618      5.388                         
+90        cordic_inst/y[10]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.619      5.387                         
+91        cordic_inst/z[4]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.666      5.340                         
+92        cordic_inst/y[9]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.685      5.321                         
+93        cordic_inst/x[0]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.700      5.306                         
+94        cordic_inst/z[3]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.732      5.274                         
+95        cordic_inst/x[13]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.737      5.270                         
+96        cordic_inst/x[13]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.743      5.264                         
+97        cordic_inst/x[13]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.747      5.259                         
+98        cordic_inst/x[8]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.751      5.255                         
+99        cordic_inst/y[8]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.751      5.255                         
+100       cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.772      5.234                         
+101       cordic_inst/z[2]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.798      5.208                         
+102       cordic_inst/x[13]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.800      5.206                         
+103       cordic_inst/y[7]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.817      5.189                         
+104       cordic_inst/x[13]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.827      5.179                         
+105       cordic_inst/z[1]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.864      5.142                         
+106       cordic_inst/y[6]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.883      5.123                         
+107       cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.921      5.085                         
+108       cordic_inst/z[0]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.925      5.081                         
+109       cordic_inst/x[5]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.949      5.057                         
+110       cordic_inst/y[5]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.949      5.057                         
+111       cordic_inst/y[15]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.986      5.020                         
+112       cordic_inst/y[15]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       0.992      5.014                         
+113       cordic_inst/x[13]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.009      4.997                         
+114       cordic_inst/y[4]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.015      4.991                         
+115       cordic_inst/y[15]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.036      4.970                         
+116       cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.072      4.934                         
+117       cordic_inst/y[3]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.081      4.925                         
+118       cordic_inst/y[15]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.087      4.919                         
+119       cordic_inst/x[13]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.118      4.888                         
+120       cordic_inst/y[15]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.130      4.876                         
+121       cordic_inst/y[2]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.147      4.859                         
+122       cordic_inst/y[15]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.151      4.855                         
+123       cordic_inst/y[15]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.153      4.853                         
+124       cordic_inst/z[31]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.183      4.824                         
+125       cordic_inst/y[15]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.186      4.820                         
+126       cordic_inst/y[15]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.192      4.814                         
+127       cordic_inst/x[1]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.213      4.793                         
+128       cordic_inst/y[1]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.213      4.793                         
+129       cordic_inst/y[15]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.227      4.779                         
+130       cordic_inst/y[15]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.278      4.728                         
+131       cordic_inst/y[0]            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.279      4.727                         
+132       cordic_inst/x[11]           ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.332      4.070                         
+133       cordic_inst/x[12]           ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.332      4.070                         
+134       cordic_inst/x[14]           ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.332      4.070                         
+135       cordic_inst/x[15]           ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.332      4.070                         
+136       cordic_inst/x[1]            ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.332      4.070                         
+137       cordic_inst/x[5]            ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.332      4.070                         
+138       cordic_inst/x[8]            ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.332      4.070                         
+139       cordic_inst/y[0]            ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.332      4.070                         
+140       cordic_inst/y[10]           ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.332      4.070                         
+141       cordic_inst/y[11]           ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.332      4.070                         
+142       cordic_inst/y[12]           ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.332      4.070                         
+143       cordic_inst/y[13]           ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.332      4.070                         
+144       cordic_inst/y[14]           ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.332      4.070                         
+145       cordic_inst/y[15]           ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.332      4.070                         
+146       cordic_inst/y[1]            ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.332      4.070                         
+147       cordic_inst/y[2]            ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.332      4.070                         
+148       cordic_inst/y[3]            ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.332      4.070                         
+149       cordic_inst/y[4]            ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.332      4.070                         
+150       cordic_inst/y[5]            ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.332      4.070                         
+151       cordic_inst/y[6]            ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.332      4.070                         
+152       cordic_inst/y[7]            ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.332      4.070                         
+153       cordic_inst/y[8]            ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.332      4.070                         
+154       cordic_inst/y[9]            ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.332      4.070                         
+155       cordic_inst/y[15]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.407      4.599                         
+156       cordic_inst/y[15]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.411      4.595                         
+157       cordic_inst/y[15]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.417      4.589                         
+158       cordic_inst/y[15]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.487      4.519                         
+159       cordic_inst/y[15]           d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.684      4.322                         
+160       cordic_inst/z[0]            asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+161       cordic_inst/z[10]           asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+162       cordic_inst/z[11]           asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+163       cordic_inst/z[12]           asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+164       cordic_inst/z[13]           asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+165       cordic_inst/z[14]           asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+166       cordic_inst/z[15]           asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+167       cordic_inst/z[16]           asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+168       cordic_inst/z[17]           asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+169       cordic_inst/z[18]           asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+170       cordic_inst/z[19]           asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+171       cordic_inst/z[1]            asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+172       cordic_inst/z[20]           asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+173       cordic_inst/z[21]           asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+174       cordic_inst/z[22]           asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+175       cordic_inst/z[23]           asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+176       cordic_inst/z[24]           asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+177       cordic_inst/z[25]           asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+178       cordic_inst/z[26]           asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+179       cordic_inst/z[27]           asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+180       cordic_inst/z[28]           asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+181       cordic_inst/z[29]           asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+182       cordic_inst/z[2]            asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+183       cordic_inst/z[30]           asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+184       cordic_inst/z[31]           asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+185       cordic_inst/z[3]            asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+186       cordic_inst/z[4]            asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+187       cordic_inst/z[5]            asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+188       cordic_inst/z[6]            asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+189       cordic_inst/z[7]            asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+190       cordic_inst/z[8]            asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+191       cordic_inst/z[9]            asdata           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       1.768      0.326                         
+192       input_fifo/empty            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       2.106      3.901                         
+193       input_fifo/empty            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       2.116      3.890                         
+194       input_fifo/empty            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       2.132      3.874                         
+195       input_fifo/empty            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       2.159      3.847                         
+196       input_fifo/empty            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       2.160      3.846                         
+197       input_fifo/empty            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       2.160      3.846                         
+198       input_fifo/empty            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       2.168      3.838                         
+199       input_fifo/empty            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       2.174      3.832                         
+200       input_fifo/empty            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       2.182      3.824                         
+201       input_fifo/empty            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       2.405      3.601                         
+202       input_fifo/empty            d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       2.419      3.587                         
+203       input_fifo/wr_addr[2]       d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       2.892      3.114                         
+204       input_fifo/rd_addr[4]       d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       2.934      3.072                         
+205       input_fifo/rd_addr[3]       d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       2.993      3.014                         
+206       input_fifo/rd_addr[2]       d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.059      2.947                         
+207       input_fifo/rd_addr[1]       d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.125      2.881                         
+208       input_fifo/wr_addr[3]       d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.166      2.840                         
+209       input_fifo/wr_addr[4]       d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.166      2.840                         
+210       cordic_inst/state[3]        d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.190      2.816                         
+211       cordic_inst/iter[0]         d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.204      2.802                         
+212       cordic_inst/iter[2]         d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.211      2.795                         
+213       input_fifo/rd_addr[0]       d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.289      2.717                         
+214       input_fifo/fifo_buf         address_b[3]     reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.442      3.014                         
+215       cordic_inst/iter[1]         d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.478      2.528                         
+216       cordic_inst/iter[3]         d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.485      2.521                         
+217       input_fifo/fifo_buf         address_b[2]     reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.508      2.947                         
+218       input_fifo/fifo_buf         address_b[1]     reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.574      2.881                         
+219       input_fifo/wr_addr[0]       d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.662      2.344                         
+220       input_fifo/fifo_buf         address_b[0]     reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.738      2.717                         
+221       input_fifo/wr_addr[1]       d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.936      2.070                         
+222       cordic_inst/z[0]            sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+223       cordic_inst/z[10]           sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+224       cordic_inst/z[11]           sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+225       cordic_inst/z[12]           sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+226       cordic_inst/z[13]           sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+227       cordic_inst/z[14]           sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+228       cordic_inst/z[15]           sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+229       cordic_inst/z[16]           sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+230       cordic_inst/z[17]           sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+231       cordic_inst/z[18]           sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+232       cordic_inst/z[19]           sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+233       cordic_inst/z[1]            sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+234       cordic_inst/z[20]           sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+235       cordic_inst/z[21]           sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+236       cordic_inst/z[22]           sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+237       cordic_inst/z[23]           sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+238       cordic_inst/z[24]           sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+239       cordic_inst/z[25]           sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+240       cordic_inst/z[26]           sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+241       cordic_inst/z[27]           sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+242       cordic_inst/z[28]           sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+243       cordic_inst/z[29]           sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+244       cordic_inst/z[2]            sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+245       cordic_inst/z[30]           sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+246       cordic_inst/z[31]           sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+247       cordic_inst/z[3]            sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+248       cordic_inst/z[4]            sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+249       cordic_inst/z[5]            sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+250       cordic_inst/z[6]            sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+251       cordic_inst/z[7]            sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+252       cordic_inst/z[8]            sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+253       cordic_inst/z[9]            sload            reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.941      1.453                         
+254       cordic_inst/state[4]        d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       3.973      2.033                         
+255       cordic_inst/state[0]        d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.051      1.956                         
+256       input_fifo/fifo_buf         wren_a           reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.074      1.893                         
+257       cordic_inst/x[11]           sclr             reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.888      0.596                         
+258       cordic_inst/x[12]           sclr             reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.888      0.596                         
+259       cordic_inst/x[14]           sclr             reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.888      0.596                         
+260       cordic_inst/x[15]           sclr             reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.888      0.596                         
+261       cordic_inst/x[1]            sclr             reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.888      0.596                         
+262       cordic_inst/x[5]            sclr             reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.888      0.596                         
+263       cordic_inst/x[8]            sclr             reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.888      0.596                         
+264       cordic_inst/y[0]            sclr             reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.888      0.596                         
+265       cordic_inst/y[10]           sclr             reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.888      0.596                         
+266       cordic_inst/y[11]           sclr             reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.888      0.596                         
+267       cordic_inst/y[12]           sclr             reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.888      0.596                         
+268       cordic_inst/y[13]           sclr             reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.888      0.596                         
+269       cordic_inst/y[14]           sclr             reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.888      0.596                         
+270       cordic_inst/y[15]           sclr             reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.888      0.596                         
+271       cordic_inst/y[1]            sclr             reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.888      0.596                         
+272       cordic_inst/y[2]            sclr             reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.888      0.596                         
+273       cordic_inst/y[3]            sclr             reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.888      0.596                         
+274       cordic_inst/y[4]            sclr             reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.888      0.596                         
+275       cordic_inst/y[5]            sclr             reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.888      0.596                         
+276       cordic_inst/y[6]            sclr             reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.888      0.596                         
+277       cordic_inst/y[7]            sclr             reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.888      0.596                         
+278       cordic_inst/y[8]            sclr             reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.888      0.596                         
+279       cordic_inst/y[9]            sclr             reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.888      0.596                         
+280       cordic_inst/cos_out[0]      ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+281       cordic_inst/cos_out[10]     ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+282       cordic_inst/cos_out[11]     ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+283       cordic_inst/cos_out[12]     ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+284       cordic_inst/cos_out[13]     ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+285       cordic_inst/cos_out[14]     ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+286       cordic_inst/cos_out[15]     ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+287       cordic_inst/cos_out[1]      ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+288       cordic_inst/cos_out[2]      ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+289       cordic_inst/cos_out[3]      ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+290       cordic_inst/cos_out[4]      ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+291       cordic_inst/cos_out[5]      ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+292       cordic_inst/cos_out[6]      ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+293       cordic_inst/cos_out[7]      ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+294       cordic_inst/cos_out[8]      ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+295       cordic_inst/cos_out[9]      ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+296       cordic_inst/sin_out[0]      ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+297       cordic_inst/sin_out[10]     ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+298       cordic_inst/sin_out[11]     ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+299       cordic_inst/sin_out[12]     ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+300       cordic_inst/sin_out[13]     ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+301       cordic_inst/sin_out[14]     ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+302       cordic_inst/sin_out[15]     ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+303       cordic_inst/sin_out[1]      ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+304       cordic_inst/sin_out[2]      ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+305       cordic_inst/sin_out[3]      ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+306       cordic_inst/sin_out[4]      ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+307       cordic_inst/sin_out[5]      ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+308       cordic_inst/sin_out[6]      ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+309       cordic_inst/sin_out[7]      ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+310       cordic_inst/sin_out[8]      ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+311       cordic_inst/sin_out[9]      ena              reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.952      0.450                         
+312       cordic_inst/state[1]        d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       4.968      1.038                         
+313       cordic_inst/cos_out[15]     d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.411      0.596                         
+314       cordic_inst/sin_out[15]     d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.411      0.596                         
+315       cordic_inst/valid_out       d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.556      0.450                         
+316       cordic_inst/cos_out[10]     d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.621      0.385                         
+317       cordic_inst/cos_out[13]     d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.621      0.385                         
+318       cordic_inst/cos_out[14]     d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.621      0.385                         
+319       cordic_inst/cos_out[3]      d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.621      0.385                         
+320       cordic_inst/cos_out[4]      d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.621      0.385                         
+321       cordic_inst/cos_out[6]      d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.621      0.385                         
+322       cordic_inst/cos_out[7]      d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.621      0.385                         
+323       cordic_inst/cos_out[9]      d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.621      0.385                         
+324       cordic_inst/sin_out[14]     d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.621      0.385                         
+325       cordic_inst/cos_out[11]     d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.636      0.370                         
+326       cordic_inst/cos_out[12]     d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.636      0.370                         
+327       cordic_inst/cos_out[2]      d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.636      0.370                         
+328       cordic_inst/cos_out[5]      d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.636      0.370                         
+329       cordic_inst/cos_out[8]      d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.636      0.370                         
+330       cordic_inst/sin_out[10]     d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.636      0.370                         
+331       cordic_inst/sin_out[11]     d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.636      0.370                         
+332       cordic_inst/sin_out[12]     d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.636      0.370                         
+333       cordic_inst/sin_out[13]     d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.636      0.370                         
+334       cordic_inst/sin_out[3]      d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.636      0.370                         
+335       cordic_inst/sin_out[4]      d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.636      0.370                         
+336       cordic_inst/sin_out[5]      d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.636      0.370                         
+337       cordic_inst/sin_out[6]      d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.636      0.370                         
+338       cordic_inst/sin_out[7]      d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.636      0.370                         
+339       cordic_inst/sin_out[8]      d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.636      0.370                         
+340       cordic_inst/sin_out[9]      d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.636      0.370                         
+341       cordic_inst/state[2]        d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.636      0.370                         
+342       cordic_inst/sin_out[2]      d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.651      0.355                         
+343       cordic_inst/cos_out[0]      d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.658      0.348                         
+344       cordic_inst/cos_out[1]      d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.658      0.348                         
+345       cordic_inst/sin_out[1]      d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.658      0.348                         
+346       cordic_inst/sin_out[0]      d                reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       5.666      0.340                         
+347       input_fifo/fifo_buf         address_a[1]     reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       6.068      0.385                         
+348       input_fifo/fifo_buf         address_a[0]     reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       6.083      0.370                         
+349       input_fifo/fifo_buf         address_a[2]     reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       6.083      0.370                         
+350       input_fifo/fifo_buf         address_a[3]     reg      cordic_top|clock:r     cordic_top|clock:r     0.000           6.324       6.098      0.355                         
+===================================================================================================================================================================================
+
+
+Start Points:
+
+Index     Instance                  Pin         Type     Start Clock            Clock Delay     Slack 
+------------------------------------------------------------------------------------------------------
+1         cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           -1.116
+2         cordic_inst/z[4]          q           reg      cordic_top|clock:r     0.000           -1.110
+3         cordic_inst/z[6]          q           reg      cordic_top|clock:r     0.000           -1.102
+4         cordic_inst/z[10]         q           reg      cordic_top|clock:r     0.000           -1.065
+5         cordic_inst/z[9]          q           reg      cordic_top|clock:r     0.000           -1.056
+6         cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           -1.050
+7         cordic_inst/z[20]         q           reg      cordic_top|clock:r     0.000           -1.049
+8         cordic_inst/z[21]         q           reg      cordic_top|clock:r     0.000           -1.043
+9         cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           -0.984
+10        cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           -0.918
+11        cordic_inst/z[15]         q           reg      cordic_top|clock:r     0.000           -0.880
+12        cordic_inst/z[27]         q           reg      cordic_top|clock:r     0.000           -0.863
+13        cordic_inst/z[14]         q           reg      cordic_top|clock:r     0.000           -0.859
+14        cordic_inst/z[26]         q           reg      cordic_top|clock:r     0.000           -0.857
+15        cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           -0.852
+16        cordic_inst/z[12]         q           reg      cordic_top|clock:r     0.000           -0.851
+17        cordic_inst/z[23]         q           reg      cordic_top|clock:r     0.000           -0.849
+18        cordic_inst/z[24]         q           reg      cordic_top|clock:r     0.000           -0.849
+19        cordic_inst/z[22]         q           reg      cordic_top|clock:r     0.000           -0.843
+20        cordic_inst/z[25]         q           reg      cordic_top|clock:r     0.000           -0.843
+21        cordic_inst/z[7]          q           reg      cordic_top|clock:r     0.000           -0.828
+22        cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           -0.786
+23        cordic_inst/z[19]         q           reg      cordic_top|clock:r     0.000           -0.775
+24        cordic_inst/z[18]         q           reg      cordic_top|clock:r     0.000           -0.769
+25        cordic_inst/z[16]         q           reg      cordic_top|clock:r     0.000           -0.761
+26        cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           -0.720
+27        cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           -0.654
+28        cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           -0.588
+29        cordic_inst/z[13]         q           reg      cordic_top|clock:r     0.000           -0.577
+30        cordic_inst/z[8]          q           reg      cordic_top|clock:r     0.000           -0.568
+31        cordic_inst/z[11]         q           reg      cordic_top|clock:r     0.000           -0.562
+32        cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           -0.522
+33        cordic_inst/z[17]         q           reg      cordic_top|clock:r     0.000           -0.487
+34        cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           -0.456
+35        cordic_inst/z[31]         q           reg      cordic_top|clock:r     0.000           -0.394
+36        cordic_inst/z[30]         q           reg      cordic_top|clock:r     0.000           -0.390
+37        cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           -0.390
+38        cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           -0.385
+39        cordic_inst/z[29]         q           reg      cordic_top|clock:r     0.000           -0.384
+40        cordic_inst/z[28]         q           reg      cordic_top|clock:r     0.000           -0.376
+41        cordic_inst/z[1]          q           reg      cordic_top|clock:r     0.000           -0.361
+42        cordic_inst/z[0]          q           reg      cordic_top|clock:r     0.000           -0.355
+43        cordic_inst/z[2]          q           reg      cordic_top|clock:r     0.000           -0.347
+44        cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           -0.324
+45        cordic_inst/iter[0]       q           reg      cordic_top|clock:r     0.000           -0.296
+46        cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           -0.258
+47        cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           -0.192
+48        cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           -0.187
+49        cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           -0.126
+50        cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           -0.121
+51        cordic_inst/z[3]          q           reg      cordic_top|clock:r     0.000           -0.080
+52        cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           -0.060
+53        cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           0.006 
+54        cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           0.011 
+55        cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           0.072 
+56        cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           0.077 
+57        cordic_inst/state[2]      q           reg      cordic_top|clock:r     0.000           0.135 
+58        cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           0.138 
+59        cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           0.204 
+60        cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           0.209 
+61        cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           0.270 
+62        cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           0.275 
+63        cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           0.289 
+64        cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           0.289 
+65        cordic_inst/y[1]          q           reg      cordic_top|clock:r     0.000           0.318 
+66        cordic_inst/y[0]          q           reg      cordic_top|clock:r     0.000           0.319 
+67        cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           0.336 
+68        cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           0.341 
+69        cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           0.355 
+70        cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           0.355 
+71        cordic_inst/y[2]          q           reg      cordic_top|clock:r     0.000           0.376 
+72        cordic_inst/state[1]      q           reg      cordic_top|clock:r     0.000           0.378 
+73        cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           0.402 
+74        cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           0.421 
+75        cordic_inst/y[3]          q           reg      cordic_top|clock:r     0.000           0.427 
+76        cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           0.468 
+77        cordic_inst/y[7]          q           reg      cordic_top|clock:r     0.000           0.470 
+78        cordic_inst/y[8]          q           reg      cordic_top|clock:r     0.000           0.476 
+79        cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           0.487 
+80        cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           0.487 
+81        cordic_inst/y[4]          q           reg      cordic_top|clock:r     0.000           0.493 
+82        cordic_inst/y[14]         q           reg      cordic_top|clock:r     0.000           0.517 
+83        cordic_inst/y[13]         q           reg      cordic_top|clock:r     0.000           0.526 
+84        cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           0.534 
+85        cordic_inst/y[5]          q           reg      cordic_top|clock:r     0.000           0.552 
+86        cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           0.553 
+87        cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           0.553 
+88        cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           0.600 
+89        cordic_inst/y[6]          q           reg      cordic_top|clock:r     0.000           0.618 
+90        cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           0.619 
+91        cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           0.666 
+92        cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           0.685 
+93        cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           0.700 
+94        cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           0.732 
+95        cordic_inst/y[11]         q           reg      cordic_top|clock:r     0.000           0.737 
+96        cordic_inst/y[12]         q           reg      cordic_top|clock:r     0.000           0.743 
+97        cordic_inst/y[9]          q           reg      cordic_top|clock:r     0.000           0.747 
+98        cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           0.751 
+99        cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           0.751 
+100       cordic_inst/state[3]      q           reg      cordic_top|clock:r     0.000           0.772 
+101       cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           0.798 
+102       cordic_inst/iter[3]       q           reg      cordic_top|clock:r     0.000           0.800 
+103       cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           0.817 
+104       cordic_inst/y[10]         q           reg      cordic_top|clock:r     0.000           0.827 
+105       cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           0.864 
+106       cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           0.883 
+107       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           0.921 
+108       cordic_inst/z[5]          q           reg      cordic_top|clock:r     0.000           0.925 
+109       cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           0.949 
+110       cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           0.949 
+111       cordic_inst/x[0]          q           reg      cordic_top|clock:r     0.000           0.986 
+112       cordic_inst/x[1]          q           reg      cordic_top|clock:r     0.000           0.992 
+113       cordic_inst/y[15]         q           reg      cordic_top|clock:r     0.000           1.009 
+114       cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           1.015 
+115       cordic_inst/x[2]          q           reg      cordic_top|clock:r     0.000           1.036 
+116       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           1.072 
+117       cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           1.081 
+118       cordic_inst/x[3]          q           reg      cordic_top|clock:r     0.000           1.087 
+119       cordic_inst/iter[2]       q           reg      cordic_top|clock:r     0.000           1.118 
+120       cordic_inst/x[7]          q           reg      cordic_top|clock:r     0.000           1.130 
+121       cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           1.147 
+122       cordic_inst/x[8]          q           reg      cordic_top|clock:r     0.000           1.151 
+123       cordic_inst/x[4]          q           reg      cordic_top|clock:r     0.000           1.153 
+124       input_fifo/empty          q           reg      cordic_top|clock:r     0.000           1.183 
+125       cordic_inst/x[13]         q           reg      cordic_top|clock:r     0.000           1.186 
+126       cordic_inst/x[14]         q           reg      cordic_top|clock:r     0.000           1.192 
+127       cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           1.213 
+128       cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           1.213 
+129       cordic_inst/x[5]          q           reg      cordic_top|clock:r     0.000           1.227 
+130       cordic_inst/x[6]          q           reg      cordic_top|clock:r     0.000           1.278 
+131       cordic_inst/iter[1]       q           reg      cordic_top|clock:r     0.000           1.279 
+132       cordic_inst/z[8]          q           reg      cordic_top|clock:r     0.000           1.332 
+133       cordic_inst/z[8]          q           reg      cordic_top|clock:r     0.000           1.332 
+134       cordic_inst/z[8]          q           reg      cordic_top|clock:r     0.000           1.332 
+135       cordic_inst/z[8]          q           reg      cordic_top|clock:r     0.000           1.332 
+136       cordic_inst/z[8]          q           reg      cordic_top|clock:r     0.000           1.332 
+137       cordic_inst/z[8]          q           reg      cordic_top|clock:r     0.000           1.332 
+138       cordic_inst/z[8]          q           reg      cordic_top|clock:r     0.000           1.332 
+139       cordic_inst/z[8]          q           reg      cordic_top|clock:r     0.000           1.332 
+140       cordic_inst/z[8]          q           reg      cordic_top|clock:r     0.000           1.332 
+141       cordic_inst/z[8]          q           reg      cordic_top|clock:r     0.000           1.332 
+142       cordic_inst/z[8]          q           reg      cordic_top|clock:r     0.000           1.332 
+143       cordic_inst/z[8]          q           reg      cordic_top|clock:r     0.000           1.332 
+144       cordic_inst/z[8]          q           reg      cordic_top|clock:r     0.000           1.332 
+145       cordic_inst/z[8]          q           reg      cordic_top|clock:r     0.000           1.332 
+146       cordic_inst/z[8]          q           reg      cordic_top|clock:r     0.000           1.332 
+147       cordic_inst/z[8]          q           reg      cordic_top|clock:r     0.000           1.332 
+148       cordic_inst/z[8]          q           reg      cordic_top|clock:r     0.000           1.332 
+149       cordic_inst/z[8]          q           reg      cordic_top|clock:r     0.000           1.332 
+150       cordic_inst/z[8]          q           reg      cordic_top|clock:r     0.000           1.332 
+151       cordic_inst/z[8]          q           reg      cordic_top|clock:r     0.000           1.332 
+152       cordic_inst/z[8]          q           reg      cordic_top|clock:r     0.000           1.332 
+153       cordic_inst/z[8]          q           reg      cordic_top|clock:r     0.000           1.332 
+154       cordic_inst/z[8]          q           reg      cordic_top|clock:r     0.000           1.332 
+155       cordic_inst/x[9]          q           reg      cordic_top|clock:r     0.000           1.407 
+156       cordic_inst/x[11]         q           reg      cordic_top|clock:r     0.000           1.411 
+157       cordic_inst/x[12]         q           reg      cordic_top|clock:r     0.000           1.417 
+158       cordic_inst/x[10]         q           reg      cordic_top|clock:r     0.000           1.487 
+159       cordic_inst/x[15]         q           reg      cordic_top|clock:r     0.000           1.684 
+160       input_fifo/fifo_buf       q_b[0]      reg      cordic_top|clock:r     0.000           1.768 
+161       input_fifo/fifo_buf       q_b[10]     reg      cordic_top|clock:r     0.000           1.768 
+162       input_fifo/fifo_buf       q_b[11]     reg      cordic_top|clock:r     0.000           1.768 
+163       input_fifo/fifo_buf       q_b[12]     reg      cordic_top|clock:r     0.000           1.768 
+164       input_fifo/fifo_buf       q_b[13]     reg      cordic_top|clock:r     0.000           1.768 
+165       input_fifo/fifo_buf       q_b[14]     reg      cordic_top|clock:r     0.000           1.768 
+166       input_fifo/fifo_buf       q_b[15]     reg      cordic_top|clock:r     0.000           1.768 
+167       input_fifo/fifo_buf       q_b[16]     reg      cordic_top|clock:r     0.000           1.768 
+168       input_fifo/fifo_buf       q_b[17]     reg      cordic_top|clock:r     0.000           1.768 
+169       input_fifo/fifo_buf       q_b[18]     reg      cordic_top|clock:r     0.000           1.768 
+170       input_fifo/fifo_buf       q_b[19]     reg      cordic_top|clock:r     0.000           1.768 
+171       input_fifo/fifo_buf       q_b[1]      reg      cordic_top|clock:r     0.000           1.768 
+172       input_fifo/fifo_buf       q_b[20]     reg      cordic_top|clock:r     0.000           1.768 
+173       input_fifo/fifo_buf       q_b[21]     reg      cordic_top|clock:r     0.000           1.768 
+174       input_fifo/fifo_buf       q_b[22]     reg      cordic_top|clock:r     0.000           1.768 
+175       input_fifo/fifo_buf       q_b[23]     reg      cordic_top|clock:r     0.000           1.768 
+176       input_fifo/fifo_buf       q_b[24]     reg      cordic_top|clock:r     0.000           1.768 
+177       input_fifo/fifo_buf       q_b[25]     reg      cordic_top|clock:r     0.000           1.768 
+178       input_fifo/fifo_buf       q_b[26]     reg      cordic_top|clock:r     0.000           1.768 
+179       input_fifo/fifo_buf       q_b[27]     reg      cordic_top|clock:r     0.000           1.768 
+180       input_fifo/fifo_buf       q_b[28]     reg      cordic_top|clock:r     0.000           1.768 
+181       input_fifo/fifo_buf       q_b[29]     reg      cordic_top|clock:r     0.000           1.768 
+182       input_fifo/fifo_buf       q_b[2]      reg      cordic_top|clock:r     0.000           1.768 
+183       input_fifo/fifo_buf       q_b[30]     reg      cordic_top|clock:r     0.000           1.768 
+184       input_fifo/fifo_buf       q_b[31]     reg      cordic_top|clock:r     0.000           1.768 
+185       input_fifo/fifo_buf       q_b[3]      reg      cordic_top|clock:r     0.000           1.768 
+186       input_fifo/fifo_buf       q_b[4]      reg      cordic_top|clock:r     0.000           1.768 
+187       input_fifo/fifo_buf       q_b[5]      reg      cordic_top|clock:r     0.000           1.768 
+188       input_fifo/fifo_buf       q_b[6]      reg      cordic_top|clock:r     0.000           1.768 
+189       input_fifo/fifo_buf       q_b[7]      reg      cordic_top|clock:r     0.000           1.768 
+190       input_fifo/fifo_buf       q_b[8]      reg      cordic_top|clock:r     0.000           1.768 
+191       input_fifo/fifo_buf       q_b[9]      reg      cordic_top|clock:r     0.000           1.768 
+192       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           2.106 
+193       input_fifo/wr_addr[1]     q           reg      cordic_top|clock:r     0.000           2.116 
+194       input_fifo/wr_addr[3]     q           reg      cordic_top|clock:r     0.000           2.132 
+195       input_fifo/wr_addr[4]     q           reg      cordic_top|clock:r     0.000           2.159 
+196       input_fifo/rd_addr[3]     q           reg      cordic_top|clock:r     0.000           2.160 
+197       input_fifo/rd_addr[4]     q           reg      cordic_top|clock:r     0.000           2.160 
+198       input_fifo/rd_addr[2]     q           reg      cordic_top|clock:r     0.000           2.168 
+199       input_fifo/rd_addr[1]     q           reg      cordic_top|clock:r     0.000           2.174 
+200       input_fifo/rd_addr[0]     q           reg      cordic_top|clock:r     0.000           2.182 
+201       input_fifo/wr_addr[2]     q           reg      cordic_top|clock:r     0.000           2.405 
+202       input_fifo/wr_addr[0]     q           reg      cordic_top|clock:r     0.000           2.419 
+203       input_fifo/wr_addr[3]     q           reg      cordic_top|clock:r     0.000           2.892 
+204       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           2.934 
+205       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           2.993 
+206       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.059 
+207       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.125 
+208       input_fifo/wr_addr[3]     q           reg      cordic_top|clock:r     0.000           3.166 
+209       input_fifo/wr_addr[3]     q           reg      cordic_top|clock:r     0.000           3.166 
+210       cordic_inst/iter[3]       q           reg      cordic_top|clock:r     0.000           3.190 
+211       cordic_inst/iter[3]       q           reg      cordic_top|clock:r     0.000           3.204 
+212       cordic_inst/iter[3]       q           reg      cordic_top|clock:r     0.000           3.211 
+213       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.289 
+214       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.442 
+215       cordic_inst/iter[3]       q           reg      cordic_top|clock:r     0.000           3.478 
+216       cordic_inst/iter[3]       q           reg      cordic_top|clock:r     0.000           3.485 
+217       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.508 
+218       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.574 
+219       input_fifo/wr_addr[3]     q           reg      cordic_top|clock:r     0.000           3.662 
+220       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.738 
+221       input_fifo/wr_addr[3]     q           reg      cordic_top|clock:r     0.000           3.936 
+222       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+223       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+224       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+225       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+226       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+227       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+228       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+229       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+230       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+231       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+232       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+233       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+234       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+235       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+236       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+237       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+238       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+239       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+240       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+241       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+242       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+243       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+244       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+245       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+246       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+247       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+248       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+249       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+250       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+251       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+252       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+253       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           3.941 
+254       cordic_inst/iter[3]       q           reg      cordic_top|clock:r     0.000           3.973 
+255       cordic_inst/state[3]      q           reg      cordic_top|clock:r     0.000           4.051 
+256       input_fifo/wr_addr[3]     q           reg      cordic_top|clock:r     0.000           4.074 
+257       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           4.888 
+258       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           4.888 
+259       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           4.888 
+260       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           4.888 
+261       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           4.888 
+262       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           4.888 
+263       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           4.888 
+264       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           4.888 
+265       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           4.888 
+266       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           4.888 
+267       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           4.888 
+268       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           4.888 
+269       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           4.888 
+270       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           4.888 
+271       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           4.888 
+272       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           4.888 
+273       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           4.888 
+274       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           4.888 
+275       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           4.888 
+276       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           4.888 
+277       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           4.888 
+278       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           4.888 
+279       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           4.888 
+280       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+281       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+282       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+283       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+284       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+285       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+286       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+287       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+288       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+289       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+290       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+291       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+292       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+293       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+294       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+295       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+296       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+297       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+298       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+299       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+300       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+301       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+302       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+303       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+304       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+305       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+306       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+307       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+308       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+309       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+310       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+311       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           4.952 
+312       cordic_inst/state[0]      q           reg      cordic_top|clock:r     0.000           4.968 
+313       cordic_inst/x[15]         q           reg      cordic_top|clock:r     0.000           5.411 
+314       cordic_inst/y[15]         q           reg      cordic_top|clock:r     0.000           5.411 
+315       cordic_inst/state[4]      q           reg      cordic_top|clock:r     0.000           5.556 
+316       cordic_inst/x[10]         q           reg      cordic_top|clock:r     0.000           5.621 
+317       cordic_inst/x[13]         q           reg      cordic_top|clock:r     0.000           5.621 
+318       cordic_inst/x[14]         q           reg      cordic_top|clock:r     0.000           5.621 
+319       cordic_inst/x[3]          q           reg      cordic_top|clock:r     0.000           5.621 
+320       cordic_inst/x[4]          q           reg      cordic_top|clock:r     0.000           5.621 
+321       cordic_inst/x[6]          q           reg      cordic_top|clock:r     0.000           5.621 
+322       cordic_inst/x[7]          q           reg      cordic_top|clock:r     0.000           5.621 
+323       cordic_inst/x[9]          q           reg      cordic_top|clock:r     0.000           5.621 
+324       cordic_inst/y[14]         q           reg      cordic_top|clock:r     0.000           5.621 
+325       cordic_inst/x[11]         q           reg      cordic_top|clock:r     0.000           5.636 
+326       cordic_inst/x[12]         q           reg      cordic_top|clock:r     0.000           5.636 
+327       cordic_inst/x[2]          q           reg      cordic_top|clock:r     0.000           5.636 
+328       cordic_inst/x[5]          q           reg      cordic_top|clock:r     0.000           5.636 
+329       cordic_inst/x[8]          q           reg      cordic_top|clock:r     0.000           5.636 
+330       cordic_inst/y[10]         q           reg      cordic_top|clock:r     0.000           5.636 
+331       cordic_inst/y[11]         q           reg      cordic_top|clock:r     0.000           5.636 
+332       cordic_inst/y[12]         q           reg      cordic_top|clock:r     0.000           5.636 
+333       cordic_inst/y[13]         q           reg      cordic_top|clock:r     0.000           5.636 
+334       cordic_inst/y[3]          q           reg      cordic_top|clock:r     0.000           5.636 
+335       cordic_inst/y[4]          q           reg      cordic_top|clock:r     0.000           5.636 
+336       cordic_inst/y[5]          q           reg      cordic_top|clock:r     0.000           5.636 
+337       cordic_inst/y[6]          q           reg      cordic_top|clock:r     0.000           5.636 
+338       cordic_inst/y[7]          q           reg      cordic_top|clock:r     0.000           5.636 
+339       cordic_inst/y[8]          q           reg      cordic_top|clock:r     0.000           5.636 
+340       cordic_inst/y[9]          q           reg      cordic_top|clock:r     0.000           5.636 
+341       cordic_inst/state[1]      q           reg      cordic_top|clock:r     0.000           5.636 
+342       cordic_inst/y[2]          q           reg      cordic_top|clock:r     0.000           5.651 
+343       cordic_inst/x[0]          q           reg      cordic_top|clock:r     0.000           5.658 
+344       cordic_inst/x[1]          q           reg      cordic_top|clock:r     0.000           5.658 
+345       cordic_inst/y[1]          q           reg      cordic_top|clock:r     0.000           5.658 
+346       cordic_inst/y[0]          q           reg      cordic_top|clock:r     0.000           5.666 
+347       input_fifo/wr_addr[1]     q           reg      cordic_top|clock:r     0.000           6.068 
+348       input_fifo/wr_addr[0]     q           reg      cordic_top|clock:r     0.000           6.083 
+349       input_fifo/wr_addr[2]     q           reg      cordic_top|clock:r     0.000           6.083 
+350       input_fifo/wr_addr[3]     q           reg      cordic_top|clock:r     0.000           6.098 
+======================================================================================================

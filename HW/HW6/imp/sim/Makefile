@@ -19,7 +19,7 @@ gen_vectors:
 	cd $(SOURCE_DIR) && ./cordic_ref
 
 run_uvm:
-	vsim -c -do run.do
+	vsim -c -do cordic_sim.do
 
 clean:
 	rm -rf work transcript $(SOURCE_DIR)/cordic_ref $(SOURCE_DIR)/rad.txt $(SOURCE_DIR)/sin.txt $(SOURCE_DIR)/cos.txt

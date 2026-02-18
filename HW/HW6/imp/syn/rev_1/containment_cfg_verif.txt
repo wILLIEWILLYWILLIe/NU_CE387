@@ -1,0 +1,2 @@
+cordic_top.cordic_inst work cordic 0 1
+cordic_top.input_fifo work fifo 0 1

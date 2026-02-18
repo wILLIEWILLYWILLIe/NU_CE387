@@ -1,0 +1,904 @@
+# Tue Feb 17 16:39:29 2026
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify (R) Premier
+Build: O-2018.09-SP1
+Install: /vol/synopsys/fpga/O-2018.09-SP1
+OS: Red Hat Enterprise Linux 8.10 (Ootpa)
+Hostname: moore.wot.ece.northwestern.edu
+max virtual memory: unlimited (bytes)
+max user processes: 1028002
+max stack size: 8388608 (bytes)
+
+
+Implementation : rev_1
+Synopsys Intel FPGA Technology Mapper, Version maprc, Build 4745R, Built Nov 27 2018 21:14:52
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+@W: FA406 |Environment variable QUARTUS_ROOTDIR not set. Cannot determine PAR version.
+Adding property syn_ta_report_clock_domain_crossing, value 0 to view:work.cordic_top(verilog)
+Adding property syn_ta_max_display_worst_paths, value 5 to view:work.cordic_top(verilog)
+@N: MF284 |Setting synthesis effort to medium for the design
+
+Start Timing Analyst (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
+
+@W: MT420 |Found inferred clock cordic_top|clock with period 6.32ns. Please declare a user-defined clock on port clock.
+@N: MT535 |Writing timing correlation to file /home/gel8580/CE387_new/HW/HW6/imp/syn/rev_1/cordic_ctd.txt 
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Tue Feb 17 16:39:29 2026
+#
+
+
+Top view:               cordic_top
+Requested Frequency:    158.1 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -1.116
+
+                     Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock       Frequency     Frequency     Period        Period        Slack      Type         Group                
+--------------------------------------------------------------------------------------------------------------------------
+cordic_top|clock     158.1 MHz     134.4 MHz     6.324         7.440         -1.116     inferred     Autoconstr_clkgroup_0
+==========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                              |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------------------------
+Starting          Ending            |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------------------------
+cordic_top|clock  cordic_top|clock  |  6.324       -1.116  |  No paths    -      |  No paths    -      |  No paths    -    
+===========================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: cordic_top|clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                      Starting                                          Arrival           
+Instance              Reference            Type       Pin     Net       Time        Slack 
+                      Clock                                                               
+------------------------------------------------------------------------------------------
+cordic_inst.z[5]      cordic_top|clock     dffeas     q       z[5]      0.845       -1.116
+cordic_inst.z[4]      cordic_top|clock     dffeas     q       z[4]      0.845       -1.110
+cordic_inst.z[6]      cordic_top|clock     dffeas     q       z[6]      0.845       -1.102
+cordic_inst.z[10]     cordic_top|clock     dffeas     q       z[10]     0.845       -1.065
+cordic_inst.z[9]      cordic_top|clock     dffeas     q       z[9]      0.845       -1.056
+cordic_inst.z[20]     cordic_top|clock     dffeas     q       z[20]     0.845       -1.049
+cordic_inst.z[21]     cordic_top|clock     dffeas     q       z[21]     0.845       -1.043
+cordic_inst.z[15]     cordic_top|clock     dffeas     q       z[15]     0.845       -0.880
+cordic_inst.z[27]     cordic_top|clock     dffeas     q       z[27]     0.845       -0.863
+cordic_inst.z[14]     cordic_top|clock     dffeas     q       z[14]     0.845       -0.859
+==========================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                      Starting                                                Required           
+Instance              Reference            Type       Pin     Net             Time         Slack 
+                      Clock                                                                      
+-------------------------------------------------------------------------------------------------
+cordic_inst.z[31]     cordic_top|clock     dffeas     d       un1_z_add31     6.851        -1.116
+cordic_inst.z[30]     cordic_top|clock     dffeas     d       un1_z_add30     6.851        -1.050
+cordic_inst.z[29]     cordic_top|clock     dffeas     d       un1_z_add29     6.851        -0.984
+cordic_inst.z[28]     cordic_top|clock     dffeas     d       un1_z_add28     6.851        -0.918
+cordic_inst.z[27]     cordic_top|clock     dffeas     d       un1_z_add27     6.851        -0.852
+cordic_inst.z[26]     cordic_top|clock     dffeas     d       un1_z_add26     6.851        -0.786
+cordic_inst.z[25]     cordic_top|clock     dffeas     d       un1_z_add25     6.851        -0.720
+cordic_inst.z[24]     cordic_top|clock     dffeas     d       un1_z_add24     6.851        -0.654
+cordic_inst.z[23]     cordic_top|clock     dffeas     d       un1_z_add23     6.851        -0.588
+cordic_inst.z[22]     cordic_top|clock     dffeas     d       un1_z_add22     6.851        -0.522
+=================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      6.324
+    - Setup time:                            0.086
+    + Intrinsic clock delay:                 0.613
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         6.851
+
+    - Propagation time:                      7.354
+    - Intrinsic clock delay:                 0.613
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.116
+
+    Number of logic level(s):                38
+    Starting point:                          cordic_inst.z[5] / q
+    Ending point:                            cordic_inst.z[31] / d
+    The start point is clocked by            cordic_top|clock [rising] on pin clk
+    The end   point is clocked by            cordic_top|clock [rising] on pin clk
+
+Instance / Net                                                     Pin         Pin               Arrival     No. of    
+Name                                     Type                      Name        Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------
+cordic_inst.z[5]                         dffeas                    q           Out     0.232     0.845       -         
+z[5]                                     Net                       -           -       0.355     -           5         
+cordic_inst.z_RNIQEQP1[4]                cycloneive_lcell_comb     datab       In      -         1.200       -         
+cordic_inst.z_RNIQEQP1[4]                cycloneive_lcell_comb     combout     Out     0.443     1.643       -         
+z_m7_0_a5_1_2                            Net                       -           -       0.326     -           1         
+cordic_inst.z_temp12lto10_0_RNIJ4P23     cycloneive_lcell_comb     datac       In      -         1.969       -         
+cordic_inst.z_temp12lto10_0_RNIJ4P23     cycloneive_lcell_comb     combout     Out     0.429     2.398       -         
+z_m7_0_a5_1_4                            Net                       -           -       0.333     -           2         
+cordic_inst.z_temp12lto31_d              cycloneive_lcell_comb     datac       In      -         2.731       -         
+cordic_inst.z_temp12lto31_d              cycloneive_lcell_comb     combout     Out     0.429     3.160       -         
+z_temp12lto31_d                          Net                       -           -       0.326     -           1         
+cordic_inst.z_temp_2_sqmuxa              cycloneive_lcell_comb     datac       In      -         3.485       -         
+cordic_inst.z_temp_2_sqmuxa              cycloneive_lcell_comb     combout     Out     0.429     3.914       -         
+z_temp_2_sqmuxa                          Net                       -           -       0.326     -           1         
+cordic_inst.un1_tz_1_sqmuxa_2            cycloneive_lcell_comb     datab       In      -         4.240       -         
+cordic_inst.un1_tz_1_sqmuxa_2            cycloneive_lcell_comb     combout     Out     0.443     4.683       -         
+un1_tz_1_sqmuxa_2                        Net                       -           -       0.326     -           1         
+cordic_inst.un2_tz_i_a2[0]               cycloneive_lcell_comb     datad       In      -         5.009       -         
+cordic_inst.un2_tz_i_a2[0]               cycloneive_lcell_comb     combout     Out     0.155     5.164       -         
+un2_tz_i_a2[0]                           Net                       -           -       0.326     -           1         
+cordic_inst.un1_z_add0                   cycloneive_lcell_comb     dataa       In      -         5.489       -         
+cordic_inst.un1_z_add0                   cycloneive_lcell_comb     cout        Out     0.498     5.987       -         
+un1_z_carry_0                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add1                   cycloneive_lcell_comb     cin         In      -         5.987       -         
+cordic_inst.un1_z_add1                   cycloneive_lcell_comb     cout        Out     0.066     6.053       -         
+un1_z_carry_1                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add2                   cycloneive_lcell_comb     cin         In      -         6.053       -         
+cordic_inst.un1_z_add2                   cycloneive_lcell_comb     cout        Out     0.066     6.119       -         
+un1_z_carry_2                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add3                   cycloneive_lcell_comb     cin         In      -         6.119       -         
+cordic_inst.un1_z_add3                   cycloneive_lcell_comb     cout        Out     0.066     6.185       -         
+un1_z_carry_3                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add4                   cycloneive_lcell_comb     cin         In      -         6.185       -         
+cordic_inst.un1_z_add4                   cycloneive_lcell_comb     cout        Out     0.066     6.251       -         
+un1_z_carry_4                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add5                   cycloneive_lcell_comb     cin         In      -         6.251       -         
+cordic_inst.un1_z_add5                   cycloneive_lcell_comb     cout        Out     0.066     6.317       -         
+un1_z_carry_5                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add6                   cycloneive_lcell_comb     cin         In      -         6.317       -         
+cordic_inst.un1_z_add6                   cycloneive_lcell_comb     cout        Out     0.066     6.383       -         
+un1_z_carry_6                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add7                   cycloneive_lcell_comb     cin         In      -         6.383       -         
+cordic_inst.un1_z_add7                   cycloneive_lcell_comb     cout        Out     0.066     6.449       -         
+un1_z_carry_7                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add8                   cycloneive_lcell_comb     cin         In      -         6.449       -         
+cordic_inst.un1_z_add8                   cycloneive_lcell_comb     cout        Out     0.066     6.515       -         
+un1_z_carry_8                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add9                   cycloneive_lcell_comb     cin         In      -         6.515       -         
+cordic_inst.un1_z_add9                   cycloneive_lcell_comb     cout        Out     0.066     6.581       -         
+un1_z_carry_9                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add10                  cycloneive_lcell_comb     cin         In      -         6.581       -         
+cordic_inst.un1_z_add10                  cycloneive_lcell_comb     cout        Out     0.066     6.647       -         
+un1_z_carry_10                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add11                  cycloneive_lcell_comb     cin         In      -         6.647       -         
+cordic_inst.un1_z_add11                  cycloneive_lcell_comb     cout        Out     0.066     6.713       -         
+un1_z_carry_11                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add12                  cycloneive_lcell_comb     cin         In      -         6.713       -         
+cordic_inst.un1_z_add12                  cycloneive_lcell_comb     cout        Out     0.066     6.779       -         
+un1_z_carry_12                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add13                  cycloneive_lcell_comb     cin         In      -         6.779       -         
+cordic_inst.un1_z_add13                  cycloneive_lcell_comb     cout        Out     0.066     6.845       -         
+un1_z_carry_13                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add14                  cycloneive_lcell_comb     cin         In      -         6.845       -         
+cordic_inst.un1_z_add14                  cycloneive_lcell_comb     cout        Out     0.066     6.911       -         
+un1_z_carry_14                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add15                  cycloneive_lcell_comb     cin         In      -         6.911       -         
+cordic_inst.un1_z_add15                  cycloneive_lcell_comb     cout        Out     0.066     6.977       -         
+un1_z_carry_15                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add16                  cycloneive_lcell_comb     cin         In      -         6.977       -         
+cordic_inst.un1_z_add16                  cycloneive_lcell_comb     cout        Out     0.066     7.043       -         
+un1_z_carry_16                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add17                  cycloneive_lcell_comb     cin         In      -         7.043       -         
+cordic_inst.un1_z_add17                  cycloneive_lcell_comb     cout        Out     0.066     7.109       -         
+un1_z_carry_17                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add18                  cycloneive_lcell_comb     cin         In      -         7.109       -         
+cordic_inst.un1_z_add18                  cycloneive_lcell_comb     cout        Out     0.066     7.175       -         
+un1_z_carry_18                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add19                  cycloneive_lcell_comb     cin         In      -         7.175       -         
+cordic_inst.un1_z_add19                  cycloneive_lcell_comb     cout        Out     0.066     7.241       -         
+un1_z_carry_19                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add20                  cycloneive_lcell_comb     cin         In      -         7.241       -         
+cordic_inst.un1_z_add20                  cycloneive_lcell_comb     cout        Out     0.066     7.307       -         
+un1_z_carry_20                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add21                  cycloneive_lcell_comb     cin         In      -         7.307       -         
+cordic_inst.un1_z_add21                  cycloneive_lcell_comb     cout        Out     0.066     7.373       -         
+un1_z_carry_21                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add22                  cycloneive_lcell_comb     cin         In      -         7.373       -         
+cordic_inst.un1_z_add22                  cycloneive_lcell_comb     cout        Out     0.066     7.439       -         
+un1_z_carry_22                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add23                  cycloneive_lcell_comb     cin         In      -         7.439       -         
+cordic_inst.un1_z_add23                  cycloneive_lcell_comb     cout        Out     0.066     7.505       -         
+un1_z_carry_23                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add24                  cycloneive_lcell_comb     cin         In      -         7.505       -         
+cordic_inst.un1_z_add24                  cycloneive_lcell_comb     cout        Out     0.066     7.571       -         
+un1_z_carry_24                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add25                  cycloneive_lcell_comb     cin         In      -         7.571       -         
+cordic_inst.un1_z_add25                  cycloneive_lcell_comb     cout        Out     0.066     7.637       -         
+un1_z_carry_25                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add26                  cycloneive_lcell_comb     cin         In      -         7.637       -         
+cordic_inst.un1_z_add26                  cycloneive_lcell_comb     cout        Out     0.066     7.703       -         
+un1_z_carry_26                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add27                  cycloneive_lcell_comb     cin         In      -         7.703       -         
+cordic_inst.un1_z_add27                  cycloneive_lcell_comb     cout        Out     0.066     7.769       -         
+un1_z_carry_27                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add28                  cycloneive_lcell_comb     cin         In      -         7.769       -         
+cordic_inst.un1_z_add28                  cycloneive_lcell_comb     cout        Out     0.066     7.835       -         
+un1_z_carry_28                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add29                  cycloneive_lcell_comb     cin         In      -         7.835       -         
+cordic_inst.un1_z_add29                  cycloneive_lcell_comb     cout        Out     0.066     7.901       -         
+un1_z_carry_29                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add30                  cycloneive_lcell_comb     cin         In      -         7.901       -         
+cordic_inst.un1_z_add30                  cycloneive_lcell_comb     cout        Out     0.066     7.967       -         
+un1_z_carry_30                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add31                  cycloneive_lcell_comb     cin         In      -         7.967       -         
+cordic_inst.un1_z_add31                  cycloneive_lcell_comb     combout     Out     0.000     7.967       -         
+un1_z_add31                              Net                       -           -       0.000     -           1         
+cordic_inst.z[31]                        dffeas                    d           In      -         7.967       -         
+=======================================================================================================================
+Total path delay (propagation time + ICD at startpoint + setup - ICD at endpoint) of 7.440 is 5.124(68.9%) logic and 2.316(31.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+*Arrival time includes intrinsic clock delay at start point and clock delay at startpoint
+
+
+Path information for path number 2: 
+      Requested Period:                      6.324
+    - Setup time:                            0.086
+    + Intrinsic clock delay:                 0.613
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         6.851
+
+    - Propagation time:                      7.348
+    - Intrinsic clock delay:                 0.613
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.110
+
+    Number of logic level(s):                38
+    Starting point:                          cordic_inst.z[4] / q
+    Ending point:                            cordic_inst.z[31] / d
+    The start point is clocked by            cordic_top|clock [rising] on pin clk
+    The end   point is clocked by            cordic_top|clock [rising] on pin clk
+
+Instance / Net                                                     Pin         Pin               Arrival     No. of    
+Name                                     Type                      Name        Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------
+cordic_inst.z[4]                         dffeas                    q           Out     0.232     0.845       -         
+z[4]                                     Net                       -           -       0.355     -           5         
+cordic_inst.z_RNIQEQP1[4]                cycloneive_lcell_comb     dataa       In      -         1.200       -         
+cordic_inst.z_RNIQEQP1[4]                cycloneive_lcell_comb     combout     Out     0.437     1.637       -         
+z_m7_0_a5_1_2                            Net                       -           -       0.326     -           1         
+cordic_inst.z_temp12lto10_0_RNIJ4P23     cycloneive_lcell_comb     datac       In      -         1.963       -         
+cordic_inst.z_temp12lto10_0_RNIJ4P23     cycloneive_lcell_comb     combout     Out     0.429     2.392       -         
+z_m7_0_a5_1_4                            Net                       -           -       0.333     -           2         
+cordic_inst.z_temp12lto31_d              cycloneive_lcell_comb     datac       In      -         2.725       -         
+cordic_inst.z_temp12lto31_d              cycloneive_lcell_comb     combout     Out     0.429     3.154       -         
+z_temp12lto31_d                          Net                       -           -       0.326     -           1         
+cordic_inst.z_temp_2_sqmuxa              cycloneive_lcell_comb     datac       In      -         3.479       -         
+cordic_inst.z_temp_2_sqmuxa              cycloneive_lcell_comb     combout     Out     0.429     3.908       -         
+z_temp_2_sqmuxa                          Net                       -           -       0.326     -           1         
+cordic_inst.un1_tz_1_sqmuxa_2            cycloneive_lcell_comb     datab       In      -         4.234       -         
+cordic_inst.un1_tz_1_sqmuxa_2            cycloneive_lcell_comb     combout     Out     0.443     4.677       -         
+un1_tz_1_sqmuxa_2                        Net                       -           -       0.326     -           1         
+cordic_inst.un2_tz_i_a2[0]               cycloneive_lcell_comb     datad       In      -         5.003       -         
+cordic_inst.un2_tz_i_a2[0]               cycloneive_lcell_comb     combout     Out     0.155     5.158       -         
+un2_tz_i_a2[0]                           Net                       -           -       0.326     -           1         
+cordic_inst.un1_z_add0                   cycloneive_lcell_comb     dataa       In      -         5.483       -         
+cordic_inst.un1_z_add0                   cycloneive_lcell_comb     cout        Out     0.498     5.981       -         
+un1_z_carry_0                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add1                   cycloneive_lcell_comb     cin         In      -         5.981       -         
+cordic_inst.un1_z_add1                   cycloneive_lcell_comb     cout        Out     0.066     6.047       -         
+un1_z_carry_1                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add2                   cycloneive_lcell_comb     cin         In      -         6.047       -         
+cordic_inst.un1_z_add2                   cycloneive_lcell_comb     cout        Out     0.066     6.113       -         
+un1_z_carry_2                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add3                   cycloneive_lcell_comb     cin         In      -         6.113       -         
+cordic_inst.un1_z_add3                   cycloneive_lcell_comb     cout        Out     0.066     6.179       -         
+un1_z_carry_3                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add4                   cycloneive_lcell_comb     cin         In      -         6.179       -         
+cordic_inst.un1_z_add4                   cycloneive_lcell_comb     cout        Out     0.066     6.245       -         
+un1_z_carry_4                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add5                   cycloneive_lcell_comb     cin         In      -         6.245       -         
+cordic_inst.un1_z_add5                   cycloneive_lcell_comb     cout        Out     0.066     6.311       -         
+un1_z_carry_5                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add6                   cycloneive_lcell_comb     cin         In      -         6.311       -         
+cordic_inst.un1_z_add6                   cycloneive_lcell_comb     cout        Out     0.066     6.377       -         
+un1_z_carry_6                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add7                   cycloneive_lcell_comb     cin         In      -         6.377       -         
+cordic_inst.un1_z_add7                   cycloneive_lcell_comb     cout        Out     0.066     6.443       -         
+un1_z_carry_7                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add8                   cycloneive_lcell_comb     cin         In      -         6.443       -         
+cordic_inst.un1_z_add8                   cycloneive_lcell_comb     cout        Out     0.066     6.509       -         
+un1_z_carry_8                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add9                   cycloneive_lcell_comb     cin         In      -         6.509       -         
+cordic_inst.un1_z_add9                   cycloneive_lcell_comb     cout        Out     0.066     6.575       -         
+un1_z_carry_9                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add10                  cycloneive_lcell_comb     cin         In      -         6.575       -         
+cordic_inst.un1_z_add10                  cycloneive_lcell_comb     cout        Out     0.066     6.641       -         
+un1_z_carry_10                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add11                  cycloneive_lcell_comb     cin         In      -         6.641       -         
+cordic_inst.un1_z_add11                  cycloneive_lcell_comb     cout        Out     0.066     6.707       -         
+un1_z_carry_11                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add12                  cycloneive_lcell_comb     cin         In      -         6.707       -         
+cordic_inst.un1_z_add12                  cycloneive_lcell_comb     cout        Out     0.066     6.773       -         
+un1_z_carry_12                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add13                  cycloneive_lcell_comb     cin         In      -         6.773       -         
+cordic_inst.un1_z_add13                  cycloneive_lcell_comb     cout        Out     0.066     6.839       -         
+un1_z_carry_13                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add14                  cycloneive_lcell_comb     cin         In      -         6.839       -         
+cordic_inst.un1_z_add14                  cycloneive_lcell_comb     cout        Out     0.066     6.905       -         
+un1_z_carry_14                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add15                  cycloneive_lcell_comb     cin         In      -         6.905       -         
+cordic_inst.un1_z_add15                  cycloneive_lcell_comb     cout        Out     0.066     6.971       -         
+un1_z_carry_15                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add16                  cycloneive_lcell_comb     cin         In      -         6.971       -         
+cordic_inst.un1_z_add16                  cycloneive_lcell_comb     cout        Out     0.066     7.037       -         
+un1_z_carry_16                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add17                  cycloneive_lcell_comb     cin         In      -         7.037       -         
+cordic_inst.un1_z_add17                  cycloneive_lcell_comb     cout        Out     0.066     7.103       -         
+un1_z_carry_17                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add18                  cycloneive_lcell_comb     cin         In      -         7.103       -         
+cordic_inst.un1_z_add18                  cycloneive_lcell_comb     cout        Out     0.066     7.169       -         
+un1_z_carry_18                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add19                  cycloneive_lcell_comb     cin         In      -         7.169       -         
+cordic_inst.un1_z_add19                  cycloneive_lcell_comb     cout        Out     0.066     7.235       -         
+un1_z_carry_19                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add20                  cycloneive_lcell_comb     cin         In      -         7.235       -         
+cordic_inst.un1_z_add20                  cycloneive_lcell_comb     cout        Out     0.066     7.301       -         
+un1_z_carry_20                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add21                  cycloneive_lcell_comb     cin         In      -         7.301       -         
+cordic_inst.un1_z_add21                  cycloneive_lcell_comb     cout        Out     0.066     7.367       -         
+un1_z_carry_21                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add22                  cycloneive_lcell_comb     cin         In      -         7.367       -         
+cordic_inst.un1_z_add22                  cycloneive_lcell_comb     cout        Out     0.066     7.433       -         
+un1_z_carry_22                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add23                  cycloneive_lcell_comb     cin         In      -         7.433       -         
+cordic_inst.un1_z_add23                  cycloneive_lcell_comb     cout        Out     0.066     7.499       -         
+un1_z_carry_23                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add24                  cycloneive_lcell_comb     cin         In      -         7.499       -         
+cordic_inst.un1_z_add24                  cycloneive_lcell_comb     cout        Out     0.066     7.565       -         
+un1_z_carry_24                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add25                  cycloneive_lcell_comb     cin         In      -         7.565       -         
+cordic_inst.un1_z_add25                  cycloneive_lcell_comb     cout        Out     0.066     7.631       -         
+un1_z_carry_25                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add26                  cycloneive_lcell_comb     cin         In      -         7.631       -         
+cordic_inst.un1_z_add26                  cycloneive_lcell_comb     cout        Out     0.066     7.697       -         
+un1_z_carry_26                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add27                  cycloneive_lcell_comb     cin         In      -         7.697       -         
+cordic_inst.un1_z_add27                  cycloneive_lcell_comb     cout        Out     0.066     7.763       -         
+un1_z_carry_27                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add28                  cycloneive_lcell_comb     cin         In      -         7.763       -         
+cordic_inst.un1_z_add28                  cycloneive_lcell_comb     cout        Out     0.066     7.829       -         
+un1_z_carry_28                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add29                  cycloneive_lcell_comb     cin         In      -         7.829       -         
+cordic_inst.un1_z_add29                  cycloneive_lcell_comb     cout        Out     0.066     7.895       -         
+un1_z_carry_29                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add30                  cycloneive_lcell_comb     cin         In      -         7.895       -         
+cordic_inst.un1_z_add30                  cycloneive_lcell_comb     cout        Out     0.066     7.961       -         
+un1_z_carry_30                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add31                  cycloneive_lcell_comb     cin         In      -         7.961       -         
+cordic_inst.un1_z_add31                  cycloneive_lcell_comb     combout     Out     0.000     7.961       -         
+un1_z_add31                              Net                       -           -       0.000     -           1         
+cordic_inst.z[31]                        dffeas                    d           In      -         7.961       -         
+=======================================================================================================================
+Total path delay (propagation time + ICD at startpoint + setup - ICD at endpoint) of 7.434 is 5.118(68.8%) logic and 2.316(31.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+*Arrival time includes intrinsic clock delay at start point and clock delay at startpoint
+
+
+Path information for path number 3: 
+      Requested Period:                      6.324
+    - Setup time:                            0.086
+    + Intrinsic clock delay:                 0.613
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         6.851
+
+    - Propagation time:                      7.340
+    - Intrinsic clock delay:                 0.613
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.102
+
+    Number of logic level(s):                38
+    Starting point:                          cordic_inst.z[6] / q
+    Ending point:                            cordic_inst.z[31] / d
+    The start point is clocked by            cordic_top|clock [rising] on pin clk
+    The end   point is clocked by            cordic_top|clock [rising] on pin clk
+
+Instance / Net                                                     Pin         Pin               Arrival     No. of    
+Name                                     Type                      Name        Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------
+cordic_inst.z[6]                         dffeas                    q           Out     0.232     0.845       -         
+z[6]                                     Net                       -           -       0.355     -           5         
+cordic_inst.z_RNIQEQP1[4]                cycloneive_lcell_comb     datac       In      -         1.200       -         
+cordic_inst.z_RNIQEQP1[4]                cycloneive_lcell_comb     combout     Out     0.429     1.629       -         
+z_m7_0_a5_1_2                            Net                       -           -       0.326     -           1         
+cordic_inst.z_temp12lto10_0_RNIJ4P23     cycloneive_lcell_comb     datac       In      -         1.955       -         
+cordic_inst.z_temp12lto10_0_RNIJ4P23     cycloneive_lcell_comb     combout     Out     0.429     2.384       -         
+z_m7_0_a5_1_4                            Net                       -           -       0.333     -           2         
+cordic_inst.z_temp12lto31_d              cycloneive_lcell_comb     datac       In      -         2.717       -         
+cordic_inst.z_temp12lto31_d              cycloneive_lcell_comb     combout     Out     0.429     3.146       -         
+z_temp12lto31_d                          Net                       -           -       0.326     -           1         
+cordic_inst.z_temp_2_sqmuxa              cycloneive_lcell_comb     datac       In      -         3.471       -         
+cordic_inst.z_temp_2_sqmuxa              cycloneive_lcell_comb     combout     Out     0.429     3.900       -         
+z_temp_2_sqmuxa                          Net                       -           -       0.326     -           1         
+cordic_inst.un1_tz_1_sqmuxa_2            cycloneive_lcell_comb     datab       In      -         4.226       -         
+cordic_inst.un1_tz_1_sqmuxa_2            cycloneive_lcell_comb     combout     Out     0.443     4.669       -         
+un1_tz_1_sqmuxa_2                        Net                       -           -       0.326     -           1         
+cordic_inst.un2_tz_i_a2[0]               cycloneive_lcell_comb     datad       In      -         4.995       -         
+cordic_inst.un2_tz_i_a2[0]               cycloneive_lcell_comb     combout     Out     0.155     5.150       -         
+un2_tz_i_a2[0]                           Net                       -           -       0.326     -           1         
+cordic_inst.un1_z_add0                   cycloneive_lcell_comb     dataa       In      -         5.475       -         
+cordic_inst.un1_z_add0                   cycloneive_lcell_comb     cout        Out     0.498     5.973       -         
+un1_z_carry_0                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add1                   cycloneive_lcell_comb     cin         In      -         5.973       -         
+cordic_inst.un1_z_add1                   cycloneive_lcell_comb     cout        Out     0.066     6.039       -         
+un1_z_carry_1                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add2                   cycloneive_lcell_comb     cin         In      -         6.039       -         
+cordic_inst.un1_z_add2                   cycloneive_lcell_comb     cout        Out     0.066     6.105       -         
+un1_z_carry_2                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add3                   cycloneive_lcell_comb     cin         In      -         6.105       -         
+cordic_inst.un1_z_add3                   cycloneive_lcell_comb     cout        Out     0.066     6.171       -         
+un1_z_carry_3                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add4                   cycloneive_lcell_comb     cin         In      -         6.171       -         
+cordic_inst.un1_z_add4                   cycloneive_lcell_comb     cout        Out     0.066     6.237       -         
+un1_z_carry_4                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add5                   cycloneive_lcell_comb     cin         In      -         6.237       -         
+cordic_inst.un1_z_add5                   cycloneive_lcell_comb     cout        Out     0.066     6.303       -         
+un1_z_carry_5                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add6                   cycloneive_lcell_comb     cin         In      -         6.303       -         
+cordic_inst.un1_z_add6                   cycloneive_lcell_comb     cout        Out     0.066     6.369       -         
+un1_z_carry_6                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add7                   cycloneive_lcell_comb     cin         In      -         6.369       -         
+cordic_inst.un1_z_add7                   cycloneive_lcell_comb     cout        Out     0.066     6.435       -         
+un1_z_carry_7                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add8                   cycloneive_lcell_comb     cin         In      -         6.435       -         
+cordic_inst.un1_z_add8                   cycloneive_lcell_comb     cout        Out     0.066     6.501       -         
+un1_z_carry_8                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add9                   cycloneive_lcell_comb     cin         In      -         6.501       -         
+cordic_inst.un1_z_add9                   cycloneive_lcell_comb     cout        Out     0.066     6.567       -         
+un1_z_carry_9                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add10                  cycloneive_lcell_comb     cin         In      -         6.567       -         
+cordic_inst.un1_z_add10                  cycloneive_lcell_comb     cout        Out     0.066     6.633       -         
+un1_z_carry_10                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add11                  cycloneive_lcell_comb     cin         In      -         6.633       -         
+cordic_inst.un1_z_add11                  cycloneive_lcell_comb     cout        Out     0.066     6.699       -         
+un1_z_carry_11                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add12                  cycloneive_lcell_comb     cin         In      -         6.699       -         
+cordic_inst.un1_z_add12                  cycloneive_lcell_comb     cout        Out     0.066     6.765       -         
+un1_z_carry_12                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add13                  cycloneive_lcell_comb     cin         In      -         6.765       -         
+cordic_inst.un1_z_add13                  cycloneive_lcell_comb     cout        Out     0.066     6.831       -         
+un1_z_carry_13                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add14                  cycloneive_lcell_comb     cin         In      -         6.831       -         
+cordic_inst.un1_z_add14                  cycloneive_lcell_comb     cout        Out     0.066     6.897       -         
+un1_z_carry_14                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add15                  cycloneive_lcell_comb     cin         In      -         6.897       -         
+cordic_inst.un1_z_add15                  cycloneive_lcell_comb     cout        Out     0.066     6.963       -         
+un1_z_carry_15                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add16                  cycloneive_lcell_comb     cin         In      -         6.963       -         
+cordic_inst.un1_z_add16                  cycloneive_lcell_comb     cout        Out     0.066     7.029       -         
+un1_z_carry_16                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add17                  cycloneive_lcell_comb     cin         In      -         7.029       -         
+cordic_inst.un1_z_add17                  cycloneive_lcell_comb     cout        Out     0.066     7.095       -         
+un1_z_carry_17                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add18                  cycloneive_lcell_comb     cin         In      -         7.095       -         
+cordic_inst.un1_z_add18                  cycloneive_lcell_comb     cout        Out     0.066     7.161       -         
+un1_z_carry_18                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add19                  cycloneive_lcell_comb     cin         In      -         7.161       -         
+cordic_inst.un1_z_add19                  cycloneive_lcell_comb     cout        Out     0.066     7.227       -         
+un1_z_carry_19                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add20                  cycloneive_lcell_comb     cin         In      -         7.227       -         
+cordic_inst.un1_z_add20                  cycloneive_lcell_comb     cout        Out     0.066     7.293       -         
+un1_z_carry_20                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add21                  cycloneive_lcell_comb     cin         In      -         7.293       -         
+cordic_inst.un1_z_add21                  cycloneive_lcell_comb     cout        Out     0.066     7.359       -         
+un1_z_carry_21                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add22                  cycloneive_lcell_comb     cin         In      -         7.359       -         
+cordic_inst.un1_z_add22                  cycloneive_lcell_comb     cout        Out     0.066     7.425       -         
+un1_z_carry_22                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add23                  cycloneive_lcell_comb     cin         In      -         7.425       -         
+cordic_inst.un1_z_add23                  cycloneive_lcell_comb     cout        Out     0.066     7.491       -         
+un1_z_carry_23                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add24                  cycloneive_lcell_comb     cin         In      -         7.491       -         
+cordic_inst.un1_z_add24                  cycloneive_lcell_comb     cout        Out     0.066     7.557       -         
+un1_z_carry_24                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add25                  cycloneive_lcell_comb     cin         In      -         7.557       -         
+cordic_inst.un1_z_add25                  cycloneive_lcell_comb     cout        Out     0.066     7.623       -         
+un1_z_carry_25                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add26                  cycloneive_lcell_comb     cin         In      -         7.623       -         
+cordic_inst.un1_z_add26                  cycloneive_lcell_comb     cout        Out     0.066     7.689       -         
+un1_z_carry_26                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add27                  cycloneive_lcell_comb     cin         In      -         7.689       -         
+cordic_inst.un1_z_add27                  cycloneive_lcell_comb     cout        Out     0.066     7.755       -         
+un1_z_carry_27                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add28                  cycloneive_lcell_comb     cin         In      -         7.755       -         
+cordic_inst.un1_z_add28                  cycloneive_lcell_comb     cout        Out     0.066     7.821       -         
+un1_z_carry_28                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add29                  cycloneive_lcell_comb     cin         In      -         7.821       -         
+cordic_inst.un1_z_add29                  cycloneive_lcell_comb     cout        Out     0.066     7.887       -         
+un1_z_carry_29                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add30                  cycloneive_lcell_comb     cin         In      -         7.887       -         
+cordic_inst.un1_z_add30                  cycloneive_lcell_comb     cout        Out     0.066     7.953       -         
+un1_z_carry_30                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add31                  cycloneive_lcell_comb     cin         In      -         7.953       -         
+cordic_inst.un1_z_add31                  cycloneive_lcell_comb     combout     Out     0.000     7.953       -         
+un1_z_add31                              Net                       -           -       0.000     -           1         
+cordic_inst.z[31]                        dffeas                    d           In      -         7.953       -         
+=======================================================================================================================
+Total path delay (propagation time + ICD at startpoint + setup - ICD at endpoint) of 7.426 is 5.110(68.8%) logic and 2.316(31.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+*Arrival time includes intrinsic clock delay at start point and clock delay at startpoint
+
+
+Path information for path number 4: 
+      Requested Period:                      6.324
+    - Setup time:                            0.086
+    + Intrinsic clock delay:                 0.613
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         6.851
+
+    - Propagation time:                      7.303
+    - Intrinsic clock delay:                 0.613
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.065
+
+    Number of logic level(s):                39
+    Starting point:                          cordic_inst.z[10] / q
+    Ending point:                            cordic_inst.z[31] / d
+    The start point is clocked by            cordic_top|clock [rising] on pin clk
+    The end   point is clocked by            cordic_top|clock [rising] on pin clk
+
+Instance / Net                                                     Pin         Pin               Arrival     No. of    
+Name                                     Type                      Name        Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------
+cordic_inst.z[10]                        dffeas                    q           Out     0.232     0.845       -         
+z[10]                                    Net                       -           -       0.370     -           6         
+cordic_inst.z_temp12lto10_0              cycloneive_lcell_comb     dataa       In      -         1.215       -         
+cordic_inst.z_temp12lto10_0              cycloneive_lcell_comb     combout     Out     0.437     1.652       -         
+z_temp12lto10_0                          Net                       -           -       0.333     -           2         
+cordic_inst.z_temp12lto10_0_RNI0ADN1     cycloneive_lcell_comb     datad       In      -         1.985       -         
+cordic_inst.z_temp12lto10_0_RNI0ADN1     cycloneive_lcell_comb     combout     Out     0.155     2.140       -         
+z_m7_0_2_a                               Net                       -           -       0.326     -           1         
+cordic_inst.z_RNI272U2[13]               cycloneive_lcell_comb     datad       In      -         2.466       -         
+cordic_inst.z_RNI272U2[13]               cycloneive_lcell_comb     combout     Out     0.155     2.621       -         
+z_m7_0_2                                 Net                       -           -       0.333     -           2         
+cordic_inst.z_temp12lto31_d              cycloneive_lcell_comb     datad       In      -         2.954       -         
+cordic_inst.z_temp12lto31_d              cycloneive_lcell_comb     combout     Out     0.155     3.109       -         
+z_temp12lto31_d                          Net                       -           -       0.326     -           1         
+cordic_inst.z_temp_2_sqmuxa              cycloneive_lcell_comb     datac       In      -         3.434       -         
+cordic_inst.z_temp_2_sqmuxa              cycloneive_lcell_comb     combout     Out     0.429     3.863       -         
+z_temp_2_sqmuxa                          Net                       -           -       0.326     -           1         
+cordic_inst.un1_tz_1_sqmuxa_2            cycloneive_lcell_comb     datab       In      -         4.189       -         
+cordic_inst.un1_tz_1_sqmuxa_2            cycloneive_lcell_comb     combout     Out     0.443     4.632       -         
+un1_tz_1_sqmuxa_2                        Net                       -           -       0.326     -           1         
+cordic_inst.un2_tz_i_a2[0]               cycloneive_lcell_comb     datad       In      -         4.957       -         
+cordic_inst.un2_tz_i_a2[0]               cycloneive_lcell_comb     combout     Out     0.155     5.112       -         
+un2_tz_i_a2[0]                           Net                       -           -       0.326     -           1         
+cordic_inst.un1_z_add0                   cycloneive_lcell_comb     dataa       In      -         5.438       -         
+cordic_inst.un1_z_add0                   cycloneive_lcell_comb     cout        Out     0.498     5.936       -         
+un1_z_carry_0                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add1                   cycloneive_lcell_comb     cin         In      -         5.936       -         
+cordic_inst.un1_z_add1                   cycloneive_lcell_comb     cout        Out     0.066     6.002       -         
+un1_z_carry_1                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add2                   cycloneive_lcell_comb     cin         In      -         6.002       -         
+cordic_inst.un1_z_add2                   cycloneive_lcell_comb     cout        Out     0.066     6.068       -         
+un1_z_carry_2                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add3                   cycloneive_lcell_comb     cin         In      -         6.068       -         
+cordic_inst.un1_z_add3                   cycloneive_lcell_comb     cout        Out     0.066     6.134       -         
+un1_z_carry_3                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add4                   cycloneive_lcell_comb     cin         In      -         6.134       -         
+cordic_inst.un1_z_add4                   cycloneive_lcell_comb     cout        Out     0.066     6.200       -         
+un1_z_carry_4                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add5                   cycloneive_lcell_comb     cin         In      -         6.200       -         
+cordic_inst.un1_z_add5                   cycloneive_lcell_comb     cout        Out     0.066     6.266       -         
+un1_z_carry_5                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add6                   cycloneive_lcell_comb     cin         In      -         6.266       -         
+cordic_inst.un1_z_add6                   cycloneive_lcell_comb     cout        Out     0.066     6.332       -         
+un1_z_carry_6                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add7                   cycloneive_lcell_comb     cin         In      -         6.332       -         
+cordic_inst.un1_z_add7                   cycloneive_lcell_comb     cout        Out     0.066     6.398       -         
+un1_z_carry_7                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add8                   cycloneive_lcell_comb     cin         In      -         6.398       -         
+cordic_inst.un1_z_add8                   cycloneive_lcell_comb     cout        Out     0.066     6.464       -         
+un1_z_carry_8                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add9                   cycloneive_lcell_comb     cin         In      -         6.464       -         
+cordic_inst.un1_z_add9                   cycloneive_lcell_comb     cout        Out     0.066     6.530       -         
+un1_z_carry_9                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add10                  cycloneive_lcell_comb     cin         In      -         6.530       -         
+cordic_inst.un1_z_add10                  cycloneive_lcell_comb     cout        Out     0.066     6.596       -         
+un1_z_carry_10                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add11                  cycloneive_lcell_comb     cin         In      -         6.596       -         
+cordic_inst.un1_z_add11                  cycloneive_lcell_comb     cout        Out     0.066     6.662       -         
+un1_z_carry_11                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add12                  cycloneive_lcell_comb     cin         In      -         6.662       -         
+cordic_inst.un1_z_add12                  cycloneive_lcell_comb     cout        Out     0.066     6.728       -         
+un1_z_carry_12                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add13                  cycloneive_lcell_comb     cin         In      -         6.728       -         
+cordic_inst.un1_z_add13                  cycloneive_lcell_comb     cout        Out     0.066     6.794       -         
+un1_z_carry_13                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add14                  cycloneive_lcell_comb     cin         In      -         6.794       -         
+cordic_inst.un1_z_add14                  cycloneive_lcell_comb     cout        Out     0.066     6.860       -         
+un1_z_carry_14                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add15                  cycloneive_lcell_comb     cin         In      -         6.860       -         
+cordic_inst.un1_z_add15                  cycloneive_lcell_comb     cout        Out     0.066     6.926       -         
+un1_z_carry_15                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add16                  cycloneive_lcell_comb     cin         In      -         6.926       -         
+cordic_inst.un1_z_add16                  cycloneive_lcell_comb     cout        Out     0.066     6.992       -         
+un1_z_carry_16                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add17                  cycloneive_lcell_comb     cin         In      -         6.992       -         
+cordic_inst.un1_z_add17                  cycloneive_lcell_comb     cout        Out     0.066     7.058       -         
+un1_z_carry_17                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add18                  cycloneive_lcell_comb     cin         In      -         7.058       -         
+cordic_inst.un1_z_add18                  cycloneive_lcell_comb     cout        Out     0.066     7.124       -         
+un1_z_carry_18                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add19                  cycloneive_lcell_comb     cin         In      -         7.124       -         
+cordic_inst.un1_z_add19                  cycloneive_lcell_comb     cout        Out     0.066     7.190       -         
+un1_z_carry_19                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add20                  cycloneive_lcell_comb     cin         In      -         7.190       -         
+cordic_inst.un1_z_add20                  cycloneive_lcell_comb     cout        Out     0.066     7.256       -         
+un1_z_carry_20                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add21                  cycloneive_lcell_comb     cin         In      -         7.256       -         
+cordic_inst.un1_z_add21                  cycloneive_lcell_comb     cout        Out     0.066     7.322       -         
+un1_z_carry_21                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add22                  cycloneive_lcell_comb     cin         In      -         7.322       -         
+cordic_inst.un1_z_add22                  cycloneive_lcell_comb     cout        Out     0.066     7.388       -         
+un1_z_carry_22                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add23                  cycloneive_lcell_comb     cin         In      -         7.388       -         
+cordic_inst.un1_z_add23                  cycloneive_lcell_comb     cout        Out     0.066     7.454       -         
+un1_z_carry_23                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add24                  cycloneive_lcell_comb     cin         In      -         7.454       -         
+cordic_inst.un1_z_add24                  cycloneive_lcell_comb     cout        Out     0.066     7.520       -         
+un1_z_carry_24                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add25                  cycloneive_lcell_comb     cin         In      -         7.520       -         
+cordic_inst.un1_z_add25                  cycloneive_lcell_comb     cout        Out     0.066     7.586       -         
+un1_z_carry_25                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add26                  cycloneive_lcell_comb     cin         In      -         7.586       -         
+cordic_inst.un1_z_add26                  cycloneive_lcell_comb     cout        Out     0.066     7.652       -         
+un1_z_carry_26                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add27                  cycloneive_lcell_comb     cin         In      -         7.652       -         
+cordic_inst.un1_z_add27                  cycloneive_lcell_comb     cout        Out     0.066     7.718       -         
+un1_z_carry_27                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add28                  cycloneive_lcell_comb     cin         In      -         7.718       -         
+cordic_inst.un1_z_add28                  cycloneive_lcell_comb     cout        Out     0.066     7.784       -         
+un1_z_carry_28                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add29                  cycloneive_lcell_comb     cin         In      -         7.784       -         
+cordic_inst.un1_z_add29                  cycloneive_lcell_comb     cout        Out     0.066     7.850       -         
+un1_z_carry_29                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add30                  cycloneive_lcell_comb     cin         In      -         7.850       -         
+cordic_inst.un1_z_add30                  cycloneive_lcell_comb     cout        Out     0.066     7.916       -         
+un1_z_carry_30                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add31                  cycloneive_lcell_comb     cin         In      -         7.916       -         
+cordic_inst.un1_z_add31                  cycloneive_lcell_comb     combout     Out     0.000     7.916       -         
+un1_z_add31                              Net                       -           -       0.000     -           1         
+cordic_inst.z[31]                        dffeas                    d           In      -         7.916       -         
+=======================================================================================================================
+Total path delay (propagation time + ICD at startpoint + setup - ICD at endpoint) of 7.389 is 4.725(63.9%) logic and 2.664(36.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+*Arrival time includes intrinsic clock delay at start point and clock delay at startpoint
+
+
+Path information for path number 5: 
+      Requested Period:                      6.324
+    - Setup time:                            0.086
+    + Intrinsic clock delay:                 0.613
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         6.851
+
+    - Propagation time:                      7.294
+    - Intrinsic clock delay:                 0.613
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.056
+
+    Number of logic level(s):                39
+    Starting point:                          cordic_inst.z[9] / q
+    Ending point:                            cordic_inst.z[31] / d
+    The start point is clocked by            cordic_top|clock [rising] on pin clk
+    The end   point is clocked by            cordic_top|clock [rising] on pin clk
+
+Instance / Net                                                     Pin         Pin               Arrival     No. of    
+Name                                     Type                      Name        Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------
+cordic_inst.z[9]                         dffeas                    q           Out     0.232     0.845       -         
+z[9]                                     Net                       -           -       0.355     -           5         
+cordic_inst.z_temp12lto10_0              cycloneive_lcell_comb     datab       In      -         1.200       -         
+cordic_inst.z_temp12lto10_0              cycloneive_lcell_comb     combout     Out     0.443     1.643       -         
+z_temp12lto10_0                          Net                       -           -       0.333     -           2         
+cordic_inst.z_temp12lto10_0_RNI0ADN1     cycloneive_lcell_comb     datad       In      -         1.976       -         
+cordic_inst.z_temp12lto10_0_RNI0ADN1     cycloneive_lcell_comb     combout     Out     0.155     2.131       -         
+z_m7_0_2_a                               Net                       -           -       0.326     -           1         
+cordic_inst.z_RNI272U2[13]               cycloneive_lcell_comb     datad       In      -         2.457       -         
+cordic_inst.z_RNI272U2[13]               cycloneive_lcell_comb     combout     Out     0.155     2.612       -         
+z_m7_0_2                                 Net                       -           -       0.333     -           2         
+cordic_inst.z_temp12lto31_d              cycloneive_lcell_comb     datad       In      -         2.945       -         
+cordic_inst.z_temp12lto31_d              cycloneive_lcell_comb     combout     Out     0.155     3.100       -         
+z_temp12lto31_d                          Net                       -           -       0.326     -           1         
+cordic_inst.z_temp_2_sqmuxa              cycloneive_lcell_comb     datac       In      -         3.425       -         
+cordic_inst.z_temp_2_sqmuxa              cycloneive_lcell_comb     combout     Out     0.429     3.854       -         
+z_temp_2_sqmuxa                          Net                       -           -       0.326     -           1         
+cordic_inst.un1_tz_1_sqmuxa_2            cycloneive_lcell_comb     datab       In      -         4.180       -         
+cordic_inst.un1_tz_1_sqmuxa_2            cycloneive_lcell_comb     combout     Out     0.443     4.623       -         
+un1_tz_1_sqmuxa_2                        Net                       -           -       0.326     -           1         
+cordic_inst.un2_tz_i_a2[0]               cycloneive_lcell_comb     datad       In      -         4.949       -         
+cordic_inst.un2_tz_i_a2[0]               cycloneive_lcell_comb     combout     Out     0.155     5.104       -         
+un2_tz_i_a2[0]                           Net                       -           -       0.326     -           1         
+cordic_inst.un1_z_add0                   cycloneive_lcell_comb     dataa       In      -         5.429       -         
+cordic_inst.un1_z_add0                   cycloneive_lcell_comb     cout        Out     0.498     5.927       -         
+un1_z_carry_0                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add1                   cycloneive_lcell_comb     cin         In      -         5.927       -         
+cordic_inst.un1_z_add1                   cycloneive_lcell_comb     cout        Out     0.066     5.993       -         
+un1_z_carry_1                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add2                   cycloneive_lcell_comb     cin         In      -         5.993       -         
+cordic_inst.un1_z_add2                   cycloneive_lcell_comb     cout        Out     0.066     6.059       -         
+un1_z_carry_2                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add3                   cycloneive_lcell_comb     cin         In      -         6.059       -         
+cordic_inst.un1_z_add3                   cycloneive_lcell_comb     cout        Out     0.066     6.125       -         
+un1_z_carry_3                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add4                   cycloneive_lcell_comb     cin         In      -         6.125       -         
+cordic_inst.un1_z_add4                   cycloneive_lcell_comb     cout        Out     0.066     6.191       -         
+un1_z_carry_4                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add5                   cycloneive_lcell_comb     cin         In      -         6.191       -         
+cordic_inst.un1_z_add5                   cycloneive_lcell_comb     cout        Out     0.066     6.257       -         
+un1_z_carry_5                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add6                   cycloneive_lcell_comb     cin         In      -         6.257       -         
+cordic_inst.un1_z_add6                   cycloneive_lcell_comb     cout        Out     0.066     6.323       -         
+un1_z_carry_6                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add7                   cycloneive_lcell_comb     cin         In      -         6.323       -         
+cordic_inst.un1_z_add7                   cycloneive_lcell_comb     cout        Out     0.066     6.389       -         
+un1_z_carry_7                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add8                   cycloneive_lcell_comb     cin         In      -         6.389       -         
+cordic_inst.un1_z_add8                   cycloneive_lcell_comb     cout        Out     0.066     6.455       -         
+un1_z_carry_8                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add9                   cycloneive_lcell_comb     cin         In      -         6.455       -         
+cordic_inst.un1_z_add9                   cycloneive_lcell_comb     cout        Out     0.066     6.521       -         
+un1_z_carry_9                            Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add10                  cycloneive_lcell_comb     cin         In      -         6.521       -         
+cordic_inst.un1_z_add10                  cycloneive_lcell_comb     cout        Out     0.066     6.587       -         
+un1_z_carry_10                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add11                  cycloneive_lcell_comb     cin         In      -         6.587       -         
+cordic_inst.un1_z_add11                  cycloneive_lcell_comb     cout        Out     0.066     6.653       -         
+un1_z_carry_11                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add12                  cycloneive_lcell_comb     cin         In      -         6.653       -         
+cordic_inst.un1_z_add12                  cycloneive_lcell_comb     cout        Out     0.066     6.719       -         
+un1_z_carry_12                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add13                  cycloneive_lcell_comb     cin         In      -         6.719       -         
+cordic_inst.un1_z_add13                  cycloneive_lcell_comb     cout        Out     0.066     6.785       -         
+un1_z_carry_13                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add14                  cycloneive_lcell_comb     cin         In      -         6.785       -         
+cordic_inst.un1_z_add14                  cycloneive_lcell_comb     cout        Out     0.066     6.851       -         
+un1_z_carry_14                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add15                  cycloneive_lcell_comb     cin         In      -         6.851       -         
+cordic_inst.un1_z_add15                  cycloneive_lcell_comb     cout        Out     0.066     6.917       -         
+un1_z_carry_15                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add16                  cycloneive_lcell_comb     cin         In      -         6.917       -         
+cordic_inst.un1_z_add16                  cycloneive_lcell_comb     cout        Out     0.066     6.983       -         
+un1_z_carry_16                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add17                  cycloneive_lcell_comb     cin         In      -         6.983       -         
+cordic_inst.un1_z_add17                  cycloneive_lcell_comb     cout        Out     0.066     7.049       -         
+un1_z_carry_17                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add18                  cycloneive_lcell_comb     cin         In      -         7.049       -         
+cordic_inst.un1_z_add18                  cycloneive_lcell_comb     cout        Out     0.066     7.115       -         
+un1_z_carry_18                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add19                  cycloneive_lcell_comb     cin         In      -         7.115       -         
+cordic_inst.un1_z_add19                  cycloneive_lcell_comb     cout        Out     0.066     7.181       -         
+un1_z_carry_19                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add20                  cycloneive_lcell_comb     cin         In      -         7.181       -         
+cordic_inst.un1_z_add20                  cycloneive_lcell_comb     cout        Out     0.066     7.247       -         
+un1_z_carry_20                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add21                  cycloneive_lcell_comb     cin         In      -         7.247       -         
+cordic_inst.un1_z_add21                  cycloneive_lcell_comb     cout        Out     0.066     7.313       -         
+un1_z_carry_21                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add22                  cycloneive_lcell_comb     cin         In      -         7.313       -         
+cordic_inst.un1_z_add22                  cycloneive_lcell_comb     cout        Out     0.066     7.379       -         
+un1_z_carry_22                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add23                  cycloneive_lcell_comb     cin         In      -         7.379       -         
+cordic_inst.un1_z_add23                  cycloneive_lcell_comb     cout        Out     0.066     7.445       -         
+un1_z_carry_23                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add24                  cycloneive_lcell_comb     cin         In      -         7.445       -         
+cordic_inst.un1_z_add24                  cycloneive_lcell_comb     cout        Out     0.066     7.511       -         
+un1_z_carry_24                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add25                  cycloneive_lcell_comb     cin         In      -         7.511       -         
+cordic_inst.un1_z_add25                  cycloneive_lcell_comb     cout        Out     0.066     7.577       -         
+un1_z_carry_25                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add26                  cycloneive_lcell_comb     cin         In      -         7.577       -         
+cordic_inst.un1_z_add26                  cycloneive_lcell_comb     cout        Out     0.066     7.643       -         
+un1_z_carry_26                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add27                  cycloneive_lcell_comb     cin         In      -         7.643       -         
+cordic_inst.un1_z_add27                  cycloneive_lcell_comb     cout        Out     0.066     7.709       -         
+un1_z_carry_27                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add28                  cycloneive_lcell_comb     cin         In      -         7.709       -         
+cordic_inst.un1_z_add28                  cycloneive_lcell_comb     cout        Out     0.066     7.775       -         
+un1_z_carry_28                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add29                  cycloneive_lcell_comb     cin         In      -         7.775       -         
+cordic_inst.un1_z_add29                  cycloneive_lcell_comb     cout        Out     0.066     7.841       -         
+un1_z_carry_29                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add30                  cycloneive_lcell_comb     cin         In      -         7.841       -         
+cordic_inst.un1_z_add30                  cycloneive_lcell_comb     cout        Out     0.066     7.907       -         
+un1_z_carry_30                           Net                       -           -       0.000     -           1         
+cordic_inst.un1_z_add31                  cycloneive_lcell_comb     cin         In      -         7.907       -         
+cordic_inst.un1_z_add31                  cycloneive_lcell_comb     combout     Out     0.000     7.907       -         
+un1_z_add31                              Net                       -           -       0.000     -           1         
+cordic_inst.z[31]                        dffeas                    d           In      -         7.907       -         
+=======================================================================================================================
+Total path delay (propagation time + ICD at startpoint + setup - ICD at endpoint) of 7.380 is 4.731(64.1%) logic and 2.649(35.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+*Arrival time includes intrinsic clock delay at start point and clock delay at startpoint
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
+
+Writing Analyst data base /home/gel8580/CE387_new/HW/HW6/imp/syn/rev_1/cordic_ta.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 20MB peak: 117MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Feb 17 16:39:29 2026
+
+###########################################################]

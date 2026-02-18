@@ -20,11 +20,14 @@ module cordic_tb;
     integer tests = 0;
 
     // DUT Instance
-    cordic dut (
+    logic fifo_full;
+
+    cordic_top dut (
         .clock(clock),
         .reset(reset),
         .valid_in(valid_in),
         .rad_in(rad_in),
+        .full_out(fifo_full), // Connect Full
         .valid_out(valid_out),
         .sin_out(sin_out),
         .cos_out(cos_out)
@@ -34,6 +37,17 @@ module cordic_tb;
     initial begin
         clock = 0;
         forever #5 clock = ~clock;
+    end
+
+    // Cycle Counting
+    integer cycle_count = 0;
+    integer start_cycle = 0;
+    integer latency = 0;
+    integer total_latency = 0;
+    
+    always @(posedge clock) begin
+        if (reset) cycle_count <= 0;
+        else cycle_count <= cycle_count + 1;
     end
 
     // Test Procedure
@@ -66,26 +80,36 @@ module cordic_tb;
             r_scan = $fscanf(cos_file, "%h\n", cos_ref);
 
             @(posedge clock);
+            while (fifo_full) @(posedge clock); // Wait if FIFO is full
             valid_in = 1;
             rad_in = rad_ref;
+            start_cycle = cycle_count; // Capture start cycle
             
             @(posedge clock);
             valid_in = 0;
 
             wait(valid_out);
+            latency = cycle_count - start_cycle;
+            total_latency = total_latency + latency;
             
             // Check results
             if (sin_out !== sin_ref || cos_out !== cos_ref) begin
                 $display("Error at test %0d: rad=%h | exp sin=%h cos=%h | got sin=%h cos=%h", 
                          tests, rad_ref, sin_ref, cos_ref, sin_out, cos_out);
                 errors++;
+            end else begin
+                // Optional: Print latency for first few tests
+                if (tests < 5) $display("Test %0d Passed. Latency: %0d cycles", tests, latency);
             end
             
             tests++;
             @(posedge clock); 
         end
 
-        $display("Simulation Complete. Tests: %0d, Errors: %0d", tests, errors);
+        $display("Simulation Complete."); 
+        $display("Tests: %0d, Errors: %0d", tests, errors);
+        if (tests > 0) $display("Average Latency: %0.2f cycles", total_latency / tests);
+
         if (errors == 0) $display("SUCCESS: All tests passed.");
         else $display("FAILURE: %0d mismatches found.", errors);
 

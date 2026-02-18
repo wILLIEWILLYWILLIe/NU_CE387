@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+The file contains the information about resource utilization per module to be displayed in the summary report.
+*******************************************************************************************-->
+<modules>
+<column_headers>
+<data>Module name</data>
+<data>ATOMS</data>
+<data>ARITHMETIC MODE</data>
+<data>REGISTERS</data>
+<data>SYNC RAMS</data>
+<data>MACs</data>
+</column_headers>
+<module>
+<data>cordic_top</data>
+<data>276</data>
+<data>0</data>
+<data>117</data>
+<data>1</data>
+<data>0</data>
+<module>
+<data>cordic</data>
+<data>259</data>
+<data>0</data>
+<data>106</data>
+<data>0</data>
+<data>0</data>
+</module>
+<module>
+<data>fifo_32s_16s_5s</data>
+<data>16</data>
+<data>0</data>
+<data>11</data>
+<data>1</data>
+<data>0</data>
+</module>
+</module>
+</modules>

@@ -1,0 +1,5 @@
+
+. Module name, ATOMS, ARITHMETIC MODE, REGISTERS, SYNC RAMS, MACs
+. cordic_top, 276, 0, 117, 1, 0
+.	. cordic, 259, 0, 106, 0, 0
+.	. fifo_32s_16s_5s, 16, 0, 11, 1, 0

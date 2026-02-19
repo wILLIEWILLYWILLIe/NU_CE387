@@ -4,6 +4,7 @@
 
 #project files
 add_file -verilog -vlog_std sysv "/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv"
+add_file -verilog -vlog_std sysv "/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_stage.sv"
 add_file -verilog -vlog_std sysv "/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv"
 add_file -verilog -vlog_std sysv "/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_top.sv"
 

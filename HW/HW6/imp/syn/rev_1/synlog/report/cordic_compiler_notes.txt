@@ -32,7 +32,23 @@
 @N: CG333 :"/vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v":54154:12:54154:23|Read directive translate_on.
 @N: CG364 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":2:7:2:10|Synthesizing module fifo in library work.
 @N: CG364 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv":2:7:2:12|Synthesizing module cordic in library work.
-@N: CG364 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_top.sv":2:7:2:16|Synthesizing module cordic_top in library work.
+@N: CG364 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_stage.sv":2:7:2:18|Synthesizing module cordic_stage in library work.
+@N: CG364 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_stage.sv":2:7:2:18|Synthesizing module cordic_stage in library work.
+@N: CG364 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_stage.sv":2:7:2:18|Synthesizing module cordic_stage in library work.
+@N: CG364 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_stage.sv":2:7:2:18|Synthesizing module cordic_stage in library work.
+@N: CG364 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_stage.sv":2:7:2:18|Synthesizing module cordic_stage in library work.
+@N: CG364 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_stage.sv":2:7:2:18|Synthesizing module cordic_stage in library work.
+@N: CG364 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_stage.sv":2:7:2:18|Synthesizing module cordic_stage in library work.
+@N: CG364 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_stage.sv":2:7:2:18|Synthesizing module cordic_stage in library work.
+@N: CG364 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_stage.sv":2:7:2:18|Synthesizing module cordic_stage in library work.
+@N: CG364 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_stage.sv":2:7:2:18|Synthesizing module cordic_stage in library work.
+@N: CG364 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_stage.sv":2:7:2:18|Synthesizing module cordic_stage in library work.
+@N: CG364 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_stage.sv":2:7:2:18|Synthesizing module cordic_stage in library work.
+@N: CG364 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_stage.sv":2:7:2:18|Synthesizing module cordic_stage in library work.
+@N: CG364 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_stage.sv":2:7:2:18|Synthesizing module cordic_stage in library work.
+@N: CG364 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_stage.sv":2:7:2:18|Synthesizing module cordic_stage in library work.
+@N: CG364 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_stage.sv":2:7:2:18|Synthesizing module cordic_stage in library work.
+@N: CG364 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_top.sv":1:7:1:16|Synthesizing module cordic_top in library work.
 @N|Running in 64-bit mode
 @N|Running in 64-bit mode
 

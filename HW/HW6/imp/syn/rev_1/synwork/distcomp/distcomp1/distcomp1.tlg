@@ -1,0 +1,28 @@
+@N:: Applying property .distcompnoprune with value 1 on module cordic in library work
+@N:: Applying property .noprune with value 1 on module cordic in library work
+@N:: Applying property .distcomp_black_box with value 1 on module cordic in library work
+@N:: Applying property syn_black_box with value 1 on module cordic in library work
+@N:: Applying property .distcompmodetop with value 1 on module cordic_top in library work
+@N:: Applying property .distcompnoprune with value 1 on module cordic_top in library work
+@N:: Applying property .noprune with value 1 on module cordic_top in library work
+@N:: Applying property .distcompnoprune with value 1 on module fifo in library work
+@N:: Applying property .noprune with value 1 on module fifo in library work
+Selecting top level module cordic_top
+@N: CG364 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":2:7:2:10|Synthesizing module fifo in library work.
+
+	FIFO_DATA_WIDTH=32'b00000000000000000000000000100000
+	FIFO_BUFFER_SIZE=32'b00000000000000000000000000010000
+	FIFO_ADDR_WIDTH=32'b00000000000000000000000000000101
+   Generated name = fifo_32s_16s_5s
+Running optimization stage 1 on fifo_32s_16s_5s .......
+@N: CL134 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":35:4:35:12|Found RAM fifo_buf, depth=16, width=32
+@N: CG364 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv":2:7:2:12|Synthesizing module cordic in library work.
+@N: CG364 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_top.sv":1:7:1:16|Synthesizing module cordic_top in library work.
+Running optimization stage 1 on cordic_top .......
+Running optimization stage 2 on cordic_top .......
+Running optimization stage 2 on fifo_32s_16s_5s .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/gel8580/CE387_new/HW/HW6/imp/syn/rev_1/synwork//distcomp/distcomp1/distcomp1.rt.csv
+

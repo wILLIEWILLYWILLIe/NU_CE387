@@ -26,22 +26,8 @@ class cordic_monitor extends uvm_monitor;
             @(vif.cb);
             if (vif.cb.valid_out) begin
                 tr = cordic_transaction::type_id::create("tr");
-                // We capture inputs and outputs. Ideally monitor sees inputs when valid_in is high
-                // and outputs when valid_out is high.
-                // However, for simplicity and since it's a block level test, 
-                // we might need to correlate input to output or just grab output.
-                // But Scoreboard needs input to calculate reference.
-                // Simple approach: Drive sends input. Monitor observes OUTPUT.
-                // But Monitor needs to know what INPUT caused this output for checking?
-                // Or Scoreboard gets the transaction from Driver (if we had a Predictor)?
-                // HW5 Scoreboard reads a file. So it expects the SEQUENCE of outputs to match the file.
-                // So Monitor just captures outputs.
-                
                 tr.sin_out = vif.cb.sin_out;
                 tr.cos_out = vif.cb.cos_out;
-                // rad_in might not be valid on valid_out cycle, ignore it or need more complex monitor.
-                // For file-based checking like HW5, we just check data stream.
-                
                 mon_ap.write(tr);
             end
         end

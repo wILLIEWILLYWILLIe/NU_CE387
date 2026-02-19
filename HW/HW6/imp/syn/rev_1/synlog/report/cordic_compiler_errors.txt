@@ -1,0 +1,17 @@
+@E: CG389 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv":162:14:162:23|Reference to undefined module cordic_stage
+@E: CG389 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv":162:14:162:23|Reference to undefined module cordic_stage
+@E: CG389 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv":162:14:162:23|Reference to undefined module cordic_stage
+@E: CG389 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv":162:14:162:23|Reference to undefined module cordic_stage
+@E: CG389 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv":162:14:162:23|Reference to undefined module cordic_stage
+@E: CG389 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv":162:14:162:23|Reference to undefined module cordic_stage
+@E: CG389 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv":162:14:162:23|Reference to undefined module cordic_stage
+@E: CG389 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv":162:14:162:23|Reference to undefined module cordic_stage
+@E: CG389 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv":162:14:162:23|Reference to undefined module cordic_stage
+@E: CG389 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv":162:14:162:23|Reference to undefined module cordic_stage
+@E: CG389 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv":162:14:162:23|Reference to undefined module cordic_stage
+@E: CG389 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv":162:14:162:23|Reference to undefined module cordic_stage
+@E: CG389 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv":162:14:162:23|Reference to undefined module cordic_stage
+@E: CG389 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv":162:14:162:23|Reference to undefined module cordic_stage
+@E: CG389 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv":162:14:162:23|Reference to undefined module cordic_stage
+@E: CG389 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv":162:14:162:23|Reference to undefined module cordic_stage
+

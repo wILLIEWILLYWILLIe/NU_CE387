@@ -6,6 +6,7 @@ vlib work
 # Using default UVM in simulator
 
 # Compile RTL
+vlog ../sv/cordic_stage.sv
 vlog ../sv/cordic.sv
 vlog ../sv/fifo.sv
 vlog ../sv/cordic_top.sv

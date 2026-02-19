@@ -1,8 +1,8 @@
-# Written by Synplify Premier version maprc, Build 4745R. Synopsys Run ID: sid1771367394 
+# Written by Synplify Premier version maprc, Build 4745R. Synopsys Run ID: sid1771453721 
 # Top Level Design Parameters 
 
 # Clocks 
-create_clock -period 6.324 -waveform {0.000 3.162} -name {cordic_top|clock} [get_ports {clock}] 
+create_clock -period 4.106 -waveform {0.000 2.053} -name {cordic_top|clock} [get_ports {clock}] 
 
 # Virtual Clocks 
 

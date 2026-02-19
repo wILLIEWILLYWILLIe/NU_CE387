@@ -21,6 +21,10 @@ class cordic_test extends uvm_test;
         phase.raise_objection(this);
         seq = cordic_sequence::type_id::create("seq");
         seq.start(env.agent.sqr);
+        
+        // Wait for pipeline to drain (19 stages + FIFO)
+        #2000; 
+        
         phase.drop_objection(this);
     endtask
 

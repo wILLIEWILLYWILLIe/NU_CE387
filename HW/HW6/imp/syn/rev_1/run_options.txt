@@ -1,11 +1,12 @@
 #--  Synopsys, Inc.
 #--  Version O-2018.09-SP1
 #--  Project file /home/gel8580/CE387_new/HW/HW6/imp/syn/rev_1/run_options.txt
-#--  Written on Tue Feb 17 16:39:29 2026
+#--  Written on Wed Feb 18 16:28:35 2026
 
 
 #project files
 add_file -verilog -vlog_std sysv "../sv/fifo.sv"
+add_file -verilog -vlog_std sysv "../sv/cordic_stage.sv"
 add_file -verilog -vlog_std sysv "../sv/cordic.sv"
 add_file -verilog -vlog_std sysv "../sv/cordic_top.sv"
 

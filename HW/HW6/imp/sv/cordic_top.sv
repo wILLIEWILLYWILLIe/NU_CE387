@@ -1,4 +1,3 @@
-
 module cordic_top (
     input  logic        clock,
     input  logic        reset,

@@ -15,7 +15,8 @@ module cordic_tb_top;
         .reset(reset),
         .valid_in(vif.valid_in),
         .rad_in(vif.rad_in),
-        .full_out(), // Connect if interface has it, otherwise leave open
+        .full_out(vif.full_out),
+        
         .valid_out(vif.valid_out),
         .sin_out(vif.sin_out),
         .cos_out(vif.cos_out)

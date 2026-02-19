@@ -1,6 +1,6 @@
 <html><body><samp><pre>
-<!@TC:1771365274>
-# Tue Feb 17 15:54:33 2026
+<!@TC:1771451002>
+# Wed Feb 18 15:43:21 2026
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -19,84 +19,77 @@ max stack size: 8388608 (bytes)
 
 
 Implementation : rev_1
-<a name=mapperReport82></a>Synopsys Intel FPGA Technology Pre-mapping, Version maprc, Build 4745R, Built Nov 27 2018 21:14:52</a>
+<a name=mapperReport25></a>Synopsys Intel FPGA Technology Pre-mapping, Version maprc, Build 4745R, Built Nov 27 2018 21:14:52</a>
 
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
 
-@A:<a href="@A:MF827:@XP_HELP">MF827</a> : <!@TM:1771365274> | No constraint file specified. 
-@N:<a href="@N:MF284:@XP_HELP">MF284</a> : <!@TM:1771365274> | Setting synthesis effort to medium for the design 
+@A:<a href="@A:MF827:@XP_HELP">MF827</a> : <!@TM:1771451002> | No constraint file specified. 
+@N:<a href="@N:MF284:@XP_HELP">MF284</a> : <!@TM:1771451002> | Setting synthesis effort to medium for the design 
 Linked File:  <a href="/home/gel8580/CE387_new/HW/HW6/imp/syn/rev_1/cordic_scck.rpt:@XP_FILE">cordic_scck.rpt</a>
 Printing clock  summary report in "/home/gel8580/CE387_new/HW/HW6/imp/syn/rev_1/cordic_scck.rpt" file 
-@N:<a href="@N:MF915:@XP_HELP">MF915</a> : <!@TM:1771365274> | Option synthesis_strategy=advanced is enabled.  
-@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1771365274> | Running in 64-bit mode. 
-@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1771365274> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
+@N:<a href="@N:MF915:@XP_HELP">MF915</a> : <!@TM:1771451002> | Option synthesis_strategy=advanced is enabled.  
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1771451002> | Running in 64-bit mode. 
+@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1771451002> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
 
-<font color=#A52A2A>@W:<a href="@W:FA406:@XP_HELP">FA406</a> : <!@TM:1771365274> | Environment variable QUARTUS_ROOTDIR not set. Cannot determine PAR version.</font> 
-@N:<a href="@N:MF284:@XP_HELP">MF284</a> : <!@TM:1771365274> | Setting synthesis effort to medium for the design 
+<font color=#A52A2A>@W:<a href="@W:FA406:@XP_HELP">FA406</a> : <!@TM:1771451002> | Environment variable QUARTUS_ROOTDIR not set. Cannot determine PAR version.</font> 
+@N:<a href="@N:MF284:@XP_HELP">MF284</a> : <!@TM:1771451002> | Setting synthesis effort to medium for the design 
 
 Finished Clear Box Flow. (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
 
-@N:<a href="@N:MH105:@XP_HELP">MH105</a> : <!@TM:1771365274> | UMR3 is only supported for HAPS-80. 
-@N:<a href="@N:MH105:@XP_HELP">MH105</a> : <!@TM:1771365274> | UMR3 is only supported for HAPS-80. 
+@N:<a href="@N:MH105:@XP_HELP">MH105</a> : <!@TM:1771451002> | UMR3 is only supported for HAPS-80. 
+@N:<a href="@N:MH105:@XP_HELP">MH105</a> : <!@TM:1771451002> | UMR3 is only supported for HAPS-80. 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 116MB peak: 117MB)
 
 
 
-<a name=mapperReport83></a>Clock Summary</a>
+<a name=mapperReport26></a>Clock Summary</a>
 ******************
 
-          Start            Requested     Requested     Clock        Clock                     Clock
-Level     Clock            Frequency     Period        Type         Group                     Load 
----------------------------------------------------------------------------------------------------
-0 -       cordic|clock     200.7 MHz     4.982         inferred     Autoconstr_clkgroup_0     106  
-===================================================================================================
+          Start                Requested     Requested     Clock        Clock                     Clock
+Level     Clock                Frequency     Period        Type         Group                     Load 
+-------------------------------------------------------------------------------------------------------
+0 -       cordic_top|clock     297.3 MHz     3.363         inferred     Autoconstr_clkgroup_0     659  
+=======================================================================================================
 
 
 
 Clock Load Summary
 ***********************
 
-                 Clock     Source          Clock Pin       Non-clock Pin     Non-clock Pin
-Clock            Load      Pin             Seq Example     Seq Example       Comb Example 
-------------------------------------------------------------------------------------------
-cordic|clock     106       clock(port)     valid_out.C     -                 -            
-==========================================================================================
+                     Clock     Source          Clock Pin                         Non-clock Pin     Non-clock Pin
+Clock                Load      Pin             Seq Example                       Seq Example       Comb Example 
+----------------------------------------------------------------------------------------------------------------
+cordic_top|clock     659       clock(port)     cordic_inst.valid_pipe\[0\].C     -                 -            
+================================================================================================================
 
-<font color=#A52A2A>@W:<a href="@W:MT529:@XP_HELP">MT529</a> : <a href="/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv:67:4:67:13:@W:MT529:@XP_MSG">cordic.sv(67)</a><!@TM:1771365274> | Found inferred clock cordic|clock which controls 106 sequential elements including z[31:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </font>
+<font color=#A52A2A>@W:<a href="@W:MT529:@XP_HELP">MT529</a> : <a href="/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv:63:4:63:13:@W:MT529:@XP_MSG">fifo.sv(63)</a><!@TM:1771451002> | Found inferred clock cordic_top|clock which controls 659 sequential elements including input_fifo.empty. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </font>
 
 Finished Pre Mapping Phase.
-@N:<a href="@N:BN225:@XP_HELP">BN225</a> : <!@TM:1771365274> | Writing default property annotation file /home/gel8580/CE387_new/HW/HW6/imp/syn/rev_1/cordic.sap. 
+@N:<a href="@N:BN225:@XP_HELP">BN225</a> : <!@TM:1771451002> | Writing default property annotation file /home/gel8580/CE387_new/HW/HW6/imp/syn/rev_1/cordic.sap. 
 
-Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 118MB)
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 116MB peak: 118MB)
 
-Encoding state machine state[4:0] (in view: work.cordic(verilog))
-original code -> new code
-   000 -> 00001
-   001 -> 00010
-   010 -> 00100
-   011 -> 01000
-   100 -> 10000
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 118MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 116MB peak: 118MB)
 
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 118MB)
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 116MB peak: 118MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 31MB peak: 118MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 32MB peak: 118MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Feb 17 15:54:34 2026
+# Wed Feb 18 15:43:22 2026
 
 ###########################################################]
 

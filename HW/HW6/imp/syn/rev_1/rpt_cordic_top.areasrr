@@ -27,17 +27,17 @@ Part:			EP4CE115FC23-7 (Altera)
 SEQUENTIAL ATOMS
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-REGISTERS     117                100 %                
+REGISTERS     1038               100 %                
 ======================================================
-Total SEQUENTIAL ATOMS in the block cordic_top:	117 (21.87 % Utilization)
+Total SEQUENTIAL ATOMS in the block cordic_top:	1038 (40.55 % Utilization)
 
 
 COMBINATIONAL ATOMS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-ATOMS     276                100 %                
+ATOMS     351                100 %                
 ==================================================
-Total COMBINATIONAL ATOMS in the block cordic_top:	276 (51.59 % Utilization)
+Total COMBINATIONAL ATOMS in the block cordic_top:	351 (13.71 % Utilization)
 
 
 RAMS
@@ -45,7 +45,7 @@ Name          Total elements     Number of bits     Utilization     Notes
 -------------------------------------------------------------------------
 SYNC RAMS     1                  512                100 %                
 =========================================================================
-Total RAMS in the block cordic_top:	1 (0.19 % Utilization)
+Total RAMS in the block cordic_top:	1 (0.04 % Utilization)
 
 ------------------------------------------------------------
 ########   Utilization report for  cell:   cordic   ########
@@ -55,17 +55,337 @@ Instance path:   cordic_top.cordic
 SEQUENTIAL ATOMS
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-REGISTERS     106                90.6 %               
+REGISTERS     1027               98.9 %               
 ======================================================
-Total SEQUENTIAL ATOMS in the block cordic_top.cordic:	106 (19.81 % Utilization)
+Total SEQUENTIAL ATOMS in the block cordic_top.cordic:	1027 (40.12 % Utilization)
 
 
 COMBINATIONAL ATOMS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-ATOMS     259                93.8 %               
+ATOMS     334                95.2 %               
 ==================================================
-Total COMBINATIONAL ATOMS in the block cordic_top.cordic:	259 (48.41 % Utilization)
+Total COMBINATIONAL ATOMS in the block cordic_top.cordic:	334 (13.05 % Utilization)
+
+-------------------------------------------------------------------------
+########   Utilization report for  cell:   cordic_stage_0s_16s   ########
+Instance path:   cordic.cordic_stage_0s_16s                              
+=========================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     40                 3.85 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block cordic.cordic_stage_0s_16s:	40 (1.56 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     4                  1.14 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block cordic.cordic_stage_0s_16s:	4 (0.16 % Utilization)
+
+--------------------------------------------------------------------------
+########   Utilization report for  cell:   cordic_stage_10s_16s   ########
+Instance path:   cordic.cordic_stage_10s_16s                              
+==========================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     65                 6.26 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block cordic.cordic_stage_10s_16s:	65 (2.54 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     12                 3.42 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block cordic.cordic_stage_10s_16s:	12 (0.47 % Utilization)
+
+--------------------------------------------------------------------------
+########   Utilization report for  cell:   cordic_stage_11s_16s   ########
+Instance path:   cordic.cordic_stage_11s_16s                              
+==========================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     65                 6.26 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block cordic.cordic_stage_11s_16s:	65 (2.54 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     10                 2.85 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block cordic.cordic_stage_11s_16s:	10 (0.39 % Utilization)
+
+--------------------------------------------------------------------------
+########   Utilization report for  cell:   cordic_stage_12s_16s   ########
+Instance path:   cordic.cordic_stage_12s_16s                              
+==========================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     65                 6.26 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block cordic.cordic_stage_12s_16s:	65 (2.54 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     8                  2.28 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block cordic.cordic_stage_12s_16s:	8 (0.31 % Utilization)
+
+--------------------------------------------------------------------------
+########   Utilization report for  cell:   cordic_stage_13s_16s   ########
+Instance path:   cordic.cordic_stage_13s_16s                              
+==========================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     34                 3.28 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block cordic.cordic_stage_13s_16s:	34 (1.33 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     6                  1.71 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block cordic.cordic_stage_13s_16s:	6 (0.23 % Utilization)
+
+--------------------------------------------------------------------------
+########   Utilization report for  cell:   cordic_stage_14s_16s   ########
+Instance path:   cordic.cordic_stage_14s_16s                              
+==========================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     34                 3.28 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block cordic.cordic_stage_14s_16s:	34 (1.33 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     4                  1.14 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block cordic.cordic_stage_14s_16s:	4 (0.16 % Utilization)
+
+--------------------------------------------------------------------------
+########   Utilization report for  cell:   cordic_stage_15s_16s   ########
+Instance path:   cordic.cordic_stage_15s_16s                              
+==========================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     33                 3.18 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block cordic.cordic_stage_15s_16s:	33 (1.29 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     2                  0.570 %              
+==================================================
+Total COMBINATIONAL ATOMS in the block cordic.cordic_stage_15s_16s:	2 (0.08 % Utilization)
+
+-------------------------------------------------------------------------
+########   Utilization report for  cell:   cordic_stage_1s_16s   ########
+Instance path:   cordic.cordic_stage_1s_16s                              
+=========================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     66                 6.36 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block cordic.cordic_stage_1s_16s:	66 (2.58 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     6                  1.71 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block cordic.cordic_stage_1s_16s:	6 (0.23 % Utilization)
+
+-------------------------------------------------------------------------
+########   Utilization report for  cell:   cordic_stage_2s_16s   ########
+Instance path:   cordic.cordic_stage_2s_16s                              
+=========================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     66                 6.36 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block cordic.cordic_stage_2s_16s:	66 (2.58 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     28                 7.98 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block cordic.cordic_stage_2s_16s:	28 (1.09 % Utilization)
+
+-------------------------------------------------------------------------
+########   Utilization report for  cell:   cordic_stage_3s_16s   ########
+Instance path:   cordic.cordic_stage_3s_16s                              
+=========================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     65                 6.26 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block cordic.cordic_stage_3s_16s:	65 (2.54 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     26                 7.41 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block cordic.cordic_stage_3s_16s:	26 (1.02 % Utilization)
+
+-------------------------------------------------------------------------
+########   Utilization report for  cell:   cordic_stage_4s_16s   ########
+Instance path:   cordic.cordic_stage_4s_16s                              
+=========================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     66                 6.36 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block cordic.cordic_stage_4s_16s:	66 (2.58 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     24                 6.84 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block cordic.cordic_stage_4s_16s:	24 (0.94 % Utilization)
+
+-------------------------------------------------------------------------
+########   Utilization report for  cell:   cordic_stage_5s_16s   ########
+Instance path:   cordic.cordic_stage_5s_16s                              
+=========================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     66                 6.36 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block cordic.cordic_stage_5s_16s:	66 (2.58 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     22                 6.27 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block cordic.cordic_stage_5s_16s:	22 (0.86 % Utilization)
+
+-------------------------------------------------------------------------
+########   Utilization report for  cell:   cordic_stage_6s_16s   ########
+Instance path:   cordic.cordic_stage_6s_16s                              
+=========================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     65                 6.26 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block cordic.cordic_stage_6s_16s:	65 (2.54 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     20                 5.7 %                
+==================================================
+Total COMBINATIONAL ATOMS in the block cordic.cordic_stage_6s_16s:	20 (0.78 % Utilization)
+
+-------------------------------------------------------------------------
+########   Utilization report for  cell:   cordic_stage_7s_16s   ########
+Instance path:   cordic.cordic_stage_7s_16s                              
+=========================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     65                 6.26 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block cordic.cordic_stage_7s_16s:	65 (2.54 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     18                 5.13 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block cordic.cordic_stage_7s_16s:	18 (0.70 % Utilization)
+
+-------------------------------------------------------------------------
+########   Utilization report for  cell:   cordic_stage_8s_16s   ########
+Instance path:   cordic.cordic_stage_8s_16s                              
+=========================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     65                 6.26 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block cordic.cordic_stage_8s_16s:	65 (2.54 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     16                 4.56 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block cordic.cordic_stage_8s_16s:	16 (0.62 % Utilization)
+
+-------------------------------------------------------------------------
+########   Utilization report for  cell:   cordic_stage_9s_16s   ########
+Instance path:   cordic.cordic_stage_9s_16s                              
+=========================================================================
+
+SEQUENTIAL ATOMS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     65                 6.26 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block cordic.cordic_stage_9s_16s:	65 (2.54 % Utilization)
+
+
+COMBINATIONAL ATOMS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+ATOMS     14                 3.99 %               
+==================================================
+Total COMBINATIONAL ATOMS in the block cordic.cordic_stage_9s_16s:	14 (0.55 % Utilization)
 
 ---------------------------------------------------------------------
 ########   Utilization report for  cell:   fifo_32s_16s_5s   ########
@@ -75,17 +395,17 @@ Instance path:   cordic_top.fifo_32s_16s_5s
 SEQUENTIAL ATOMS
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-REGISTERS     11                 9.4 %                
+REGISTERS     11                 1.06 %               
 ======================================================
-Total SEQUENTIAL ATOMS in the block cordic_top.fifo_32s_16s_5s:	11 (2.06 % Utilization)
+Total SEQUENTIAL ATOMS in the block cordic_top.fifo_32s_16s_5s:	11 (0.43 % Utilization)
 
 
 COMBINATIONAL ATOMS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-ATOMS     16                 5.8 %                
+ATOMS     17                 4.84 %               
 ==================================================
-Total COMBINATIONAL ATOMS in the block cordic_top.fifo_32s_16s_5s:	16 (2.99 % Utilization)
+Total COMBINATIONAL ATOMS in the block cordic_top.fifo_32s_16s_5s:	17 (0.66 % Utilization)
 
 
 RAMS
@@ -93,7 +413,7 @@ Name          Total elements     Number of bits     Utilization     Notes
 -------------------------------------------------------------------------
 SYNC RAMS     1                  512                100 %                
 =========================================================================
-Total RAMS in the block cordic_top.fifo_32s_16s_5s:	1 (0.19 % Utilization)
+Total RAMS in the block cordic_top.fifo_32s_16s_5s:	1 (0.04 % Utilization)
 
 
 ##### END OF AREA REPORT #####]

@@ -16,7 +16,7 @@ max stack size: 8388608 (bytes)
 
 Implementation : rev_1
 
-# Written on Tue Feb 17 16:29:53 2026
+# Written on Wed Feb 18 16:28:41 2026
 
 ##### DESIGN INFO #######################################################
 
@@ -40,7 +40,7 @@ Clock Relationships
 
 Starting             Ending               |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
 -----------------------------------------------------------------------------------------------------------------------------------------------------
-cordic_top|clock     cordic_top|clock     |     4.982            |     No paths         |     No paths         |     No paths                         
+cordic_top|clock     cordic_top|clock     |     3.363            |     No paths         |     No paths         |     No paths                         
 =====================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.

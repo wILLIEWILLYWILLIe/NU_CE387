@@ -1,13 +1,13 @@
 @P:  Part : ep4ce115fc23-7
-@P:  Worst Slack : -1.116
-@P:  cordic_top|clock - Estimated Frequency : 134.4 MHz
-@P:  cordic_top|clock - Requested Frequency : 158.1 MHz
-@P:  cordic_top|clock - Estimated Period : 7.440
-@P:  cordic_top|clock - Requested Period : 6.324
-@P:  cordic_top|clock - Slack : -1.116
+@P:  Worst Slack : -0.725
+@P:  cordic_top|clock - Estimated Frequency : 207.0 MHz
+@P:  cordic_top|clock - Requested Frequency : 243.5 MHz
+@P:  cordic_top|clock - Estimated Period : 4.831
+@P:  cordic_top|clock - Requested Period : 4.106
+@P:  cordic_top|clock - Slack : -0.725
 @P: cordic_top Part : ep4ce115fc23-7
 @P: cordic_top I/O ATOMs : 35
-@P: cordic_top Total LUTs : 348 
-@P: cordic_top Register bits : 117
+@P: cordic_top Total LUTs : 1439 
+@P: cordic_top Register bits : 1038
 @P: cordic_top DSP Blocks : 0 (0 nine-bit DSP elements)
-@P:  CPU Time : 0h:00m:02s
+@P:  CPU Time : 0h:00m:08s

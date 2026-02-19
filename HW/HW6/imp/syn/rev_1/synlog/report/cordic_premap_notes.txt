@@ -5,4 +5,5 @@
 @N: MF284 |Setting synthesis effort to medium for the design
 @N: MH105 |UMR3 is only supported for HAPS-80.
 @N: MH105 |UMR3 is only supported for HAPS-80.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_stage.sv":70:4:70:12|Removing sequential instance z_out[31:0] (in view: work.cordic_stage_15s_16s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: BN225 |Writing default property annotation file /home/gel8580/CE387_new/HW/HW6/imp/syn/rev_1/cordic.sap.

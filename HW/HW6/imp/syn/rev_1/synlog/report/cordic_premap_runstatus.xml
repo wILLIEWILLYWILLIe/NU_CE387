@@ -13,7 +13,7 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>8</data>
+<data>9</data>
 <report_link name="more">
 <data>/home/gel8580/CE387_new/HW/HW6/imp/syn/rev_1/synlog/report/cordic_premap_notes.txt</data>
 </report_link>
@@ -37,10 +37,10 @@ The file contains the job information from mapper to be displayed as part of the
 <data>0h:00m:00s</data>
 </info>
 <info name="Peak Memory">
-<data>118MB</data>
+<data>122MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1771367393</data>
+<data type="timestamp">1771453721</data>
 </info>
 </job_info>
 </job_run_status>

@@ -16,7 +16,7 @@ max stack size: 8388608 (bytes)
 
 Implementation : rev_1
 
-# Written on Tue Feb 17 16:29:53 2026
+# Written on Wed Feb 18 16:28:40 2026
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      (none)
@@ -36,15 +36,15 @@ Clock Summary
           Start                Requested     Requested     Clock        Clock                     Clock
 Level     Clock                Frequency     Period        Type         Group                     Load 
 -------------------------------------------------------------------------------------------------------
-0 -       cordic_top|clock     200.7 MHz     4.982         inferred     Autoconstr_clkgroup_0     181  
+0 -       cordic_top|clock     297.3 MHz     3.363         inferred     Autoconstr_clkgroup_0     1185 
 =======================================================================================================
 
 
 Clock Load Summary
 ******************
 
-                     Clock     Source          Clock Pin                   Non-clock Pin     Non-clock Pin
-Clock                Load      Pin             Seq Example                 Seq Example       Comb Example 
-----------------------------------------------------------------------------------------------------------
-cordic_top|clock     181       clock(port)     cordic_inst.valid_out.C     -                 -            
-==========================================================================================================
+                     Clock     Source          Clock Pin                         Non-clock Pin     Non-clock Pin
+Clock                Load      Pin             Seq Example                       Seq Example       Comb Example 
+----------------------------------------------------------------------------------------------------------------
+cordic_top|clock     1185      clock(port)     cordic_inst.valid_pipe\[0\].C     -                 -            
+================================================================================================================

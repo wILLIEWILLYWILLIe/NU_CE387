@@ -17,28 +17,30 @@ max stack size: 8388608 (bytes)
 Implementation : rev_1
 Synopsys HDL compiler and linker, Version comp2018q4p1, Build 004R, Built Nov 27 2018 21:19:49
 
-Modified Files: 3
+Modified Files: 1
 FID:  path (prevtimestamp, timestamp)
-0        /home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv (2026-02-17 15:53:36, 2026-02-17 16:05:15)
-12       /home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_top.sv (N/A, 2026-02-17 16:05:17)
-13       /home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv (N/A, 2026-02-17 16:05:09)
+12       /home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_top.sv (2026-02-17 16:05:17, 2026-02-18 16:17:08)
 
 *******************************************************************
-Modules that may have changed as a result of file changes: 3
+Modules that may have changed as a result of file changes: 4
 MID:  lib.cell.view
 0        work.cordic.verilog may have changed because the following files changed:
-                        /home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv (2026-02-17 15:53:36, 2026-02-17 16:05:15) <-- (module definition)
-                        /home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_top.sv (N/A, 2026-02-17 16:05:17) <-- (may instantiate this module)
+                        /home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_top.sv (2026-02-17 16:05:17, 2026-02-18 16:17:08) <-- (may instantiate this module)
+3        work.cordic_stage.verilog may have changed because the following files changed:
+                        /home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_top.sv (2026-02-17 16:05:17, 2026-02-18 16:17:08) <-- (may instantiate this module)
 1        work.cordic_top.verilog may have changed because the following files changed:
-                        /home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_top.sv (N/A, 2026-02-17 16:05:17) <-- (module definition)
+                        /home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_top.sv (2026-02-17 16:05:17, 2026-02-18 16:17:08) <-- (module definition)
 2        work.fifo.verilog may have changed because the following files changed:
-                        /home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_top.sv (N/A, 2026-02-17 16:05:17) <-- (may instantiate this module)
-                        /home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv (N/A, 2026-02-17 16:05:09) <-- (module definition)
+                        /home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_top.sv (2026-02-17 16:05:17, 2026-02-18 16:17:08) <-- (may instantiate this module)
 
 *******************************************************************
-Unmodified files: 11
+Unmodified files: 15
 FID:  path (timestamp)
+0        /home/gel8580/CE387_new/HW/HW6/imp/sv/cordic.sv (2026-02-18 16:03:45)
+14       /home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_stage.sv (2026-02-18 16:03:43)
+13       /home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv (2026-02-17 16:05:09)
 1        /home/gel8580/CE387_new/HW/HW6/imp/syn/rev_1/synwork//distcomp/distcomp0/distcomp0.xmr (2026-02-17 15:35:18)
+15       /home/gel8580/CE387_new/HW/HW6/imp/syn/rev_1/synwork//distcomp/distcomp1/distcomp1.xmr (2026-02-18 16:06:31)
 2        /vol/synopsys/fpga/O-2018.09-SP1/lib/altera/altera.v (2018-11-27 23:10:11)
 3        /vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_lpm.v (2018-11-27 23:10:39)
 4        /vol/synopsys/fpga/O-2018.09-SP1/lib/altera/quartus_prime181/altera_mf.v (2018-11-27 23:10:39)

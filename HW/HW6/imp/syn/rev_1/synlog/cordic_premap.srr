@@ -1,4 +1,4 @@
-# Tue Feb 17 16:29:53 2026
+# Wed Feb 18 16:28:40 2026
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -30,20 +30,21 @@ Printing clock  summary report in "/home/gel8580/CE387_new/HW/HW6/imp/syn/rev_1/
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 105MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 105MB)
 
 @W: FA406 |Environment variable QUARTUS_ROOTDIR not set. Cannot determine PAR version.
 @N: MF284 |Setting synthesis effort to medium for the design
 
-Finished Clear Box Flow. (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
+Finished Clear Box Flow. (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 121MB)
 
 @N: MH105 |UMR3 is only supported for HAPS-80.
 @N: MH105 |UMR3 is only supported for HAPS-80.
+@N: BN362 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/cordic_stage.sv":70:4:70:12|Removing sequential instance z_out[31:0] (in view: work.cordic_stage_15s_16s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 121MB)
 
 
 
@@ -53,7 +54,7 @@ Clock Summary
           Start                Requested     Requested     Clock        Clock                     Clock
 Level     Clock                Frequency     Period        Type         Group                     Load 
 -------------------------------------------------------------------------------------------------------
-0 -       cordic_top|clock     200.7 MHz     4.982         inferred     Autoconstr_clkgroup_0     181  
+0 -       cordic_top|clock     297.3 MHz     3.363         inferred     Autoconstr_clkgroup_0     1185 
 =======================================================================================================
 
 
@@ -61,39 +62,32 @@ Level     Clock                Frequency     Period        Type         Group   
 Clock Load Summary
 ***********************
 
-                     Clock     Source          Clock Pin                   Non-clock Pin     Non-clock Pin
-Clock                Load      Pin             Seq Example                 Seq Example       Comb Example 
-----------------------------------------------------------------------------------------------------------
-cordic_top|clock     181       clock(port)     cordic_inst.valid_out.C     -                 -            
-==========================================================================================================
+                     Clock     Source          Clock Pin                         Non-clock Pin     Non-clock Pin
+Clock                Load      Pin             Seq Example                       Seq Example       Comb Example 
+----------------------------------------------------------------------------------------------------------------
+cordic_top|clock     1185      clock(port)     cordic_inst.valid_pipe\[0\].C     -                 -            
+================================================================================================================
 
-@W: MT529 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":63:4:63:12|Found inferred clock cordic_top|clock which controls 181 sequential elements including input_fifo.empty. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"/home/gel8580/CE387_new/HW/HW6/imp/sv/fifo.sv":63:4:63:12|Found inferred clock cordic_top|clock which controls 1185 sequential elements including input_fifo.empty. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file /home/gel8580/CE387_new/HW/HW6/imp/syn/rev_1/cordic.sap.
 
-Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 118MB)
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 122MB)
 
-Encoding state machine state[4:0] (in view: work.cordic(verilog))
-original code -> new code
-   000 -> 00001
-   001 -> 00010
-   010 -> 00100
-   011 -> 01000
-   100 -> 10000
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 118MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 122MB)
 
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 118MB)
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 122MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 31MB peak: 118MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 35MB peak: 122MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Feb 17 16:29:53 2026
+# Wed Feb 18 16:28:41 2026
 
 ###########################################################]

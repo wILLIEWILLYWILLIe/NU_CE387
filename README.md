@@ -44,6 +44,16 @@ The repository is organized by homework assignment:
   - `FPGA_HW5.pdf`: Assignment description
   - `HW.tex`: Homework report (LaTeX)
 
+- **HW/HW6/**: Homework 6
+  - `imp/`: Implementation directory
+    - `sv/`: SystemVerilog source files
+    - `sim/`: Simulation files
+    - `syn/`: Synthesis scripts and output
+    - `uvm/`: UVM verification environment
+  - `FPGA_HW6.pdf`: Assignment description
+  - `cordic.cpp`: C++ source for CORDIC
+  - `cordic_caltime.cpp`: C++ source for time calculation
+
 - **Demo/**: Demonstration files
   - `week1/`: Week 1 demos
   - `week2/`: Week 2 demos
@@ -58,6 +68,7 @@ To run simulations, navigate to the `sim` directory within each homework folder 
 - **HW1-HW3**: `HW/HW<#>/sim`
 - **HW4**: `HW/HW4/edge_detect/sim`
 - **HW5**: `HW/HW5/imp/sim`
+- **HW6**: `HW/HW6/imp/sim`
 
 Example for HW4:
 ```bash
@@ -74,6 +85,7 @@ To run synthesis, navigate to the `syn` directory within each homework folder an
 - **HW1-HW3**: `HW/HW<#>/syn`
 - **HW4**: `HW/HW4/edge_detect/syn`
 - **HW5**: `HW/HW5/imp/syn`
+- **HW6**: `HW/HW6/imp/syn`
 
 Example for HW5:
 ```bash

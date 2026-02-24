@@ -1,46 +1,46 @@
-# do fft_tb.do
+# do fft_uvm_sim.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
 # vmap work work 
 # Modifying modelsim.ini
 # Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
-# Start time: 11:40:37 on Feb 24,2026
+# Start time: 12:30:00 on Feb 24,2026
 # vlog -sv ../sv/my_fft_pkg.sv 
 # -- Compiling package my_fft_pkg
 # 
 # Top level modules:
 # 	--none--
-# End time: 11:40:37 on Feb 24,2026, Elapsed time: 0:00:00
+# End time: 12:30:00 on Feb 24,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
-# Start time: 11:40:37 on Feb 24,2026
+# Start time: 12:30:00 on Feb 24,2026
 # vlog -sv ../sv/fifo_ctrl.sv 
 # -- Compiling module fifo_ctrl
 # 
 # Top level modules:
 # 	fifo_ctrl
-# End time: 11:40:37 on Feb 24,2026, Elapsed time: 0:00:00
+# End time: 12:30:00 on Feb 24,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
-# Start time: 11:40:37 on Feb 24,2026
+# Start time: 12:30:00 on Feb 24,2026
 # vlog -sv ../sv/fifo.sv 
 # -- Compiling module fifo
 # 
 # Top level modules:
 # 	fifo
-# End time: 11:40:38 on Feb 24,2026, Elapsed time: 0:00:01
+# End time: 12:30:00 on Feb 24,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
-# Start time: 11:40:38 on Feb 24,2026
+# Start time: 12:30:00 on Feb 24,2026
 # vlog -sv ../sv/fft_bit_reversal.sv 
 # -- Compiling module fft_bit_reversal
 # 
 # Top level modules:
 # 	fft_bit_reversal
-# End time: 11:40:38 on Feb 24,2026, Elapsed time: 0:00:00
+# End time: 12:30:00 on Feb 24,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
-# Start time: 11:40:38 on Feb 24,2026
+# Start time: 12:30:00 on Feb 24,2026
 # vlog -sv ../sv/fft_stage.sv 
 # -- Compiling package my_fft_pkg
 # -- Compiling module fft_stage
@@ -48,19 +48,19 @@
 # 
 # Top level modules:
 # 	fft_stage
-# End time: 11:40:38 on Feb 24,2026, Elapsed time: 0:00:00
+# End time: 12:30:00 on Feb 24,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
-# Start time: 11:40:38 on Feb 24,2026
+# Start time: 12:30:00 on Feb 24,2026
 # vlog -sv ../sv/complex_mult.sv 
 # -- Compiling module complex_mult
 # 
 # Top level modules:
 # 	complex_mult
-# End time: 11:40:38 on Feb 24,2026, Elapsed time: 0:00:00
+# End time: 12:30:00 on Feb 24,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
-# Start time: 11:40:38 on Feb 24,2026
+# Start time: 12:30:00 on Feb 24,2026
 # vlog -sv ../sv/fft_top.sv 
 # -- Compiling package my_fft_pkg
 # -- Compiling module fft_top
@@ -73,22 +73,46 @@
 # 
 # Top level modules:
 # 	fft_top
-# End time: 11:40:38 on Feb 24,2026, Elapsed time: 0:00:00
+# End time: 12:30:00 on Feb 24,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 5
 # Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
-# Start time: 11:40:38 on Feb 24,2026
-# vlog -sv ../sv/fft_tb.sv 
-# -- Compiling package my_fft_pkg
-# -- Compiling module fft_tb
+# Start time: 12:30:00 on Feb 24,2026
+# vlog -sv "+incdir+../uvm" ../uvm/my_uvm_pkg.sv 
+# -- Compiling package my_uvm_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
 # -- Importing package my_fft_pkg
+# ** Note: (vlog-2286) ../uvm/my_uvm_pkg.sv(8): Using implicit +incdir+/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
 # 
 # Top level modules:
-# 	fft_tb
-# End time: 11:40:38 on Feb 24,2026, Elapsed time: 0:00:00
+# 	--none--
+# End time: 12:30:01 on Feb 24,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vsim -c -do "run -all; quit" fft_tb 
-# Start time: 11:40:38 on Feb 24,2026
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 12:30:01 on Feb 24,2026
+# vlog -sv "+incdir+../uvm" ../uvm/fft_if.sv 
+# -- Compiling interface fft_if
+# 
+# Top level modules:
+# 	--none--
+# End time: 12:30:01 on Feb 24,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 12:30:01 on Feb 24,2026
+# vlog -sv "+incdir+../uvm" ../uvm/my_uvm_tb.sv 
+# ** Note: (vlog-2286) ../uvm/my_uvm_tb.sv(4): Using implicit +incdir+/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package my_uvm_tb_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package my_uvm_pkg
+# -- Importing package my_fft_pkg
+# -- Compiling module my_uvm_tb
+# 
+# Top level modules:
+# 	my_uvm_tb
+# End time: 12:30:01 on Feb 24,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -coverage -do "coverage save -onexit fft_coverage.ucdb; run -all; quit" my_uvm_tb "+UVM_TESTNAME=my_uvm_test" 
+# Start time: 12:30:01 on Feb 24,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  ModelSim SE-64 2020.1 Jan 28 2020 Linux 4.18.0-553.92.1.el8_10.x86_64
 # //
 # //  Copyright 1991-2020 Mentor Graphics Corporation
@@ -104,92 +128,111 @@
 # //
 # ** Warning: License feature 'msimhdlsim' will expire in 4 days.
 # Loading sv_std.std
+# Loading work.fft_if(fast)
 # Loading work.my_fft_pkg(fast)
-# Loading work.fft_tb(fast)
-# run -all
-# Starting Input Drive...
-# [TOP] BitRev Input to Stage 0: 4145 + j0004
-# [TOP] BitRev Input to Stage 0: c078 + jfeb3
-# [TOP] BitRev Input to Stage 0: 0134 + j4121
-# [TOP] BitRev Input to Stage 0: 007e + jbef1
-# [TOP] BitRev Input to Stage 0: 2c6b + j2cb6
-# [TOP] BitRev Input to Stage 0: d3d0 + jd3cf
-# [TOP] BitRev Input to Stage 0: d419 + j2c05
-# [TOP] BitRev Input to Stage 0: 2e96 + jd2eb
-# [TOP] BitRev Input to Stage 0: 399e + j19f9
-# [TOP] BitRev Input to Stage 0: c4e9 + je5e9
-# [TOP] BitRev Input to Stage 0: e615 + j3b71
-# [TOP] BitRev Input to Stage 0: 1880 + jc47f
-# [TOP] BitRev Input to Stage 0: 1816 + j3b61
-# [TOP] BitRev Input to Stage 0: e8bf + jc578
-# [TOP] BitRev Input to Stage 0: c463 + j19f4
-# [TOP] BitRev Input to Stage 0: 3b75 + je670
-# [TOP] Stage 4 Output: 00000429 + jffffff58
-# [TOP] Stage 4 Output: 0004011a + j000005b2
-# [63500 ns] Output Sample #0: 0429 + jff58 | PASS (Bit-Accurate)
-# [TOP] Stage 4 Output: 0000012a + j00000015
-# [TOP] Stage 4 Output: 000002cc + j000005aa
-# [64500 ns] Output Sample #1: 011a + j05b2 | PASS (Bit-Accurate)
-# [65500 ns] Output Sample #2: 012a + j0015 | PASS (Bit-Accurate)
-# [TOP] Stage 4 Output: ffffff1b + j000002e3
-# [TOP] BitRev Input to Stage 0: 0000 + j0000
-# [TOP] Stage 4 Output: 00000b9c + jffffff3f
-# [66500 ns] Output Sample #3: 02cc + j05aa | PASS (Bit-Accurate)
-# [67500 ns] Output Sample #4: ff1b + j02e3 | PASS (Bit-Accurate)
-# [TOP] Stage 4 Output: ffffff7c + jfffffbe7
-# [TOP] BitRev Input to Stage 0: 0000 + j0000
-# [TOP] BitRev Input to Stage 0: 0000 + j0000
-# [TOP] Stage 4 Output: 0000029b + j0000042f
-# [68500 ns] Output Sample #5: 0b9c + jff3f | PASS (Bit-Accurate)
-# [69500 ns] Output Sample #6: ff7c + jfbe7 | PASS (Bit-Accurate)
-# [TOP] Stage 4 Output: 0000088d + jfffffd30
-# [TOP] BitRev Input to Stage 0: 0000 + j0000
-# [TOP] BitRev Input to Stage 0: 0000 + j0000
-# [TOP] Stage 4 Output: fffffdd4 + jfffffdea
-# [70500 ns] Output Sample #7: 029b + j042f | PASS (Bit-Accurate)
-# [71500 ns] Output Sample #8: 088d + jfd30 | PASS (Bit-Accurate)
-# [TOP] Stage 4 Output: 00000214 + j0000021b
-# [TOP] BitRev Input to Stage 0: 0000 + j0000
-# [TOP] BitRev Input to Stage 0: 0000 + j0000
-# [TOP] Stage 4 Output: fffff8e2 + j00000152
-# [72500 ns] Output Sample #9: fdd4 + jfdea | PASS (Bit-Accurate)
-# [73500 ns] Output Sample #10: 0214 + j021b | PASS (Bit-Accurate)
-# [TOP] Stage 4 Output: 000001ef + jfffffbc1
-# [TOP] BitRev Input to Stage 0: 0000 + j0000
-# [TOP] BitRev Input to Stage 0: 0000 + j0000
-# [TOP] Stage 4 Output: 0000015e + jffffff91
-# [74500 ns] Output Sample #11: f8e2 + j0152 | PASS (Bit-Accurate)
-# [75500 ns] Output Sample #12: 01ef + jfbc1 | PASS (Bit-Accurate)
-# [TOP] Stage 4 Output: fffffd76 + jfffffc7d
-# [TOP] BitRev Input to Stage 0: 0000 + j0000
-# [TOP] BitRev Input to Stage 0: 0000 + j0000
-# [TOP] Stage 4 Output: fffffc2f + jfffffce9
-# [76500 ns] Output Sample #13: 015e + jff91 | PASS (Bit-Accurate)
-# [77500 ns] Output Sample #14: fd76 + jfc7d | PASS (Bit-Accurate)
-# [TOP] BitRev Input to Stage 0: 0000 + j0000
-# [TOP] BitRev Input to Stage 0: 0000 + j0000
-# [78500 ns] Output Sample #15: fc2f + jfce9 | PASS (Bit-Accurate)
-# Waiting for outputs...
-# [TOP] BitRev Input to Stage 0: 0000 + j0000
-# [TOP] BitRev Input to Stage 0: 0000 + j0000
-# [TOP] BitRev Input to Stage 0: 0000 + j0000
+# Loading mtiUvm.uvm_pkg
+# Loading work.my_uvm_pkg(fast)
+# Loading work.my_uvm_tb_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.my_uvm_tb(fast)
+# Loading /vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# ** Warning: License feature 'svverification' will expire in 4 days.
+# ** Warning: License feature 'msimcoverage' will expire in 4 days.
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+# coverage save -onexit fft_coverage.ucdb
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
 # 
-# --- PERFORMANCE SUMMARY ---
-# FFT Points (N):          16
-# Latency (First In to First Out):          48 cycles
-# Processing Time (First In to Last Out):          63 cycles
-# Throughput Interval (Cycles between outputs): 1.00 cycles/sample
-# Effective Throughput at 100MHz: 100.00 Msamples/sec
-# ---------------------------
+#   ***********       IMPORTANT RELEASE NOTES         ************
 # 
-# All          16 samples checked. Simulation Finished.
-# ** Note: $finish    : ../sv/fft_tb.sv(137)
-#    Time: 886 ns  Iteration: 0  Instance: /fft_tb
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
 # 
-# *********************************
-# *      TEST PASSED (100%)       *
-# *  All 16 samples are bit-accurate *
-# *********************************
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
 # 
-# End time: 11:40:38 on Feb 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test my_uvm_test...
+# UVM_INFO ../uvm/my_uvm_driver.sv(26) @ 0: uvm_test_top.env.agent.driver [DRV] Waiting for reset deassertion
+# UVM_INFO ../uvm/my_uvm_sequence.sv(27) @ 0: uvm_test_top.env.agent.sequencer@@seq [SEQ] Starting sequence - reading samples
+# UVM_INFO ../uvm/my_uvm_driver.sv(30) @ 10000: uvm_test_top.env.agent.driver [DRV] Reset deasserted, starting drive loop
+# UVM_INFO ../uvm/my_uvm_driver.sv(42) @ 14500: uvm_test_top.env.agent.driver [DRV] Driving block of 64 samples
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 62501: uvm_test_top.env.agent.monitor [MON] Captured sample #0: 0429 + jff58
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 63501: uvm_test_top.env.agent.monitor [MON] Captured sample #1: 011a + j05b2
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 64501: uvm_test_top.env.agent.monitor [MON] Captured sample #2: 012a + j0015
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 65501: uvm_test_top.env.agent.monitor [MON] Captured sample #3: 02cc + j05aa
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 66501: uvm_test_top.env.agent.monitor [MON] Captured sample #4: ff1b + j02e3
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 67501: uvm_test_top.env.agent.monitor [MON] Captured sample #5: 0b9c + jff3f
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 68501: uvm_test_top.env.agent.monitor [MON] Captured sample #6: ff7c + jfbe7
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 69501: uvm_test_top.env.agent.monitor [MON] Captured sample #7: 029b + j042f
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 70501: uvm_test_top.env.agent.monitor [MON] Captured sample #8: 088d + jfd30
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 71501: uvm_test_top.env.agent.monitor [MON] Captured sample #9: fdd4 + jfdea
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 72501: uvm_test_top.env.agent.monitor [MON] Captured sample #10: 0214 + j021b
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 73501: uvm_test_top.env.agent.monitor [MON] Captured sample #11: f8e2 + j0152
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 74501: uvm_test_top.env.agent.monitor [MON] Captured sample #12: 01ef + jfbc1
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 75501: uvm_test_top.env.agent.monitor [MON] Captured sample #13: 015e + jff91
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 76501: uvm_test_top.env.agent.monitor [MON] Captured sample #14: fd76 + jfc7d
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 77501: uvm_test_top.env.agent.monitor [MON] Captured sample #15: fc2f + jfce9
+# UVM_INFO ../uvm/my_uvm_monitor.sv(72) @ 77501: uvm_test_top.env.agent.monitor [MON] Sending block transaction to scoreboard
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(111) @ 77501: uvm_test_top.env.scoreboard [SCB] Received block of 16 samples
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 1 matched: 0429+jff58
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 2 matched: 011a+j05b2
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 3 matched: 012a+j0015
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 4 matched: 02cc+j05aa
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 5 matched: ff1b+j02e3
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 6 matched: 0b9c+jff3f
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 7 matched: ff7c+jfbe7
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 8 matched: 029b+j042f
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 9 matched: 088d+jfd30
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 10 matched: fdd4+jfdea
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 11 matched: 0214+j021b
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 12 matched: f8e2+j0152
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 13 matched: 01ef+jfbc1
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 14 matched: 015e+jff91
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 15 matched: fd76+jfc7d
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 16 matched: fc2f+jfce9
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 78501: uvm_test_top.env.agent.monitor [MON] Captured sample #0: fc2f + jfce9
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 88501: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../uvm/my_uvm_monitor.sv(87) @ 88501: uvm_test_top.env.agent.monitor [MON] --- PERFORMANCE SUMMARY ---
+# UVM_INFO ../uvm/my_uvm_monitor.sv(88) @ 88501: uvm_test_top.env.agent.monitor [MON] FFT Points (N): 16
+# UVM_INFO ../uvm/my_uvm_monitor.sv(89) @ 88501: uvm_test_top.env.agent.monitor [MON] Latency (First In to First Out): 47 cycles
+# UVM_INFO ../uvm/my_uvm_monitor.sv(90) @ 88501: uvm_test_top.env.agent.monitor [MON] Processing Time (First In to Last Out): 63 cycles
+# UVM_INFO ../uvm/my_uvm_monitor.sv(91) @ 88501: uvm_test_top.env.agent.monitor [MON] Throughput Interval: 1.07 cycles/sample
+# UVM_INFO ../uvm/my_uvm_monitor.sv(92) @ 88501: uvm_test_top.env.agent.monitor [MON] Effective Throughput at 100MHz: 93.75 Msamples/sec
+# UVM_INFO ../uvm/my_uvm_monitor.sv(93) @ 88501: uvm_test_top.env.agent.monitor [MON] ---------------------------
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(146) @ 88501: uvm_test_top.env.scoreboard [SCB] TEST PASSED! All 16 samples are bit-accurate.
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(152) @ 88501: uvm_test_top.env.scoreboard [SCB] Input Data Coverage:  76.0%
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(153) @ 88501: uvm_test_top.env.scoreboard [SCB] Output Data Coverage: 76.0%
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(154) @ 88501: uvm_test_top.env.scoreboard [SCB] Sample Index Coverage: 100.0%
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   54
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [DRV]     3
+# [MON]    25
+# [Questa UVM]     2
+# [RNTST]     1
+# [SCB]    21
+# [SEQ]     1
+# [TEST_DONE]     1
+# ** Note: $finish    : /vol/mentor/modelsim-2020.1/modeltech/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 885010 ps  Iteration: 54  Instance: /my_uvm_tb
+# Saving coverage database on exit...
+# End time: 12:30:04 on Feb 24,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 1

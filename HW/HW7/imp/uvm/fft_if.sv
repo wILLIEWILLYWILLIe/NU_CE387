@@ -3,7 +3,6 @@
 `define FFT_IF_SV
 
 interface fft_if(input logic clock, input logic reset);
-    // Data width should match globals or package
     parameter int DATA_WIDTH = 16;
 
     // Input FIFO
@@ -27,7 +26,8 @@ interface fft_if(input logic clock, input logic reset);
     modport monitor (
         input  clock, reset,
         input  wr_en, real_in, imag_in, in_full,
-        input  rd_en, real_out, imag_out, out_empty
+        output rd_en,
+        input  real_out, imag_out, out_empty
     );
 
 endinterface

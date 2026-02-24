@@ -94,7 +94,7 @@ module fft_tb import my_fft_pkg::*;;
         end
 
         // Drive 16 samples + 48 flushing samples (to ensure all stages flush)
-        $display("Starting Input Drive...");
+        if (DEBUG) $display("Starting Input Drive...");
         for (int k = 0; k < N + 48; k++) begin
             while (in_full) @(posedge clk);
             @(negedge clk);
@@ -116,7 +116,7 @@ module fft_tb import my_fft_pkg::*;;
         end
         
         // Wait for all samples to emerge
-        $display("Waiting for outputs...");
+        if (DEBUG) $display("Waiting for outputs...");
         while (checked_samples < N) begin
             @(posedge clk);
             if (cycles > 2000) break;
@@ -153,7 +153,7 @@ module fft_tb import my_fft_pkg::*;;
                 if (checked_samples < N) begin
                     if ($fscanf(fd_out_r, "%h\n", golden_r) == 1 && $fscanf(fd_out_i, "%h\n", golden_i) == 1) begin
                         if (real_out_val === golden_r[DATA_WIDTH-1:0] && imag_out_val === golden_i[DATA_WIDTH-1:0]) begin
-                            $display("[%0t ns] Output Sample #%0d: %h + j%h | PASS (Bit-Accurate)", $time, checked_samples, real_out_val, imag_out_val);
+                            if (DEBUG) $display("[%0t ns] Output Sample #%0d: %h + j%h | PASS (Bit-Accurate)", $time, checked_samples, real_out_val, imag_out_val);
                         end else begin
                             $display("[%0t ns] Output Sample #%0d: %h + j%h | FAIL! (Expected: %h + j%h)", 
                                      $time, checked_samples, real_out_val, imag_out_val, golden_r[DATA_WIDTH-1:0], golden_i[DATA_WIDTH-1:0]);

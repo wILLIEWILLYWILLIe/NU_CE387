@@ -21,7 +21,9 @@ class my_uvm_test extends uvm_test;
     virtual task run_phase(uvm_phase phase);
         phase.raise_objection(this);
         seq.start(env.agent.sequencer);
-        #1000; // Small drain time
+        // Wait for monitor to collect all N output samples
+        // Pipeline latency ~48 cycles + N outputs, 10ns per cycle
+        #10000;
         phase.drop_objection(this);
     endtask
 endclass

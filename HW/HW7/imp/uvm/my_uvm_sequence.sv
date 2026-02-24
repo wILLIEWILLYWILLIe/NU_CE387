@@ -13,6 +13,7 @@ class my_uvm_sequence extends uvm_sequence#(my_uvm_transaction);
         int fd_r, fd_i;
         int val_r, val_i;
         int status_r, status_i;
+        int total_samples;
 
         req = my_uvm_transaction::type_id::create("req");
         
@@ -25,17 +26,24 @@ class my_uvm_sequence extends uvm_sequence#(my_uvm_transaction);
 
         `uvm_info("SEQ", "Starting sequence - reading samples", UVM_LOW)
 
-        // Read all samples and put into a single transaction (or multiple if N is large)
-        // Here we'll do one N-point block
-        start_item(req);
-        req.real_payload = new[FFT_N];
-        req.imag_payload = new[FFT_N];
+        // Send N data samples + 48 flush zeros (same as direct testbench)
+        total_samples = FFT_N + 48;
 
-        for (int i = 0; i < FFT_N; i++) begin
-            status_r = $fscanf(fd_r, "%h\n", val_r);
-            status_i = $fscanf(fd_i, "%h\n", val_i);
-            req.real_payload[i] = val_r;
-            req.imag_payload[i] = val_i;
+        start_item(req);
+        req.real_payload = new[total_samples];
+        req.imag_payload = new[total_samples];
+
+        for (int i = 0; i < total_samples; i++) begin
+            if (i < FFT_N) begin
+                status_r = $fscanf(fd_r, "%h\n", val_r);
+                status_i = $fscanf(fd_i, "%h\n", val_i);
+                req.real_payload[i] = val_r;
+                req.imag_payload[i] = val_i;
+            end else begin
+                // Flush zeros to push data through pipeline
+                req.real_payload[i] = 0;
+                req.imag_payload[i] = 0;
+            end
         end
         finish_item(req);
 

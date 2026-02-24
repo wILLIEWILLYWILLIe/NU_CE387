@@ -24,9 +24,11 @@ class my_uvm_driver extends uvm_driver#(my_uvm_transaction);
         vif.imag_in <= 0;
 
         `uvm_info("DRV", "Waiting for reset deassertion", UVM_LOW)
-        wait(vif.reset === 1); // vif.reset is active high (from TB top)
+        // Wait for rst_n to go low first (reset asserted), then high (deasserted)
+        wait(vif.reset === 0);
+        wait(vif.reset === 1);
         `uvm_info("DRV", "Reset deasserted, starting drive loop", UVM_LOW)
-        @(posedge vif.clock);
+        repeat(5) @(posedge vif.clock); // Extra settle time
 
         forever begin
             seq_item_port.get_next_item(req);
@@ -45,7 +47,7 @@ class my_uvm_driver extends uvm_driver#(my_uvm_transaction);
             vif.real_in <= tr.real_payload[i][DATA_WIDTH-1:0];
             vif.imag_in <= tr.imag_payload[i][DATA_WIDTH-1:0];
             @(posedge vif.clock);
-            #1; // Hold time
+            #1;
             vif.wr_en <= 0;
         end
     endtask

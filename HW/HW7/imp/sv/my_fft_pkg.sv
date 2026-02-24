@@ -6,6 +6,7 @@ package my_fft_pkg;
     parameter int Q = 14;
     parameter int NUM_STAGES = $clog2(N);
     parameter int INT_WIDTH = 32; // Match C reference's 32-bit int precision
+    parameter int DEBUG = 0;      // 0: quiet (performance+summary only), 1: verbose debug prints
 
     typedef struct packed {
         logic signed [TWIDDLE_WIDTH-1:0] real_val;

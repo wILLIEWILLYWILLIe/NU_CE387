@@ -1,0 +1,335 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.01, Jan 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/gel8580/CE387/HW/HW7/imp/sim
+T_opt
+!s11d my_uvm_pkg /home/gel8580/CE387/HW/HW7/imp/sim/work 1 fft_if 1 /home/gel8580/CE387/HW/HW7/imp/sim/work 
+!s110 1771957293
+VaXWk5f5@`>nQe_ZDTdz_53
+04 9 4 work my_uvm_tb fast 0
+=1-b49691574b56-699dec2d-33e0b-babb1
+Z1 o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;2020.1;71
+R0
+T_opt1
+!s110 1771957663
+V]GFn:VJYC=l]AaUS;38fj0
+04 6 4 work fft_tb fast 0
+=1-b49691574b56-699ded9e-dd37d-f2966
+R1
+R2
+n@_opt1
+R3
+vcomplex_mult
+Z4 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z5 !s110 1771957662
+!i10b 1
+!s100 OQLE^3i8ZZ^a5b6dC3ZcK2
+Z6 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IH06RgTdEbD6`DK0CQFj8>0
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1771888357
+8../sv/complex_mult.sv
+F../sv/complex_mult.sv
+!i122 138
+L0 2 76
+Z8 OL;L;2020.1;71
+r1
+!s85 0
+31
+Z9 !s108 1771957662.000000
+!s107 ../sv/complex_mult.sv|
+!s90 -sv|../sv/complex_mult.sv|
+!i113 0
+Z10 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vfft_bit_reversal
+R4
+R5
+!i10b 1
+!s100 CE6?bNzM?^ViRVCY0kk5@2
+R6
+IdEHdaTCohJz`Z9E=IP:de0
+R7
+S1
+R0
+w1771865738
+8../sv/fft_bit_reversal.sv
+F../sv/fft_bit_reversal.sv
+!i122 136
+L0 2 112
+R8
+r1
+!s85 0
+31
+Z11 !s108 1771957661.000000
+!s107 ../sv/fft_bit_reversal.sv|
+!s90 -sv|../sv/fft_bit_reversal.sv|
+!i113 0
+R10
+R2
+Yfft_if
+R4
+Z12 !s110 1771957418
+!i10b 1
+!s100 _PQC=3Oj]<A^:jh8XE33A1
+R6
+IdDRg0Q^Lmh4C@CN^BI56L0
+R7
+S1
+R0
+w1771955340
+8../uvm/fft_if.sv
+F../uvm/fft_if.sv
+!i122 123
+Z13 L0 5 0
+R8
+r1
+!s85 0
+31
+Z14 !s108 1771957418.000000
+!s107 ../uvm/fft_if.sv|
+!s90 -sv|+incdir+../uvm|../uvm/fft_if.sv|
+!i113 0
+R10
+Z15 !s92 -sv +incdir+../uvm -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vfft_stage
+R4
+Z16 DXx4 work 10 my_fft_pkg 0 22 GjX2zOde=flE3^BX3SeB<1
+R5
+!i10b 1
+!s100 DGMhOioX7N;4ZKjS[31A<1
+R6
+I3VO_TDAE@:CYJI<`^`5TK2
+R7
+S1
+R0
+w1771888013
+8../sv/fft_stage.sv
+F../sv/fft_stage.sv
+!i122 137
+L0 4 167
+R8
+r1
+!s85 0
+31
+R9
+!s107 ../sv/my_fft_pkg.sv|../sv/fft_stage.sv|
+!s90 -sv|../sv/fft_stage.sv|
+!i113 0
+R10
+R2
+vfft_tb
+R4
+DXx4 work 10 my_fft_pkg 0 22 __mlBWh]Uz573AWK<Qgjm0
+R5
+!i10b 1
+!s100 2PW23H_TG2llG]8T=fY6U0
+R6
+IHkBkA6I9=D0HUZ8o^6VGF0
+R7
+S1
+R0
+w1771957613
+8../sv/fft_tb.sv
+F../sv/fft_tb.sv
+!i122 140
+L0 5 180
+R8
+r1
+!s85 0
+31
+R9
+Z17 !s107 ../sv/my_fft_pkg.sv|../sv/fft_tb.sv|
+Z18 !s90 -sv|../sv/fft_tb.sv|
+!i113 0
+R10
+R2
+vfft_top
+R4
+R16
+R5
+!i10b 1
+!s100 <k1SkUcJPa=7Cb9l:e<e<2
+R6
+INLgDXLPUz2d@2<WWIoQWm2
+R7
+S1
+R0
+w1771957593
+8../sv/fft_top.sv
+F../sv/fft_top.sv
+!i122 139
+L0 4 130
+R8
+r1
+!s85 0
+31
+R9
+!s107 ../sv/my_fft_pkg.sv|../sv/fft_top.sv|
+!s90 -sv|../sv/fft_top.sv|
+!i113 0
+R10
+R2
+vfifo
+R4
+Z19 !s110 1771957661
+!i10b 1
+!s100 iWa@;lA>F>ffX]c=dRkFf1
+R6
+Izm^^KJf4KWNCg9V5hWi7A3
+R7
+S1
+R0
+Z20 w1771866526
+8../sv/fifo.sv
+F../sv/fifo.sv
+!i122 135
+L0 2 78
+R8
+r1
+!s85 0
+31
+R11
+!s107 ../sv/fifo.sv|
+!s90 -sv|../sv/fifo.sv|
+!i113 0
+R10
+R2
+vfifo_ctrl
+R4
+R19
+!i10b 1
+!s100 ;MaeQXe8e1IMl0YcW7jJe3
+R6
+IW]N5=fF_S;ATK;ifkmJ1]2
+R7
+S1
+R0
+R20
+8../sv/fifo_ctrl.sv
+F../sv/fifo_ctrl.sv
+!i122 134
+L0 2 61
+R8
+r1
+!s85 0
+31
+R11
+!s107 ../sv/fifo_ctrl.sv|
+!s90 -sv|../sv/fifo_ctrl.sv|
+!i113 0
+R10
+R2
+Xmy_fft_pkg
+R4
+R5
+!i10b 1
+!s100 hMFAizLn[hV30ZoiNS5>o2
+R6
+I__mlBWh]Uz573AWK<Qgjm0
+V__mlBWh]Uz573AWK<Qgjm0
+S1
+R0
+w1771957581
+8../sv/my_fft_pkg.sv
+F../sv/my_fft_pkg.sv
+!i122 140
+L0 2 0
+R8
+r1
+!s85 0
+31
+R9
+R17
+R18
+!i113 0
+R10
+R2
+Xmy_uvm_pkg
+!s115 fft_if
+R4
+Z21 DXx6 mtiUvm 7 uvm_pkg 0 22 lXjlbbgd2P7=0FIB1[zNj3
+Z22 DXx4 work 10 my_fft_pkg 0 22 T1XUBbG6Zl]PfUHgeUmDY2
+R12
+!i10b 1
+!s100 Q:jU>CCVbF16335_MEgUM2
+R6
+I3A^GjflZlI8f3R1B`nB1:0
+V3A^GjflZlI8f3R1B`nB1:0
+S1
+R0
+w1771957273
+8../uvm/my_uvm_pkg.sv
+F../uvm/my_uvm_pkg.sv
+Z23 F/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh
+Z24 F/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh
+Z25 F/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh
+Z26 F/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh
+Z27 F/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh
+Z28 F/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh
+Z29 F/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh
+Z30 F/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh
+Z31 F/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh
+Z32 F/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh
+Z33 F/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh
+Z34 F/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh
+F../uvm/my_uvm_globals.sv
+F../uvm/my_uvm_transaction.sv
+F../uvm/my_uvm_sequence.sv
+F../uvm/my_uvm_driver.sv
+F../uvm/my_uvm_monitor.sv
+F../uvm/my_uvm_scoreboard.sv
+F../uvm/my_uvm_agent.sv
+F../uvm/my_uvm_env.sv
+F../uvm/my_uvm_test.sv
+!i122 122
+R13
+R8
+r1
+!s85 0
+31
+!s108 1771957417.000000
+!s107 ../uvm/my_uvm_test.sv|../uvm/my_uvm_env.sv|../uvm/my_uvm_agent.sv|../uvm/my_uvm_scoreboard.sv|../uvm/my_uvm_monitor.sv|../uvm/my_uvm_driver.sv|../uvm/my_uvm_sequence.sv|../uvm/my_uvm_transaction.sv|../uvm/my_uvm_globals.sv|/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh|/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh|/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh|/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh|/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh|/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh|/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh|/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh|/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh|/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh|/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh|/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh|../uvm/my_uvm_pkg.sv|
+!s90 -sv|+incdir+../uvm|../uvm/my_uvm_pkg.sv|
+!i113 0
+R10
+R15
+R2
+vmy_uvm_tb
+R4
+R21
+R22
+Z35 DXx4 work 10 my_uvm_pkg 0 22 3A^GjflZlI8f3R1B`nB1:0
+DXx4 work 17 my_uvm_tb_sv_unit 0 22 Mz8z>j@WPV8U_`U`O?z1S0
+R12
+R7
+r1
+!s85 0
+!i10b 1
+!s100 hIYfYPoWmme`7i4CkRPJD2
+I_Q<b8]hf<W^6GLA_I7hNU1
+!s105 my_uvm_tb_sv_unit
+S1
+R0
+Z36 w1771956293
+Z37 8../uvm/my_uvm_tb.sv
+Z38 F../uvm/my_uvm_tb.sv
+!i122 124
+L0 8 43
+R8
+31
+R14
+Z39 !s107 /vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh|/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh|/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh|/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh|/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh|/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh|/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh|/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh|/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh|/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/u

@@ -15,12 +15,12 @@ module my_uvm_tb;
         forever #5 clock = ~clock;
     end
 
+    // rst_n: active-low reset
+    // Start deasserted (reset=0 → rst_n=0), then assert after some time
     initial begin
-        reset = 1;
-        #20;
-        reset = 0;
-        #20;
-        reset = 1;
+        reset = 0;  // rst_n = 0 → DUT in reset
+        #100;
+        reset = 1;  // rst_n = 1 → DUT active
     end
 
     // Interface

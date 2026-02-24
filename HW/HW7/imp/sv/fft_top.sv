@@ -53,7 +53,7 @@ module fft_top import my_fft_pkg::*; (
         .ready_in(br_ready_in)
     );
 
-    always @(posedge clk) if (br_valid_out) $display("[TOP] BitRev Input to Stage 0: %h + j%h", br_real_out, br_imag_out);
+    always @(posedge clk) if (DEBUG && br_valid_out) $display("[TOP] BitRev Input to Stage 0: %h + j%h", br_real_out, br_imag_out);
 
     // ---- FFT Stages (DIT: stage 0 has D=1, stage 3 has D=8) ----
     logic stage_valid [0:NUM_STAGES];
@@ -113,7 +113,7 @@ module fft_top import my_fft_pkg::*; (
         end
     endgenerate
 
-    always @(posedge clk) if (stage_valid[NUM_STAGES]) $display("[TOP] Stage %0d Output: %h + j%h", NUM_STAGES, stage_real[NUM_STAGES], stage_imag[NUM_STAGES]);
+    always @(posedge clk) if (DEBUG && stage_valid[NUM_STAGES]) $display("[TOP] Stage %0d Output: %h + j%h", NUM_STAGES, stage_real[NUM_STAGES], stage_imag[NUM_STAGES]);
 
     // ---- Output: truncate INT_WIDTH back to DATA_WIDTH ----
     logic signed [DATA_WIDTH-1:0] final_real, final_imag;

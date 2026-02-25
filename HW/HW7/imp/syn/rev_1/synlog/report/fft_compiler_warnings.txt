@@ -1,0 +1,12 @@
+@W: CL169 :"/home/gel8580/CE387/HW/HW7/imp/sv/fft_stage.sv":72:4:72:12|Pruning unused register delay_pipe_v[3:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"/home/gel8580/CE387/HW/HW7/imp/sv/fft_stage.sv":72:4:72:12|Pruning register bits 3 to 1 of cnt_in[3:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/HW/HW7/imp/sv/fft_stage.sv":72:4:72:12|Pruning register bits 3 to 1 of cnt_out[3:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"/home/gel8580/CE387/HW/HW7/imp/sv/fft_stage.sv":72:4:72:12|Pruning unused register delay_pipe_v[3:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"/home/gel8580/CE387/HW/HW7/imp/sv/fft_stage.sv":72:4:72:12|Pruning register bits 3 to 2 of cnt_in[3:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/HW/HW7/imp/sv/fft_stage.sv":72:4:72:12|Pruning register bits 3 to 2 of cnt_out[3:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"/home/gel8580/CE387/HW/HW7/imp/sv/fft_stage.sv":72:4:72:12|Pruning unused register delay_pipe_v[3:0]. Make sure that there are no unused intermediate registers.
+@W: CL260 :"/home/gel8580/CE387/HW/HW7/imp/sv/fft_stage.sv":72:4:72:12|Pruning register bit 3 of cnt_in[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"/home/gel8580/CE387/HW/HW7/imp/sv/fft_stage.sv":72:4:72:12|Pruning register bit 3 of cnt_out[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL169 :"/home/gel8580/CE387/HW/HW7/imp/sv/fft_stage.sv":72:4:72:12|Pruning unused register delay_pipe_v[3:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/gel8580/CE387/HW/HW7/imp/sv/fft_top.sv":73:12:73:20|Pruning unused register gen_stages[0].stage_cnt[0]. Make sure that there are no unused intermediate registers.
+

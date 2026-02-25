@@ -1,0 +1,10 @@
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: BN362 :"/home/gel8580/CE387/HW/HW7/imp/sv/fifo.sv":64:4:64:12|Removing sequential instance empty (in view: work.fifo_16s_32s_6s_2(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/HW/HW7/imp/sv/fifo.sv":64:4:64:12|Removing sequential instance empty (in view: work.fifo_16s_32s_6s_0(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN225 |Writing default property annotation file /home/gel8580/CE387/HW/HW7/imp/syn/rev_1/fft.sap.

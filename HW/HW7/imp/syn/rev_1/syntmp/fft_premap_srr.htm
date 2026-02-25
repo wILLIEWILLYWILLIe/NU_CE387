@@ -1,0 +1,98 @@
+<html><body><samp><pre>
+<!@TC:1771972157>
+# Tue Feb 24 16:29:16 2026
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09-SP1
+Install: /vol/synopsys/fpga/O-2018.09-SP1
+OS: Red Hat Enterprise Linux 8.10 (Ootpa)
+Hostname: finagle.wot.ece.northwestern.edu
+max virtual memory: unlimited (bytes)
+max user processes: 254205
+max stack size: 8388608 (bytes)
+
+
+Implementation : rev_1
+<a name=mapperReport93></a>Synopsys Intel FPGA Technology Pre-mapping, Version maprc, Build 4745R, Built Nov 27 2018 21:14:52</a>
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
+
+@A:<a href="@A:MF827:@XP_HELP">MF827</a> : <!@TM:1771972157> | No constraint file specified. 
+@N:<a href="@N:MF284:@XP_HELP">MF284</a> : <!@TM:1771972157> | Setting synthesis effort to medium for the design 
+Linked File:  <a href="/home/gel8580/CE387/HW/HW7/imp/syn/rev_1/fft_scck.rpt:@XP_FILE">fft_scck.rpt</a>
+Printing clock  summary report in "/home/gel8580/CE387/HW/HW7/imp/syn/rev_1/fft_scck.rpt" file 
+@N:<a href="@N:MF916:@XP_HELP">MF916</a> : <!@TM:1771972157> | Option synthesis_strategy=base is enabled.  
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1771972157> | Running in 64-bit mode. 
+@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1771972157> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 104MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 104MB)
+
+<font color=#A52A2A>@W:<a href="@W:FA406:@XP_HELP">FA406</a> : <!@TM:1771972157> | Environment variable QUARTUS_ROOTDIR not set. Cannot determine PAR version.</font> 
+@N:<a href="@N:MF284:@XP_HELP">MF284</a> : <!@TM:1771972157> | Setting synthesis effort to medium for the design 
+
+Finished Clear Box Flow. (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 123MB)
+
+@N:<a href="@N:MH105:@XP_HELP">MH105</a> : <!@TM:1771972157> | UMR3 is only supported for HAPS-80. 
+@N:<a href="@N:MH105:@XP_HELP">MH105</a> : <!@TM:1771972157> | UMR3 is only supported for HAPS-80. 
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/gel8580/CE387/HW/HW7/imp/sv/fifo.sv:64:4:64:13:@N:BN362:@XP_MSG">fifo.sv(64)</a><!@TM:1771972157> | Removing sequential instance empty (in view: work.fifo_16s_32s_6s_2(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/gel8580/CE387/HW/HW7/imp/sv/fifo.sv:64:4:64:13:@N:BN362:@XP_MSG">fifo.sv(64)</a><!@TM:1771972157> | Removing sequential instance empty (in view: work.fifo_16s_32s_6s_0(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 124MB peak: 125MB)
+
+
+
+<a name=mapperReport94></a>Clock Summary</a>
+******************
+
+          Start           Requested     Requested     Clock        Clock                     Clock
+Level     Clock           Frequency     Period        Type         Group                     Load 
+--------------------------------------------------------------------------------------------------
+0 -       fft_top|clk     149.0 MHz     6.709         inferred     Autoconstr_clkgroup_0     3633 
+==================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                Clock     Source        Clock Pin                             Non-clock Pin     Non-clock Pin
+Clock           Load      Pin           Seq Example                           Seq Example       Comb Example 
+-------------------------------------------------------------------------------------------------------------
+fft_top|clk     3633      clk(port)     gen_stages\[1\]\.stage_cnt[1:0].C     -                 -            
+=============================================================================================================
+
+<font color=#A52A2A>@W:<a href="@W:MT529:@XP_HELP">MT529</a> : <a href="/home/gel8580/CE387/HW/HW7/imp/sv/fifo.sv:64:4:64:13:@W:MT529:@XP_MSG">fifo.sv(64)</a><!@TM:1771972157> | Found inferred clock fft_top|clk which controls 3633 sequential elements including fifo_in_real.empty. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </font>
+
+Finished Pre Mapping Phase.
+@N:<a href="@N:BN225:@XP_HELP">BN225</a> : <!@TM:1771972157> | Writing default property annotation file /home/gel8580/CE387/HW/HW7/imp/syn/rev_1/fft.sap. 
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 125MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 125MB peak: 126MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 128MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 41MB peak: 128MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Feb 24 16:29:17 2026
+
+###########################################################]
+
+</pre></samp></body></html>

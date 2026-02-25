@@ -1,0 +1,7 @@
+@E: CG855 :"/home/gel8580/CE387/HW/HW7/imp/sv/my_fft_pkg.sv":2:8:2:17|Duplicate module/interface/package name my_fft_pkg
+@E: CG247 :"/home/gel8580/CE387/HW/HW7/imp/sv/my_fft_pkg.sv":3:18:3:18|Redeclaration of N
+@E: CS187 :"/home/gel8580/CE387/HW/HW7/imp/sv/fft_stage.sv":170:0:170:8|Expecting endpackage
+@E: CG855 :"/home/gel8580/CE387/HW/HW7/imp/sv/my_fft_pkg.sv":2:8:2:17|Duplicate module/interface/package name my_fft_pkg
+@E: CG247 :"/home/gel8580/CE387/HW/HW7/imp/sv/my_fft_pkg.sv":3:18:3:18|Redeclaration of N
+@E: CS187 :"/home/gel8580/CE387/HW/HW7/imp/sv/fft_top.sv":133:0:133:8|Expecting endpackage
+

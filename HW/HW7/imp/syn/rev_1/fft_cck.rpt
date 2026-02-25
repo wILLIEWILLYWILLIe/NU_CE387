@@ -1,0 +1,145 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09-SP1
+Install: /vol/synopsys/fpga/O-2018.09-SP1
+OS: Red Hat Enterprise Linux 8.10 (Ootpa)
+Hostname: finagle.wot.ece.northwestern.edu
+max virtual memory: unlimited (bytes)
+max user processes: 254205
+max stack size: 8388608 (bytes)
+
+
+Implementation : rev_1
+
+# Written on Tue Feb 24 16:29:17 2026
+
+##### DESIGN INFO #######################################################
+
+Top View:                "fft_top"
+Constraint File(s):      (none)
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting        Ending          |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-------------------------------------------------------------------------------------------------------------------------------------------
+fft_top|clk     fft_top|clk     |     6.709            |     No paths         |     No paths         |     No paths                         
+===========================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:imag_in[0]
+p:imag_in[1]
+p:imag_in[2]
+p:imag_in[3]
+p:imag_in[4]
+p:imag_in[5]
+p:imag_in[6]
+p:imag_in[7]
+p:imag_in[8]
+p:imag_in[9]
+p:imag_in[10]
+p:imag_in[11]
+p:imag_in[12]
+p:imag_in[13]
+p:imag_in[14]
+p:imag_in[15]
+p:imag_out[0]
+p:imag_out[1]
+p:imag_out[2]
+p:imag_out[3]
+p:imag_out[4]
+p:imag_out[5]
+p:imag_out[6]
+p:imag_out[7]
+p:imag_out[8]
+p:imag_out[9]
+p:imag_out[10]
+p:imag_out[11]
+p:imag_out[12]
+p:imag_out[13]
+p:imag_out[14]
+p:imag_out[15]
+p:in_full
+p:out_empty
+p:rd_en
+p:real_in[0]
+p:real_in[1]
+p:real_in[2]
+p:real_in[3]
+p:real_in[4]
+p:real_in[5]
+p:real_in[6]
+p:real_in[7]
+p:real_in[8]
+p:real_in[9]
+p:real_in[10]
+p:real_in[11]
+p:real_in[12]
+p:real_in[13]
+p:real_in[14]
+p:real_in[15]
+p:real_out[0]
+p:real_out[1]
+p:real_out[2]
+p:real_out[3]
+p:real_out[4]
+p:real_out[5]
+p:real_out[6]
+p:real_out[7]
+p:real_out[8]
+p:real_out[9]
+p:real_out[10]
+p:real_out[11]
+p:real_out[12]
+p:real_out[13]
+p:real_out[14]
+p:real_out[15]
+p:rst_n
+p:wr_en
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

@@ -1,119 +1,4 @@
-# do fft_uvm_sim.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
-# Start time: 12:30:00 on Feb 24,2026
-# vlog -sv ../sv/my_fft_pkg.sv 
-# -- Compiling package my_fft_pkg
-# 
-# Top level modules:
-# 	--none--
-# End time: 12:30:00 on Feb 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
-# Start time: 12:30:00 on Feb 24,2026
-# vlog -sv ../sv/fifo_ctrl.sv 
-# -- Compiling module fifo_ctrl
-# 
-# Top level modules:
-# 	fifo_ctrl
-# End time: 12:30:00 on Feb 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
-# Start time: 12:30:00 on Feb 24,2026
-# vlog -sv ../sv/fifo.sv 
-# -- Compiling module fifo
-# 
-# Top level modules:
-# 	fifo
-# End time: 12:30:00 on Feb 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
-# Start time: 12:30:00 on Feb 24,2026
-# vlog -sv ../sv/fft_bit_reversal.sv 
-# -- Compiling module fft_bit_reversal
-# 
-# Top level modules:
-# 	fft_bit_reversal
-# End time: 12:30:00 on Feb 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
-# Start time: 12:30:00 on Feb 24,2026
-# vlog -sv ../sv/fft_stage.sv 
-# -- Compiling package my_fft_pkg
-# -- Compiling module fft_stage
-# -- Importing package my_fft_pkg
-# 
-# Top level modules:
-# 	fft_stage
-# End time: 12:30:00 on Feb 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
-# Start time: 12:30:00 on Feb 24,2026
-# vlog -sv ../sv/complex_mult.sv 
-# -- Compiling module complex_mult
-# 
-# Top level modules:
-# 	complex_mult
-# End time: 12:30:00 on Feb 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
-# Start time: 12:30:00 on Feb 24,2026
-# vlog -sv ../sv/fft_top.sv 
-# -- Compiling package my_fft_pkg
-# -- Compiling module fft_top
-# -- Importing package my_fft_pkg
-# ** Warning: ../sv/fft_top.sv(91): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: ../sv/fft_top.sv(92): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: ../sv/fft_top.sv(93): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: ../sv/fft_top.sv(95): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# ** Warning: ../sv/fft_top.sv(96): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
-# 
-# Top level modules:
-# 	fft_top
-# End time: 12:30:00 on Feb 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 5
-# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
-# Start time: 12:30:00 on Feb 24,2026
-# vlog -sv "+incdir+../uvm" ../uvm/my_uvm_pkg.sv 
-# -- Compiling package my_uvm_pkg
-# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
-# -- Importing package my_fft_pkg
-# ** Note: (vlog-2286) ../uvm/my_uvm_pkg.sv(8): Using implicit +incdir+/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
-# 
-# Top level modules:
-# 	--none--
-# End time: 12:30:01 on Feb 24,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
-# Start time: 12:30:01 on Feb 24,2026
-# vlog -sv "+incdir+../uvm" ../uvm/fft_if.sv 
-# -- Compiling interface fft_if
-# 
-# Top level modules:
-# 	--none--
-# End time: 12:30:01 on Feb 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
-# Start time: 12:30:01 on Feb 24,2026
-# vlog -sv "+incdir+../uvm" ../uvm/my_uvm_tb.sv 
-# ** Note: (vlog-2286) ../uvm/my_uvm_tb.sv(4): Using implicit +incdir+/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
-# -- Compiling package my_uvm_tb_sv_unit
-# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
-# -- Importing package my_uvm_pkg
-# -- Importing package my_fft_pkg
-# -- Compiling module my_uvm_tb
-# 
-# Top level modules:
-# 	my_uvm_tb
-# End time: 12:30:01 on Feb 24,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -c -coverage -do "coverage save -onexit fft_coverage.ucdb; run -all; quit" my_uvm_tb "+UVM_TESTNAME=my_uvm_test" 
-# Start time: 12:30:01 on Feb 24,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# //  ModelSim SE-64 2020.1 Jan 28 2020 Linux 4.18.0-553.92.1.el8_10.x86_64
+# //  ModelSim SE-64 2020.1 Jan 28 2020 Linux 4.18.0-553.89.1.el8_10.x86_64
 # //
 # //  Copyright 1991-2020 Mentor Graphics Corporation
 # //  All Rights Reserved.
@@ -126,6 +11,120 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
+# ** Warning: License feature 'msimviewer' will expire in 4 days.
+# do fft_sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 20:56:46 on Feb 24,2026
+# vlog -reportprogress 300 -sv ../sv/my_fft_pkg.sv 
+# -- Compiling package my_fft_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 20:56:47 on Feb 24,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 20:56:47 on Feb 24,2026
+# vlog -reportprogress 300 -sv ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 20:56:47 on Feb 24,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 20:56:47 on Feb 24,2026
+# vlog -reportprogress 300 -sv ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 20:56:47 on Feb 24,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 20:56:47 on Feb 24,2026
+# vlog -reportprogress 300 -sv ../sv/fft_bit_reversal.sv 
+# -- Compiling module fft_bit_reversal
+# 
+# Top level modules:
+# 	fft_bit_reversal
+# End time: 20:56:47 on Feb 24,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 20:56:47 on Feb 24,2026
+# vlog -reportprogress 300 -sv ../sv/fft_stage.sv 
+# -- Compiling module fft_stage
+# -- Importing package my_fft_pkg
+# 
+# Top level modules:
+# 	fft_stage
+# End time: 20:56:47 on Feb 24,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 20:56:47 on Feb 24,2026
+# vlog -reportprogress 300 -sv ../sv/complex_mult.sv 
+# -- Compiling module complex_mult
+# 
+# Top level modules:
+# 	complex_mult
+# End time: 20:56:47 on Feb 24,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 20:56:47 on Feb 24,2026
+# vlog -reportprogress 300 -sv ../sv/fft_top.sv 
+# -- Compiling module fft_top
+# -- Importing package my_fft_pkg
+# ** Warning: ../sv/fft_top.sv(90): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: ../sv/fft_top.sv(91): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: ../sv/fft_top.sv(92): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: ../sv/fft_top.sv(94): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: ../sv/fft_top.sv(95): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# 
+# Top level modules:
+# 	fft_top
+# End time: 20:56:47 on Feb 24,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 5
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 20:56:47 on Feb 24,2026
+# vlog -reportprogress 300 -sv "+incdir+../uvm" ../uvm/my_uvm_pkg.sv 
+# -- Compiling package my_uvm_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package my_fft_pkg
+# ** Note: (vlog-2286) ../uvm/my_uvm_pkg.sv(8): Using implicit +incdir+/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 20:56:47 on Feb 24,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 20:56:47 on Feb 24,2026
+# vlog -reportprogress 300 -sv "+incdir+../uvm" ../uvm/fft_if.sv 
+# -- Compiling interface fft_if
+# 
+# Top level modules:
+# 	--none--
+# End time: 20:56:48 on Feb 24,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 20:56:48 on Feb 24,2026
+# vlog -reportprogress 300 -sv "+incdir+../uvm" ../uvm/my_uvm_tb.sv 
+# ** Note: (vlog-2286) ../uvm/my_uvm_tb.sv(4): Using implicit +incdir+/vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package my_uvm_tb_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package my_uvm_pkg
+# -- Importing package my_fft_pkg
+# -- Compiling module my_uvm_tb
+# 
+# Top level modules:
+# 	my_uvm_tb
+# End time: 20:56:48 on Feb 24,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -coverage my_uvm_tb "+UVM_TESTNAME=my_uvm_test" 
+# Start time: 20:56:48 on Feb 24,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Warning: License feature 'msimhdlsim' will expire in 4 days.
 # Loading sv_std.std
 # Loading work.fft_if(fast)
@@ -135,12 +134,22 @@
 # Loading work.my_uvm_tb_sv_unit(fast)
 # Loading mtiUvm.questa_uvm_pkg(fast)
 # Loading work.my_uvm_tb(fast)
+# Loading work.fft_if(fast__2)
+# Loading work.fft_top(fast)
+# Loading work.fifo(fast)
+# Loading work.fft_bit_reversal(fast)
+# Loading work.fft_stage(fast)
+# Loading work.complex_mult(fast)
+# Loading work.fft_stage(fast__1)
+# Loading work.fft_stage(fast__2)
+# Loading work.fft_stage(fast__3)
 # Loading /vol/mentor/modelsim-2020.1/modeltech/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# ** Warning: License feature 'svverification' will expire in 4 days.
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
 # ** Warning: License feature 'svverification' will expire in 4 days.
 # ** Warning: License feature 'msimcoverage' will expire in 4 days.
 # ** Warning: (vsim-8634) Code was not compiled with coverage options.
-# coverage save -onexit fft_coverage.ucdb
-#  run -all
+# .main_pane.wave.interior.cs.body.pw.wf
 # ----------------------------------------------------------------
 # UVM-1.1d
 # (C) 2007-2013 Mentor Graphics Corporation
@@ -168,46 +177,46 @@
 # UVM_INFO ../uvm/my_uvm_sequence.sv(27) @ 0: uvm_test_top.env.agent.sequencer@@seq [SEQ] Starting sequence - reading samples
 # UVM_INFO ../uvm/my_uvm_driver.sv(30) @ 10000: uvm_test_top.env.agent.driver [DRV] Reset deasserted, starting drive loop
 # UVM_INFO ../uvm/my_uvm_driver.sv(42) @ 14500: uvm_test_top.env.agent.driver [DRV] Driving block of 64 samples
-# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 62501: uvm_test_top.env.agent.monitor [MON] Captured sample #0: 0429 + jff58
-# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 63501: uvm_test_top.env.agent.monitor [MON] Captured sample #1: 011a + j05b2
-# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 64501: uvm_test_top.env.agent.monitor [MON] Captured sample #2: 012a + j0015
-# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 65501: uvm_test_top.env.agent.monitor [MON] Captured sample #3: 02cc + j05aa
-# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 66501: uvm_test_top.env.agent.monitor [MON] Captured sample #4: ff1b + j02e3
-# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 67501: uvm_test_top.env.agent.monitor [MON] Captured sample #5: 0b9c + jff3f
-# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 68501: uvm_test_top.env.agent.monitor [MON] Captured sample #6: ff7c + jfbe7
-# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 69501: uvm_test_top.env.agent.monitor [MON] Captured sample #7: 029b + j042f
-# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 70501: uvm_test_top.env.agent.monitor [MON] Captured sample #8: 088d + jfd30
-# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 71501: uvm_test_top.env.agent.monitor [MON] Captured sample #9: fdd4 + jfdea
-# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 72501: uvm_test_top.env.agent.monitor [MON] Captured sample #10: 0214 + j021b
-# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 73501: uvm_test_top.env.agent.monitor [MON] Captured sample #11: f8e2 + j0152
-# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 74501: uvm_test_top.env.agent.monitor [MON] Captured sample #12: 01ef + jfbc1
-# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 75501: uvm_test_top.env.agent.monitor [MON] Captured sample #13: 015e + jff91
-# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 76501: uvm_test_top.env.agent.monitor [MON] Captured sample #14: fd76 + jfc7d
-# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 77501: uvm_test_top.env.agent.monitor [MON] Captured sample #15: fc2f + jfce9
-# UVM_INFO ../uvm/my_uvm_monitor.sv(72) @ 77501: uvm_test_top.env.agent.monitor [MON] Sending block transaction to scoreboard
-# UVM_INFO ../uvm/my_uvm_scoreboard.sv(111) @ 77501: uvm_test_top.env.scoreboard [SCB] Received block of 16 samples
-# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 1 matched: 0429+jff58
-# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 2 matched: 011a+j05b2
-# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 3 matched: 012a+j0015
-# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 4 matched: 02cc+j05aa
-# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 5 matched: ff1b+j02e3
-# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 6 matched: 0b9c+jff3f
-# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 7 matched: ff7c+jfbe7
-# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 8 matched: 029b+j042f
-# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 9 matched: 088d+jfd30
-# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 10 matched: fdd4+jfdea
-# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 11 matched: 0214+j021b
-# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 12 matched: f8e2+j0152
-# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 13 matched: 01ef+jfbc1
-# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 14 matched: 015e+jff91
-# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 15 matched: fd76+jfc7d
-# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 77501: uvm_test_top.env.scoreboard [SCB] Sample 16 matched: fc2f+jfce9
-# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 78501: uvm_test_top.env.agent.monitor [MON] Captured sample #0: fc2f + jfce9
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 70501: uvm_test_top.env.agent.monitor [MON] Captured sample #0: 0429 + jff58
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 71501: uvm_test_top.env.agent.monitor [MON] Captured sample #1: 011a + j05b2
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 72501: uvm_test_top.env.agent.monitor [MON] Captured sample #2: 012a + j0015
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 73501: uvm_test_top.env.agent.monitor [MON] Captured sample #3: 02cc + j05aa
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 74501: uvm_test_top.env.agent.monitor [MON] Captured sample #4: ff1b + j02e3
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 75501: uvm_test_top.env.agent.monitor [MON] Captured sample #5: 0b9c + jff3f
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 76501: uvm_test_top.env.agent.monitor [MON] Captured sample #6: ff7c + jfbe7
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 77501: uvm_test_top.env.agent.monitor [MON] Captured sample #7: 029b + j042f
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 78501: uvm_test_top.env.agent.monitor [MON] Captured sample #8: 088d + jfd30
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 79501: uvm_test_top.env.agent.monitor [MON] Captured sample #9: fdd4 + jfdea
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 80501: uvm_test_top.env.agent.monitor [MON] Captured sample #10: 0214 + j021b
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 81501: uvm_test_top.env.agent.monitor [MON] Captured sample #11: f8e2 + j0152
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 82501: uvm_test_top.env.agent.monitor [MON] Captured sample #12: 01ef + jfbc1
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 83501: uvm_test_top.env.agent.monitor [MON] Captured sample #13: 015e + jff91
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 84501: uvm_test_top.env.agent.monitor [MON] Captured sample #14: fd76 + jfc7d
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 85501: uvm_test_top.env.agent.monitor [MON] Captured sample #15: fc2f + jfce9
+# UVM_INFO ../uvm/my_uvm_monitor.sv(72) @ 85501: uvm_test_top.env.agent.monitor [MON] Sending block transaction to scoreboard
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(111) @ 85501: uvm_test_top.env.scoreboard [SCB] Received block of 16 samples
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 85501: uvm_test_top.env.scoreboard [SCB] Sample 1 matched: 0429+jff58
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 85501: uvm_test_top.env.scoreboard [SCB] Sample 2 matched: 011a+j05b2
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 85501: uvm_test_top.env.scoreboard [SCB] Sample 3 matched: 012a+j0015
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 85501: uvm_test_top.env.scoreboard [SCB] Sample 4 matched: 02cc+j05aa
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 85501: uvm_test_top.env.scoreboard [SCB] Sample 5 matched: ff1b+j02e3
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 85501: uvm_test_top.env.scoreboard [SCB] Sample 6 matched: 0b9c+jff3f
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 85501: uvm_test_top.env.scoreboard [SCB] Sample 7 matched: ff7c+jfbe7
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 85501: uvm_test_top.env.scoreboard [SCB] Sample 8 matched: 029b+j042f
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 85501: uvm_test_top.env.scoreboard [SCB] Sample 9 matched: 088d+jfd30
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 85501: uvm_test_top.env.scoreboard [SCB] Sample 10 matched: fdd4+jfdea
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 85501: uvm_test_top.env.scoreboard [SCB] Sample 11 matched: 0214+j021b
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 85501: uvm_test_top.env.scoreboard [SCB] Sample 12 matched: f8e2+j0152
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 85501: uvm_test_top.env.scoreboard [SCB] Sample 13 matched: 01ef+jfbc1
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 85501: uvm_test_top.env.scoreboard [SCB] Sample 14 matched: 015e+jff91
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 85501: uvm_test_top.env.scoreboard [SCB] Sample 15 matched: fd76+jfc7d
+# UVM_INFO ../uvm/my_uvm_scoreboard.sv(136) @ 85501: uvm_test_top.env.scoreboard [SCB] Sample 16 matched: fc2f+jfce9
+# UVM_INFO ../uvm/my_uvm_monitor.sv(62) @ 86501: uvm_test_top.env.agent.monitor [MON] Captured sample #0: fc2f + jfce9
 # UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 88501: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
 # UVM_INFO ../uvm/my_uvm_monitor.sv(87) @ 88501: uvm_test_top.env.agent.monitor [MON] --- PERFORMANCE SUMMARY ---
 # UVM_INFO ../uvm/my_uvm_monitor.sv(88) @ 88501: uvm_test_top.env.agent.monitor [MON] FFT Points (N): 16
-# UVM_INFO ../uvm/my_uvm_monitor.sv(89) @ 88501: uvm_test_top.env.agent.monitor [MON] Latency (First In to First Out): 47 cycles
-# UVM_INFO ../uvm/my_uvm_monitor.sv(90) @ 88501: uvm_test_top.env.agent.monitor [MON] Processing Time (First In to Last Out): 63 cycles
+# UVM_INFO ../uvm/my_uvm_monitor.sv(89) @ 88501: uvm_test_top.env.agent.monitor [MON] Latency (First In to First Out): 55 cycles
+# UVM_INFO ../uvm/my_uvm_monitor.sv(90) @ 88501: uvm_test_top.env.agent.monitor [MON] Processing Time (First In to Last Out): 71 cycles
 # UVM_INFO ../uvm/my_uvm_monitor.sv(91) @ 88501: uvm_test_top.env.agent.monitor [MON] Throughput Interval: 1.07 cycles/sample
 # UVM_INFO ../uvm/my_uvm_monitor.sv(92) @ 88501: uvm_test_top.env.agent.monitor [MON] Effective Throughput at 100MHz: 93.75 Msamples/sec
 # UVM_INFO ../uvm/my_uvm_monitor.sv(93) @ 88501: uvm_test_top.env.agent.monitor [MON] ---------------------------
@@ -233,6 +242,11 @@
 # [TEST_DONE]     1
 # ** Note: $finish    : /vol/mentor/modelsim-2020.1/modeltech/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
 #    Time: 885010 ps  Iteration: 54  Instance: /my_uvm_tb
-# Saving coverage database on exit...
-# End time: 12:30:04 on Feb 24,2026, Elapsed time: 0:00:03
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at /vol/mentor/modelsim-2020.1/modeltech/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# 0 ps
+# 929260 ps
+# End time: 10:59:23 on Feb 25,2026, Elapsed time: 14:02:35
 # Errors: 0, Warnings: 1
+# ** Warning: License feature 'svverification' will expire in 3 days.
+# ** Warning: License feature 'msimcoverage' will expire in 3 days.

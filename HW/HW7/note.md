@@ -26,6 +26,9 @@
 ### 1. `my_fft_pkg.sv`
 
 - 新增 `NUM_STAGES` 和 `INT_WIDTH = 32` 參數（匹配 C 的 32-bit `int`）
+- 新增 `DEBUG` 選項：
+  - `DEBUG = 0`：僅列印效能總結與測試結果（簡潔模式）。
+  - `DEBUG = 1`：列印詳細的級間資料與蝶形運算過程。
 - 修正 4 個旋轉因子（Twiddle Factor），原本用雙精度計算，與 C 的 `float` 精度不同，差了 1：
 
 | 旋轉因子 | 修正前 | 修正後 |
@@ -45,6 +48,7 @@
 - 延遲線 `D = N/2^(s+1)` → `D = 2^s`
 - DIF 是先 add/sub 再乘 twiddle → DIT 是先乘 twiddle 再 add/sub
 - 新增 `delay_pipe` 對齊乘法器延遲
+- **時序優化**：在模組輸出端加上暫存器（Output Registration），將本級的蝶形運算與下一級的乘法器邏輯隔開，大幅降低邏輯層級（Logic Levels）。這會使每個 Stage 增加 1 cycle 延遲。
 
 **改動二：移除 ÷2 縮放**
 - 原本 `bf_add_r[DATA_WIDTH:1]`（右移 1 位 = ÷2），4 級疊加 = ÷16
@@ -64,6 +68,10 @@
 **改動二：反量化捨入方式**
 - 原本用 `>>>` 算術右移（向下取整），C 用 `/`（向零截斷），負數結果不同
 - 修正為使用 SV 有號除法 `/`
+- **時序優化**：由於 `/` 在合成時會產生大量邏輯層級（~40級），改用基於位移（Shift）的優化邏輯來實現「向零截斷」：
+  - `adjusted = (rounded < 0) ? (rounded + (QUANT - 1)) : rounded;`
+  - `result = adjusted >>> Q;`
+  - 維持 100% 位元精確度，同時大幅提升頻率。
 
 **修正後 Pipeline：**
 ```
@@ -186,7 +194,6 @@ Sample Index Coverage: 100.0%
 | Effective Throughput @100MHz | 93.75 Msamples/sec |
 
 ---
-
 ## 作業要求達成檢查
 
 ### Setup
@@ -236,8 +243,66 @@ Sample Index Coverage: 100.0%
 ### Verification — Simulation Script
 - [x] Direct testbench：`fft_tb.do`
 - [x] UVM testbench：`fft_uvm_sim.do`（含 coverage 收集）
+- [x] GUI 波形模擬：`fft_sim.do`（含 `fft_wave.do` 波形設定）
+
+### Waveform 波形觀測
+
+#### 執行方式
+在 Modelsim/Questasim 中執行：
+```tcl
+do fft_sim.do
+```
+此腳本會自動編譯、載入模擬、開啟波形視窗並跑完模擬。
+
+#### 波形腳本說明
+
+| 檔案 | 用途 |
+|------|------|
+| `fft_sim.do` | 主模擬腳本：編譯 → `vsim -voptargs="+acc"` → `log -r /*` → 載入波形 → `run -all` → `wave zoom full` |
+| `fft_wave.do` | 波形訊號設定：定義各 Group 的訊號與顯示格式 |
+
+#### 波形 Group 說明
+
+| Group | 包含訊號 | 用途 |
+|-------|---------|------|
+| **TOP** | `clock`, `reset` | 全域時脈與重置 |
+| **VIF** | `wr_en`, `real_in/out`, `imag_in/out`, `in_full`, `rd_en`, `out_empty` | UVM Interface I/O |
+| **BIT_REV** | `br_valid_out`, `br_real_out`, `br_imag_out` | 位元反轉輸出（DIT 輸入端） |
+| **STAGES_PIPELINE** | `stage_valid[]`, `stage_real[]`, `stage_imag[]` | 各級間 Pipeline 訊號 |
+| **STAGE_3** | `valid_in/out`, `real_in/out` | 最後一級 FFT Stage 詳細訊號 |
+| **STAGE_3_MULT** | `valid_in/out`, `out_real`, `out_imag` | Stage 3 內部乘法器 |
+| **OUT_FIFO** | `empty`, `full` | 輸出 FIFO 狀態 |
+
+#### 重要參數
+- `-voptargs="+acc"`：關閉最佳化，確保所有內部訊號可見
+- `log -r /*`：記錄所有層級訊號，方便事後手動新增觀測
+- `wave zoom full`：模擬結束後自動縮放至完整時間軸
 
 ### Compare Results
 - [x] 硬體 FFT 輸出 vs C 參考：**16/16 bit-true accuracy**（零量化誤差）
 - [x] Throughput：pipeline 填滿後 93.75 Msamples/sec
 - [x] Latency：47 cycles（first in → first out）
+
+## 時序優化與效能總結
+
+為了達成 100 MHz 的目標，進行了多輪時序優化：
+
+### 時序優化歷史 (Timing Optimization History)
+
+| 優化階段 | 描述 | 估算頻率 (Est Freq) | Slack | 狀態 |
+|----------|------|--------------------|-------|------|
+| **初始版本** | 使用 `/` 除法器進行反量化 | 58.2 MHz | -7.100 | 已解決 |
+| **第一階段** | 將 `/` 改為位移 (Shift) 優化邏輯 | 84.6 MHz | -1.774 | 已解決 |
+| **第二階段** | 在 `fft_stage` 增加輸出暫存器 (Output Reg) | 97.4 MHz | -1.540 | 已解決 |
+| **第三階段** | 增加乘法器輸入暫存器 (Input Reg) | **117.1 MHz** | -1.281 | **已完成** |
+
+### 最新時序報告 (Summary for Stage 3)
+
+| Clock Name | Req Freq | Est Freq | Slack |
+|------------|----------|----------|-------|
+| `fft_top\|clk` | 137.8 MHz | 117.1 MHz | -1.281 |
+
+### 待優化點分析
+目前的關鍵路徑已經從「查表/組合邏輯」轉移到了「乘法器核心」內部。具體來說，是 32x16 bit 的乘法運算在一個 Clock Cycle 內產生的 Carry Chain 過長。
+
+雖然 117.1 MHz 已經達到並超過了原定的 100 MHz 目標（有 17% 的預留空間），但若要追求更高的頻率（如 140 MHz+），可以進一步將 `complex_mult` 的乘法階段（Stage 1）拆分為兩個 Pipeline Stages。

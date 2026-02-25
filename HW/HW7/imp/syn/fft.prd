@@ -1,0 +1,13 @@
+#--  Synopsys, Inc.
+#--  Version O-2018.09-SP1
+#--  Project file /home/gel8580/CE387/HW/HW7/imp/syn/fft.prd
+#--  Written on Tue Feb 24 16:42:05 2026
+
+#
+### Watch Implementation type ###
+#
+watch_impl -all
+#
+### Watch Implementation properties ###
+#
+watch_prop -clear

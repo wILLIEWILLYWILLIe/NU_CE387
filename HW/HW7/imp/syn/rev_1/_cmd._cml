@@ -1,0 +1,1 @@
+-link -encrypt -top fft_top -osyn /home/gel8580/CE387/HW/HW7/imp/syn/rev_1/synwork/fft_comp.srs /home/gel8580/CE387/HW/HW7/imp/syn/rev_1/synwork/layer0.srs  -jobname linker  

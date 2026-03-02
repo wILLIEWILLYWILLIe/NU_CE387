@@ -1,1 +1,10 @@
 Demo/*
+
+# FM Radio - generated golden reference files (too large for git)
+Final_Project/FM Radio/test/*.txt
+Final_Project/FM Radio/test/usrp.dat
+
+# FM Radio - compiled binaries
+Final_Project/FM Radio/fm_radio
+Final_Project/FM Radio/fm_golden
+

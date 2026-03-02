@@ -120,31 +120,193 @@ BP_PILOT (19 kHz) → multiply(自身 → 平方) → HP filter (移除 DC) → 
 ## 5. 實作計劃與優先順序
 
 ### Phase 1：核心基礎模組（先驗證定點數正確性）
-- [ ] **`fir.sv`** — 通用參數化實數 FIR（tap 數、係數、decimation 可配置）
-- [ ] **`fir_cmplx.sv`** — 複數 FIR（實例化兩個 `fir.sv`）
-- [ ] **`qarctan.sv`** — 分段有理逼近的 arctan（或查表）
+- [x] **`fir.sv`** — 通用參數化實數 FIR（tap 數、係數、decimation 可配置）✅
+- [x] **`fir_pkg.sv`** — 所有 FIR/IIR 係數 package ✅
+- [ ] **`fir_cmplx.sv`** — 複數 FIR（Channel Filter 虛部係數=0，可用兩個 `fir.sv` 代替）
+- [x] **`qarctan.sv`** — 分段有理逼近 arctan（package function）✅
 
 ### Phase 2：FM 解調路徑（先跑出單聲道輸出）
-- [ ] **`demodulate.sv`** — 4 個乘法 + `qarctan` + gain
+- [x] **`demodulate.sv`** — conj multiply + `qarctan_f` + gain ✅
+- [x] **`fir.sv` (decimation=8)** — L+R LPF ✅（同一 fir.sv 不同參數）
 - [ ] **`fm_channel.sv`** — Channel Filter + FM Demod 串聯
-- [ ] **`mono_path.sv`** — L+R FIR + decimation=8 → 32 kHz 單聲道
+- [ ] **`mono_path.sv`** — 全 mono 路徑串接
 
 ### Phase 3：立體聲分離
+- [x] **`multiply.sv`** — 定點乘法 `DEQUANTIZE(x*y)` ✅
+- [x] **`add_sub.sv`** — 加法/減法 (left_raw/right_raw) ✅
 - [ ] **`pilot_gen.sv`** — BP_PILOT → 平方 → HP → 38 kHz 載波
 - [ ] **`stereo_path.sv`** — BP_LMR → × 38 kHz → AUDIO_LMR + decimation=8
 
 ### Phase 4：後處理與整合
-- [ ] **`deemphasis.sv`** — 1st-order IIR，左右各一路
-- [ ] **`fft_top.sv`** — 全系統整合 + FIFO 緩衝
+- [x] **`deemphasis.sv`** — 1st-order IIR de-emphasis ✅
+- [x] **`gain.sv`** — 音量控制 ✅
+- [ ] **`fm_radio_top.sv`** — 全系統整合
 
 ### Phase 5：驗證
-- [ ] C 模擬輸出作為 golden reference（各模組逐一驗證）
-- [ ] ModelSim 定點數 vs C 參考輸出比較
+- [x] C 模擬輸出作為 golden reference（`make golden` → `test/*.txt`）✅
+- [x] `fir.sv` (Channel, 20-tap, decim=1)：**PASS 262144/262144** ✅
+- [x] `fir.sv` (L+R LPF, 32-tap, decim=8)：**PASS 32768/32768** ✅
+- [x] `fir.sv` (BP Pilot, 32-tap, decim=1)：**PASS 262144/262144** ✅
+- [x] `fir.sv` (BP L-R, 32-tap, decim=1)：**PASS 262144/262144** ✅
+- [x] `fir.sv` (HP, 32-tap, decim=1)：**PASS 262144/262144** ✅
+- [x] `fir.sv` (L-R LPF, 32-tap, decim=8)：**PASS 32768/32768** ✅
+- [x] `demodulate.sv`：**PASS 262144/262144** ✅
+- [x] `multiply.sv` (Pilot squaring)：**PASS 262144/262144** ✅
+- [x] `multiply.sv` (L-R demod)：**PASS 262144/262144** ✅
+- [x] `deemphasis.sv` (Left)：**PASS 32768/32768** ✅
+- [x] `gain.sv` (Left)：**PASS 32768/32768** ✅
+- [x] `add_sub.sv` (ADD left_raw, SUB right_raw)：**PASS 32768/32768** ✅
+- [x] 全流程串接驗證（`fm_radio_top.sv`）：**PASS 32768/32768** ✅
 - [ ] UVM 環境（如時間允許）
 
 ---
 
-## 6. FPGA 實作注意事項
+## 6. 模組驗證對照表
+
+| SV 模組 | 輸入 txt | 輸出 golden txt | 說明 |
+|---------|----------|----------------|------|
+| `fir.sv`（Channel I） | `in_I.txt` | `ch_I.txt` | 20-tap LPF |
+| `fir.sv`（Channel Q） | `in_Q.txt` | `ch_Q.txt` | 20-tap LPF |
+| `demodulate.sv` | `ch_I.txt`, `ch_Q.txt` | `demod.txt` | FM 解調 |
+| `fir.sv`（L+R LPF, ×8） | `demod.txt` | `audio_lpr.txt` | 32-tap, decim=8 |
+| `fir.sv`（BP Pilot） | `demod.txt` | `bp_pilot.txt` | 32-tap BPF |
+| `fir.sv`（BP L-R） | `demod.txt` | `bp_lmr.txt` | 32-tap BPF |
+| `multiply.sv`（平方） | `bp_pilot.txt` × 自身 | `pilot_sq.txt` | 自身相乘 |
+| `fir.sv`（HP filter） | `pilot_sq.txt` | `pilot_38k.txt` | 32-tap HPF |
+| `multiply.sv`（解調） | `pilot_38k.txt`, `bp_lmr.txt` | `lmr_bb.txt` | L-R 下變頻 |
+| `fir.sv`（L-R LPF, ×8） | `lmr_bb.txt` | `audio_lmr.txt` | 32-tap, decim=8 |
+| `add_sub.sv` | `audio_lpr.txt`, `audio_lmr.txt` | `left_raw.txt`, `right_raw.txt` | 加減法 |
+| `deemphasis.sv`（L/R） | `left/right_raw.txt` | `left/right_deemph.txt` | IIR |
+| `gain.sv`（L/R） | `left/right_deemph.txt` | `out_left/right.txt` | 音量控制 |
+
+---
+
+## 7. Debug 紀錄
+
+### A. fir.sv 驗證過程（Xcelium xrun）
+
+| 問題 | 原因 | 修正 |
+|------|------|------|
+| `$readmemd` not found | Xcelium 不支援 `$readmemd`（非標準） | 改用 `$fscanf` 逐行讀十進位 |
+| `always_ff` multiple drivers | `errors`/`checked`/`out_idx` 同時被 `initial` 和 `always_ff` 寫入 | TB 改用 `always @(posedge clk)` |
+| `ref` illegal in static task | Xcelium 不允許 static task 使用 `ref` 參數 | 移除 task，改用 inline `$fscanf` |
+| `integer i` multiple drivers | `i` 被 `always_comb` 和 `always_ff` 共用 | 各 block 用 `int j`/`int k` local 變數 |
+| 262107 mismatches（off-by-one） | `x_reg <= x_in` 是非阻塞，MAC 讀到舊值 | 加 `x_new` 組合邏輯，先算 shift 結果再 MAC |
+| 2 mismatches（overflow） | SV 乘法因 64-bit `acc` 被自動提升，不像 C 的 32-bit overflow | 用 `logic signed [31:0] prod` 強制 32-bit，並改為每項單獨 DEQUANTIZE |
+| **PASS 262144/262144** | — | 全部修正後 bit-true 通過 |
+
+### B. demodulate.sv 驗證過程
+
+| 問題 | 原因 | 修正 |
+|------|------|------|
+| 261933 mismatches（大量輸出為 0） | `qarctan` 作為獨立 module，跨模組 `always_comb` evaluation order 問題 | 改為 package function `qarctan_f`，inline 呼叫 |
+| 255437 mismatches（系統性 ~2% 偏低） | `FM_DEMOD_GAIN` 常數錯誤：742 → 正確值 758 | 重新計算 `(int)(256000/(2π×55000)×1024)=758` |
+| **PASS 262144/262144** | — | 全部修正後 bit-true 通過 |
+
+### C. fir.sv decimation=8 驗證過程
+
+| 問題 | 原因 | 修正 |
+|------|------|------|
+| 32768 mismatches（全部輸出 `x`） | TB 用 `.*` 自動連接，但本地變數叫 `dut_coeffs`，DUT port 叫 `coeffs`，名字不匹配導致未連接 | 將 TB 中 `dut_coeffs` 改名為 `coeffs` |
+| 32747 mismatches（數值錯亂） | `fir.sv` 的 decimation 邏輯每個 clock 移位 DECIM，但每個 clock 只收 1 個樣本 | 改為每個 clock shift 1 位，每 DECIM 個 clock 才算 MAC，移除 `x_new` 組合邏輯 |
+| **PASS 32768/32768** | — | 同時 regression 通過：fir (decim=1) PASS 262144/262144 |
+
+### D. multiply.sv 驗證過程
+
+| 問題 | 原因 | 修正 |
+|------|------|------|
+| **一次通過** | 邏輯簡單，僅 `DEQUANTIZE(x*y)` | 無需修正 |
+| **PASS 262144/262144** | — | Pilot 平方驗證通過 |
+
+### E. deemphasis.sv 驗證過程
+
+| 問題 | 原因 | 修正 |
+|------|------|------|
+| 14123 mismatches（系統性 ±1） | `IIR_Y_COEFFS[1]` 常數錯誤：寫成 -668，實際用 C 程式計算為 -666 | 用 gcc 執行直接算出正確係數：`QUANTIZE_F((0.21140067-1)/(0.21140067+1))=-666` |
+| 14123 mismatches（类型報警 + 郾同答案） | 換成 `logic signed` 後仍相同 | 策却是係數錯誤，不是類型問題 |
+| **PASS 32768/32768** | — | 係數額正後 + two-process 改寫 |
+
+### F. gain.sv 驗證過程
+
+| 問題 | 原因 | 修正 |
+|------|------|------|
+| **一次通過** | 邏輯簡單 | 無需修正 |
+| **PASS 32768/32768** | — | 音量控制驗證通過 |
+
+### G. add_sub_tb.sv 驗證過程
+
+| 問題 | 原因 | 修正 |
+|------|------|------|
+| `ref` argument illegal | Xcelium 不支援 static task 使用 `ref` 參數（同 fir_tb 的舊 bug）| 移除 task，改為兩段 inline 迴圈分別跑 ADD 和 SUB |
+| **PASS 32768/32768 (ADD + SUB)** | — | bit-true 通過 |
+
+### H. 其餘中間路徑 TB（fir_bppilot/bplmr/hp/lmr, mult_lmr）
+
+| 問題 | 原因 | 修正 |
+|------|------|------|
+| **全部一次通過** | `fir.sv` 通用模組配係數即可，`multiply.sv` 邏輯已驗證 | 無需修正 |
+| **PASS: 全數 262144/262144 或 32768/32768** | — | Pipeline 所有中間路徑 bit-true 驗證完成 |
+
+### I. fm_radio_top.sv (全系統整合) 驗證過程
+
+| 問題 | 原因 | 修正 |
+|------|------|------|
+| **左右聲道出現對稱誤差 (Left 少 16，Right 多 16)** | L-R 路徑的時間沒對齊。`pilot_38k` 在解調前經過了 `multiply(sq)` 和 `fir(hp)` 浪費了 **2 cycles**，直接拿來跟剛做完 BP 的 `bp_lmr` 相乘會導致時間錯位。因為錯位，`audio_lmr` 算錯，導致加減法後產生 `±LMR_error` 變成對稱誤差 | 在 `bp_lmr` 送入 L-R 解調乘法器前，手動加上 **2-cycle register delay (`bp_lmr_d2`)**，讓兩邊訊號時間完全對齊。 |
+| **PASS 32768/32768 (Left & Right)** | — | 全 pipeline 端到端 (End-to-End) bit-true 驗證通過 ✅ |
+
+---
+
+## 8. 目前 SV 檔案列表 (`imp/sv/`)
+
+| 檔案 | 類型 | 驗證狀態 | 說明 |
+|------|------|----------|------|
+| `fir_pkg.sv` | Package | — | 所有係數、常數定義 |
+| `qarctan.sv` | Package | — | `qarctan_f()` inline function |
+| `fm_radio_top.sv` | Module | **PASS** | 全系統頂層模組（含 4-cycle LPR delay 及 2-cycle BPLMR delay） |
+| `fir.sv` | Module | **PASS** ×6 | 通用 FIR，所有 tap 數、decimation 均可配置 |
+| `demodulate.sv` | Module | **PASS** | FM 解調器（conjugate multiply + qarctan + gain） |
+| `multiply.sv` | Module | **PASS** | 定點乘法，用於 Pilot 平方和 L-R 解調 |
+| `deemphasis.sv` | Module | **PASS** | 1st-order IIR de-emphasis（左/右各一等 |
+| `gain.sv` | Module | **PASS** | 音量控制 `DEQUANTIZE(x*gain) << 4` |
+| `add_sub.sv` | Module | **PASS** | 加法（left_raw）+ 減法（right_raw） |
+| `fir_tb.sv` | TB | ✔ PASS | Channel Filter I 路（in_I → ch_I） |
+| `fir_lpr_tb.sv` | TB | ✔ PASS | L+R LPF decim=8（demod → audio_lpr） |
+| `fir_bppilot_tb.sv` | TB | ✔ PASS | BP Pilot decim=1（demod → bp_pilot） |
+| `fir_bplmr_tb.sv` | TB | ✔ PASS | BP L-R decim=1（demod → bp_lmr） |
+| `fir_hp_tb.sv` | TB | ✔ PASS | HP decim=1（pilot_sq → pilot_38k） |
+| `fir_lmr_tb.sv` | TB | ✔ PASS | L-R LPF decim=8（lmr_bb → audio_lmr） |
+| `demod_tb.sv` | TB | ✔ PASS | FM 解調器（ch_I/Q → demod） |
+| `multiply_tb.sv` | TB | ✔ PASS | Pilot 平方（bp_pilot × bp_pilot → pilot_sq） |
+| `multiply_lmr_tb.sv` | TB | ✔ PASS | L-R 解調（pilot_38k × bp_lmr → lmr_bb） |
+| `deemphasis_tb.sv` | TB | ✔ PASS | IIR de-emphasis Left（left_raw → left_deemph） |
+| `gain_tb.sv` | TB | ✔ PASS | 音量控制 Left（left_deemph → out_left） |
+| `add_sub_tb.sv` | TB | ✔ PASS | lpr±lmr → left_raw，right_raw |
+| `fm_radio_top_tb.sv`| TB | ✔ PASS | 端到端全系統（in_I/Q → left/right_out） |
+
+## 9. Makefile 使用方式 (`imp/sim/`)
+
+```bash
+make fir          # Channel Filter (20-tap, decim=1)     in_I → ch_I
+make fir_lpr      # L+R LPF (32-tap, decim=8)           demod → audio_lpr
+make fir_bppilot  # BP Pilot BPF (32-tap, decim=1)      demod → bp_pilot
+make fir_bplmr    # BP L-R BPF (32-tap, decim=1)        demod → bp_lmr
+make fir_hp       # HP filter (32-tap, decim=1)         pilot_sq → pilot_38k
+make fir_lmr      # L-R LPF (32-tap, decim=8)           lmr_bb → audio_lmr
+make demod        # FM 解調器                            ch_I/Q → demod
+make mult         # Pilot 平方                             bp_pilot² → pilot_sq
+make mult_lmr     # L-R 解調乘法                        pilot_38k×bp_lmr → lmr_bb
+make deemph       # IIR de-emphasis (Left)               left_raw → left_deemph
+make gain_test    # 音量控制 (Left)                      left_deemph → out_left
+make add_sub_test # 加減法                                 lpr±lmr → left/right_raw
+make top          # 全系統 Top-level                       in_I/Q → out_left/right
+# 以上 13 個 testbench 全部 PASS
+make all          # 跑全部系統單元測試與 top
+make clean        # 清除 xcelium 檔案
+```
+
+---
+
+## 8. FPGA 實作注意事項
 
 | 考量 | 說明 |
 |------|------|
@@ -157,7 +319,7 @@ BP_PILOT (19 kHz) → multiply(自身 → 平方) → HP filter (移除 DC) → 
 
 ---
 
-## 7. Source Files 說明 (`src/`)
+## 9. Source Files 說明 (`src/`)
 
 | 檔案 | 說明 |
 |------|------|
@@ -169,7 +331,7 @@ BP_PILOT (19 kHz) → multiply(自身 → 平方) → HP filter (移除 DC) → 
 
 ---
 
-## 8. Golden Reference 檔案說明 (`test/`)
+## 10. Golden Reference 檔案說明 (`test/`)
 
 執行 `make golden` 後，`test/` 資料夾會產生以下 18 個檔案，每個檔案每行一個十進位整數（Q10 格式）。
 
@@ -195,5 +357,31 @@ BP_PILOT (19 kHz) → multiply(自身 → 平方) → HP filter (移除 DC) → 
 | `out_left.txt` | 32768 | `gain_n()` | **最終左聲道輸出**（音量控制後，16-bit 範圍） |
 | `out_right.txt` | 32768 | `gain_n()` | **最終右聲道輸出**（音量控制後，16-bit 範圍） |
 
-> **FPGA 驗證方式：** 每個 SV 模組的 testbench 讀取對應的輸入檔，比對輸出是否與輸出檔完全一致（bit-true）。
 > 例如驗證 `fir.sv`（Channel Filter）：輸入 `in_I.txt` → 比對 `ch_I.txt`。
+
+---
+
+## 11. C Reference (`fm_radio.cpp`) 完整性與對應檢核
+
+為了確保 FPGA 實作完全覆蓋 C 程式的要求，以下為 `fm_radio_stereo()` 中的所有運算步驟與 SV 模組的嚴格對應檢查：
+
+| C 程式運算 (fm_radio_stereo) | C 函數呼叫 | SV 模組對應 | 檢核結果 |
+|-----------------------------|------------|-------------|----------|
+| **1. Channel Filter (80kHz)** | `fir_cmplx_n` (decim=1) | `fir.sv` (2 次實例化 I/Q) | ✅ **PASS** (bit-true) |
+| **2. FM Demodulation** | `demodulate_n` | `demodulate.sv` | ✅ **PASS** (含 `qarctan_f` 行為完全一致) |
+| **3. L+R Path (LPF 15kHz)** | `fir_n` (decim=8) | `fir.sv` (`lpr_coeffs`, decim=8) | ✅ **PASS** |
+| **4. Pilot BPF (19kHz)** | `fir_n` (decim=1) | `fir.sv` (`pilot_coeffs`) | ✅ **PASS** |
+| **5. Pilot Squaring (38kHz)** | `multiply_n` | `multiply.sv` (自身相乘) | ✅ **PASS** |
+| **6. Pilot HPF** | `fir_n` (decim=1) | `fir.sv` (`hp_coeffs`) | ✅ **PASS** |
+| **7. L-R BPF (23-53kHz)** | `fir_n` (decim=1) | `fir.sv` (`bplmr_coeffs`) | ✅ **PASS** |
+| **8. L-R Demodulation** | `multiply_n` | `multiply.sv` (L-R BPF × Pilot HPF) | ✅ **PASS** (加 2-cycle delay 解決時間對齊) |
+| **9. L-R Path (LPF 15kHz)** | `fir_n` (decim=8) | `fir.sv` (`lmr_coeffs`, decim=8) | ✅ **PASS** |
+| **10. Stereo Mix (Add/Sub)** | `add_n`, `sub_n` | `add_sub.sv` | ✅ **PASS** (加 4-cycle delay 解決 LPR/LMR 對齊) |
+| **11. De-emphasis** | `deemphasis_n` | `deemphasis.sv` (IIR) | ✅ **PASS** (修正 `IIR_Y_COEFFS[1]` 為 -666) |
+| **12. Volume Control (Gain)** | `gain_n` | `gain.sv` | ✅ **PASS** |
+
+**完整性結論：**
+1. 所有 C 迴圈處理均轉換為 **Stream 流水線並行處理**。
+2. 所有資料位寬均**嚴格維持 C 的 32-bit int 範圍與溢位行為**。
+3. 所有 `DEQUANTIZE` (1024 除法) 與 Q10 格式轉換皆在硬體中完美重現。
+4. **Top Level End-to-End 比對：0 Errors (32768/32768 samples for both Left and Right)。**

@@ -1,0 +1,16 @@
+fm_radio_top.u_gain_R work gain 0 1
+fm_radio_top.u_gain_L work gain 0 1
+fm_radio_top.u_deemph_R work deemphasis 0 1
+fm_radio_top.u_deemph_L work deemphasis 0 1
+fm_radio_top.u_sub work add_sub 0 1
+fm_radio_top.u_add work add_sub 0 1
+fm_radio_top.u_fir_lmr work fir 0 1
+fm_radio_top.u_multiply_lmr work multiply 0 1
+fm_radio_top.u_fir_bplmr work fir 0 1
+fm_radio_top.u_fir_hp work fir 0 1
+fm_radio_top.u_multiply_sq work multiply 0 1
+fm_radio_top.u_fir_bppilot work fir 0 1
+fm_radio_top.u_fir_lpr work fir 0 1
+fm_radio_top.u_demod work demodulate 0 1
+fm_radio_top.u_fir_ch_Q work fir 0 1
+fm_radio_top.u_fir_ch_I work fir 0 1

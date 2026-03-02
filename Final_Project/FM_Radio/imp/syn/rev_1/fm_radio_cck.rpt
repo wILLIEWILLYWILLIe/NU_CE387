@@ -1,0 +1,209 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify (R) Premier
+Build: O-2018.09-SP1
+Install: /vol/synopsys/fpga/O-2018.09-SP1
+OS: Red Hat Enterprise Linux 8.10 (Ootpa)
+Hostname: finagle.wot.ece.northwestern.edu
+max virtual memory: unlimited (bytes)
+max user processes: 254205
+max stack size: 8388608 (bytes)
+
+
+Implementation : rev_1
+
+# Written on Mon Mar  2 16:23:37 2026
+
+##### DESIGN INFO #######################################################
+
+Top View:                "fm_radio_top"
+Constraint File(s):      (none)
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting             Ending               |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+System               fm_radio_top|clk     |     13.009           |     No paths         |     No paths         |     No paths                         
+fm_radio_top|clk     System               |     13.009           |     No paths         |     No paths         |     No paths                         
+fm_radio_top|clk     fm_radio_top|clk     |     13.009           |     No paths         |     No paths         |     No paths                         
+=====================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:I_in[0]
+p:I_in[1]
+p:I_in[2]
+p:I_in[3]
+p:I_in[4]
+p:I_in[5]
+p:I_in[6]
+p:I_in[7]
+p:I_in[8]
+p:I_in[9]
+p:I_in[10]
+p:I_in[11]
+p:I_in[12]
+p:I_in[13]
+p:I_in[14]
+p:I_in[15]
+p:I_in[16]
+p:I_in[17]
+p:I_in[18]
+p:I_in[19]
+p:I_in[20]
+p:I_in[21]
+p:I_in[22]
+p:I_in[23]
+p:I_in[24]
+p:I_in[25]
+p:I_in[26]
+p:I_in[27]
+p:I_in[28]
+p:I_in[29]
+p:I_in[30]
+p:I_in[31]
+p:Q_in[0]
+p:Q_in[1]
+p:Q_in[2]
+p:Q_in[3]
+p:Q_in[4]
+p:Q_in[5]
+p:Q_in[6]
+p:Q_in[7]
+p:Q_in[8]
+p:Q_in[9]
+p:Q_in[10]
+p:Q_in[11]
+p:Q_in[12]
+p:Q_in[13]
+p:Q_in[14]
+p:Q_in[15]
+p:Q_in[16]
+p:Q_in[17]
+p:Q_in[18]
+p:Q_in[19]
+p:Q_in[20]
+p:Q_in[21]
+p:Q_in[22]
+p:Q_in[23]
+p:Q_in[24]
+p:Q_in[25]
+p:Q_in[26]
+p:Q_in[27]
+p:Q_in[28]
+p:Q_in[29]
+p:Q_in[30]
+p:Q_in[31]
+p:left_out[0]
+p:left_out[1]
+p:left_out[2]
+p:left_out[3]
+p:left_out[4]
+p:left_out[5]
+p:left_out[6]
+p:left_out[7]
+p:left_out[8]
+p:left_out[9]
+p:left_out[10]
+p:left_out[11]
+p:left_out[12]
+p:left_out[13]
+p:left_out[14]
+p:left_out[15]
+p:left_out[16]
+p:left_out[17]
+p:left_out[18]
+p:left_out[19]
+p:left_out[20]
+p:left_out[21]
+p:left_out[22]
+p:left_out[23]
+p:left_out[24]
+p:left_out[25]
+p:left_out[26]
+p:left_out[27]
+p:left_out[28]
+p:left_out[29]
+p:left_out[30]
+p:left_out[31]
+p:right_out[0]
+p:right_out[1]
+p:right_out[2]
+p:right_out[3]
+p:right_out[4]
+p:right_out[5]
+p:right_out[6]
+p:right_out[7]
+p:right_out[8]
+p:right_out[9]
+p:right_out[10]
+p:right_out[11]
+p:right_out[12]
+p:right_out[13]
+p:right_out[14]
+p:right_out[15]
+p:right_out[16]
+p:right_out[17]
+p:right_out[18]
+p:right_out[19]
+p:right_out[20]
+p:right_out[21]
+p:right_out[22]
+p:right_out[23]
+p:right_out[24]
+p:right_out[25]
+p:right_out[26]
+p:right_out[27]
+p:right_out[28]
+p:right_out[29]
+p:right_out[30]
+p:right_out[31]
+p:rst_n
+p:valid_in
+p:valid_out
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

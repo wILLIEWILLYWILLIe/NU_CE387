@@ -1,0 +1,106 @@
+@N:: Applying property .distcompmodetop with value 1 on module fm_radio_top in library work
+@N:: Applying property .distcompnoprune with value 1 on module fm_radio_top in library work
+@N:: Applying property .noprune with value 1 on module fm_radio_top in library work
+@N:: Applying property .distcompnoprune with value 1 on module gain in library work
+@N:: Applying property .noprune with value 1 on module gain in library work
+@N:: Applying property .distcompnoprune with value 1 on module deemphasis in library work
+@N:: Applying property .noprune with value 1 on module deemphasis in library work
+@N:: Applying property .distcompnoprune with value 1 on module add_sub in library work
+@N:: Applying property .noprune with value 1 on module add_sub in library work
+@N:: Applying property .distcompnoprune with value 1 on module fir in library work
+@N:: Applying property .noprune with value 1 on module fir in library work
+@N:: Applying property .distcompnoprune with value 1 on module multiply in library work
+@N:: Applying property .noprune with value 1 on module multiply in library work
+@N:: Applying property .distcompnoprune with value 1 on module demodulate in library work
+@N:: Applying property .noprune with value 1 on module demodulate in library work
+@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir_pkg.sv":6:8:6:14|Synthesizing module fir_pkg in library work.
+@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/qarctan.sv":7:8:7:18|Synthesizing module qarctan_pkg in library work.
+Selecting top level module fm_radio_top
+@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":6:7:6:9|Synthesizing module fir in library work.
+
+	TAPS=32'b00000000000000000000000000010100
+	DECIM=32'b00000000000000000000000000000001
+	WIDTH=32'b00000000000000000000000000100000
+	CWIDTH=32'b00000000000000000000000000100000
+	BITS=32'b00000000000000000000000000001010
+   Generated name = fir_20s_1s_32s_32s_10s
+Running optimization stage 1 on fir_20s_1s_32s_32s_10s .......
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning unused register x_reg[19][31:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning unused register acc[63:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning unused register x_val[31:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning unused register prod[31:0]. Make sure that there are no unused intermediate registers.
+@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":7:7:7:16|Synthesizing module demodulate in library work.
+@N: CG179 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":83:54:83:63|Removing redundant assignment.
+Running optimization stage 1 on demodulate .......
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":92:4:92:12|Pruning unused bits 30 to 0 of stg2_x_reg[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":92:4:92:12|Pruning unused bits 30 to 0 of stg2_y_reg[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":6:7:6:9|Synthesizing module fir in library work.
+
+	TAPS=32'b00000000000000000000000000100000
+	DECIM=32'b00000000000000000000000000001000
+	WIDTH=32'b00000000000000000000000000100000
+	CWIDTH=32'b00000000000000000000000000100000
+	BITS=32'b00000000000000000000000000001010
+   Generated name = fir_32s_8s_32s_32s_10s
+Running optimization stage 1 on fir_32s_8s_32s_32s_10s .......
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning unused register x_reg[31][31:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning unused register acc[63:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning unused register x_val[31:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning unused register prod[31:0]. Make sure that there are no unused intermediate registers.
+@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":6:7:6:9|Synthesizing module fir in library work.
+
+	TAPS=32'b00000000000000000000000000100000
+	DECIM=32'b00000000000000000000000000000001
+	WIDTH=32'b00000000000000000000000000100000
+	CWIDTH=32'b00000000000000000000000000100000
+	BITS=32'b00000000000000000000000000001010
+   Generated name = fir_32s_1s_32s_32s_10s
+Running optimization stage 1 on fir_32s_1s_32s_32s_10s .......
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning unused register x_reg[31][31:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning unused register acc[63:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning unused register x_val[31:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning unused register prod[31:0]. Make sure that there are no unused intermediate registers.
+@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/multiply.sv":7:7:7:14|Synthesizing module multiply in library work.
+Running optimization stage 1 on multiply .......
+@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/add_sub.sv":8:7:8:13|Synthesizing module add_sub in library work.
+Running optimization stage 1 on add_sub .......
+@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/deemphasis.sv":17:7:17:16|Synthesizing module deemphasis in library work.
+Running optimization stage 1 on deemphasis .......
+@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/gain.sv":7:7:7:10|Synthesizing module gain in library work.
+Running optimization stage 1 on gain .......
+@N: CG364 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv":14:7:14:18|Synthesizing module fm_radio_top in library work.
+Running optimization stage 1 on fm_radio_top .......
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv":120:4:120:12|Pruning unused register bplmr_v_d1. Make sure that there are no unused intermediate registers.
+@W: CL169 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv":120:4:120:12|Pruning unused register bplmr_v_d2. Make sure that there are no unused intermediate registers.
+Running optimization stage 2 on fm_radio_top .......
+@N: CL135 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv":162:4:162:12|Found sequential shift lpr_delay_v with address depth of 4 words and data bit width of 1.
+@N: CL135 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv":162:4:162:12|Found sequential shift lpr_delay_d with address depth of 4 words and data bit width of 32.
+Running optimization stage 2 on gain .......
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/gain.sv":26:4:26:12|Optimizing register bit y_out[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/gain.sv":26:4:26:12|Optimizing register bit y_out[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/gain.sv":26:4:26:12|Optimizing register bit y_out[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/gain.sv":26:4:26:12|Optimizing register bit y_out[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/gain.sv":26:4:26:12|Pruning register bits 3 to 0 of y_out[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/gain.sv":26:4:26:12|Pruning register bits 31 to 26 of y_out[31:4]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Running optimization stage 2 on deemphasis .......
+@W: CL260 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/deemphasis.sv":54:4:54:12|Pruning register bit 31 of x0_reg[31:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL247 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/deemphasis.sv":21:44:21:47|Input port bit 31 of x_in[31:0] is unused
+
+Running optimization stage 2 on add_sub .......
+Running optimization stage 2 on multiply .......
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/multiply.sv":26:4:26:12|Pruning register bits 31 to 22 of out[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Running optimization stage 2 on fir_32s_1s_32s_32s_10s .......
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning register bits 31 to 28 of y_reg[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Running optimization stage 2 on fir_32s_8s_32s_32s_10s .......
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning register bits 31 to 28 of y_reg[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Running optimization stage 2 on demodulate .......
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":92:4:92:12|Pruning register bits 31 to 22 of demod_out[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":92:4:92:12|Pruning register bits 31 to 24 of stg1_r_val[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":92:4:92:12|Pruning register bits 31 to 23 of stg1_i_val[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Running optimization stage 2 on fir_20s_1s_32s_32s_10s .......
+@W: CL279 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fir.sv":35:4:35:12|Pruning register bits 31 to 27 of y_reg[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/synwork//distcomp/distcomp0/distcomp0.rt.csv
+

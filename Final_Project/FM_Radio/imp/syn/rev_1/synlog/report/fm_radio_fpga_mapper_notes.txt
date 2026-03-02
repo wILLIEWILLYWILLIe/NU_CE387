@@ -1,0 +1,223 @@
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MT206 |Auto Constrain mode is enabled
+@N: MF236 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":63:28:63:85|Generating a type sdiv divider 
+@N: MF236 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Generating a type sdiv divider 
+@N: MF236 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/deemphasis.sv":46:17:46:36|Generating a type sdiv divider 
+@N: MF236 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/deemphasis.sv":42:42:42:61|Generating a type sdiv divider 
+@N: MF236 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/deemphasis.sv":42:18:42:37|Generating a type sdiv divider 
+@N: MF236 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/deemphasis.sv":46:17:46:36|Generating a type sdiv divider 
+@N: MF236 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/deemphasis.sv":42:42:42:61|Generating a type sdiv divider 
+@N: MF236 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/deemphasis.sv":42:18:42:37|Generating a type sdiv divider 
+@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/add_sub.sv":27:4:27:12|Removing sequential instance u_sub.z_out[31] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/add_sub.sv":27:4:27:12|Removing sequential instance u_add.z_out[31] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv":162:4:162:12|Removing sequential instance lpr_delay_d_3_[31] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv":162:4:162:12|Removing sequential instance lpr_delay_d_2_[31] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv":162:4:162:12|Removing sequential instance lpr_delay_d_1_[31] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv":162:4:162:12|Removing sequential instance lpr_delay_d_0_[31] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_fir_bppilot.y_reg[27:18] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_fir_hp.y_reg[27:18] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv":120:4:120:12|Removing sequential instance bp_lmr_d2[17:0] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv":120:4:120:12|Removing sequential instance bp_lmr_d2[27:18] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/fm_radio_top.sv":162:4:162:12|Removing sequential instance lpr_delay_d_3_[27:0] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_fir_hp.x_reg\[30\][21:0] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_demod.real_prev[26:18] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_fir_bplmr.cnt[1] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_fir_hp.cnt[1] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_fir_bppilot.cnt[1] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_fir_ch_Q.cnt[1] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_fir_ch_I.cnt[1] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_fir_bplmr.cnt[2] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_fir_hp.cnt[2] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_fir_bppilot.cnt[2] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_fir_ch_Q.cnt[2] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_fir_ch_I.cnt[2] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_deemph_L.y_out[22] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_deemph_L.y_out[23] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_deemph_L.y_out[24] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_deemph_L.y_out[25] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_deemph_L.y_out[26] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_deemph_L.y_out[27] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_deemph_L.y_out[28] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_deemph_L.y_out[29] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_deemph_L.y_out[30] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_deemph_L.y_out[31] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_deemph_R.y_out[22] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_deemph_R.y_out[23] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_deemph_R.y_out[24] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_deemph_R.y_out[25] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_deemph_R.y_out[26] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_deemph_R.y_out[27] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_deemph_R.y_out[28] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_deemph_R.y_out[29] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_deemph_R.y_out[30] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_deemph_R.y_out[31] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_demod.stg2_r[30] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_demod.stg2_r[31] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_deemph_L.y0_reg[31] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :|Removing sequential instance u_deemph_R.y0_reg[31] (in view: work.fm_radio_top(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un87_sum_s0[32]" with "34" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un101_sum_s0[32]" with "34" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un59_sum_s0[32]" with "34" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_s0[32]" with "34" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un199_sum_s0[32]" with "34" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un185_sum_s0[32]" with "34" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un171_sum_s0[32]" with "34" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un157_sum_s0[32]" with "34" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un143_sum_s0[32]" with "34" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un129_sum_s0[32]" with "34" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un115_sum_s0[32]" with "34" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un73_sum_s0[32]" with "34" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un45_sum_s0[32]" with "34" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un31_sum_s0[32]" with "34" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un17_sum_s0[32]" with "33" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un206_sum[32]" with "37" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un192_sum[32]" with "37" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un178_sum[32]" with "37" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un164_sum[32]" with "37" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un150_sum[32]" with "37" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un136_sum[32]" with "38" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un122_sum[32]" with "38" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un108_sum[32]" with "38" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un94_sum[32]" with "38" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un80_sum[32]" with "38" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un66_sum[32]" with "38" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un52_sum[32]" with "38" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un38_sum[32]" with "38" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un24_sum[32]" with "38" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un10_sum[32]" with "35" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un3_sum[32]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[31]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[30]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[29]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[28]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[27]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[26]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[25]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[24]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[23]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[22]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[21]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[20]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[19]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[18]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[17]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[16]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[15]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[14]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[13]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[12]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[11]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[10]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[9]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[8]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[7]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[6]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[5]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[4]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[3]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un2_temp_b[2]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un157_sum_s0[1]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[30]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[29]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[28]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[27]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[26]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[25]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[24]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[23]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[22]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[21]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[20]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[19]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[18]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[17]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[16]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[15]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[14]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[13]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[12]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[11]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[10]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[9]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[8]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[7]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[6]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[5]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[4]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[3]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[2]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA100 :"/home/gel8580/CE387/Final_Project/FM_Radio/imp/sv/demodulate.sv":61:28:61:85|Instance "u_demod.stg2_r_calc_2.if_generate_plus\.mult1_un213_sum_d1_m[1]" with "35" loads has been replicated "1" time(s) due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un206_sum_add32" with "38" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un192_sum_add32" with "38" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un178_sum_add32" with "38" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un164_sum_add32" with "38" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un150_sum_add32" with "38" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un136_sum_add32" with "39" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un122_sum_add32" with "39" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un108_sum_add32" with "39" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un94_sum_add32" with "39" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un80_sum_add32" with "39" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un66_sum_add32" with "39" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un52_sum_add32" with "39" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un38_sum_add32" with "39" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un24_sum_add32" with "39" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un10_sum_add32" with "36" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un2_temp_b[25]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un2_temp_b[24]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un2_temp_b[23]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un2_temp_b[22]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un2_temp_b[21]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un2_temp_b[20]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un2_temp_b[19]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un2_temp_b[18]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un2_temp_b[17]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un2_temp_b[16]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un2_temp_b[15]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un2_temp_b[14]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un2_temp_b[13]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un2_temp_b[12]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un2_temp_b[11]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un2_temp_b[10]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un2_temp_b[9]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un2_temp_b[8]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un2_temp_b[7]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un2_temp_b[6]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un2_temp_b[5]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un2_temp_b[4]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un2_temp_b[3]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un2_temp_b[2]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.stg2_r_calc_3.if_generate_plus\.mult1_un2_temp_b[1]" with "31" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.un17_stg2_r_calc_0[24]" with "36" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.un17_stg2_r_calc_add22" with "36" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.un17_stg2_r_calc_add21" with "36" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.un17_stg2_r_calc_add20" with "36" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.un17_stg2_r_calc_add19" with "36" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.un17_stg2_r_calc_add18" with "36" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.un17_stg2_r_calc_add17" with "36" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.un17_stg2_r_calc_add16" with "36" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.un17_stg2_r_calc_add15" with "36" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.un17_stg2_r_calc_add14" with "36" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.un17_stg2_r_calc_add13" with "36" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.un17_stg2_r_calc_add12" with "36" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.un17_stg2_r_calc_add11" with "36" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.un17_stg2_r_calc_add10" with "36" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.un17_stg2_r_calc_add9" with "36" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.un17_stg2_r_calc_add8" with "36" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.un17_stg2_r_calc_add7" with "36" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.un17_stg2_r_calc_add6" with "36" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.un17_stg2_r_calc_add5" with "36" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.un17_stg2_r_calc_add4" with "36" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.un17_stg2_r_calc_add3" with "36" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.un17_stg2_r_calc_add2" with "36" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.un17_stg2_r_calc_add1" with "36" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: FA101 |Net "u_demod.un17_stg2_r_calc_add0" with "36" loads has been buffered by "1" buffers due to hard fanout limit of "30" 
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+@N: MT535 |Writing timing correlation to file /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/fm_radio_ctd.txt 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+@N: FA174 |The following device usage report estimates place and route data. Please look at the place and route report for final resource usage.

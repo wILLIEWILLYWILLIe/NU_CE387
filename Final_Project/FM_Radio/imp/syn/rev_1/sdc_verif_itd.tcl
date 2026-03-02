@@ -1,0 +1,40 @@
+set paths_array(margin_msg,1) {}
+set paths_array(e_line,1) {0}
+set paths_array(req_time,1) {86.716}
+set paths_array(slack,1) {-15.303}
+set paths_array(TS,1) {}
+set paths_array(start_point,1) {u_demod/stg1_i_val[22]}
+set paths_array(end_clk_dly,1) {0.000}
+set paths_array(start_clock,1) {fm_radio_top|clk:rising}
+set paths_array(skew,1) {0.0}
+set paths_array(sig) {/home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/fm_radio.prj|rev_1 {} /home/gel8580/CE387/Final_Project/FM_Radio/imp/syn/rev_1/sdc_verif_slack.itd correlate 1 slack 1 {} {} {} {} {} {} 0 1 0 1 1}
+set paths_array(margin,1) {0}
+set paths_array(pro_slack,1) {0}
+set paths_array(start_type,1) {reg}
+set paths_array(start_clk_dly,1) {0.000}
+set paths_array(index,1) {1}
+set paths_array(passed,1) {0}
+set paths_array(end_point,1) {u_demod/stg2_r[28]}
+set paths_array(end_type,1) {reg}
+set paths_array(data_delay,1) {0}
+set paths_array(status_msg,1) {}
+set paths_array(s_line,1) {0}
+set paths_array(end_clock,1) {fm_radio_top|clk:rising}
+set synth_array(start_clk_dly,1) {}
+set synth_array(start_type,1) {}
+set synth_array(start_point,1) {}
+set synth_array(end_clk_dly,1) {}
+set synth_array(end_type,1) {}
+set synth_array(end_point,1) {}
+set synth_array(start_clock,1) {}
+set synth_array(skew,1) {}
+set synth_array(slack,1) {}
+set synth_array(req_time,1) {}
+set synth_array(end_clock,1) {}
+set sort_list {1 NA}
+set clock_list {}
+set foo {ctd_ta_point,u_demod/stg1_i_val[22]}
+set ta_array($foo) {u_demod.stg1_i_val[22]}
+set foo {ctd_ta_point,u_demod/stg2_r[28]}
+set ta_array($foo) {u_demod.stg2_r[28]}
+puts ""

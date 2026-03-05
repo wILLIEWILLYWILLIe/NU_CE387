@@ -15,8 +15,8 @@ module nn_tb;
     // ---------------------------------------------------------
     // File paths (relative to sim working directory)
     // ---------------------------------------------------------
-    localparam string INPUT_FILE = "../../neural_net/x_test.txt";
-    localparam string LABEL_FILE = "../../neural_net/y_test.txt";
+    localparam string INPUT_FILE = "../source/x_test.txt";
+    localparam string LABEL_FILE = "../source/y_test.txt";
 
     // ---------------------------------------------------------
     // Clock & Reset

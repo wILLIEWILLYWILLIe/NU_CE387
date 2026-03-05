@@ -1,27 +1,40 @@
-# =============================================================
-# ModelSim/QuestaSim simulation script for Neural Network
-# =============================================================
-# Usage: do nn_sim.do
-# Run from imp/sim/ directory
-# =============================================================
 
-# Create work library
 vlib work
+vmap work work
 
-# Compile (package first, then leaf → top → testbench)
+# Compile source files
 vlog -sv ../sv/nn_pkg.sv
 vlog -sv ../sv/fifo.sv
 vlog -sv ../sv/neuron.sv
 vlog -sv ../sv/layer.sv
 vlog -sv ../sv/argmax.sv
 vlog -sv ../sv/nn_top.sv
-vlog -sv ../sv/nn_tb.sv
 
-# Load simulation
-vsim -voptargs="+acc" work.nn_tb
+# Compile UVM environment
+vlog -sv +incdir+../uvm ../uvm/my_uvm_pkg.sv
+vlog -sv +incdir+../uvm ../uvm/nn_if.sv
+vlog -sv +incdir+../uvm ../uvm/my_uvm_tb.sv
 
-# Log all signals (for waveform viewing)
+# Elaborate and load simulation
+vsim -voptargs="+acc" my_uvm_tb +UVM_TESTNAME=my_uvm_test
+
+# Log all signals for waveform viewing
 log -r /*
+
+# Load waveform if in GUI mode
+if {[batch_mode]} {
+    # batch mode: skip wave commands
+} else {
+    view wave
+    delete wave *
+    do nn_wave.do
+}
 
 # Run simulation
 run -all
+
+# Zoom full if in GUI mode
+if {![batch_mode]} {
+    wave zoom full
+}
+

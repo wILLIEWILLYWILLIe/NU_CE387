@@ -1,0 +1,67 @@
+fsm_options -device {state[9:0]}
+
+define_state S_IDLE 0000 {/home/gel8580/CE387/HW/HW8/imp/sv/nn_top.sv} 187 12 187 17
+state_output S_IDLE {state[0]} 1
+
+define_state S_FIFO_PREFETCH 0001 {/home/gel8580/CE387/HW/HW8/imp/sv/nn_top.sv} 194 12 194 26
+state_output S_FIFO_PREFETCH {state[1]} 1
+
+define_state S_START_L0 0010 {/home/gel8580/CE387/HW/HW8/imp/sv/nn_top.sv} 198 12 198 21
+state_output S_START_L0 {state[2]} 1
+
+define_state S_RUN_L0 0011 {/home/gel8580/CE387/HW/HW8/imp/sv/nn_top.sv} 205 12 205 19
+state_output S_RUN_L0 {state[3]} 1
+
+define_state S_WAIT_L0 0100 {/home/gel8580/CE387/HW/HW8/imp/sv/nn_top.sv} 217 12 217 20
+state_output S_WAIT_L0 {state[4]} 1
+
+define_state S_START_L1 0101 {/home/gel8580/CE387/HW/HW8/imp/sv/nn_top.sv} 225 12 225 21
+state_output S_START_L1 {state[5]} 1
+
+define_state S_RUN_L1 0110 {/home/gel8580/CE387/HW/HW8/imp/sv/nn_top.sv} 231 12 231 19
+state_output S_RUN_L1 {state[6]} 1
+
+define_state S_WAIT_L1 0111 {/home/gel8580/CE387/HW/HW8/imp/sv/nn_top.sv} 240 12 240 20
+state_output S_WAIT_L1 {state[7]} 1
+
+define_state S_ARGMAX 1000 {/home/gel8580/CE387/HW/HW8/imp/sv/nn_top.sv} 248 12 248 19
+state_output S_ARGMAX {state[8]} 1
+
+define_state S_DONE 1001 {/home/gel8580/CE387/HW/HW8/imp/sv/nn_top.sv} 255 12 255 17
+state_output S_DONE {state[9]} 1
+
+fsm_options -resetState S_IDLE
+
+define_transition S_DONE S_DONE {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = --------------0---}
+define_transition S_ARGMAX S_DONE {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = ------------------}
+define_transition S_WAIT_L1 S_ARGMAX {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = ---------------1--}
+define_transition S_WAIT_L1 S_WAIT_L1 {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = ---------------0--}
+define_transition S_RUN_L1 S_WAIT_L1 {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = 1001--------------}
+define_transition S_RUN_L1 S_RUN_L1 {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = --1---------------}
+define_transition S_RUN_L1 S_RUN_L1 {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = -1----------------}
+define_transition S_RUN_L1 S_RUN_L1 {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = 0-----------------}
+define_transition S_RUN_L1 S_RUN_L1 {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = ---0--------------}
+define_transition S_START_L1 S_RUN_L1 {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = ------------------}
+define_transition S_WAIT_L0 S_START_L1 {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = ----------------1-}
+define_transition S_WAIT_L0 S_WAIT_L0 {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = ----------------0-}
+define_transition S_RUN_L0 S_WAIT_L0 {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = ----1111000011----}
+define_transition S_RUN_L0 S_RUN_L0 {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = -----------1------}
+define_transition S_RUN_L0 S_RUN_L0 {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = ----------1-------}
+define_transition S_RUN_L0 S_RUN_L0 {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = ---------1--------}
+define_transition S_RUN_L0 S_RUN_L0 {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = --------1---------}
+define_transition S_RUN_L0 S_RUN_L0 {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = ----0-------------}
+define_transition S_RUN_L0 S_RUN_L0 {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = -----0------------}
+define_transition S_RUN_L0 S_RUN_L0 {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = ------0-----------}
+define_transition S_RUN_L0 S_RUN_L0 {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = -------0----------}
+define_transition S_RUN_L0 S_RUN_L0 {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = ------------0-----}
+define_transition S_RUN_L0 S_RUN_L0 {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = -------------0----}
+define_transition S_START_L0 S_RUN_L0 {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = ------------------}
+define_transition S_FIFO_PREFETCH S_START_L0 {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = ------------------}
+define_transition S_IDLE S_FIFO_PREFETCH {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = -----------------0}
+define_transition S_DONE S_IDLE {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = --------------1---}
+define_transition S_IDLE S_IDLE {l1_cnt[0],l1_cnt[1],l1_cnt[2],l1_cnt[3],cnt[0],cnt[1],cnt[2],cnt[3],cnt[4],cnt[5],cnt[6],cnt[7],cnt[8],cnt[9],argmax_valid_out,l1_valid_out,l0_valid_out,fifo_empty = -----------------1}
+fsm_options -SRSPath {/home/gel8580/CE387/HW/HW8/imp/syn/rev_1/synwork/nn_top_mult.srs}
+fsm_options -SRSTime 1772578794
+fsm_options -FSMPath {state[9:0]}
+fsm_options -view {work.nn_top.verilog|i:state[9:0]}
+fsm_options -ID {1527142711}

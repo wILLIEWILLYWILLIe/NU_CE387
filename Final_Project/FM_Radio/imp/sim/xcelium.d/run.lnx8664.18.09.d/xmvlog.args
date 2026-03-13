@@ -1,0 +1,27 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/run.lnx8664.18.09.d
+-RUNMODE
+-sv
+../sv/fir_pkg.sv
+../sv/qarctan.sv
+../sv/fir.sv
+../sv/demodulate.sv
+../sv/multiply.sv
+../sv/deemphasis.sv
+../sv/gain.sv
+../sv/add_sub.sv
+../sv/fm_radio_top.sv
+../sv/fm_radio_top_tb.sv
+-CDSLIB
+./xcelium.d/run.lnx8664.18.09.d/cdsrun.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.18.09.d/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/run.lnx8664.18.09.d/xllibs
+-ALLOWUNBOUND

@@ -1,0 +1,20 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-sv
+-access
++rwc
+-timescale
+1ns/1ps
+-64bit
+../sv/fir_pkg.sv
+../sv/qarctan.sv
+../sv/fir.sv
+../sv/demodulate.sv
+../sv/multiply.sv
+../sv/deemphasis.sv
+../sv/gain.sv
+../sv/add_sub.sv
+../sv/fm_radio_top.sv
+../sv/fm_radio_top_tb.sv

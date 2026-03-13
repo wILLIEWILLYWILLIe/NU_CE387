@@ -3,7 +3,7 @@
 [![SystemVerilog](https://img.shields.io/badge/Language-SystemVerilog-blue.svg)](https://en.wikipedia.org/wiki/SystemVerilog)
 [![FPGA-Flow](https://img.shields.io/badge/Flow-FPGA%20Design-green.svg)]()
 [![UVM-Verified](https://img.shields.io/badge/Methodology-UVM-blueviolet.svg)]()
-[![Course-CE387](https://img.shields.io/badge/Course-CE387-red.svg)]()
+<!-- [![Course-CE387](https://img.shields.io/badge/Course-CE387-red.svg)]() -->
 
 This repository contains homework assignments and projects for the **CE387 - Real-Time Digital Systems Design and Verification with FPGAs** course.
 
@@ -36,6 +36,15 @@ The following industry-standard EDA tools and environments are utilized througho
   - **Cadence Genus**: ASIC Logic Synthesis.
   - **Cadence Innovus**: Place & Route (P&R) and GDSII generation.
 - **Project Tracking**: Design notes, timing optimization logs, and area/power reports.
+
+## 🚀 Getting Started
+
+### Environment Setup
+To initialize the EDA tool environment on the server, source the `myenv` script from the repository root:
+```bash
+source myenv
+```
+This script sets up paths for ModelSim, Synplify Pro, and QuestaSim.
 
 ## 🏗️ Repository Structure
 
